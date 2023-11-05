@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>chinese on My New Hugo Site</title>
-    <link>https://example.org/tags/chinese/</link>
-    <description>Recent content in chinese on My New Hugo Site</description>
+    <title>chinese on ねこメモ</title>
+    <link>https://nekotei-m.github.io/tags/chinese/</link>
+    <description>Recent content in chinese on ねこメモ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ja</language>
     <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nekotei-m.github.io/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文測試</title>
-      <link>https://example.org/posts/chinese-test/</link>
+      <link>https://nekotei-m.github.io/posts/chinese-test/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/chinese-test/</guid>
+      <guid>https://nekotei-m.github.io/posts/chinese-test/</guid>
       <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;</description>
     </item>
   </channel>
