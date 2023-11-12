@@ -1,0 +1,312 @@
+/*
+ Customized CSS for whole site
+*/
+* {
+  background-repeat: no-repeat;
+}
+
+a, a:active, a:hover, a:visited {
+  color: #101010;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover span {
+  font-weight: bold !important;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  margin: 1.2rem 0 0.8rem;
+}
+
+hr {
+	border-top: 4px double #bababa;
+	text-align: center;
+}
+hr:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: transparent;
+	color: #8c8b8b;
+	font-size: 18px;
+}
+
+hr.none {
+  clear: both;
+  border: none;
+}
+
+hr.none:after {
+  content: '';
+}
+
+/* SIDEBAR */
+#sidebar .sidebar-profile .sidebar-profile-picture {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 180px !important;
+}
+
+#sidebar .sidebar-profile {
+  height: 180px !important;
+}
+
+#sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link .sidebar-button-icon {
+  margin-right: 5px !important;
+}
+
+#sidebar ul.game-list li.sidebar-button {
+  height: auto;
+}
+
+#sidebar ul.game-list ul {
+  list-style-type: none;
+  margin: -15px 0 0;
+  padding: 0 10px 30px 30px;
+}
+
+#sidebar ul.game-list ul li a {
+  overflow: hidden;
+  display: block;
+  height: 3rem;
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+#sidebar ul.game-list ul li{
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 40px;
+}
+
+#sidebar ul.game-list ul li.game-title {
+  padding: 12px 0 1px 25px;
+  font-size: 1.6rem;
+  background-size: 10%;
+  background-position: left bottom;
+}
+
+#sidebar ul.game-list ul li.dtd7 { background-image: url('/img/layout/icon_7dtd.png'); }
+#sidebar ul.game-list ul li.vic3 { background-image: url('/img/layout/icon_vic3.png'); }
+#sidebar ul.game-list ul li.impr { background-image: url('/img/layout/icon_impr.png'); }
+
+#sidebar ul.sns li.sidebar-button {
+  height: 35px;
+  line-height: 35px;
+}
+
+.fa-niconico {
+  background-image: url('/img/layout/icon_niconico.png');
+  background-size: contain;
+}
+
+a i.fa-niconico {
+  filter: brightness(90%);
+}
+
+a:hover i.fa-niconico {
+  filter: brightness(100%);
+}
+
+/* PAGES */
+div#main {
+  background-image: linear-gradient( 90.5deg,  rgba(255, 252, 248,1) 7.1%, rgba(248, 251, 247,1) 67.4% );
+}
+
+.post .post-content,
+.post .post-content p,
+div.sans-serif {
+  color: #0b0d0d;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+  letter-spacing: 1px;
+}
+/*
+.post .post-content p,
+div.serif {
+  font-family: 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', serif
+}*/
+
+/* PAGE FOOTER */
+.post-actions-wrap ul.post-action-share {
+    width: 100%;
+}
+
+.post-actions-wrap ul.post-action-share li.post-action {
+    float: left;
+}
+
+.post-actions-wrap ul.post-action-share li.arrow-up {
+    float: right;
+}
+
+.post-actions-wrap ul.post-action-share li.post-action .post-action-btn {
+    margin-right: 15px;
+}
+
+.post-actions-wrap ul.post-action-share li.arrow-up .post-action-btn {
+    margin-right: 0 !important;
+}
+
+/* DEFAULT TABLE */
+table tr:nth-child(2n) {
+    background: #f0f2f9;
+}
+
+table tr:nth-child(2n+1) {
+    background: #fcfcfc;
+}
+
+table tr:has(th) {
+  background: transparent !important;
+}
+
+table th,
+table td {
+  font-size: 1.5rem;
+}
+
+
+div.toc {
+  box-sizing: border-box;
+  position: relative;
+  top: 30px; 
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  width: 300px;
+  background-image: linear-gradient( 145deg, #f3f2ed 7.1%, #f0efe8 67.4% );
+  font-family: sans-serif;
+  text-indent: 20px;
+}
+
+div.toc:after,
+div.toc:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 50px solid transparent;
+  transform: rotate(135deg);
+}
+div.toc:after {
+  bottom: -60px;
+  right: -65px;
+  border-bottom: 50px solid #fffcf8;
+  box-shadow: 0px 7px 6px -9px black;
+}
+
+div.toc:before {
+  top: -60px;
+  left: -65px;
+  border-top: 50px solid #fffcf8;
+  box-shadow: 0px -7px 6px -9px black;
+}
+
+div.toc h3 {
+  margin: 20px 0 5px 30px;
+}
+
+div.toc ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.toc > ul {
+  margin: 0 0 20px 30px;
+}
+
+div.toc li {
+  width: 300px;
+}
+
+div.toc li p {
+  font-weight: bold;
+}
+
+div.toc ul ul a:before {
+  content: "├";
+}
+
+div.toc ul ul li:last-child a:before {
+  content: "└";
+}
+
+
+/**
+ * Tooltip Styles
+ */
+
+/* Base styles for the element that has a tooltip */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Base styles for the entire tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition:         
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out,
+    transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
+}
+
+/* Show the entire tooltip on hover and focus */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:before,
+[data-tooltip]:focus:after {
+  visibility: visible;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Base styles for the tooltip's directional arrow */
+[data-tooltip]:before {
+  z-index: 1001;
+  border: 6px solid transparent;
+  background: transparent;
+  content: "";
+}
+
+/* Base styles for the tooltip's content area */
+[data-tooltip]:after {
+  z-index: 1000;
+  padding: 8px;
+/*  width: 160px;*/
+  width: auto;
+  background-color: #000;
+  background-color: hsla(0, 100%, 95%, 0.9);
+  color: #00013e;
+  content: attr(data-tooltip);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Directions */
+
+/* Top (default) */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  bottom: 100%;
+  left: 50%;
+}
+
+[data-tooltip]:before {
+  margin-left: -6px;
+  margin-bottom: -12px;
+  border-top-color: #000;
+  border-top-color: hsla(0, 100%, 95%, 0.9);
+}
