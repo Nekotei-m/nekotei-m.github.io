@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nekotei-m.github.io/categories/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/memo/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/posts/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/vic3/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/categories/victoria3/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/vic3/military-units/</loc>
+    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://nekotei-m.github.io/7dtd/a21-loot-block/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
   </url><url>
@@ -11,26 +35,8 @@
     <loc>https://nekotei-m.github.io/tags/7dtd/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://nekotei-m.github.io/categories/</loc>
-    <lastmod>2023-11-07T21:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://nekotei-m.github.io/tags/data/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/posts/</loc>
-    <lastmod>2023-11-07T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/</loc>
-    <lastmod>2023-11-07T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/</loc>
-    <lastmod>2023-11-07T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/vic3/</loc>
-    <lastmod>2023-11-06T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/categories/victoria3/</loc>
-    <lastmod>2023-11-06T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/vic3/company-list/</loc>
     <lastmod>2023-11-06T21:00:00+09:00</lastmod>
@@ -43,9 +49,6 @@
   </url><url>
     <loc>https://nekotei-m.github.io/categories/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/memo/</loc>
-    <lastmod>2023-11-01T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/vic3/misc-notes/</loc>
     <lastmod>2023-11-01T21:00:00+09:00</lastmod>

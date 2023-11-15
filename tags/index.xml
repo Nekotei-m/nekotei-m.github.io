@@ -6,8 +6,22 @@
     <description>Recent content in Tags on ねこメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Nov 2023 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Nov 2023 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memo</title>
+      <link>https://nekotei-m.github.io/tags/memo/</link>
+      <pubDate>Tue, 14 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/memo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vic3</title>
+      <link>https://nekotei-m.github.io/tags/vic3/</link>
+      <pubDate>Tue, 14 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/vic3/</guid>
+      <description></description>
+    </item>
     <item>
       <title>7dtd</title>
       <link>https://nekotei-m.github.io/tags/7dtd/</link>
@@ -23,24 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>Vic3</title>
-      <link>https://nekotei-m.github.io/tags/vic3/</link>
-      <pubDate>Mon, 06 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>https://nekotei-m.github.io/tags/vic3/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>About</title>
       <link>https://nekotei-m.github.io/tags/about/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://nekotei-m.github.io/tags/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Memo</title>
-      <link>https://nekotei-m.github.io/tags/memo/</link>
-      <pubDate>Wed, 01 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>https://nekotei-m.github.io/tags/memo/</guid>
       <description></description>
     </item>
     <item>

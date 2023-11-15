@@ -6,8 +6,15 @@
     <description>Recent content on ねこメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 07 Nov 2023 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Nov 2023 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>戦闘ユニットの性能</title>
+      <link>https://nekotei-m.github.io/vic3/military-units/</link>
+      <pubDate>Tue, 14 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/military-units/</guid>
+      <description>&lt;p&gt;1.5.7（正式版）での陸軍・海軍のユニットの性能表です。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[α21] ルート品期待値</title>
       <link>https://nekotei-m.github.io/7dtd/a21-loot-block/</link>
