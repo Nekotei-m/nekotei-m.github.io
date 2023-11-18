@@ -125,6 +125,10 @@ div.sans-serif {
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
   letter-spacing: 1px;
 }
+
+.post .caution {
+  color: #e8042c;
+}
 /*
 .post .post-content p,
 div.serif {
@@ -153,21 +157,28 @@ div.serif {
 }
 
 /* DEFAULT TABLE */
-table tr:nth-child(2n) {
+tr:nth-child(2n) {
     background: #f0f2f9;
 }
 
-table tr:nth-child(2n+1) {
+tr:nth-child(2n+1) {
     background: #fcfcfc;
 }
 
-table tr:has(th) {
+tr:has(th) {
   background: transparent !important;
 }
 
-table th,
-table td {
+th,
+td {
   font-size: 1.5rem;
+}
+
+td {
+  border-right: dotted 1px #ccc;
+}
+td:last-child {
+  border-right: none;
 }
 
 
