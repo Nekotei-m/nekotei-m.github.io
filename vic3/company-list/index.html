@@ -295,8 +295,9 @@
             <div class="main-content-wrap">
               <p>Ver1.5で追加された企業の設立条件・効果の一覧です。
 （1.5.7正式版での確認）</p>
-<p>共通企業（特定条件なし）が24社、地域限定企業が84社、文化固有企業が14社、DLC企業が11社あります。
-<strong>対象施設</strong>は生産・建設のボーナス対象となる施設、<strong>制限</strong>は企業を解禁するための条件で、さらに有効にするには<strong>設立条件</strong>を満たす必要があります。</p>
+<p>共通企業（特定条件なし）が24社、地域限定企業が84社、文化固有企業が14社、DLC企業が11社あります。<br>
+<strong>対象施設</strong>は生産・建設のボーナス対象となる施設、<strong>制限</strong>は企業を解禁するための条件で、さらに有効にするには<strong>設立条件</strong>を満たす必要があります。<br>
+※単に「建設済み」が条件になっているものは、いまのところ建設キューにいれただけの状態でもOKなようです
 
 
 <style>
@@ -338,7 +339,7 @@ table#prosperity-effects td.group {
   <ul>
     <li><span>企業一覧</span><ul>
         <li><a href="#common-company">共通企業</a></li>
-        <li><a href="#area-company">地域固有企業</a></li>
+        <li><a href="#area-company">地域限定企業</a></li>
         <li><a href="#culture-company">文化固有企業</a></li>
         <li><a href="#dlc-company">DLC企業</a></li>
       </ul>
@@ -376,7 +377,7 @@ table#prosperity-effects td.group {
   <tr><td id="company_basic_electrics">ホーム・エレクトリクス株式会社</td><td>電気産業</td><td>‐</td><td>任意の州で電気産業の施設レベル5以上</td><td>発電所産出+10%</td></tr>
 </table>
 
-<h3 id="area-company">地域固有企業</h3>
+<h3 id="area-company">地域限定企業</h3>
 <table class="limited">
   <tr><th>企業名</th><th>対象施設</th><th>制限</th><th>設立条件</th><th>繁栄効果</th></tr>
   <tr><td id="company_standard_oil">スタンダード・オイル</td><td>石油リグ<br>鉄道</td><td>アメリカ中西部地域に関心がある</td><td>ポンプジャックを研究済みで、アメリカ中西部地域の任意の州（編入済）で石油リグの施設レベル5以上</td><td>鉄道生産量+20%</td></tr>
@@ -502,7 +503,7 @@ table#prosperity-effects td.group {
 <br>
 <br>
 <h3 id="prosperity-company">繁栄効果逆引き</h3>
-<p>★は文化固有、◆は地域固有を示しています。マウスオーバーで指定の文化や地名が確認できます。また企業名をクリックすると詳細へ飛べます。</p>
+<p>★は文化固有、◆は地域限定、[DLC]は該当のDLCが必要なことを示しています。マウスオーバーで指定の文化や地名が確認できます。また企業名をクリックすると詳細へ飛べます。</p>
 <table id="prosperity-effects">
 <tr><th colspan="2">繁栄効果</th><th>企業名</th></tr>
 <tr><td class="group" rowspan="50">産業補正</td><td>小麦畑生産量+20%</td><td><a href="#company_ursus">ウルサス</a><sup data-tooltip="マウォポルスカ州">◆</sup></td></tr>
@@ -645,6 +646,7 @@ table#prosperity-effects td.group {
 <tr><td>威信+5%</td><td><a href="#company_john_brown">ジョン・ブラウン&カンパニー</a><sup data-tooltip="ローランド州">◆</sup><br><a href="#company_gwr">グレート・ウェスタン鉄道</a><sup data-tooltip="ウェストカントリー州およびミッドランド州およびウェールズ州およびホームカウンティー州">◆</sup></td></tr>
 <tr><td>悪名の減衰-25%</td><td><a href="#company_united_fruit">ユナイテッド・フルーツ社</a><sup data-tooltip="ヤンキーorディキシー文化">★</sup></td></tr>
 </table>
+</p>
               
 
 
