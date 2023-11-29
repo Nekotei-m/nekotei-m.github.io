@@ -45,6 +45,12 @@ hr.none:after {
   content: '';
 }
 
+.note {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
 /* SIDEBAR */
 #sidebar .sidebar-profile .sidebar-profile-picture {
   width: 180px !important;
@@ -129,6 +135,7 @@ div.sans-serif {
 .post .caution {
   color: #e8042c;
 }
+
 /*
 .post .post-content p,
 div.serif {
