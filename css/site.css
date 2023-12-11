@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
 }
 
+section {
+  margin: 0 0 3rem;
+}
+
+table {
+  margin: 0 0 2rem;
+}
+
 a, a:active, a:hover, a:visited {
   color: #101010;
   text-decoration: none;
@@ -19,6 +27,7 @@ a:hover span {
 h2,
 h3 {
   margin: 1.2rem 0 0.8rem;
+  color: #601010;
 }
 
 hr {
@@ -43,6 +52,11 @@ hr.none {
 
 hr.none:after {
   content: '';
+}
+
+dl, ol, ul {
+  margin: 0 0 2rem 2.3rem;
+  padding-inline-start: 0;/*2.3rem;*/
 }
 
 .note {
@@ -127,9 +141,10 @@ div#main {
 .post .post-content,
 .post .post-content p,
 div.sans-serif {
-  color: #0b0d0d;
+  margin: 0 0 2rem !important;
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
   letter-spacing: 1px;
+  color: #0b0d0d;
 }
 
 .post .caution {

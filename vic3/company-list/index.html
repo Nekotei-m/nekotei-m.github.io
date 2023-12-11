@@ -309,7 +309,6 @@
 ※単に「建設済み」が条件になっているものは、いまのところ建設キューにいれただけの状態でもOKなようです</p>
 <p>企業の設立後は60ヵ月のクールダウンを経ないと無効化できず、また一度無効にした企業の再設立は48ヵ月のクールダウンが必要です。
 
-
 <style>
 h3 {
   margin: 1rem 0 0.5rem;
@@ -458,7 +457,7 @@ table#prosperity-effects td.group {
   <tr><td id="company_tata">タタ</td><td>織物工場<br>製鉄所</td><td>南インド地域に関心がある</td><td>ボンベイ州（編入済）で織物工場or製鉄所の施設レベル10以上</td><td>建設局生産量+5%<br>週ごとの最大建設進捗+10</td></tr>
   <tr><td id="company_sunhwaguk">スンファグク</td><td>タバコ農園<br>稲田</td><td>満州地域に関心がある</td><td>中央指令型経済を研究済みで、朝鮮の母国州（編入済）でタバコ農園が施設レベル10（限定？設定ミスかも）</td><td>技術普及+10%</td></tr>
   <tr><td id="company_nam_dinh">ナムディン繊維工場</td><td>織物工場</td><td>インドシナ地域に関心がある</td><td>企業チャーターを研究済みで、トンキン州（編入済）で織物工場の施設レベル10以上</td><td>技術普及+10%</td></tr>
-  <tr><td id="company_imperial_tobacco">ペルシャ帝国タバコ社</td><td>タバコ農園</td><td>ペルシア地域に関心がある</td><td>企業チャーターを研究済みで、ペルシア地域の任意の州（編入済）で4ヶ所以上のタバコ農園の施設レベル5以上</td><td>技術普及+20%<br>農村民IGの支持-2</td></tr>
+  <tr><td id="company_imperial_tobacco">ペルシャ帝国タバコ社</td><td>タバコ農園</td><td>ペルシア地域に関心がある</td><td>企業チャーターを研究済みで、ペルシア地域の任意の州（編入済）で4ヶ所以上のタバコ農園の施設レベル5以上</td><td>技術普及+20%<br><span class="caution">農村民IGの支持-2</span></td></tr>
   <tr><td id="company_san_miguel">サン・ミゲル</td><td>食品産業</td><td>インドネシア地域に関心がある</td><td>企業チャーターを研究済みで、インドネシア地域の任意の州（編入済）で食品産業の施設レベル10以上</td><td>生活水準減少に<br>端を発する急進派-10%</td></tr>
   <tr><td id="company_william_sandford">ウィリアム・サンドフォード有限責任会社</td><td>製鉄所</td><td>オセアニア地域に関心がある</td><td>ベッセマー法を研究済みで、ニューサウスウェールズ州（編入済）で製鉄所の施設レベル10以上</td><td>鉄道生産量+15%</td></tr>
   <tr><td id="company_b_grimm">B. グリム</td><td>稲田</td><td>インドシナ地域に関心がある</td><td>バンコク州（編入済）で稲田の施設レベル10以上</td><td>人口100K人あたりの<br>&nbsp;インフラ+1<br>食品産業生産量+10%</td></tr>
@@ -480,7 +479,7 @@ table#prosperity-effects td.group {
 <h3 id="culture-company">文化固有企業</h3>
 <table class="limited">
   <tr><th>企業名</th><th>対象施設</th><th>制限</th><th>設立条件</th><th>繁栄効果</th></tr>
-  <tr><td id="company_united_fruit">ユナイテッド・フルーツ社</td><td>バナナ農園<br>砂糖農園</td><td>主要文化にヤンキーorディキシーをもつ</td><td>（自国または従属国の）中南米のいずれかの州でバナナ農園の施設レベル5以上</td><td>プランテーション系<br>生産量+20%<br>悪名の減衰-25%</td></tr>
+  <tr><td id="company_united_fruit">ユナイテッド・フルーツ社</td><td>バナナ農園<br>砂糖農園</td><td>主要文化にヤンキーorディキシーをもつ</td><td>（自国または従属国の）中南米のいずれかの州でバナナ農園の施設レベル5以上</td><td>プランテーション系<br>生産量+20%<br><span class="caution">悪名の減衰-25%</span></td></tr>
   <tr><td id="company_vodka_monopoly">ウォッカ・モノポリー</td><td>食品産業<br>ブドウ園</td><td>主要文化にロシアをもつ</td><td>法律レッセフェールを採用していない、かつ任意の州（編入済）で食品産業の施設レベル5以上</td><td>生活水準減少に<br>端を発する急進派-15%</td></tr>
   <tr><td id="company_mantetsu">南満洲鉄道</td><td>鉄道<br>石炭鉱山<br>ガラス工房</td><td>主要文化に日本をもつ</td><td>明治維新後、鉄道を研究済みで、自国または従属国が盛京を持ち、満州地域or華北地域に4ヶ所以上鉄道建設済み</td><td>非母国州における<br>植民地成長速度+10%<br>小麦畑生産量+15%</td></tr>
   <tr><td id="company_mitsubishi">三菱</td><td>軍用造船所<br>石炭鉱山<br>発動機産業</td><td>主要文化に日本をもつ</td><td>明治維新後、装甲艦を研究済みで、中国（編入済）で造船所or軍用造船所or石炭鉱山の施設レベル10以上</td><td>戦争兵器産業生産量+10%<br>実業家IGの支持+2</td></tr>
@@ -583,7 +582,7 @@ table#prosperity-effects td.group {
 <tr><td>生活水準減少に端を発する急進派-5%</td><td><a href="#company_basic_colonial_plantations_1">グランド・イースト・プランテーションズ社</a><span></span><br><a href="#company_gwr">グレート・ウェスタン鉄道</a><sup data-tooltip="ウェストカントリー州およびミッドランド州およびウェールズ州およびホームカウンティー州">◆</sup></td></tr>
 <tr><td>差別に端を発する急進派-10%</td><td><a href="#company_allatini_mills">アラティーニ工場</a><sup data-tooltip="マケドニア州">◆</sup></td></tr>
 <tr><td>農村民IGの魅力+20%</td><td><a href="#company_bunge_born">ブンヘ&ボルン</a><sup data-tooltip="ラ・プラタ地域">◆</sup></td></tr>
-<tr><td>農村民IGの支持-2</td><td><a href="#company_imperial_tobacco">ペルシャ帝国タバコ社</a><sup data-tooltip="ペルシア地域">◆</sup></td></tr>
+<tr><td><span class="caution">農村民IGの支持-2</span></td><td><a href="#company_imperial_tobacco">ペルシャ帝国タバコ社</a><sup data-tooltip="ペルシア地域">◆</sup></td></tr>
 <tr><td>実業家の政治力+20%</td><td><a href="#company_mitsui">三井</a><sup data-tooltip="関西">◆</sup></td></tr>
 <tr><td>実業家の政治力+15%</td><td><a href="#company_estanifera_llallagua">ラジャグア・エスタニフェラ社</a><sup data-tooltip="要CoS・ポトシ州">DLC</sup></td></tr>
 <tr><td>実業家IGの魅力+10%</td><td><a href="#company_ap_moller">A.P. モラー</a><sup data-tooltip="シェラン州">◆</sup><br><a href="#company_savva_morozov">サヴァ・モロゾフ＆サンズ</a><sup data-tooltip="モスクワ州">◆</sup></td></tr>
@@ -650,7 +649,7 @@ table#prosperity-effects td.group {
 <tr><td>威信+15%</td><td><a href="#company_jingdezhen">景徳鎮窯</a><sup data-tooltip="福建省">◆</sup><br><a href="#company_ccci">コンゴ社</a><sup data-tooltip="ワロン文化">★</sup><br><a href="#company_ricordi">G. リコルディ & C.</a><sup data-tooltip="ロンバルディア州">◆</sup><br><a href="#company_cgv">ワイン生産者総連盟</a><sup data-tooltip="フランスorオック文化">★</sup></td></tr>
 <tr><td>威信+10%</td><td><a href="#company_orient_express">オリエント鉄道</a><sup data-tooltip="バルカン地域">◆</sup><br><a href="#company_savva_morozov">サヴァ・モロゾフ＆サンズ</a><sup data-tooltip="モスクワ州">◆</sup><br><a href="#company_basic_wine_and_fruit">ワイン&フルーツ株式会社</a><span></span></td></tr>
 <tr><td>威信+5%</td><td><a href="#company_john_brown">ジョン・ブラウン&カンパニー</a><sup data-tooltip="ローランド州">◆</sup><br><a href="#company_gwr">グレート・ウェスタン鉄道</a><sup data-tooltip="ウェストカントリー州およびミッドランド州およびウェールズ州およびホームカウンティー州">◆</sup></td></tr>
-<tr><td>悪名の減衰-25%</td><td><a href="#company_united_fruit">ユナイテッド・フルーツ社</a><sup data-tooltip="ヤンキーorディキシー文化">★</sup></td></tr>
+<tr><td><span class="caution">悪名の減衰-25%</span></td><td><a href="#company_united_fruit">ユナイテッド・フルーツ社</a><sup data-tooltip="ヤンキーorディキシー文化">★</sup></td></tr>
 </table>
 </p>
               

@@ -6,8 +6,15 @@
     <description>Recent content in Victoria3 on ねこメモ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 14 Nov 2023 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 17 Nov 2023 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/categories/victoria3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>建築のコツ</title>
+      <link>https://nekotei-m.github.io/vic3/construction-tips/</link>
+      <pubDate>Fri, 17 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/construction-tips/</guid>
+      <description>&lt;p&gt;1.5から現地価格の導入により難しくなった建築のTipsです。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>戦闘ユニットの性能</title>
       <link>https://nekotei-m.github.io/vic3/military-units/</link>
@@ -27,8 +34,7 @@
       <link>https://nekotei-m.github.io/vic3/company-list/</link>
       <pubDate>Mon, 06 Nov 2023 21:00:00 +0900</pubDate>
       <guid>https://nekotei-m.github.io/vic3/company-list/</guid>
-      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。
-（1.5.10正式版での確認）&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。&#xA;（1.5.10正式版での確認）&lt;/p&gt;</description>
     </item>
     <item>
       <title>未分類のメモ</title>
