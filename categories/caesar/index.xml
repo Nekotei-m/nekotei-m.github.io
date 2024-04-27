@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Caesar on ねこメモ</title>
+    <link>https://nekotei-m.github.io/categories/caesar/</link>
+    <description>Recent content in Caesar on ねこメモ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 11 Dec 2023 21:00:00 +0900</lastBuildDate>
+    <atom:link href="https://nekotei-m.github.io/categories/caesar/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>プロジェクトカエサル（要約）</title>
+      <link>https://nekotei-m.github.io/caesar/tintotalk/</link>
+      <pubDate>Mon, 11 Dec 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/caesar/tintotalk/</guid>
+      <description>&lt;p&gt;Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

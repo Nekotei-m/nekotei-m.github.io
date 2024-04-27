@@ -59,6 +59,10 @@ dl, ol, ul {
   padding-inline-start: 0;/*2.3rem;*/
 }
 
+sup {
+  line-height: 0;
+}
+
 .note {
   display: block;
   font-size: 1.3rem;
@@ -114,6 +118,7 @@ dl, ol, ul {
 #sidebar ul.game-list ul li.dtd7 { background-image: url('/img/layout/icon_7dtd.png'); }
 #sidebar ul.game-list ul li.vic3 { background-image: url('/img/layout/icon_vic3.png'); }
 #sidebar ul.game-list ul li.impr { background-image: url('/img/layout/icon_impr.png'); }
+#sidebar ul.game-list ul li.caesar { background-image: url('/img/layout/icon_tinto.png'); }
 
 #sidebar ul.sns li.sidebar-button {
   height: 35px;

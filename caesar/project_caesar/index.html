@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4R2215NGV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S4R2215NGV');
+    </script>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "プロジェクトカエサル（要約）",
+  
+  "image": "http://localhost:1313/img/caesar/tintotalk.png",
+  
+  "datePublished": "2023-12-11T21:00:00+09:00",
+  "dateModified": "2023-12-11T21:00:00+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "ねこてー",
+    
+    "image": "http://localhost:1313/img/icon_profile.png"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/caesar\/project_caesar\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ねこメモ",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/img/icon_profile.png"
+    }
+    
+  },
+  "description": "Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="ねこてー">
+<meta name="keywords" content="">
+<meta name="description" content="Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。">
+
+
+<meta property="og:description" content="Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="プロジェクトカエサル（要約）">
+<meta name="twitter:title" content="プロジェクトカエサル（要約）">
+<meta property="og:url" content="http://localhost:1313/caesar/project_caesar/">
+<meta property="twitter:url" content="http://localhost:1313/caesar/project_caesar/">
+<meta property="og:site_name" content="ねこメモ">
+<meta property="og:description" content="Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。">
+<meta name="twitter:description" content="Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。">
+<meta property="og:locale" content="ja">
+
+  
+    <meta property="article:published_time" content="2023-12-11T21:00:00">
+  
+  
+    <meta property="article:modified_time" content="2023-12-11T21:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="">
+    
+  
+  
+    
+      <meta property="article:tag" content="Project Caesar">
+    
+      <meta property="article:tag" content="Tips">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@nekotei_m">
+
+
+  <meta name="twitter:creator" content="@nekotei_m">
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:1313/img/caesar/tintotalk.png">
+  <meta property="twitter:image" content="http://localhost:1313/img/caesar/tintotalk.png">
+
+
+  <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://localhost:1313/img/layout/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="http://localhost:1313/img/layout/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/img/layout/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="http://localhost:1313/img/layout/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="http://localhost:1313/img/layout/icon-512x512.png">
+  <link rel="manifest" href="http://localhost:1313/img/layout/manifest.json">
+
+    <title>プロジェクトカエサル（要約）</title>
+
+    <link rel="icon" href="http://localhost:1313/img/layout/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/caesar/project_caesar/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="http://localhost:1313/css/site.css">
+      
+    
+
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="http://localhost:1313/" aria-label="ホームページへ">ねこメモ</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="http://localhost:1313/#about" aria-label="リンクを開く: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="http://localhost:1313/img/icon_profile.png" alt="プロフィール画像" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+    <div class="sidebar-profile">
+      <a href="http://localhost:1313/">
+        <img class="sidebar-profile-picture" src="http://localhost:1313/img/layout/icon_nekomemo.png" alt="プロフィール画像" />
+      </a>
+    </div>
+    
+    <ul class="sidebar-buttons game-list">
+      <li class="sidebar-button">
+        <span class="sidebar-button-link " title="Home">
+          <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+          <span class="sidebar-button-desc"><strong>カテゴリ</strong></span>
+        </span>
+        <ul>
+          <li class="game-title dtd7"><a href="http://localhost:1313/categories/7_days_to_die/">
+            <strong>7 days to die</strong>
+          </a></li>
+          <li><a href="http://localhost:1313/7dtd/a21-by-data/">[α21] データで見る7dtd</a></li>
+          <li class="game-title impr"><a href="http://localhost:1313/categories/caesar/">
+            <strong>Project Caesar</strong>
+          </a></li>
+          <li><a href="http://localhost:1313/caesar/tintotalk/">開発日記要約</a></li>
+          <li class="game-title vic3"><a href="http://localhost:1313/categories/victoria3/">
+            <strong>Victoria3</strong>
+          </a></li>
+          <li><a href="http://localhost:1313/vic3/ig-list/">利益団体</a></li>
+          <li><a href="http://localhost:1313/vic3/company-list/">企業</a></li>
+          <li><a href="http://localhost:1313/vic3/military-units/">ユニット性能</a></li>
+          <li><a href="http://localhost:1313/vic3/construction-tips/">建築のコツ</a></li>
+          <li><a href="http://localhost:1313/vic3/misc-notes/">未分類のメモ</a></li>
+          <li class="game-title impr"><a href="http://localhost:1313/categories/imperator_rome/">
+            <strong>Imperator: Rome</strong>
+          </a></li>
+          <li><a href="http://localhost:1313/impr/imperator-rome-tips2.0/">Tips</a></li>
+        </ul>
+    </ul>
+    <ul class="sidebar-buttons sns">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="http://localhost:1313/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">プロフィール</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/nekotei_m" target="_blank" rel="noopener" title="Twitter(X)">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-twitter" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Twitter(X)</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youtube.com/@nekotei/" target="_blank" rel="noopener" title="Youtube">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-youtube" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Youtube</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.nicovideo.jp/user/2157109" target="_blank" rel="noopener" title="ニコニコ動画">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-niconico" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">ニコニコ動画</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      プロジェクトカエサル（要約）
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-12-11T21:00:00&#43;09:00">
+        
+  12月 11, 2023
+
+      </time>
+    
+    
+  
+  
+    <span>カテゴリー</span>
+    
+      <a class="category-link" href="http://localhost:1313/categories/"></a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>Pradox Interactive社のProject Caesarに関する開発日誌を抜粋したものです。</p>
+プレイ期間
+・1337年から約500年の予定
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">*</a></sup>
+
+Map(#2)
+・ゴール平射図法
+  極地をむやみに大きくすることなく、赤道付近を小さくし過ぎず、中緯度地域を適切な大きさにできるから
+・マップ単位は州ではなく地区(Location)＜州(Province)＜地域(Area)＜地方(Region)＜亜大陸(Subcontinent)
+（例：西ヨーロッパ亜大陸のスカンジナビア地方のスヴェアランド地域のウップランド州のストックホルム）
+・地区はなるべく均一に分割され、原則として大きさで最大3倍
+・ひとつの州にはだいたい4～8の地区を含む(#2)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/post-29439631" target="_new" rel="noopener noreferrer">*</a></sup>
+・Vic3のひとつの州は10～50の地区にあたる(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29563758" target="_new" rel="noopener noreferrer">*</a></sup>
+・海も沿岸と沿岸隣接水域、海流が設定されている。海流は沿岸地域を相互に接続している
+・サハラ砂漠やグリーンランド、海流外の外洋など通行不能地形もある
+・国が小さいときは短い名前で表示される(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502790" target="_new" rel="noopener noreferrer">*</a></sup>
+・大きな川でも艦隊の航行はできない(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527243" target="_new" rel="noopener noreferrer">*</a></sup>
+・
+
+地区(#2,#6,#8)
+・地区は次の3つの自然に関するデータを持つ
+  気候 - 乾燥、北極、大陸などが含まれます。
+  地形 - 平地、丘陵、山地など。
+  植生 - 森林、林、農地、砂漠など。
+・現在の地区数は27,518(#3)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">*</a></sup>
+・中核州の扱いはEU4ともEU3とも異なる(#4)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477263" target="_new" rel="noopener noreferrer">*</a></sup>
+・デフォルトではすべての地区は農村(Rural Settlement)であり、街(Towns)、都市(Cities)へとアップグレードできる
+・アップグレードするには一定の人口が必要でコストもかかる
+・アップグレードすると人口容量が増えるが食料生産が減り、貴族/聖職者/都市民POPが増える
+・アップグレードには数年かかる(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527279" target="_new" rel="noopener noreferrer">*</a></sup>
+・農村と街では建物の種類もガラリと変わる（※IRに近いか？）
+・建設はスロットを埋めていくものではない(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527378" target="_new" rel="noopener noreferrer">*</a></sup>
+・地区には支配権(Control)があり、首都等からの距離と地形によって減少する（0%～100%）
+・支配権は税収や徴集兵の数に直結し、低ければ自国市場の魅力も弱まって他国市場へ属してしまうかもしれない
+・距離のペナルティは外洋はかなり高く、海岸線沿いや河川沿いは軽減され、陸上では道路を建設して下げることができる
+・土地管理人(Bailiff)の建物を建設することでも軽減できるが、貴族POPと食料コストが増加する
+・支配権が低すぎれば独立につながるだろう(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527397" target="_new" rel="noopener noreferrer">*</a></sup>
+・地区の海岸線では港などの建物や海軍に応じて、海域の支配権がゆっくり時間をかけて構築される
+・海域の支配権は支配権だけではなく、自国市場にも影響する
+・敵海軍による封鎖や海賊による襲撃を受けると海域の支配権は急速に失われ、防衛しなかったことを後悔するだろう
+・都市は過疎化することもある(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527206" target="_new" rel="noopener noreferrer">*</a></sup>
+・飛び地は土地管理人(Bailiff)がいないとコントロールできなくなる(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527209" target="_new" rel="noopener noreferrer">*</a></sup>
+・地区は人口/産品/主要宗教/主要文化/基礎税額/所属市場/食料収支/気候/地形/植生のパラメタをもつ
+・どの地区も必ず1つの産品を持つ
+・産品の産出量を増加させるにはお金と時間（180日？）、そして別の産品が市場に必要な場合もある（例えば鉱山の拡張に木材）
+・どこまで拡張できるかは人口、開発度、技術、社会的価値観によって変わる
+・産品の産出には農民か奴隷を必要とし、そこで働くPOPは食料生産には従事しない
+
+
+POP(#3)
+・以下の属性であらわされる人口。1人単位で表示される
+  文化 - カタルーニャ、アンダルシア、スウェーデンなど
+  宗教 - カトリック、ルーテル派、スンニ派など
+  社会階級 - Project Caesarには5つの異なる階級がある
+    貴族 - ピラミッドの頂点に立つ人々
+    聖職者 - これらは司祭、修道士など
+    都市民 - これらはある国の町や都市に存在する
+    平民 - これが国民の大部分
+    奴隷 - 合法である国にのみ存在する
+・識字率があり、技術の進歩やPOPの立場に影響する
+  ※技術の進歩は識字率だけが影響するものではない
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/post-29476650" target="_new" rel="noopener noreferrer">*</a></sup>
+・満足度は以下のものを代表にさまざま影響を受ける
+  宗教寛容度
+  文化的偏見
+  国内安定度
+・POPは時間の経過とともに増加または減少し、他文化への同化、宗教への改宗、さらには移住する可能性がある
+・POPはゲームの基盤ではありますが、それはバックグラウンドにあるシステムであり、間接的にしか制御できないことです。
+・POPは地区単位で設定されるがPCパフォーマンスについては心配してない
+
+
+政府(#4)
+・5つの異なる政府タイプが存在する
+  君主制(Monarchy) - 正統性(Legitimacy)を使用します。
+  共和制(Republic) - 共和の伝統(Republican Tradition)を使用します。
+  神政国家(Theocracy) - 献身(Devotion)を使用します。
+  遊牧民(Steppe Horde) - 遊牧民の結束(Horde Unity)を使用します。
+  部族(Tribe) - 部族の団結(Tribal Cohesion)を使用します。
+・国のランク、政府改革、地域により国の呼称が決められる
+・成人の統治者がいない場合は摂政が置かれる
+  ※空位期間もある
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477160" target="_new" rel="noopener noreferrer">*</a></sup>
+・制度や法律などの政府改革があり、階級への影響をはじめ様々な効果を得らえる
+  （国や文化宗教、その他により使用可能なものが異なる）
+・議会があり、各階級からの議題の要求がある（どんな国家制度でも？）
+  ※現在は2年のクールダウンがあり、一方5年以上開催されないと不安が高まる
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477185" target="_new" rel="noopener noreferrer">*</a></sup>
+・内閣が存在し、国が大きくなるにつれて可能な行動が増える（EU4の顧問とCK2の評議会の複合）
+・法律や政府改革により13の社会的価値観に変化を及ぼす（非/中央集権化、貴族制/富豪制、農奴/自由農etc）
+・ミッションツリーは存在するがEU4とは異なるスタイルになる
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477527" target="_new" rel="noopener noreferrer">*</a></sup>
+・内戦はImperatorにちかいシステムとなる(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502791" target="_new" rel="noopener noreferrer">*</a></sup>
+・奴隷の反乱もある(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29503004" target="_new" rel="noopener noreferrer">*</a></sup>
+・同君連合の仕組みはEU4とは変わる(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29503906" target="_new" rel="noopener noreferrer">*</a></sup>
+・安定度は各階級の満足度、POPの昇進速度（部族民から平民、都市民…）、POPの満足度が影響する
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1664941/post-29557569" target="_new" rel="noopener noreferrer">*</a></sup>
+・安定度は他にも内閣の方針、国教聖職者の割合、経費支出にも影響する
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1662820/post-29548063" target="_new" rel="noopener noreferrer">*</a></sup>
+
+
+階級(Estates)(#5)
+・4つの階級が存在し、統治者(Crown)も含めて100%の権力を分け合っている
+  貴族(Nobility)
+  聖職者(Clergy)
+  都市民(Burghers)
+  平民(Commoners)
+・貴族と平民は同じPOP数で1000倍の権力差がある（例：1000人で貴族50、平民0.05）
+  POPのいない階級は権力を持たない(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502805" target="_new" rel="noopener noreferrer">*</a></sup>
+  奴隷は権力を持たない(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502863" target="_new" rel="noopener noreferrer">*</a></sup>
+  統治者の権力ベースは国の総人口(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502867" target="_new" rel="noopener noreferrer">*</a></sup>
+・統治者の権力の大小により、特権の取り消し、法律変更、宮廷の各種コストや内閣の効率に影響する
+・各階級には現在の満足度から特権・法律・安定度などに影響された均衡点へと向かっていく
+・現在の満足度が50%超でボーナス、50%未満でペナルティ。25%未満になると税金を払わない
+  貴族はあなたの名声の獲得と対スパイ活動に影響を与えます。
+  聖職者は研究速度と外交上の評判に影響を与えます。
+  都市民は販売者の力と生産効率に影響を与えます。
+  平民は食糧生産と安定度コストに影響を与えます。
+・国や政府タイプに応じて独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響を及ぼす
+・徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資を行う（多く場合国も利益となる）
+・各階級が持つ資金は建物の他に国家へのローンを提供するプールともなる(#8)
+
+
+経済(#7,#8)
+・収入
+  税金（各階級に対する特権や法律などにより上限が変化する）
+  貿易収入
+  外交収入
+  余剰食糧販売（州単位）
+  （※鋳貨、派兵収入も見える）
+・費用
+  宮廷コスト（正当性や権力に影響する）
+  陸軍と海軍、砦の維持費
+  文化投資（ルネサンス時代から。統治者の威信に影響）
+  植民地支出
+  安定性への投資（国のサイズや法律、社会価値観により必要額が変化）
+    安定性は-100%～+100%の範囲で時間の経過により原則として0に近づくが、投資で変わる
+    他に安定性を向上させるのは内閣と総人口に占める国教の聖職者の割合
+  食料が不足していればその購入費用も負担しなくてはならない
+  （※金利、貿易出費、傭兵雇用費、探検費用などもみえる）
+・ほとんどがスライダーで調整可能（自動化ボタンもある(#7)）
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29546003" target="_new" rel="noopener noreferrer">*</a></sup>
+・税率の調整は0.1%刻み(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29545858" target="_new" rel="noopener noreferrer">*</a></sup>
+・平時であっても軍事費用をゼロにするのはペナルティがあるだろう(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29545885" target="_new" rel="noopener noreferrer">*</a></sup>
+・安定性に投資したお金は各階級に行くことはなく消滅する(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29545950" target="_new" rel="noopener noreferrer">*</a></sup>
+・借金は各階級から提供される。各階級に提供できる資金がないと国は破産する
+・近隣に金融組織（領地をもたない）があれば外交官を派遣してお金を借りることができるが、もし返済が滞ったら二度と貸してもらえないだろう
+・金利はさまざま要因によって変わる(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29564020" target="_new" rel="noopener noreferrer">*</a></sup>
+・借金は早期返済してもEU4と同じくすべての金利を払う必要がある(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29564491" target="_new" rel="noopener noreferrer">*</a></sup>
+・基礎税額は建物や産品から計算され、支配権によって上下し、現在/見込/最大が表示される
+・見込と現在の差額は潜在的な反乱軍の資金となる(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29563547" target="_new" rel="noopener noreferrer">*</a></sup>
+・反乱軍は支配権と基礎税額によって進捗が計算される(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29563847" target="_new" rel="noopener noreferrer">*</a></sup>
+・現在の支配権から産出された基礎税額は各階級に分配され、階級ごとの税率によって国庫に入る税額が決まる
+・貿易の流れは動的（？）(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29563328" target="_new" rel="noopener noreferrer">*</a></sup>
+・メディチ銀行にはいくつかのユニークな仕組みがある(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29563402" target="_new" rel="noopener noreferrer">*</a></sup>
+
+
+建設(#9)
+・建設に必要な産品と維持or生産に必要な産品があり、地元市場で入手可能になっている必要がある
+・建物種類は100以上あり、農村のみや街のみ、沿岸のみ、他国にのみ、無主地のみなど様々
+・文化や宗教、地域や国固有のものもある
+・たとえばオランダには干拓地がある
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29581146" target="_new" rel="noopener noreferrer">*</a></sup>
+・建物にはレベルがあり、1またはある数字で固定のものや人口などに応じて増えるものがある
+・建物は大きくわけて生産施設、特定の効果を発揮する施設（城など）、階級のみが建設可能な施設の3種類
+・各階級は満足度が高ければ階級専用建物以外も建てることがある
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580605" target="_new" rel="noopener noreferrer">*</a></sup>
+・生産施設には軍事用、ポップ用、建物での消費など、約70種類の産品がある
+・特定の効果とは貯蔵できる食料の量を増やす穀倉、読み書き能力を高める図書館、さまざまな種類の砦、人材を訓練する建物、造船を支援する港の建物など多種多様なものがある
+・建物は（おそらく時代に合わせて）ギルドから工場まで進化していく
+・同じ産品でも生産方法が複数あり、たとえば紙は皮や植物繊維、木のみからなど、それぞれ原料によって利益も異なる
+・技術で解禁される生産方法もある(#9)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29581118" target="_new" rel="noopener noreferrer">*</a></sup>
+・生産方法は自動化もできる(#9)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580575" target="_new" rel="noopener noreferrer">*</a></sup>
+・建物には働くPOPも必要で、農民が建物で働けばその分食料生産は減り、貴族や聖職者が必要であればそれらのPOP数も増えて存在感を増すだろう
+・利益のない建物は補助金を出さない限り閉鎖されてしまう
+・逆に建物を一時的に閉鎖して、POPを別の建物で働かせたり、産品の価格を変化させたりすることもできる
+・各階級が建てた建物は閉鎖できない。破壊はできるが不満が貯まるだろう
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580644" target="_new" rel="noopener noreferrer">*</a></sup>
+・建物の利益はその地区の基礎税額に加算される
+・基本的な原材料となる産品は農村に建てられる製材場、羊牧場、採石場などや貿易から入手できる
+・産品の備蓄の概念もある
+・戦争で建物が破壊される可能性もあるかもしれない
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580494" target="_new" rel="noopener noreferrer">*</a></sup>
+・占領中の地区の建物は市場への供給量が減らすだろう
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580546" target="_new" rel="noopener noreferrer">*</a></sup>
+・EU4のような産品によるゲーム的ボーナスはない
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580798" target="_new" rel="noopener noreferrer">*</a></sup>
+
+
+戦争
+・マップ上の地区でユニットを移動させる戦争システムが搭載されます(#2)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/#post-29439618" target="_new" rel="noopener noreferrer">*</a></sup>
+・常備軍はゲーム中盤から終盤までゲームに登場しない(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502832" target="_new" rel="noopener noreferrer">*</a></sup>
+・マンパワーはPOPに100%依存する(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527282" target="_new" rel="noopener noreferrer">*</a></sup>
+・要塞はある(#6)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527299" target="_new" rel="noopener noreferrer">*</a></sup>
+・常備軍と徴集兵が混在する。初期の常備軍は数百もないだろう(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29546011" target="_new" rel="noopener noreferrer">*</a></sup>
+・和平による征服コストは支配権によっても変わる(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29564507" target="_new" rel="noopener noreferrer">*</a></sup>
+・城を建てるとZoCが発生する(#9)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">*</a></sup>
+・ZoCはEU4/IR的なものになる。時代によっては無視できる(#9)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580492" target="_new" rel="noopener noreferrer">*</a></sup>
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580525" target="_new" rel="noopener noreferrer">*</a></sup>
+・ユニット維持のために産品を消費する必要がある
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580669" target="_new" rel="noopener noreferrer">*</a></sup>
+
+実績
+・ヨハン氏の意見としては鉄人必須(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502735" target="_new" rel="noopener noreferrer">*</a></sup>
+
+統治者
+・スキルをもつ(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502769" target="_new" rel="noopener noreferrer">*</a></sup>
+
+技術/研究
+・すべてのPOPが影響を与える(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502919" target="_new" rel="noopener noreferrer">*</a></sup>
+
+その他
+・幸運な国家（Lucky Nation）は存在しない(#5)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29503686" target="_new" rel="noopener noreferrer">*</a></sup>
+・国旗はCK3/Vic3のような動的なシステムがある(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29546116" target="_new" rel="noopener noreferrer">*</a></sup>
+・彗星は安定性を-10する（？）(#7)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/post-29546026" target="_new" rel="noopener noreferrer">*</a></sup>
+・国家解放は対象国がコアを持つすべての地区を対象とする(#8)
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/post-29564691" target="_new" rel="noopener noreferrer">*</a></sup>
+・EU4の衛星国のようにどこでも従属国を作ることはできる
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1666241/post-29564375" target="_new" rel="noopener noreferrer">*</a></sup>
+・教皇庁、百年戦争、対立教皇、宗教改革のメカニズムはある
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1665873/post-29561342" target="_new" rel="noopener noreferrer">*</a></sup>
+・オプションとして台帳を制限する設定を予定している
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1659155/post-29542829" target="_new" rel="noopener noreferrer">*</a></sup>
+・一時停止、一時停止解除、一時停止切り替えの3つのホットキーを設定できる
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1625651/post-29529615" target="_new" rel="noopener noreferrer">*</a></sup>
+・必須環境はメインメモリ32GB以上になるかもしれない
+  <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580876" target="_new" rel="noopener noreferrer">*</a></sup>
+・伝染病のメカニズムはある
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1636928/post-29478324" target="_new" rel="noopener noreferrer">*</a></sup>
+・メッセージの個別設定は可能
+  <sup><a href="https://forum.paradoxplaza.com/forum/threads/1638374/post-29481033" target="_new" rel="noopener noreferrer">*</a></sup>
+
+#01 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer">*</a></sup>
+#02 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer">*</a></sup>
+#03 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">*</a></sup>
+#04 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">*</a></sup>
+#05 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">*</a></sup>
+#06 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer">*</a></sup>
+#07 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer">*</a></sup>
+#08 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">*</a></sup>
+#09 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">*</a></sup>
+#10 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#11 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#12 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#13 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#14 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#15 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+#16 <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/" target="_new" rel="noopener noreferrer">*</a></sup>
+
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">タグ</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="http://localhost:1313/tags/project-caesar/">Project Caesar</a>
+
+  <a class="tag tag--primary tag--small" href="http://localhost:1313/tags/tips/">Tips</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/caesar/project_caesar/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://localhost:1313/caesar/project_caesar/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=http://localhost:1313/caesar/project_caesar/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2024 ねこてー. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:1313/caesar/project_caesar/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://localhost:1313/caesar/project_caesar/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=http://localhost:1313/caesar/project_caesar/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fcaesar%2Fproject_caesar%2F" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Facebookで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Flocalhost%3A1313%2Fcaesar%2Fproject_caesar%2F" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitterで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A1313%2Fcaesar%2Fproject_caesar%2F" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i><span>Redditで共有</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="http://localhost:1313/img/layout/icon_profile.png" alt="プロフィール画像" />
+    
+    <h4 id="about-card-name">ねこてー</h4>
+    
+      <div id="about-card-bio">ねこを愛するひと（愛されるとは言ってない）</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        管理人
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        ニャパン
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('http://localhost:1313/img/layout/bg_sidebar.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="http://localhost:1313/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
