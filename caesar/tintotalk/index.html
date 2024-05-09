@@ -313,6 +313,7 @@ section#s-new h2 {color: #164284;}
       <li><a href="#s-market">市場</a></li>
       <li><a href="#s-construction">建設</a></li>
       <li><a href="#s-warfare">戦争</a></li>
+      <li><a href="#s-units">軍隊</a></li>
       <li><a href="#s-ruler">統治者</a></li>
       <li><a href="#s-tecnology">技術/研究</a></li>
       <li><a href="#s-archivement">実績</a></li>
@@ -330,46 +331,36 @@ section#s-new h2 {color: #164284;}
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer">第10回</a>は主に市場について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">第11回</a>は軍隊について</p>
 <ul>
-  <li>各国は今所属している市場から<strong>独立して新しい市場を作成</strong>したり、<strong>古い市場を解体</strong>したりできる</li>
-  <li>市場は<strong>複数持つこともできる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596726" target="_new" rel="noopener noreferrer">(#10)</a></sup><br>
-小さな市場では商品の多様さが失われ、大きな市場では周縁の市場アクセスが低下するからだ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597505" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>新しい市場を立ち上げるには多くの資金が必要になるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596968" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>各市場には<strong>特定の地区に中心市場</strong>があり、その地区の所有者がその市場を管理する。市場の備蓄も同様<sup><a href="https://forum.paradoxplaza.com/forum/threads/1673977/post-29596656" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-  <li>原則として各地区は、<strong>市場の魅力や場所と市場中心部の間の距離、外交的要因などに応じて、最も適切な市場に属する</strong></li>
-  <li>市場アクセスは道路、水域、地形などの輸送コストが影響する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596872" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>すべての商品には<strong>現地価格があり、供給対需要の値も存在</strong>する</li>
-  <li>価格の上限下限は時代に依存する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596793" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>各商品の供給はいくつかの要因に依存する
-    <ul>
-      <li><strong>RGO（資源産出）</strong>からの出力</li>
-      <li><strong>建物</strong>からの出力</li>
-      <li><strong>基礎出力</strong>（※粘土、木材、砂、石などの一部の商品）</li>
-      <li><strong>商人の貿易</strong>（※商人は自らの裁量で取引を行う）</li>
-    </ul>
-  </li>
-  <li>需要は主に<strong>建物の維持、商品原料、建設、陸軍と海軍の採用と維持</strong>、および<strong>POP需要</strong>など</li>
-  <li><strong>市場内の需要が優先</strong>され、余剰のみ貿易対象となる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596987" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>市場内の建物と海域の支配権などに応じて<strong>商人は貿易容量と貿易力を持ち</strong>、貿易できる商品の量に影響する</li>
-  <li><strong>貿易独占</strong>特権のような、彼らに影響を与える法律や特権がある<br>（市民の収容力を100%増やす代わりにハンザ同盟商人の貿易力を25%削減）</li>
-  <li>貿易は市場間の距離が長ければ長いほど、各商品の出荷に必要な容量が増え、維持コストも高くなる</li>
-  <li>外交コマンドで<strong>市場アクセスの優先順位を要求および/または提供する</strong>ことができる</li>
-  <li>一部の国は<strong>完全に孤立</strong>しているため、その市場からの輸出入を許可するには<strong>特別な協定</strong>が必要だ</li>
-  <li><strong>通商禁止</strong>は商人の通過を不可能にし、輸送コストを著しく上昇させるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597102" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li><strong>海峡は通行料が存在</strong>し、また外交でその<strong>免除</strong>を求めることもできる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596690" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>各市場では<strong>特定の商品の輸出入が禁止</strong>される場合がある<br>
-  （イスラム教徒の市場ではワイン、ビール、酒類の輸出入が禁止）</li>
-  <li>時代に寄って市場同士の<strong>取引可能範囲</strong>があり、隣接した市場以外とも貿易はできる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596803" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>従属国の属する市場は宗主国が決めることができる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596972" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>他国同士の戦争も場合によっては貿易に悪影響がでるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596888" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>海賊と私掠船は交易路に大混乱を引き起こすだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597166" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>中心市場を征服するだけで相手市場が崩壊するわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597109" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>POPに富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li><strong>取引は自動化</strong>ができ、個別に取引をロックすることも可能だ</li>
-  <li>トレードノードには言語に関するメカニズムがある（※文化とは別に言語のパラメタがある？）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597511" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li><strong>適切に並列化できるようにゼロから設計されたシステムにより、現在のパフォーマンスは良好だ</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597837" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>カスタム国家は初期リリースでは予定していない<sup><a href="https://forum.paradoxplaza.com/forum/threads/1671517/post-29592401" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+軍隊(#11)
+  <li>ユニットの種類は<strong>歩兵、騎兵、砲兵、補助部隊</strong>の4つ</li>
+  <li>1部隊の<strong>上限は時代で変化</strong>する（歩兵は100～3200、その他はまた別）</li>
+  <li>招集手段は<strong>傭兵</strong>か<strong>徴兵</strong>か<strong>常備軍</strong>か</li>
+  <li>傭兵も含めて部隊の数は自由に分割可能</li>
+  <li>傭兵は各地にいる傭兵団を雇う。他国に雇われていれば当然雇えない</li>
+  <li>傭兵は基本2年契約（延長可）</li>
+  <li><strong>傭兵を送り出すことで資金を得るプレイ</strong>も可能<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610437" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵は<strong>州ごとに招集</strong>され<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610412" target="_new" rel="noopener noreferrer">(#11)</a></sup>、招集には時間がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610380" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵は戦争中にしか招集できず、また<strong>招集以降補充されない</strong></li>
+  <li>常備軍には<strong>専用の建物</strong>が必要</li>
+  <li>時代や文化に応じて建築できる建物が変わる（弓騎兵、ロングボウ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610462" target="_new" rel="noopener noreferrer">(#11)</a></sup>など）</li>
+  <li><strong>通常の騎兵と弓騎兵の混在も可</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610324" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li><strong>人的資源も建物から</strong>得られる</li>
+  <li>たとえばクリルタイは毎月50のMPを提供し、最大3000MP（5年分）まで備蓄できる。また<strong>100人の射手</strong>を<strong>雇用するには100MPを消費</strong>し、加えて<strong>毎月1MPの維持コスト</strong>がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610591" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>需要文化以外は人的資源が少なくなる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610168" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵や常備軍は<strong>部隊に損失があればPOPも減少</strong>する</li>
+  <li><strong>常備軍が回復するには自国領にいる必要</strong>があり、<strong>傭兵は賄賂で寝返る</strong>こともある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610287" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>固定の<strong>部隊数上限はない</strong>が人的資源や消費産品で制限されるだろう</li>
+  <li>物資が足りないと士気が下がる</li>
+  <li>いまのところ装備に関する産品は「<strong>武器</strong>」と「<strong>銃</strong>」だが増える可能性はあり、「<strong>大砲</strong>」を分割することを検討してる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610200" target="_new" rel="noopener noreferrer">(#11</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610509" target="_new" rel="noopener noreferrer">#11)</a></sup></li>
+  <li>海軍も徴兵（？）がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610316" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>ユニットのデータには「<strong>最大戦力 / 戦闘力 / 戦闘幅 / 士気ダメージ / ユニットウェイト / 損耗率 / 食料貯蔵量 / 食料消費量 / 移動速度 / 戦闘速度 / 先制 / 側面攻撃</strong>」がある</li>
+<!--Maximun Strength/Combat Power/Frontage/Morale Damge Done/Unit Weight per Strength/ monthly Damage from Attrition/Food Storage/Food Consumption/Movement Speed/Combat Speed/Initiative/Flanking Ability-->
+  <li>損耗はユニットウェイトで計算される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610312" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>ユニットデータとは別に国全体として「<strong>規律（攻防）/ 戦術（防）/ 士気 / 各兵科に対する攻撃ダメージ補正</strong>」がある</li>
+  <li><strong>陸軍伝統は全部隊の経験の平均から産出</strong>され、訓練で上げることができる</li>
+  <li>陸軍伝統は<strong>士気や包囲能力を向上</strong>させ、<strong>社会的価値観にも影響</strong>する</li>
 </ul>
 </section>
 <br>
@@ -578,9 +569,9 @@ section#s-new h2 {color: #164284;}
   <li>新しい市場を立ち上げるには多くの資金が必要になるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596968" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
   <li>各市場には<strong>特定の地区に中心市場</strong>があり、その地区の所有者がその市場を管理する。市場の備蓄も同様<sup><a href="https://forum.paradoxplaza.com/forum/threads/1673977/post-29596656" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>原則として各地区は、<strong>市場の魅力や場所と市場中心部の間の距離、外交的要因などに応じて、最も適切な市場に属する</strong></li>
-  <li>市場アクセスは道路、水域、地形などの輸送コストが影響する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596872" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
+  <li>市場アクセスは<strong>道路、水域、地形などの輸送コストが影響</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596872" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
   <li>すべての商品には<strong>現地価格があり、供給対需要の値も存在</strong>する</li>
-  <li>価格の上限下限は時代に依存する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596793" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
+  <li>価格の<strong>上限下限は時代に依存</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596793" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
   <li>各商品の供給はいくつかの要因に依存する
     <ul>
       <li><strong>RGO（資源産出）</strong>からの出力</li>
@@ -592,7 +583,7 @@ section#s-new h2 {color: #164284;}
   <li>需要は主に<strong>建物の維持、商品原料、建設、陸軍と海軍の採用と維持</strong>、および<strong>POP需要</strong>など</li>
   <li><strong>市場内の需要が優先</strong>され、余剰のみ貿易対象となる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29596987" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
   <li>市場内の建物と海域の支配権などに応じて<strong>商人は貿易容量と貿易力を持ち</strong>、貿易できる商品の量に影響する</li>
-  <li><strong>貿易独占</strong>特権のような、彼らに影響を与える法律や特権がある<br>（市民の収容力を100%増やす代わりにハンザ同盟商人の貿易力を25%削減）</li>
+  <li><strong>貿易独占</strong>特権のような、商人に影響を与える法律や特権がある<br>（市民の収容力を100%増やす代わりにハンザ同盟商人の貿易力を25%削減）</li>
   <li>貿易は市場間の距離が長ければ長いほど、各商品の出荷に必要な容量が増え、維持コストも高くなる</li>
   <li>外交コマンドで<strong>市場アクセスの優先順位を要求および/または提供する</strong>ことができる</li>
   <li>一部の国は<strong>完全に孤立</strong>しているため、その市場からの輸出入を許可するには<strong>特別な協定</strong>が必要だ</li>
@@ -657,6 +648,40 @@ section#s-new h2 {color: #164284;}
 </section>
 <hr>
 
+<section id="s-units">
+<h2>軍隊(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#11</a>)</h2>
+<ul>
+  <li>ユニットの種類は<strong>歩兵、騎兵、砲兵、補助部隊</strong>の4つ</li>
+  <li>1部隊の<strong>上限は時代で変化</strong>する（歩兵は100～3200、その他はまた別）</li>
+  <li>招集手段は<strong>傭兵</strong>か<strong>徴兵</strong>か<strong>常備軍</strong>か</li>
+  <li>傭兵も含めて部隊の数は自由に分割可能</li>
+  <li>傭兵は各地にいる傭兵団を雇う。他国に雇われていれば当然雇えない</li>
+  <li>傭兵は基本2年契約（延長可）</li>
+  <li><strong>傭兵を送り出すことで資金を得るプレイ</strong>も可能<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610437" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵は<strong>州ごとに招集</strong>され<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610412" target="_new" rel="noopener noreferrer">(#11)</a></sup>、招集には時間がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610380" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵は戦争中にしか招集できず、また<strong>招集以降補充されない</strong></li>
+  <li>常備軍には<strong>専用の建物</strong>が必要</li>
+  <li>時代や文化に応じて建築できる建物が変わる（弓騎兵、ロングボウ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610462" target="_new" rel="noopener noreferrer">(#11)</a></sup>など）</li>
+  <li><strong>通常の騎兵と弓騎兵の混在も可</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610324" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li><strong>人的資源も建物から</strong>得られる</li>
+  <li>たとえばクリルタイは毎月50のMPを提供し、最大3000MP（5年分）まで備蓄できる。また<strong>100人の射手</strong>を<strong>雇用するには100MPを消費</strong>し、加えて<strong>毎月1MPの維持コスト</strong>がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610591" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>需要文化以外は人的資源が少なくなる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610168" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>徴兵や常備軍は<strong>部隊に損失があればPOPも減少</strong>する</li>
+  <li><strong>常備軍が回復するには自国領にいる必要</strong>があり、<strong>傭兵は賄賂で寝返る</strong>こともある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610287" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>固定の<strong>部隊数上限はない</strong>が人的資源や消費産品で制限されるだろう</li>
+  <li>物資が足りないと士気が下がる</li>
+  <li>いまのところ装備に関する産品は「<strong>武器</strong>」と「<strong>銃</strong>」だが増える可能性はあり、「<strong>大砲</strong>」を分割することを検討してる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610200" target="_new" rel="noopener noreferrer">(#11</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610509" target="_new" rel="noopener noreferrer">#11)</a></sup></li>
+  <li>海軍も徴兵（？）がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610316" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>ユニットのデータには「<strong>最大戦力 / 戦闘力 / 戦闘幅 / 士気ダメージ / ユニットウェイト / 損耗率 / 食料貯蔵量 / 食料消費量 / 移動速度 / 戦闘速度 / 先制 / 側面攻撃</strong>」がある</li>
+<!--Maximun Strength/Combat Power/Frontage/Morale Damge Done/Unit Weight per Strength/ monthly Damage from Attrition/Food Storage/Food Consumption/Movement Speed/Combat Speed/Initiative/Flanking Ability-->
+  <li>損耗はユニットウェイトで計算される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610312" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>ユニットデータとは別に国全体として「<strong>規律（攻防）/ 戦術（防）/ 士気 / 各兵科に対する攻撃ダメージ補正</strong>」がある</li>
+  <li><strong>陸軍伝統は全部隊の経験の平均から産出</strong>され、訓練で上げることができる</li>
+  <li>陸軍伝統は<strong>士気や包囲能力を向上</strong>させ、<strong>社会的価値観にも影響</strong>する</li>
+</ul>
+</section>
+<hr>
+
 <section id="s-ruler">
 <h2>統治者</h2>
 <ul>
@@ -711,6 +736,7 @@ section#s-new h2 {color: #164284;}
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">開発日記#8 https://forum.paradoxplaza.com/forum/developer-diary/1666167/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">開発日記#9 https://forum.paradoxplaza.com/forum/developer-diary/1670510/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer">開発日記#10 https://forum.paradoxplaza.com/forum/developer-diary/1673745/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">開発日記#11 https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
   <li><!--a href="" target="_new" rel="noopener noreferrer">開発日記#10</a--></li>
 </ol>
 </section>
