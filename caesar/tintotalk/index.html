@@ -292,9 +292,16 @@
 secton > ul > li::before {list-style-type: none, content: "・"}
 h2 a, h2 a:visited {font-size:smaller; font-weight: normal; color: #601010;}
 h2 a:hover {color: darkblue;}
-ol#devdiary-list {list-style-type: none;}
-section#s-new {padding: 10px 20px; border-radius: 20px; border: solid 4px #164284; background-color: #F6FBFF;}
+section#s-new {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: solid 4px #164284;
+  background-color: #F6FBFF;
+  background: linear-gradient(to bottom right, #FCFEFF, #F4F9FF);
+}
 section#s-new h2 {color: #164284;}
+section#url-list ol {list-style-type: none; font-size: 1.2rem;} 
+section#url-list ol em {font-size: 1.4rem;} 
 </style>
 
 <div class="toc">
@@ -314,6 +321,7 @@ section#s-new h2 {color: #164284;}
       <li><a href="#s-construction">建設</a></li>
       <li><a href="#s-warfare">戦争</a></li>
       <li><a href="#s-units">軍隊</a></li>
+      <li><a href="#s-io">国際組織</a></li>
       <li><a href="#s-ruler">統治者</a></li>
       <li><a href="#s-tecnology">技術/研究</a></li>
       <li><a href="#s-archivement">実績</a></li>
@@ -331,44 +339,47 @@ section#s-new h2 {color: #164284;}
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">第11回</a>は軍隊について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">第12回</a>は国際組織について</p>
 <ul>
-軍隊(#11)
-  <li>ユニットの種類は<strong>歩兵、騎兵、砲兵、補助部隊</strong>の4つ</li>
-  <li>1部隊の<strong>上限は時代で変化</strong>する（歩兵は100～3200、その他はまた別）</li>
-  <li>招集手段は<strong>傭兵</strong>か<strong>徴兵</strong>か<strong>常備軍</strong>か</li>
-  <li>傭兵も含めて部隊の数は自由に分割可能</li>
-  <li>傭兵は各地にいる傭兵団を雇う。他国に雇われていれば当然雇えない</li>
-  <li>傭兵は基本2年契約（延長可）</li>
-  <li><strong>傭兵を送り出すことで資金を得るプレイ</strong>も可能<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610437" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>徴兵は<strong>州ごとに招集</strong>され<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610412" target="_new" rel="noopener noreferrer">(#11)</a></sup>、招集には時間がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610380" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>徴兵は戦争中にしか招集できず、また<strong>招集以降補充されない</strong></li>
-  <li>常備軍には<strong>専用の建物</strong>が必要</li>
-  <li>時代や文化に応じて建築できる建物が変わる（弓騎兵、ロングボウ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610462" target="_new" rel="noopener noreferrer">(#11)</a></sup>など）</li>
-  <li><strong>通常の騎兵と弓騎兵の混在も可</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610324" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li><strong>人的資源も建物から</strong>得られる</li>
-  <li>たとえばクリルタイは毎月50のMPを提供し、最大3000MP（5年分）まで備蓄できる。また<strong>100人の射手</strong>を<strong>雇用するには100MPを消費</strong>し、加えて<strong>毎月1MPの維持コスト</strong>がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610591" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>需要文化以外は人的資源が少なくなる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610168" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>徴兵や常備軍は<strong>部隊に損失があればPOPも減少</strong>する</li>
-  <li><strong>常備軍が回復するには自国領にいる必要</strong>があり、<strong>傭兵は賄賂で寝返る</strong>こともある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610287" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>固定の<strong>部隊数上限はない</strong>が人的資源や消費産品で制限されるだろう</li>
-  <li>物資が足りないと士気が下がる</li>
-  <li>いまのところ装備に関する産品は「<strong>武器</strong>」と「<strong>銃</strong>」だが増える可能性はあり、「<strong>大砲</strong>」を分割することを検討してる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610200" target="_new" rel="noopener noreferrer">(#11</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610509" target="_new" rel="noopener noreferrer">#11)</a></sup></li>
-  <li>海軍も徴兵（？）がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610316" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>ユニットのデータには「<strong>最大戦力 / 戦闘力 / 戦闘幅 / 士気ダメージ / ユニットウェイト / 損耗率 / 食料貯蔵量 / 食料消費量 / 移動速度 / 戦闘速度 / 先制 / 側面攻撃</strong>」がある</li>
-<!--Maximun Strength/Combat Power/Frontage/Morale Damge Done/Unit Weight per Strength/ monthly Damage from Attrition/Food Storage/Food Consumption/Movement Speed/Combat Speed/Initiative/Flanking Ability-->
-  <li>損耗はユニットウェイトで計算される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610312" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>ユニットデータとは別に国全体として「<strong>規律（攻防）/ 戦術（防）/ 士気 / 各兵科に対する攻撃ダメージ補正</strong>」がある</li>
-  <li><strong>陸軍伝統は全部隊の経験の平均から産出</strong>され、訓練で上げることができる</li>
-  <li>陸軍伝統は<strong>士気や包囲能力を向上</strong>させ、<strong>社会的価値観にも影響</strong>する</li>
-</ul>
+  <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
+  <li>以下のような仕組みによってそれぞれ特色を持つ
+    <ul>
+      <li>リーダーがいるか、またリーダーが<strong>個人か国家か</strong></li>
+      <li>団体が<strong>独自のもの</strong>か、同様なものが<strong>複数存在する</strong>か</li>
+      <li><strong>地区を所有</strong>しているか</li>
+      <li>メンバーの<strong>特典やペナルティ</strong></li>
+      <li>持つことができる<strong>法律や政策</strong></li>
+      <li>組織内の<strong>特別な地位</strong></li>
+      <li><strong>戦争中のメンバーの振る舞い</strong></li>
+    </ul>
+  </li>
+  <li><strong>複数の国際組織に所属することができ</strong>、教皇派や皇帝派のようなある国際組織に所属してる場合のみ参加できる組織もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626418" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>朝貢は朝貢国に支払いをすることで権威を獲得する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626456" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>EU4とは異なり<strong>同君連合は従属国ではない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626602" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>HREの選挙人は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>戦象など特殊なユニットは現地でしか作成できない</strong>（象を輸入して作成することはできない）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/post-29631739" target="_new" rel="noopener noreferrer">(#map2)</a></sup></li>
+  <li>地区情報の一覧は以下の通り<sup><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer">(*)</a></sup>
+    <ul>
+      <li><strong>気候</strong>：熱帯  / 温暖湿潤 / 西岸海洋性 / 乾燥帯 / ツンドラ / 地中海性 / 亜寒帯湿潤 / 極圏</li>
+      <li><strong>植生</strong>：砂漠 / サバンナ / 草原 / 農地 / 林 / 森林 / ジャングル</li>
+      <li><strong>陸地</strong>：平原 / 山地 / 丘陵 / 高原 / 湿原</li>
+      <li><strong>海洋</strong>：外洋 / 深海 / 沿岸 / 内海 / 海峡 / 湖 / 高山湖 / 塩湖 / 環礁</li>
+      <li><strong>食品</strong>：野生肉 / 魚類 / 小麦 / 大豆 / トウモロコシ / 米 / 穀類 / 豆類 / ジャガイモ / 畜肉 / オリーブ / デーツ / 果物</li>
+      <li><strong>原材料</strong>：ウール / コットン / 砂糖 / タバコ / 馬 / 粘土 / 砂 / 石炭 / 鉄 / 銅 / 金 / 銀 / 石 / 錫 / 鉛 / 絹 / 染料 / 香料 / 紅茶 / ココア / コーヒー / 繊維作物 / 象牙 / 毛皮 / 木材 / 塩 / 医薬品 / 宝石 / 真珠 / 琥珀 / 塩硝 / ミョウバン / 香辛料 / ワイン / 象 / 大理石 / 水銀</li>
+    </ul>
+  </li>
+  <li>建築は地区ごとのキュー<sup><a href="https://forum.paradoxplaza.com/forum/threads/1677645/post-29627695" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  </ul>
 </section>
 <br>
 
 <section id="s-playabletime">
 <h2>プレイ期間</h2>
 <ul>
-<li><strong>1337年から約500年</strong>の予定<sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">*</a></sup></li>
+<li><strong>1337年から約500年</strong>の予定<sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -387,6 +398,19 @@ section#s-new h2 {color: #164284;}
 <li>サハラ砂漠やグリーンランド、海流外の外洋など通行不能地形もある</li>
 <li>国が小さいときは短い名前で表示される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502790" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
 <li>大きな川でも艦隊の航行はできない <sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527243" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+<li>森林は軍隊の移動速度を低下させ、視界を遮断（戦場の霧）する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29615763" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
+<li>サンクトペテルブルクなどはイベントで地名が変化する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29616415" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
+<li>マップをピクセル数で表現すると16384 x 8192（EU4は5632 x 1048）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29617396" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
+  <li>地区情報の一覧は以下の通り<sup><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer">(*)</a></sup>
+    <ul>
+      <li><strong>気候</strong>：熱帯  / 温暖湿潤 / 西岸海洋性 / 乾燥帯 / ツンドラ / 地中海性 / 亜寒帯湿潤 / 極圏</li>
+      <li><strong>植生</strong>：砂漠 / サバンナ / 草原 / 農地 / 林 / 森林 / ジャングル</li>
+      <li><strong>陸地</strong>：平原 / 山地 / 丘陵 / 高原 / 湿原</li>
+      <li><strong>海洋</strong>：外洋 / 深海 / 沿岸 / 内海 / 海峡 / 湖 / 高山湖 / 塩湖 / 環礁</li>
+      <li><strong>食品</strong>：野生肉 / 魚類 / 小麦 / 大豆 / トウモロコシ / 米 / 穀類 / 豆類 / ジャガイモ / 畜肉 / オリーブ / デーツ / 果物</li>
+      <li><strong>原材料</strong>：ウール / コットン / 砂糖 / タバコ / 馬 / 粘土 / 砂 / 石炭 / 鉄 / 銅 / 金 / 銀 / 石 / 錫 / 鉛 / 絹 / 染料 / 香料 / 紅茶 / ココア / コーヒー / 繊維作物 / 象牙 / 毛皮 / 木材 / 塩 / 医薬品 / 宝石 / 真珠 / 琥珀 / 塩硝 / ミョウバン / 香辛料 / ワイン / 象 / 大理石 / 水銀</li>
+    </ul>
+  </li>
 </ul>
 </section>
 <hr>
@@ -418,6 +442,7 @@ section#s-new h2 {color: #164284;}
 <li>敵海軍による封鎖や海賊による襲撃を受けると海域の支配権は急速に失われ、防衛しなかったことを後悔するだろう</li>
 <li>都市は過疎化することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527206" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
 <li><strong>飛び地は土地管理人(Bailiff)がいないとコントロールできなくなる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527209" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+<li><strong>ヘルレのような飛び地国はHREを介して支配権を伝播する</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-1-10th-of-may-2024.1675505/post-29615456" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
 <li>地区は人口/産品/主要宗教/主要文化/基礎税額/所属市場/食料収支/気候/地形/植生のパラメタをもつ</li>
 <li>どの地区も必ず<strong>1つの産品</strong>を持つ</li>
 <li>産品の産出量を増加させるにはお金と時間（180日？）、そして別の産品が市場に必要な場合もある（例えば鉱山の拡張に木材）</li>
@@ -628,6 +653,7 @@ section#s-new h2 {color: #164284;}
 <li><strong>戦争で建物が破壊される</strong>可能性もあるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580494" target="_new" rel="noopener noreferrer">*</a></sup></li>
 <li>占領中の地区の建物は市場への供給量が減るだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580546" target="_new" rel="noopener noreferrer">*</a></sup></li>
 <li>EU4のような産品によるゲーム的ボーナスはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580798" target="_new" rel="noopener noreferrer">*</a></sup></li>
+  <li>建築は地区ごとのキュー<sup><a href="https://forum.paradoxplaza.com/forum/threads/1677645/post-29627695" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -678,9 +704,39 @@ section#s-new h2 {color: #164284;}
   <li>ユニットデータとは別に国全体として「<strong>規律（攻防）/ 戦術（防）/ 士気 / 各兵科に対する攻撃ダメージ補正</strong>」がある</li>
   <li><strong>陸軍伝統は全部隊の経験の平均から産出</strong>され、訓練で上げることができる</li>
   <li>陸軍伝統は<strong>士気や包囲能力を向上</strong>させ、<strong>社会的価値観にも影響</strong>する</li>
+  <li>占領地域でも回復はできるが自国領ほどの効率ではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29612865" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>将軍の配置は軍隊ごと<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29613154" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li><strong>戦象など特殊なユニットは現地でしか作成できない</strong>（象を輸入して作成することはできない）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/post-29631739" target="_new" rel="noopener noreferrer">(#map2)</a></sup></li>
+  </ul>
+</section>
+<hr>
+
+<section id="s-io">
+<h2>国際組織(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#12</a>)</h2>
+<ul>
+  <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
+  <li>以下のような仕組みによってそれぞれ特色を持つ
+    <ul>
+      <li>リーダーがいるか、またリーダーが<strong>個人か国家か</strong></li>
+      <li>団体が<strong>独自のもの</strong>か、同様なものが<strong>複数存在する</strong>か</li>
+      <li><strong>地区を所有</strong>しているか</li>
+      <li>メンバーの<strong>特典やペナルティ</strong></li>
+      <li>持つことができる<strong>法律や政策</strong></li>
+      <li>組織内の<strong>特別な地位</strong></li>
+      <li><strong>戦争中のメンバーの振る舞い</strong></li>
+    </ul>
+  </li>
+  <li><strong>複数の国際組織に所属することができ</strong>、教皇派や皇帝派のようなある国際組織に所属してる場合のみ参加できる組織もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626418" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>朝貢は朝貢国に支払いをすることで権威を獲得する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626456" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>EU4とは異なり<strong>同君連合は従属国ではない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626602" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>HREの選挙人は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
 </ul>
 </section>
 <hr>
+
 
 <section id="s-ruler">
 <h2>統治者</h2>
@@ -725,19 +781,29 @@ section#s-new h2 {color: #164284;}
 </ul>
 </section>
 <hr>
+<section id="url-list">
 <ol id="devdiary-list">
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer">開発日記#1 https://forum.paradoxplaza.com/forum/developer-diary/1625360/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer">開発日記#2 https://forum.paradoxplaza.com/forum/developer-diary/1626415/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">開発日記#3 https://forum.paradoxplaza.com/forum/developer-diary/1630154/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">開発日記#4 https://forum.paradoxplaza.com/forum/developer-diary/1636860/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">開発日記#5 https://forum.paradoxplaza.com/forum/developer-diary/1647775/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer">開発日記#6 https://forum.paradoxplaza.com/forum/developer-diary/1657435/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer">開発日記#7 https://forum.paradoxplaza.com/forum/developer-diary/1662356/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">開発日記#8 https://forum.paradoxplaza.com/forum/developer-diary/1666167/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">開発日記#9 https://forum.paradoxplaza.com/forum/developer-diary/1670510/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer">開発日記#10 https://forum.paradoxplaza.com/forum/developer-diary/1673745/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">開発日記#11 https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
-  <li><!--a href="" target="_new" rel="noopener noreferrer">開発日記#10</a--></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#1</em> https://forum.paradoxplaza.com/forum/developer-diary/1625360/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#2</em> https://forum.paradoxplaza.com/forum/developer-diary/1626415/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#3</em> https://forum.paradoxplaza.com/forum/developer-diary/1630154/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#4</em> https://forum.paradoxplaza.com/forum/developer-diary/1636860/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#5</em> https://forum.paradoxplaza.com/forum/developer-diary/1647775/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#6</em> https://forum.paradoxplaza.com/forum/developer-diary/1657435/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#7</em> https://forum.paradoxplaza.com/forum/developer-diary/1662356/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#8</em> https://forum.paradoxplaza.com/forum/developer-diary/1666167/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#9</em> https://forum.paradoxplaza.com/forum/developer-diary/1670510/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em> https://forum.paradoxplaza.com/forum/developer-diary/1673745/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#11</em> https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#12</em> https://forum.paradoxplaza.com/forum/developer-diary/1677441/</a></li>
+  <li><!--a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em></a--></li>
+</ol>
+<ol>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#1</em> https://forum.paradoxplaza.com/forum/developer-diary/1675505/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#2</em> https://forum.paradoxplaza.com/forum/developer-diary/1678273/</a></li>
+</ol>
+<ol>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1675861/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 11th of May 2024</em> https://forum.paradoxplaza.com/forum/threads/1675861/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer"><em>Reference Materials for the Map Thread</em> https://forum.paradoxplaza.com/forum/threads/1675562/</a></li>
 </ol>
 </section>
 
