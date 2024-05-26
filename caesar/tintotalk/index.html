@@ -314,6 +314,7 @@ section#url-list ol em {font-size: 1.4rem;}
       <li><a href="#s-map">Map</a></li>
       <li><a href="#s-locations">地区(Locations)</a></li>
       <li><a href="#s-pops">POP</a></li>
+      <li><a href="#s-religions">宗教</a></li>
       <li><a href="#s-goverments">政府</a></li>
       <li><a href="#s-estates">階級(Estates)</a></li>
       <li><a href="#s-economy">経済</a></li>
@@ -324,6 +325,7 @@ section#url-list ol em {font-size: 1.4rem;}
       <li><a href="#s-io">国際組織</a></li>
       <li><a href="#s-ruler">統治者</a></li>
       <li><a href="#s-tecnology">技術/研究</a></li>
+      <li><a href="#s-countries">各国詳細</a></li>
       <li><a href="#s-archivement">実績</a></li>
       <li><a href="#s-etc">その他</a></li>
     <!--li><a href="#"></a>
@@ -339,39 +341,25 @@ section#url-list ol em {font-size: 1.4rem;}
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">第12回</a>は国際組織について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/" target="_new" rel="noopener noreferrer">第13回</a>は宗教について</p>
 <ul>
-  <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
-  <li>以下のような仕組みによってそれぞれ特色を持つ
-    <ul>
-      <li>リーダーがいるか、またリーダーが<strong>個人か国家か</strong></li>
-      <li>団体が<strong>独自のもの</strong>か、同様なものが<strong>複数存在する</strong>か</li>
-      <li><strong>地区を所有</strong>しているか</li>
-      <li>メンバーの<strong>特典やペナルティ</strong></li>
-      <li>持つことができる<strong>法律や政策</strong></li>
-      <li>組織内の<strong>特別な地位</strong></li>
-      <li><strong>戦争中のメンバーの振る舞い</strong></li>
-    </ul>
-  </li>
-  <li><strong>複数の国際組織に所属することができ</strong>、教皇派や皇帝派のようなある国際組織に所属してる場合のみ参加できる組織もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626418" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>朝貢は朝貢国に支払いをすることで権威を獲得する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626456" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>EU4とは異なり<strong>同君連合は従属国ではない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626602" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>HREの選挙人は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>戦象など特殊なユニットは現地でしか作成できない</strong>（象を輸入して作成することはできない）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/post-29631739" target="_new" rel="noopener noreferrer">(#map2)</a></sup></li>
-  <li>地区情報の一覧は以下の通り<sup><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer">(*)</a></sup>
-    <ul>
-      <li><strong>気候</strong>：熱帯  / 温暖湿潤 / 西岸海洋性 / 乾燥帯 / ツンドラ / 地中海性 / 亜寒帯湿潤 / 極圏</li>
-      <li><strong>植生</strong>：砂漠 / サバンナ / 草原 / 農地 / 林 / 森林 / ジャングル</li>
-      <li><strong>陸地</strong>：平原 / 山地 / 丘陵 / 高原 / 湿原</li>
-      <li><strong>海洋</strong>：外洋 / 深海 / 沿岸 / 内海 / 海峡 / 湖 / 高山湖 / 塩湖 / 環礁</li>
-      <li><strong>食品</strong>：野生肉 / 魚類 / 小麦 / 大豆 / トウモロコシ / 米 / 穀類 / 豆類 / ジャガイモ / 畜肉 / オリーブ / デーツ / 果物</li>
-      <li><strong>原材料</strong>：ウール / コットン / 砂糖 / タバコ / 馬 / 粘土 / 砂 / 石炭 / 鉄 / 銅 / 金 / 銀 / 石 / 錫 / 鉛 / 絹 / 染料 / 香料 / 紅茶 / ココア / コーヒー / 繊維作物 / 象牙 / 毛皮 / 木材 / 塩 / 医薬品 / 宝石 / 真珠 / 琥珀 / 塩硝 / ミョウバン / 香辛料 / ワイン / 象 / 大理石 / 水銀</li>
-    </ul>
-  </li>
-  <li>建築は地区ごとのキュー<sup><a href="https://forum.paradoxplaza.com/forum/threads/1677645/post-29627695" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>EU4とは違って<strong>宣教師はおらず、制度やインフラによってゆっくり改宗が行われる</strong></li>
+  <li>他の宗教に対する態度は<strong>親和的、好意的、中立、否定的、敵視の5段階</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644429" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>国ごとに<strong>真の信仰、異端、異教に対する独自の寛容さ</strong>を持つ</li>
+  <li>宗教グループは<strong>キリスト教、イスラム教、東方宗教、ダルマ教、ゾロアスター教、マニ教、ユダヤ教、アンデス、異教</strong></li>
+  <li><strong>カトリック、正教、合性論者、プロテスタント、イスラム教、仏教、神道、ナワトル、ヒンドゥー教、インティ宗教には独自のギミック</strong>がある</li>
+  <li>例えばジャイナ教は開戦理由なしに戦争を始めることができず、カルヴァン主義では戦闘でサイコロを振り直すことはなく、すべてが予め定められている</li>
+  <li>その他の宗教については今後追加する余地がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643487" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>日本の主な宗教は神道</strong>だが仏教の要素も含まれている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643660" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>中国は儒教と道教のメカニズムが存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/\1680927/post-29643667" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>インドにはジャイナ教、大乗仏教、上座部仏教が存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643848" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>国教を変えることは可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644156" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+
+  <li><strong>選帝侯は統治者ではなく国を選ぶ</strong>ので、同君連合の場合はどちらか片方の国が選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643480" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+
+  <li>フランスは<strong>通常の封臣とアパナージュ</strong>の2種類の臣下を持つ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1681426/" target="_new" rel="noopener noreferrer">(#Map3)</a></sup></li>
+  <li>エヴルーは<strong>フランスの属国でありながら、ナバラと同君連合関係</strong>にある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1681426/post-29648832" target="_new" rel="noopener noreferrer">(#Map3)</a></sup></li>
+  <li>世界征服は不可能にするのが目標だが、プレイヤーはいつも上手だ<sup><a href="https://forum.paradoxplaza.com/forum/threads/1680010/post-29638911" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   </ul>
 </section>
 <br>
@@ -380,6 +368,7 @@ section#url-list ol em {font-size: 1.4rem;}
 <h2>プレイ期間</h2>
 <ul>
 <li><strong>1337年から約500年</strong>の予定<sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>世界征服は不可能にするのが目標だが、プレイヤーはいつも上手だ<sup><a href="https://forum.paradoxplaza.com/forum/threads/1680010/post-29638911" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -479,6 +468,24 @@ section#url-list ol em {font-size: 1.4rem;}
 <li>POPはゲームの基盤だが、それはバックグラウンドにあるシステムであり、間接的にしか制御できない</li>
 <li>POPは地区単位で設定されるがPCパフォーマンスについては心配してない</li>
 <li>POPに富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-religions">
+<h2>宗教(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">#4</a>)</h2>
+<ul>
+  <li>EU4とは違って<strong>宣教師はおらず、制度やインフラによってゆっくり改宗が行われる</strong></li>
+  <li>他の宗教に対する態度は<strong>親和的、好意的、中立、否定的、敵視の5段階</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644429" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>国ごとに<strong>真の信仰、異端、異教に対する独自の寛容さ</strong>を持つ</li>
+  <li>宗教グループは<strong>キリスト教、イスラム教、東方宗教、ダルマ教、ゾロアスター教、マニ教、ユダヤ教、アンデス、異教</strong></li>
+  <li><strong>カトリック、正教、合性論者、プロテスタント、イスラム教、仏教、神道、ナワトル、ヒンドゥー教、インティ宗教には独自のギミック</strong>がある</li>
+  <li>例えばジャイナ教は開戦理由なしに戦争を始めることができず、カルヴァン主義では戦闘でサイコロを振り直すことはなく、すべてが予め定められている</li>
+  <li>その他の宗教については今後追加する余地がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643487" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>日本の主な宗教は神道</strong>だが仏教の要素も含まれている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643660" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>中国は儒教と道教のメカニズムが存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/\1680927/post-29643667" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>インドにはジャイナ教、大乗仏教、上座部仏教が存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643848" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>国教を変えることは可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644156" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -712,7 +719,7 @@ section#url-list ol em {font-size: 1.4rem;}
 <hr>
 
 <section id="s-io">
-<h2>国際組織(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#12</a>)</h2>
+<h2>国際組織/International Organizations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#12</a>)</h2>
 <ul>
   <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
   <li>以下のような仕組みによってそれぞれ特色を持つ
@@ -732,7 +739,8 @@ section#url-list ol em {font-size: 1.4rem;}
   <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
   <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
   <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>HREの選挙人は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>HREの選帝侯は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>選帝侯は統治者ではなく国を選ぶ</strong>ので、同君連合の場合はどちらか片方の国が選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643480" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -750,6 +758,15 @@ section#url-list ol em {font-size: 1.4rem;}
 <h2>技術/研究</h2>
 <ul>
 <li>すべてのPOPが影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502919" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-countries">
+<h2>各国詳細</h2>
+<ul>
+  <li>フランスは<strong>通常の封臣とアパナージュ</strong>の2種類の臣下を持つ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1681426/" target="_new" rel="noopener noreferrer">(#Map3)</a></sup></li>
+  <li>エヴルーは<strong>フランスの属国でありながら、ナバラと同君連合関係</strong>にある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1681426/post-29648832" target="_new" rel="noopener noreferrer">(#Map3)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -796,14 +813,19 @@ section#url-list ol em {font-size: 1.4rem;}
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#11</em> https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#12</em> https://forum.paradoxplaza.com/forum/developer-diary/1677441/</a></li>
   <li><!--a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em></a--></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#13</em> https://forum.paradoxplaza.com/forum/developer-diary/1680927/</a></li>
 </ol>
 <ol>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#1</em> https://forum.paradoxplaza.com/forum/developer-diary/1675505/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#2</em> https://forum.paradoxplaza.com/forum/developer-diary/1678273/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer"><em>Reference Materials for the Map Thread</em> https://forum.paradoxplaza.com/forum/threads/1675562/</a></li>
 </ol>
 <ol>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1672503/" target="_new" rel="noopener noreferrer"><em>A Saturday Building?</em> https://forum.paradoxplaza.com/forum/threads/1672503/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1674510/" target="_new" rel="noopener noreferrer"><em>Another Saturday Building - 4th of May</em> https://forum.paradoxplaza.com/forum/threads/1674510/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1675861/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 11th of May 2024</em> https://forum.paradoxplaza.com/forum/threads/1675861/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer"><em>Reference Materials for the Map Thread</em> https://forum.paradoxplaza.com/forum/threads/1675562/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1679122/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 18th of May 2024</em> https://forum.paradoxplaza.com/forum/threads/1679122/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1681600/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 25th of May 2024</em> https://forum.paradoxplaza.com/forum/threads/1681600/</a></li>
 </ol>
 </section>
 
