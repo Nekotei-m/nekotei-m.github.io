@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project Caesar on ねこメモ</title>
-    <link>http://localhost:1313/tags/project-caesar/</link>
+    <link>https://nekotei-m.github.io/tags/project-caesar/</link>
     <description>Recent content in Project Caesar on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 11 Dec 2023 21:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/project-caesar/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nekotei-m.github.io/tags/project-caesar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>プロジェクトカエサル（要約）</title>
-      <link>http://localhost:1313/caesar/tintotalk/</link>
+      <link>https://nekotei-m.github.io/caesar/tintotalk/</link>
       <pubDate>Mon, 11 Dec 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/caesar/tintotalk/</guid>
+      <guid>https://nekotei-m.github.io/caesar/tintotalk/</guid>
       <description>&lt;p&gt;Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,52 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vic3 on ねこメモ</title>
-    <link>http://localhost:1313/tags/vic3/</link>
+    <link>https://nekotei-m.github.io/tags/vic3/</link>
     <description>Recent content in Vic3 on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 11 Dec 2023 21:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/vic3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nekotei-m.github.io/tags/vic3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>建築のコツ</title>
-      <link>http://localhost:1313/vic3/construction-tips/</link>
+      <link>https://nekotei-m.github.io/vic3/construction-tips/</link>
       <pubDate>Mon, 11 Dec 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/construction-tips/</guid>
+      <guid>https://nekotei-m.github.io/vic3/construction-tips/</guid>
       <description>&lt;p&gt;1.5から現地価格の導入により難しくなった建築のTipsです。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>POP需要のナゾ</title>
-      <link>http://localhost:1313/vic3/pop-needs/</link>
-      <pubDate>Mon, 04 Dec 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/pop-needs/</guid>
-      <description>&lt;p&gt;POP需要のナゾについて追求しましょう。&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>戦闘ユニットの性能</title>
-      <link>http://localhost:1313/vic3/military-units/</link>
+      <link>https://nekotei-m.github.io/vic3/military-units/</link>
       <pubDate>Tue, 14 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/military-units/</guid>
+      <guid>https://nekotei-m.github.io/vic3/military-units/</guid>
       <description>&lt;p&gt;陸軍・海軍のユニットの性能表です。1.5.11で確認。&lt;/p&gt;</description>
     </item>
     <item>
       <title>利益団体</title>
-      <link>http://localhost:1313/vic3/ig-list/</link>
+      <link>https://nekotei-m.github.io/vic3/ig-list/</link>
       <pubDate>Tue, 14 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/ig-list/</guid>
+      <guid>https://nekotei-m.github.io/vic3/ig-list/</guid>
       <description>&lt;p&gt;国ごとに変わる利益団体の支持の効果やイデオロギー、名称の一覧です。&lt;/p&gt;</description>
     </item>
     <item>
       <title>企業一覧（正引き・逆引き）</title>
-      <link>http://localhost:1313/vic3/company-list/</link>
+      <link>https://nekotei-m.github.io/vic3/company-list/</link>
       <pubDate>Mon, 06 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/company-list/</guid>
+      <guid>https://nekotei-m.github.io/vic3/company-list/</guid>
       <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。&#xA;（1.6.1で確認）&lt;/p&gt;</description>
     </item>
     <item>
       <title>未分類のメモ</title>
-      <link>http://localhost:1313/vic3/misc-notes/</link>
+      <link>https://nekotei-m.github.io/vic3/misc-notes/</link>
       <pubDate>Wed, 01 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/vic3/misc-notes/</guid>
+      <guid>https://nekotei-m.github.io/vic3/misc-notes/</guid>
       <description>&lt;p&gt;またきちんと記事化していない雑多なメモ書きです。&lt;/p&gt;</description>
     </item>
   </channel>
