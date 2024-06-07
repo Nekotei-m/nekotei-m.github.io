@@ -324,7 +324,8 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
       <li><a href="#s-warfare">戦争</a></li>
       <li><a href="#s-units">軍隊</a></li>
       <li><a href="#s-io">国際組織</a></li>
-      <li><a href="#s-ruler">統治者</a></li>
+      <li><a href="#s-diplomacy">外交</a></li>
+      <li><a href="#s-character">キャラクター</a></li>
       <li><a href="#s-tecnology">技術/研究</a></li>
       <li><a href="#s-situation">シチュエーション</a></li>
       <li><a href="#s-dhe">動的歴史イベント</a></li>
@@ -344,47 +345,35 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/" target="_new" rel="noopener noreferrer">第14回</a>はシチュエーションシステムについて</p>
+<p><strong><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/" target="_new" rel="noopener noreferrer">第15回</a>はキャラクター</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
-  <li><strong>シチュエーションシステムとは一定期間にわたって複数の国が関与するコンテンツ群</strong></li>
-  <li><strong>独自のアクション、トリガーとなるイベント、独自のUIやマップモード</strong>もある</li>
-  <li>例えば<strong>黒死病、イタリア戦争、紅巾の乱</strong>などが含まれる</li>
-  <li><strong>黒死病は1346年から</strong>流行の兆しが見え、<strong>中央アジアのどこか</strong>で腺ペストが発生して旧世界に広がり、影響を受けた地域の<strong>人口の40～60%が死亡</strong>する</li>
-  <li>黒死病は<strong>隣接地域、軍隊の移動、または貿易を通じて広がる</strong></li>
-  <li>黒死病を<strong>軽減する方法はいくつかあるが、効率は低いうえにコストは高い</strong>（宮廷の隔離や病人の追放、少数派を非難など）</li>
-  <li>黒死病の発生地域をランダムにすることはできるが新大陸で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29659868" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>黒死病の一度だけではなくほかの流行り病が蔓延することもあるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658189" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>一般的な病気の仕組みも存在</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658205" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>イタリア戦争はフランスやイベリア主要国、またはHRE皇帝がイタリアの国に宣戦布告すると即座に開始</strong>する</li>
-  <li>イタリア戦争は<strong>フランスリーグ、イベリアリーグ、皇帝リーグ、3つのイタリアリーグ</strong>の計6つの勢力がイタリアの覇権を相争う</li>
-  <li>イタリア戦争には<strong>イタリアに拠点を所有していれば誰でも参加でき、また放棄することもできる</strong></li>
-  <li><strong>紅巾の乱は1350年以降</strong>に元の安定度が25を下回り、いずれかの階級が不満を抱えている場合、発生する可能性がある</li>
-  <li>条件は厳しいが、<strong>大航海時代に到達すれば紅巾の乱を回避</strong>できる</li>
-  <li>紅巾の乱が始まると歴史をなぞって<strong>各地が独立し、紅巾賊と呼ばれる国際組織を作る</strong></li>
-  <li>各紅巾賊は<strong>独立時にプレイ可能</strong>であり、互いに戦争を行うこともできる</li>
-  <li>各紅巾賊は<strong>-100から100までの範囲で元に対する忠誠心を持ち、忠誠度が0を超えると自動的に紅巾の乱の国際組織から離脱する</strong></li>
-  <li>元は<strong>20年以内に安定度を取り戻し、紅巾の乱からすべての勢力が離脱</strong>すれば事態は収束する</li>
-  <li>紅巾の乱収束時に忠誠度が50を超えるすべての紅巾賊は自動的に元に併合される</li>
-  <li><strong>紅巾賊が中華の大部分（7割）を押さえると元から中華皇帝の座を奪って</strong>乱は終了する</li>
-  <li>特別な外交コマンドとして、元は紅巾賊に称号を下賜して費用と引き換えに忠誠度を獲得したり、忠誠度の高い紅巾賊を同盟に呼んだりできる。一方紅巾賊は特別なCBで征服コストが低減され、征服地の統合速度も大幅に早めることができる</li>
-  <li>その他にも<strong>大シスマ、百年戦争、日本の戦国時代</strong>もあるが、これらは後日詳しく取り上げる予定だ</li>
+  <li><strong>0から100</strong>の範囲で<strong>行政、外交、軍事</strong>の3つの能力値を持つ</li>
+  <li>能力値は誕生時に<strong>0から始まり、幼少期の特性に応じて大人になるまで成長</strong>する</li>
+  <li>統治者の子供や孫に<strong>特定の教育を割り当てることができる</strong></li>
+  <li><strong>統治者は統治中に最大3つの特性</strong>を獲得する</li>
+  <li><strong>将軍または提督は戦闘後に特性を1つ</strong>獲得することがある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675134" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>キャラクターは出身文化、信仰する宗教、出生地と現在地をもつ</li>
+  <li>ほとんどのキャラクターは貴族階級だが、政体などによっては異なることもある</li>
+  <li><strong>配偶者の数は宗教と法律によって異なる</strong></li>
+  <li>子供の数は両親の生殖能力に大きく左右される</li>
+  <li>同盟を確保するために娘を結婚させたり、修道院に送ったり、有能な人物を貴族に取り立てたりすることがあるだろう</li>
+  <li><strong>婚姻相手はゲーム内に存在するキャラクターから選ぶ</strong>必要がある</li>
+  <li>他国に適切な婚姻相手がいない場合は、地元の貴族や下層民との婚姻を余儀なくされるかもしれない</li>
+  <li><strong>王族婚はその2つの国の間に連合を形成</strong>する。ただしすべての国には独自の相続法があり、<strong>後継者が異なると連合は解消される</strong>だろう</li>
+  <li><strong>君主の履歴や家系図</strong>も確認できる画面がある</li>
+  <li>ポートレート表示はオフにすることもできる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675078" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>近親婚は妨げられる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675097" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>統治者に付く<strong>ニックネームはある</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675105" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>デンマークに王朝がないのは空位時代で摂政制のような状態になっているから<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675212" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>スウェーデンとノルウェーは連合国で、スコーネはスウェーデンの自治領、アイスランドとグリーンランドはノルウェーの自治領<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675287" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>キャラクターの衣装は時代とともに変わる…ようにする目標を立てている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675284" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>統治者の兄弟姉妹も子供を持つ可能性<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675366" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>家系制度があるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675481" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li><strong>キャラクターの忠誠度のような仕組みはない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675511" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>外交は外交官スロットではなく<strong>外交キャパシティというポイント制</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 
-  <li>現在のシチュエーション数は13だが、まだまだ追加予定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658249" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>シチュエーションは動的には作成されない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658598" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-
-  <li><strong>宗教改革</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658295" target="_new" rel="noopener noreferrer">(#14)</a></sup>や<strong>宗教戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658141" target="_new" rel="noopener noreferrer">(#14)</a></sup>、<strong>フス戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658579" target="_new" rel="noopener noreferrer">(#14)</a></sup>もシチュエーションとして表現されるだろう</li>
-  
-  <li><strong>日本の南北朝時代はシチュエーションになる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29660152" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  
-  <li><strong>小規模なものは動的歴史イベント</strong>（Dynamic Historical Event）として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658091" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>AIが動的歴史イベントでどう振る舞うかはオプション設定で選べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658588" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>ウロシュ5世治世下でのセルビアの崩壊のような1つの国内の出来事は<strong>災厄（Disaster）</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658122" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>薔薇戦争はシチュエーションではなく災厄</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658621" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>継承戦争はシチュエーションではなく別のメカニズム</strong>だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658146" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-
-  <li>新世界の産品が旧世界に導入されるなど、<strong>産品が変化する</strong>ことはある<sup><a href="https://forum.paradoxplaza.com/forum/threads/1682001/post-29657762" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-  <li><strong>金と銀の産品は鋳造能力に影響</strong>を与える<sup><a href="https://forum.paradoxplaza.com/forum/threads/1682311/post-29657764" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <br>
@@ -570,6 +559,7 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
     <li>都市民は<strong>販売者の力と生産効率</strong>に影響</li>
     <li>平民は<strong>食糧生産と安定度コスト</strong>に影響</li>
   </ul></li>
+  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 <li>国や政府タイプに応じて<strong>独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響</strong>を及ぼす</li>
 <li><strong>徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資</strong>を行う（多く場合国にも利益となる）</li>
 <li>各階級が持つ資金は建物の他に<strong>国家へのローンを提供するプールともなる</strong>(#8)</li>
@@ -773,11 +763,38 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
 </section>
 <hr>
 
-
-<section id="s-ruler">
-<h2>統治者</h2>
+<section id="s-diplomacy">
+<h2>外交</h2>
 <ul>
-<li>スキルをもつ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502769" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+  <li>外交は外交官スロットではなく<strong>外交キャパシティというポイント制</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-character">
+<h2>キャラクター</h2>
+<ul>
+  <li><strong>0から100</strong>の範囲で<strong>行政、外交、軍事</strong>の3つの能力値を持つ</li>
+  <li>能力値は誕生時に<strong>0から始まり、幼少期の特性に応じて大人になるまで成長</strong>する</li>
+  <li>統治者の子供や孫に<strong>特定の教育を割り当てることができる</strong></li>
+  <li><strong>統治者は統治中に最大3つの特性</strong>を獲得する</li>
+  <li><strong>将軍または提督は戦闘後に特性を1つ</strong>獲得することがある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675134" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>キャラクターは出身文化、信仰する宗教、出生地と現在地をもつ</li>
+  <li>ほとんどのキャラクターは貴族階級だが、政体などによっては異なることもある</li>
+  <li><strong>配偶者の数は宗教と法律によって異なる</strong></li>
+  <li>子供の数は両親の生殖能力に大きく左右される</li>
+  <li>同盟を確保するために娘を結婚させたり、修道院に送ったり、有能な人物を貴族に取り立てたりすることがあるだろう</li>
+  <li><strong>婚姻相手はゲーム内に存在するキャラクターから選ぶ</strong>必要がある</li>
+  <li>他国に適切な婚姻相手がいない場合は、地元の貴族や下層民との婚姻を余儀なくされるかもしれない</li>
+  <li><strong>王族婚はその2つの国の間に連合を形成</strong>する。ただしすべての国には独自の相続法があり、<strong>後継者が異なると連合は解消される</strong>だろう</li>
+  <li><strong>君主の履歴や家系図</strong>も確認できる画面がある</li>
+  <li>ポートレート表示はオフにすることもできる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675078" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>近親婚は妨げられる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675097" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>統治者に付く<strong>ニックネームはある</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675105" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>キャラクターの衣装は時代とともに変わる…ようにする目標を立てている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675284" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>統治者の兄弟姉妹も子供を持つ可能性<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675366" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>家系制度があるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675481" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li><strong>キャラクターの忠誠度のような仕組みはない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675511" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -841,6 +858,8 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
   <li>ウロシュ5世治世下でのセルビアの崩壊のような1つの国内の出来事は<strong>災厄（Disaster）</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658122" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
   <li><strong>薔薇戦争はシチュエーションではなく災厄</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658621" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
   <li><strong>継承戦争はシチュエーションではなく別のメカニズム</strong>だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658146" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>デンマークに王朝がないのは空位時代で摂政制のような状態になっているから<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675212" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>スウェーデンとノルウェーは連合国で、スコーネはスウェーデンの自治領、アイスランドとグリーンランドはノルウェーの自治領<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675287" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -889,13 +908,15 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#12</em> https://forum.paradoxplaza.com/forum/developer-diary/1677441/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#13</em> https://forum.paradoxplaza.com/forum/developer-diary/1680927/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/.1682450/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#14</em> https://forum.paradoxplaza.com/forum/developer-diary/1682450/</a></li>
-  <!--li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em></a></li-->
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#15</em> https://forum.paradoxplaza.com/forum/developer-diary/1685161/</a></li>
+  <!--li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em> </a></li-->
 </ol>
 <ol>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#1</em> https://forum.paradoxplaza.com/forum/developer-diary/1675505/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1678273/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#2</em> https://forum.paradoxplaza.com/forum/developer-diary/1678273/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1681426/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#3</em> https://forum.paradoxplaza.com/forum/developer-diary/1681426/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer"><em>Reference Materials for the Map Thread</em> https://forum.paradoxplaza.com/forum/threads/1675562/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1684788/" target="_new" rel="noopener noreferrer"><em>Thanks for Feedback! Here's some of the changes (4th June 2024)</em> https://forum.paradoxplaza.com/forum/threads/1684788/</a></li>
 </ol>
 <ol>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1672503/" target="_new" rel="noopener noreferrer"><em>A Saturday Building?</em> https://forum.paradoxplaza.com/forum/threads/1672503/</a></li>
