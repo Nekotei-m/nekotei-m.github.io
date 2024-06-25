@@ -43,5 +43,12 @@
       <guid>http://localhost:1313/7dtd/a21-by-data/</guid>
       <description>&lt;p&gt;α21をデータ的な視点から見てみましょう。α20との比較や探索時に役立つ（かもしれない）ルート品のリストなど。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>勢力ブロック</title>
+      <link>http://localhost:1313/vic3/powerblock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vic3/powerblock/</guid>
+      <description>&lt;p&gt;勢力圏のアイデンティティと原則の一覧です。（1.7.0で確認）&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

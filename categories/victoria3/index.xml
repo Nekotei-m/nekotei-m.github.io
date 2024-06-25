@@ -50,5 +50,12 @@
       <guid>http://localhost:1313/vic3/misc-notes/</guid>
       <description>&lt;p&gt;またきちんと記事化していない雑多なメモ書きです。&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>勢力ブロック</title>
+      <link>http://localhost:1313/vic3/powerblock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vic3/powerblock/</guid>
+      <description>&lt;p&gt;勢力圏のアイデンティティと原則の一覧です。（1.7.0で確認）&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
