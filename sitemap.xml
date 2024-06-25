@@ -2,101 +2,99 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/caesar/</loc>
+    <loc>https://nekotei-m.github.io/categories/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/data/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/posts/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/vic3/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/categories/victoria3/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/vic3/powerblock/</loc>
+    <lastmod>2024-06-25T21:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/categories/caesar/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://nekotei-m.github.io/tags/gimmick/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gimmick/</loc>
+    <loc>https://nekotei-m.github.io/tags/project-caesar/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://nekotei-m.github.io/tags/tips/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/project-caesar/</loc>
+    <loc>https://nekotei-m.github.io/caesar/tintotalk/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://nekotei-m.github.io/vic3/construction-tips/</loc>
     <lastmod>2023-12-11T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/tips/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/vic3/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/victoria3/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/caesar/tintotalk/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/vic3/construction-tips/</loc>
-    <lastmod>2023-12-11T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/vic3/pop-needs/</loc>
-    <lastmod>2023-12-04T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/data/</loc>
+    <loc>https://nekotei-m.github.io/vic3/military-units/</loc>
     <lastmod>2023-11-14T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vic3/military-units/</loc>
+    <loc>https://nekotei-m.github.io/vic3/ig-list/</loc>
     <lastmod>2023-11-14T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vic3/ig-list/</loc>
-    <lastmod>2023-11-14T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/7dtd/a21-loot-block/</loc>
+    <loc>https://nekotei-m.github.io/7dtd/a21-loot-block/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/7_days_to_die/</loc>
+    <loc>https://nekotei-m.github.io/categories/7_days_to_die/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/7dtd/</loc>
+    <loc>https://nekotei-m.github.io/tags/7dtd/</loc>
     <lastmod>2023-11-07T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vic3/company-list/</loc>
+    <loc>https://nekotei-m.github.io/vic3/company-list/</loc>
     <lastmod>2023-11-06T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/about/</loc>
+    <loc>https://nekotei-m.github.io/tags/about/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about-this-site/</loc>
+    <loc>https://nekotei-m.github.io/about-this-site/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
+    <loc>https://nekotei-m.github.io/categories/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
     <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/memo/</loc>
+    <loc>https://nekotei-m.github.io/tags/memo/</loc>
     <lastmod>2023-11-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/vic3/misc-notes/</loc>
+    <loc>https://nekotei-m.github.io/vic3/misc-notes/</loc>
     <lastmod>2023-11-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blank/</loc>
+    <loc>https://nekotei-m.github.io/blank/</loc>
     <lastmod>2023-01-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/streaming/</loc>
+    <loc>https://nekotei-m.github.io/streaming/</loc>
     <lastmod>2023-01-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/7dtd/a21-by-data/</loc>
+    <loc>https://nekotei-m.github.io/7dtd/a21-by-data/</loc>
     <lastmod>2023-01-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/imperator_rome/</loc>
+    <loc>https://nekotei-m.github.io/categories/imperator_rome/</loc>
     <lastmod>2021-07-05T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impr/imperator-rome-tips2.0/</loc>
+    <loc>https://nekotei-m.github.io/impr/imperator-rome-tips2.0/</loc>
     <lastmod>2021-07-05T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ir/</loc>
+    <loc>https://nekotei-m.github.io/tags/ir/</loc>
     <lastmod>2021-07-05T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/vic3/powerblock/</loc>
+    <loc>https://nekotei-m.github.io/archives/</loc>
   </url>
 </urlset>

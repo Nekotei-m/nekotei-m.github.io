@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ねこメモ</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://nekotei-m.github.io/tags/</link>
     <description>Recent content in Tags on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 11 Dec 2023 21:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jun 2024 21:00:00 +0900</lastBuildDate>
+    <atom:link href="https://nekotei-m.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gimmick</title>
-      <link>http://localhost:1313/tags/gimmick/</link>
+      <title>Data</title>
+      <link>https://nekotei-m.github.io/tags/data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/gimmick/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Project Caesar</title>
-      <link>http://localhost:1313/tags/project-caesar/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/project-caesar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tips</title>
-      <link>http://localhost:1313/tags/tips/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/tips/</guid>
+      <guid>https://nekotei-m.github.io/tags/data/</guid>
       <description></description>
     </item>
     <item>
       <title>Vic3</title>
-      <link>http://localhost:1313/tags/vic3/</link>
+      <link>https://nekotei-m.github.io/tags/vic3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/vic3/</guid>
+      <guid>https://nekotei-m.github.io/tags/vic3/</guid>
       <description></description>
     </item>
     <item>
-      <title>Data</title>
-      <link>http://localhost:1313/tags/data/</link>
+      <title>Gimmick</title>
+      <link>https://nekotei-m.github.io/tags/gimmick/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/data/</guid>
+      <guid>https://nekotei-m.github.io/tags/gimmick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Caesar</title>
+      <link>https://nekotei-m.github.io/tags/project-caesar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nekotei-m.github.io/tags/project-caesar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://nekotei-m.github.io/tags/tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://nekotei-m.github.io/tags/tips/</guid>
       <description></description>
     </item>
     <item>
       <title>7dtd</title>
-      <link>http://localhost:1313/tags/7dtd/</link>
+      <link>https://nekotei-m.github.io/tags/7dtd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/7dtd/</guid>
+      <guid>https://nekotei-m.github.io/tags/7dtd/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/tags/about/</link>
+      <link>https://nekotei-m.github.io/tags/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/about/</guid>
+      <guid>https://nekotei-m.github.io/tags/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Memo</title>
-      <link>http://localhost:1313/tags/memo/</link>
+      <link>https://nekotei-m.github.io/tags/memo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/memo/</guid>
+      <guid>https://nekotei-m.github.io/tags/memo/</guid>
       <description></description>
     </item>
     <item>
       <title>IR</title>
-      <link>http://localhost:1313/tags/ir/</link>
+      <link>https://nekotei-m.github.io/tags/ir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ir/</guid>
+      <guid>https://nekotei-m.github.io/tags/ir/</guid>
       <description></description>
     </item>
   </channel>
