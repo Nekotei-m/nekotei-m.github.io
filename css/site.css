@@ -184,15 +184,15 @@ div.serif {
 }
 
 /* DEFAULT TABLE */
-tr:nth-child(2n) {
-    background: #f0f2f9;
+table tr:nth-child(2n) {
+    background: #f0f2f9 !important;
 }
 
-tr:nth-child(2n+1) {
-    background: #fcfcfc;
+table tr:nth-child(2n+1)  {
+    background: #fcfcfc !important;
 }
 
-tr:has(th) {
+table tr:has(th) {
   background: transparent !important;
 }
 
