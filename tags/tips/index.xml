@@ -6,8 +6,15 @@
     <description>Recent content in Tips on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 11 Dec 2023 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2024 20:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>国家承認について（1.7対応）</title>
+      <link>https://nekotei-m.github.io/vic3/recognition/</link>
+      <pubDate>Sun, 30 Jun 2024 20:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/recognition/</guid>
+      <description>&lt;p&gt;国家承認ジャーナルについての解説です。（1.7.1で確認）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>プロジェクトカエサル（要約）</title>
       <link>https://nekotei-m.github.io/caesar/tintotalk/</link>
