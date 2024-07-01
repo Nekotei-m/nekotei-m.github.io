@@ -147,7 +147,7 @@ div#main {
 .post .post-content p,
 div.sans-serif {
   margin: 0 0 2rem !important;
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+  font-family: "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
   letter-spacing: 1px;
   color: #0b0d0d;
 }
