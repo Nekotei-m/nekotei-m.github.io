@@ -6,10 +6,17 @@
     <description>Recent content in Posts on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 30 Jun 2024 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2024 20:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>国家承認について（1.7対応）</title>
+      <title>従属国について</title>
+      <link>https://nekotei-m.github.io/vic3/subjects/</link>
+      <pubDate>Mon, 01 Jul 2024 20:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/subjects/</guid>
+      <description>&lt;p&gt;従属国についての解説です。（1.7.1で確認）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>国家承認について</title>
       <link>https://nekotei-m.github.io/vic3/recognition/</link>
       <pubDate>Sun, 30 Jun 2024 20:00:00 +0900</pubDate>
       <guid>https://nekotei-m.github.io/vic3/recognition/</guid>

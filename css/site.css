@@ -274,6 +274,11 @@ div.toc ul ul li:last-child a:before {
   content: "└";
 }
 
+ul.reference {
+  list-style-type: none;
+  margin: 1.2rem 0;
+}
+
 
 /**
  * Tooltip Styles
