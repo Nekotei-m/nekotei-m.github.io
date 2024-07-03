@@ -190,12 +190,12 @@
           <li class="game-title vic3"><a href="https://nekotei-m.github.io/categories/victoria3/">
             <strong>Victoria3</strong>
           </a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.7）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.7）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ（1.6）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.7）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/misc-notes/">未分類のメモ</a></li>
           <li class="game-title impr"><a href="https://nekotei-m.github.io/categories/imperator_rome/">
@@ -304,7 +304,7 @@ p strong.term { color: #933; }
 
 <p>進捗は様々要素で進んだり、減退したりします。</p>
 <strong><ul>
-  <li>GDP20位以内</li>
+  <li>一人当たりGDP20位以内</li>
   <li>一人当たりSoLランキング20位以内</li>
   <li>識字率40%以上</li>
   <li>何らかの選挙法を採用している</li>
@@ -312,7 +312,7 @@ p strong.term { color: #933; }
 <p>これらを満たすとそれぞれ<strong class="term">毎週+1ポイントの進捗</strong>を得られ、</p>
 
 <strong><ul>
-  <li>GDP50位圏外</li>
+  <li>一人当たりGDP50位圏外</li>
   <li>一人当たりSoLランク50位圏外</li>
   <li>識字率20%以下</li>
   <li>奴隷禁止を採用して<span class="caution">いない</span></li>
@@ -327,12 +327,14 @@ p strong.term { color: #933; }
 <p>また列強と外交関係が良ければ「<strong class="term">使節を要請する</strong>」ことにより、<strong>一時的に</strong><strong class="term">20ポイントの進捗</strong>を得られます。
 ただし受け入れは簡単ではなく、
 <ul>
-  <li>イデオロギーが似ている（最大50）</li>
-  <li>態度が良好（保護的で25）</li>
-  <li>関係性高め（親しみで50・友好で25）</li>
+  <li>政府のイデオロギーの類似（最大+50）</li>
+  <li>態度が良好（温和+50・保護的+25）</li>
+  <li>関係性高め（親しみ+50・友好+25・親密+10）</li>
+  <li>各種条約（貿易条約+15・投資権付与+25・防衛同盟+35・同盟+50）</li>
+  <li>同じ勢力ブロックメンバー（+25）</li>
 </ul>
 これらで100以上の受諾値を確保しなければいけません。<br>
-狙って行うというより、可能なら要請するような位置付けでしょうか。</p>
+特にAI国の態度に左右されるため、狙うよりは可能なら要請するような位置付けでしょうか。</p>
 
 <p>また以前のように<strong>戦争という手段</strong>に訴えることも可能です。<br>
 <strong>大国以上</strong>の相手に対して勝利すると、<strong class="term">要求した戦略目標の戦略ポイント×4の進捗</strong>を得られます。
@@ -343,6 +345,12 @@ p strong.term { color: #933; }
 
 <p>ジャーナルが完了すると晴れて<strong class="term">承認国</strong>となり、ランダムな列強と関係が30改善して好意的なロビーが発生する確率が高くなります。</p>
 <hr>
+
+<ul class="reference">
+  <li>\Victoria 3\game\common\diplomatic_actions\28_request_recognition.txt</li>
+  <li>\Victoria 3\game\common\journal_entries\05_request_recognition.txt</li>
+  <li>\Victoria 3\game\common\on_actions\00_code_on_actions.txt</li>
+</ul>
               
 
 
