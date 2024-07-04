@@ -309,11 +309,14 @@ table.principal td img { margin-top: -10px; }
 <p><strong class="term">勢力ブロック</strong>とはある目標を掲げた複数の国家からなる連合体です。<br>
 目標となる<strong class="term">アイディンティティ</strong>と特性を決める<strong class="term">原則</strong>により、リーダーとメンバーで異なるボーナスを受け取ります。<br>
 勢力ブロックを立ち上げるには<strong>大国以上の国家ランク</strong>と<strong>影響力500</strong>が必要です。</p>
-
-<p>勢力ブロックに参加させるにはその国に対し一定量の<strong class="term">勢力影響</strong>が必要です。<br>
-勢力影響を高めるには、<strong>その国の地域に関心を持ち、こちらへの経済的依存度を高め、良好な外交関係を築き、文化的受容が必要</strong>です。</p>
-
+<br>
+<p>勢力ブロックに参加させるにはその国に対し一定量の<strong class="term">勢力の優位性</strong>が必要です。<br>
+勢力の優位性とはその国に対する各勢力ブロックおよびその国自身の影響力の相対値であり、2位の影響力との相対的な影響力の差です。<br>
+<img src="https://nekotei-m.github.io/img/vic3/powerbloc/ref_leverage.jpg" alt="勢力の優位性の図。ロシアがトップで次に当事者のギリシアが続く">
+勢力の優位性を高めるには、<strong>その国の地域に関心を持ち、こちらへの経済的依存度を高め、良好な外交関係を築き、文化的受容が必要</strong>です。</p>
+<br>
 <p>また多くのメンバーを繋ぎとめるためには<strong class="term">結束力</strong>が必要で、その維持のためにはアイディンティティごとに異なる手段が必要です<br>
+<img src="https://nekotei-m.github.io/img/vic3/powerbloc/ref_cohesion.jpg" alt="結束力の状況。現在66">
 <ul>
 <li>貿易同盟：<strong>最大商品生産</strong>など</li>
 <li>君主制帝国：<strong>リーダーの威信</strong>など</li>
@@ -321,13 +324,14 @@ table.principal td img { margin-top: -10px; }
 <li>軍事条約：<strong>リーダーの戦力投射</strong>など</li>
 <li>宗教招集：<strong>宗教IGの影響力</strong>など</li>
 </ul>
-
+<br>
 <p><strong class="term">原則</strong><strong>は最低1つ。SoIがあれば2～4つ目が解放</strong>されます。<br>
 3つ目は勢力ブロックランク<strong>5以上</strong>とメンバー数<strong>5国</strong>以上で解放<br>
 4つ目は勢力ブロックランク<strong>3以上</strong>とメンバー数<strong>10国</strong>以上で解放<br>
 ※<strong class="term">勢力ブロックランク</strong>はメンバーの威信合計ランク</p>
+<img src="https://nekotei-m.github.io/img/vic3/powerbloc/ref_principal.jpg" alt="原則の取得状況。属国化1と植民地事業2を採用。次の権限獲得まで26ヵ月">
 
-<p>原則の採用およびレベルアップには<strong class="term">権限</strong>が必要で、権限の獲得には<strong>メンバー数と結束力が影響</strong>します。</p>
+<p>原則の採用およびレベルアップには<strong class="term">権限</strong>が必要で、権限の獲得には<strong>自国の威信ランクとメンバー数、結束力が影響</strong>します。</p>
 <hr>
 <br>
 <h3 id="identity">アイデンティティ</h3>
@@ -426,7 +430,7 @@ table.principal td img { margin-top: -10px; }
 <td><strong>+25 従属国あたりの権力</strong></td><td>+25 従属国あたりの権力<br><strong>+25% 従属国からの貢納</strong></td><td>+25 従属国あたりの権力<br>+25% 従属国からの貢納<br><strong>従属国州に対する布告の制定を許可</strong></td></tr>
 
 <tr><td><strong>高度な調査</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/advanced_research.png"></td>
-<td><strong>+25% 技術の普及</strong></td><td>+25% 技術の普及<br><strong>-25% 先行ペナルティ</strong></td><td>+25% 技術の普及<br>-25% 先行ペナルティ<br><strong>+25 最大革新投資</strong></td></tr>
+<td><strong>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br>+25% 教育の制度の変更速度<br>-10% 教育の制度の行政コスト<br>+5% 技術の普及（制度Lvごと）</strong></td><td>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br><strong>+40%</strong> 教育の制度の変更速度<br><strong>-25%</strong> 教育の制度の行政コスト<br>+5% 技術の普及（制度Lvごと）<br><strong>-5% 先行ペナルティ（制度Lvごと）</strong></td><td>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br><strong>+50%</strong> 教育の制度の変更速度<br><strong>-50%</strong> 教育の制度の行政コスト<br>+5% 技術の普及（制度Lvごと）<br>-5% 先行ペナルティ（制度Lvごと）<br><strong>+15 最大革新投資（制度Lvごと）</strong></td></tr>
 
 <tr><td><strong>防衛協力<img src="https://nekotei-m.github.io/img/vic3/powerbloc/defensive_coorperation.png"></td>
 <td><strong>メンバー間戦争の禁止</strong></td><td>メンバー間戦争の禁止<br><strong>-50% 外交戦でのメンバー懐柔の戦略ポイント</strong></td><td>メンバー間戦争の禁止<br>-50% 外交戦でのメンバー懐柔の戦略ポイント<br><strong>防衛戦争での協力</strong></td></tr>
@@ -441,7 +445,7 @@ table.principal td img { margin-top: -10px; }
 <td><strong>+10% 農業生産量</strong></td><td>+10% 農業生産量<br><strong>-10% 死亡率</strong></td><td>+10% 農業生産量<br>-10% 死亡率<br><strong>+1 生活水準<br>食品産業PM「効率的な製缶方法」（食料品生産+10）アンロック</strong></td></tr>
 
 <tr><td><strong>警察の連携</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/dedicated_police.png"></td>
-<td><strong>+50% 法執行機関の制度の変更速度<br>-50% 法執行機関の行政力コスト</strong></td><td>+50% 法執行機関の制度の変更速度<br>-50% 法執行機関の行政力コスト<br><strong>+50 権力（制度Lv毎）</strong></td><td>+50% 法執行機関の制度の変更速度<br>-50% 法執行機関の行政力コスト<br>+50 権力（制度Lv毎）<br><strong>-5% 政治運動急進主義（制度Lv毎）</strong></td></tr>
+<td><strong>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br>+25% 法執行機関の制度の変更速度<br>-10% 法執行機関の行政力コスト</strong></td><td>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br><strong>+40%</strong> 法執行機関の制度の変更速度<br><strong>-25%</strong> 法執行機関の行政力コスト<br><strong>-5% 政治運動急進主義（制度Lv毎）</strong></td><td>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br><strong>+50%</strong> 法執行機関の制度の変更速度<br><strong>-50%</strong> 法執行機関の行政力コスト<br>-5% 政治運動急進主義（制度Lv毎）<br><strong>+50 権力（制度Lv毎）</strong></td></tr>
 
 <tr><td><strong>輸送インフラ</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/transport.png"></td>
 <td><strong>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限</strong></td><td>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限<br><strong>+20% 輸送船団</strong></td><td>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限<br>+20% 輸送船団<br><strong>+50 陸上貿易キャパシティ<br>鉄道用PM3種（輸送生産・インフラUP）アンロック</strong></td></tr>
@@ -450,7 +454,7 @@ table.principal td img { margin-top: -10px; }
 <td><strong>+10% 軍需産業生産量</strong></td><td>+10% 軍需産業生産量<br><strong>-15% 軍需品の経費</strong></td><td>+10% 軍需産業生産量<br>-15% 軍需品の経費<br><strong>-33% 補給路コスト<br>気球偵察アンロック</strong></td></tr>
 
 <tr><td><strong>植民地事業所</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/colonial_offices.png"></td>
-<td><strong>+50% 植民地の制度の変更速度<br>-50% 植民地の制度の行政力コスト</strong></td><td>+50% 植民地の制度の変更速度<br>-50% 植民地の制度の行政力コスト<br><strong>+0.05 植民地成長スピード（制度Lv毎）</strong></td><td>+50% 植民地の制度の変更速度<br>-50% 植民地の制度の行政力コスト<br>+0.05 植民地成長スピード（制度Lv毎）<br><strong>-50% 非承認国に対する悪名の生成</strong></td></tr>
+<td><strong>自国の植民法をメンバーに強制可（リーダーのみ）<br>（法）植民地なしを禁止<br>+25% 植民地の制度の変更速度<br>-10% 植民地の制度の行政力コスト</strong></td><td>自国の植民法をメンバーに強制可（リーダーのみ）<br>（法）植民地なしを禁止<br><strong>+40%</strong> 植民地の制度の変更速度<br><strong>-25%</strong> 植民地の制度の行政力コスト<br><strong>+0.05 植民地成長スピード（制度Lv毎）</strong></td><td>自国の植民法をメンバーに強制可（リーダーのみ）<br>（法）植民地なしを禁止<br><strong>+50%</strong> 植民地の制度の変更速度<br><strong>-50%</strong> 植民地の制度の行政力コスト<br>+0.05 植民地成長スピード（制度Lv毎）<br><strong>-5% 非承認国に対する悪名の生成（制度Lv毎）</strong></td></tr>
 
 <tr><td><strong>国外投資</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/foreign_investment.png"></td>
 <td><strong>経済的依存度による勢力影響の増大</strong></td><td>経済的依存度による勢力影響の増大<br><strong>-50% ブロック外所有施設の国有化コスト</strong></td><td>経済的依存度による勢力影響の増大<br>-50% ブロック外所有施設の国有化コスト<br><strong>下位の威信ランクメンバーへの国外投資権</strong></td></tr>
@@ -474,6 +478,22 @@ table.principal td img { margin-top: -10px; }
 <td><strong>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト</td><td>-33 対立側の扇動者の人気度</strong><br>-25% 抑圧および強化コスト<br><strong>+20% イデオロギーの矛盾に対する党内総務の影響</strong></td><td>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト<br>+20% イデオロギーの矛盾に対する党内総務の影響<br><strong>25 正当性の下限値</strong></td></tr>
 </table>
 <hr>
+<ul class="reference">
+  <li>\Victoria 3\game\common\ai_strategies\00_default_strategy.txt</li>
+  <li>\Victoria 3\game\common\ai_strategies\02_diplomatic_strategies.txt</li>
+  <li>\Victoria 3\game\common\ai_strategies\02_subject_diplomatic_strategies.txt</li>
+  <li>\Victoria 3\game\common\cohesion_levels\00_cohesion_levels.txt</li>
+  <li>\Victoria 3\game\common\company_types\99_basic_companies.txt</li>
+  <li>\Victoria 3\game\common\defines\00_ai.txt</li>
+  <li>\Victoria 3\game\common\defines\00_defines.txt</li>
+  <li>\Victoria 3\game\common\diplomatic_actions\*.txt</li>
+  <li>\Victoria 3\game\common\diplomatic_plays\*.txt</li>
+  <li>\Victoria 3\game\common\power_bloc_identities\00_power_bloc_identities.txt</li>
+  <li>\Victoria 3\game\common\power_bloc_principles\00_power_bloc_principles.txt</li>
+  <li>\Victoria 3\game\common\scripted_triggers\00_victoria_scripted_triggers.txt</li>
+  <li>\Victoria 3\game\common\script_values\00_diplomacy_values.txt</li>
+  <li>\Victoria 3\game\common\script_values\01_power_bloc_values.txt</li>
+ </ul>
               
 
 

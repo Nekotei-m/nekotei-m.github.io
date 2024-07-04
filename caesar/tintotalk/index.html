@@ -366,6 +366,9 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
   <li>継承法にはサリカ法、セミサリカ法、共和国のさまざな選挙、教皇選出法など国ごとに異なる</li>
   <li><strong>条件を満たすと削除される建物もある</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1689847/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 
+</ul>
+</section>
+<br><!--
 封建制でも複数の種類がある(#18)
 https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-18-26th-of-june-2024.1689850/post-29726760
 異端審問法にも複数の種類がある(#18)
@@ -378,12 +381,93 @@ https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-18-26th-of-june
 https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-18-26th-of-june-2024.1689850/post-29726952
 ポーランドの議会名は Sejm、カスティーリャの議会名は Cortes、スウェーデンの議会名は Riksdagなど国によって呼び方は異なる(#18)
 https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-18-26th-of-june-2024.1689850/post-29729981
-</ul>
-</section>
-<br>
 
 
+#ProjectCaesar
+第19回は時代と制度について
+・ゲームには6つの時代があり、各時代は約1世紀ごとに次へ進む
+伝統主義の時代 / Age of Traditions
+ルネッサンスの時代 / Age of Renaissance
+大航海時代 / Age of Discovery
+宗教改革の時代 / Age of Reformation
+絶対主義の時代 / Age of Absolutism
+革命の時代 / Age of Revolutions
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/
 
+・各時代には3つの制度が出現し、それぞれが「（伏字）」を解除して世界中に広がる
+・時代ごとに税金徴集額が増加し、保有できる軍隊の規模が増加する
+・制度の出現場所は、最初の時代はより厳格に歴史的な位置に、後の時代はより柔軟になる
+・制度の動的な出現が気に入らない場合は「歴史的」モードに設定すれば固定場所に出現する
+・制度の拡散には時間がかかり、隣接地区や海路を通してか、市場の貿易ルートを通じて広がる
+・制度が自国の人口の10%以上に広がったら受け入れることができる。
+・受け入れによって制度が与える「（伏字）」に採用可能になる
+・内閣のメンバーに州の制度を受け入れるよう割り当てることもできる
+
+■伝統の時代
+・律法主義／出現地点：ローマ
+　旧世界のほとんどでは、ゲーム開始時にこの制度が普及し、受け入れられている
+・実力主義／出現地点：北京
+　ゲーム開始時には東アジアにのみ広がっている
+・封建制／出現地点：アーヘン
+　旧世界のほとんどの地域に広まっている
+
+■ルネッサンスの時代
+・ルネッサンス／歴史的出現地点：フィレンツェ
+　時代が始まって間もなく、大学のある北イタリアの都市で誕生する
+・銀行業／歴史的出現地点：ジェノバ
+「資本経済」の強い社会的価値を持っていて、ヨーロッパ・北アフリカ・中東の1k以上の市民がいる町や都市で発生する
+・職業軍人／歴史的出現地点：パリ
+「軍質重視」の社会的価値を持つヨーロッパのどの地区にでも出現する
+
+■大航海時代
+・新世界／歴史的出現地点：セビリア
+　2k以上の市民を擁し、アゾレス諸島と西アフリカの海岸線を発見した西ヨーロッパまたは北アフリカのどの港でも出現する
+・印刷機／歴史的出現地点：マインツ
+　所有者が5枚以上の紙を生産し、「外向きの」社会的価値がある、2k以上の市民がいる地区であればどこでも発生する
+・パイク・アンド・ショット（テルシオ）／歴史的出現地点：インスブルック
+　職業軍人を受容済みで20超の軍事伝統、「土地」の社会的価値観を持ち、火薬技術を持っている場所で発生
+
+■宗教改革の時代
+・信仰告白主義／歴史的出現地点：アウクスブルク
+　印刷機を持ち、支配的な宗教がカトリックであり、「唯心論」の社会的価値がある欧州の町や都市で発生
+・グローバル貿易／歴史的出現地点：リスボン
+　世界中で最も価値の高い商品が取引されている都市の市場センターで発生
+・砲兵／歴史的出現地点：イスタンブール
+　銃器職人と金属工房があり、「攻撃的」な社会的価値を持つ世界中のどの都市でも発生
+
+■絶対主義の時代
+・工場／歴史的出現地点：ダービー
+　建物レベルが100を超え、市民が20k以上おり、「資本経済」の社会的価値を持っている地区に生成
+・科学革命／歴史的出現地点：ケンブリッジ
+　大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生
+・軍事革命／歴史的出現地点：ストックホルム
+　軍事施設が多く、人口が50k人を超える首都であればどこでも発生
+
+■革命の時代
+・啓蒙／歴史的出現地点：パリ
+　大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生
+・工業化／歴史的出現地点：ブラックバーン(イングランド)
+　250以上の建物レベルと少なくとも20kの市民がいて、「資本経済」の社会的価値を持っている地区であればどこでも発生
+・国民皆兵／歴史的出現地点：パリ
+　軍事施設が多く、人口が200kを超え、「防御的」な社会的価値を持つ首都で発生
+
+歴史的な出現地点をオンにしている場合は、たとえその場所が条件を満たさなくなっていてもそこで発生する
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743174
+植民者が現れるまで、新世界では制度を利用できない
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743202
+制度の広がりは主に貿易
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743240
+で、大航海時代以降
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743304
+になると内閣を利用できる
+貿易による普及はは輸入元で広がる
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743386
+制度の発生場所は1つに制限されている
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743322
+時代は時間経過で移り変わる
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743406
+
+-->
 <section id="s-playabletime">
 <h2>プレイ期間</h2>
 <ul>
