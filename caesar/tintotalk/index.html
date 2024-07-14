@@ -349,7 +349,7 @@ section#url-list ol em {font-size: 1.4rem; font-weight: bold;}
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><strong><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer">第18回</a>は法律</strong>について</p>
+<p><strong><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer">第19回</a>は時代と制度</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
   <li><strong>法律とはある法律（たとえば徴兵法など）について複数の法案の中からコストを払って選択する</strong>もの</li>
@@ -451,22 +451,96 @@ https://forum.paradoxplaza.com/forum/developer-diary/1693447/
 ・国民皆兵／歴史的出現地点：パリ
 　軍事施設が多く、人口が200kを超え、「防御的」な社会的価値を持つ首都で発生
 
-歴史的な出現地点をオンにしている場合は、たとえその場所が条件を満たさなくなっていてもそこで発生する
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743174
-植民者が現れるまで、新世界では制度を利用できない
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743202
-制度の広がりは主に貿易
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743240
-で、大航海時代以降
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743304
+歴史的な出現地点をオンにしている場合は、たとえその場所が条件を満たさなくなっていてもその場所で発生する(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743174
+植民者が現れるまで、新世界では制度を利用できない(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743202
+制度の広がりは主に貿易(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743240
+で、大航海時代以降(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743304
 になると内閣を利用できる
-貿易による普及はは輸入元で広がる
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743386
-制度の発生場所は1つに制限されている
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743322
-時代は時間経過で移り変わる
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-19-3rd-of-july-2024.1693447/post-29743406
+貿易による普及はは輸入元で広がる(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743386
+制度の発生場所は1つに制限されている(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743322
+時代は時間経過で移り変わる(#19)
+https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743406
 
+
+ステータスは低い方から銅色→銀色→金色→紫色の順で表示される(*)
+https://forum.paradoxplaza.com/forum/threads/1691918/post-29728175
+スタート年代以前の出来事によるAEなども反映させたい(*)
+https://forum.paradoxplaza.com/forum/threads/1692550/post-29742408
+市場アクセスは購入の優先度と量の両方に影響される(*)
+https://forum.paradoxplaza.com/forum/threads/1693040/post-29742449
+市場アクセスは川などにも影響される(*)
+https://forum.paradoxplaza.com/forum/threads/1693040/post-29743617
+
+#ProjectCaesar
+第20回は技術とナショナルアイデアに代わるものについて
+
+・「進歩/Advances」と呼ばれるメカニズムに再構成された
+・進歩により新しいコマンド、ユニット、法律、相続法、CB…様々なものがアンロックされる
+・ツリーには現在100の進歩があり、固有の進歩もある
+・文化や宗教、ある地区を所有しているか、政府の種類などにより固有の進歩が出現する
+・前回のTTで挙げた制度に関連する進歩もある
+・各時代の開始時に各国に固有の新しい進歩ツリーが作成される
+・伝統の時代以外は共通、行政、外交、軍事の4つのツリーが用意されている
+　たとえば
+　行政 - 優れた行政効率、低金利、より良い近接拡散、安価な傭兵など
+　外交 - 優れた商人、より高い外交評判、従属国の設立、安価な戦争スコアコストなど
+　軍事 - 戦闘でのより高い名声、毎月の伝統獲得など
+・時代の開始時にいずれかひとつの分野をフォーカスすることで、その分野の研究が加速する
+
+・非現実的だが利便性のために進歩を研究せずに最大1年分の研究を蓄積することもできる
+・基本的には同じ研究コストがかかるが、「文字」などコストの高いキーストーンとなる進歩もある
+・以前の時代の進歩が現在の時代よりも安価になり、キャッチアップを可能にしている
+・研究の量は、定住国か遊牧民か、典礼言語、聖職者の満足度と国の平均識字率で変わる
+
+https://forum.paradoxplaza.com/forum/developer-diary/1694744/
+
+アイデア システムの一部は、国の社会的価値や法律によってカバーされていますが、この新しいシステムが残りの部分をカバー
+
+
+
+進歩により、新しい外交、新しいユニット、ユニットの新しい能力、新しいキャラクター アクション、新しい主題の相互作用、新しい地所特権、新しい法律、法律の新しいポリシー、新しい相続システム、新しい開戦理由、新しい政府改革、新しい内閣の行動、新しい建物、建物の追加レベル、新しい生産方法がアンロック
+
+安定性への投資、道路の建設、税金の徴収などのメカニズムもアンロックされます。
+貴族の識字率の向上や軍事戦術の改善などの重要な統計も得られます。
+
+
+
+伝統の時代を除くすべてのツリーには、共通の開始点と各機関から 1 つずつ、合計 4 つの異なる開始点があります。
+機関からのものは、その機関に関連する進歩のロックを解除する傾向があります。
+ツリー内のすべての進歩の約 70% は、すべての国で共通である傾向がありますが、残りはどの国でプレイしているかによって完全に異なります。
+ルネッサンス時代と大航海時代のツリーの進歩の 3 分の 1 以上は、研究にinstitutionsを必要としません。
+
+開始ボーナスは、すでに研究された状態で開始する伝統の時代の進歩 2 つとなり、残りは残りの時代に分散され、終了ボーナスは革命の時代の進歩となりました。
+
+ポーランドには現在 16 のユニークな進歩があります
+文化や宗教、場所を所有できる国かどうか、政府の種類に応じて、多くのユニークな進歩があります。
+
+行政、外交、軍事の焦点に分類され、各カテゴリに少なくとも 10 個の進歩が含まれ、ルネッサンス時代から始まります。
+
+各時代の開始時に、1 つの焦点を選択します。これにより、その時代のツリーにそれらの進歩が追加されます
+行政 - 行政効率の向上、利子の低下、近接伝播の改善、傭兵のコスト削減など。
+外交 - より優れた商人、より高い外交評判、行進する臣民、より安い戦争スコアのコストなど。
+軍事 - 戦闘による名声の向上、毎月の伝統の獲得など。
+
+伝統の時代の進歩ツリーは、多くの開始点があるという点で少しユニークであり、特に新世界では、すべての開始点を備えていない国がたくさんあります。
+
+ほぼすべての進歩で同じ研究コストがあります
+「書き言葉のアルファベット」など、はるかにコストのかかるキーストーン進歩がいくつかあります。
+
+すべての国は毎月「研究」を生成し、それが現在研究中の進歩に直接「支払われ」ます。
+進歩を研究せずに最大 1 年分の研究を蓄積できます。
+
+以前の時代の進歩が現在の時代よりも安価になる、一種のキャッチアップ メカニズムもあります。
+行う研究の量は、定住国であるか、まだ遊牧民の集団であるか、および典礼言語の力に応じて異なります。聖職者の満足度と国の平均識字率も、研究の速度に影響します。
+
+研究を完全に自動化させることもできます
+来週は探索の楽しさと喜びについて
 -->
 <section id="s-playabletime">
 <h2>プレイ期間</h2>
@@ -1073,7 +1147,11 @@ https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-7-21st-of-june-2
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#16</em> https://forum.paradoxplaza.com/forum/developer-diary/1687571/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#17</em> https://forum.paradoxplaza.com/forum/developer-diary/1689183/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#18</em> https://forum.paradoxplaza.com/forum/developer-diary/1689850/</a></li>
-  <!--li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10</em> </a></li-->
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#19</em> https://forum.paradoxplaza.com/forum/developer-diary/1693447/</a></li
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20</em> https://forum.paradoxplaza.com/forum/developer-diary/1694744/</a></li>
+<!--
+  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20</em> </a></li>
+-->
 </ol>
 <ol>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#1</em> https://forum.paradoxplaza.com/forum/developer-diary/1675505/</a></li>
@@ -1084,6 +1162,7 @@ https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-7-21st-of-june-2
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687953/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#6</em> https://forum.paradoxplaza.com/forum/developer-diary/1687953/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689600/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#7</em> https://forum.paradoxplaza.com/forum/developer-diary/1689600/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1692158/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#8</em> https://forum.paradoxplaza.com/forum/developer-diary/1692158/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693751/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#9</em> https://forum.paradoxplaza.com/forum/developer-diary/1693751/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
@@ -1100,6 +1179,11 @@ https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-7-21st-of-june-2
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1686332/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 8th of June 2024</em> https://forum.paradoxplaza.com/forum/threads/1686332/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1688221/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 15th of June 2024</em> https://forum.paradoxplaza.com/forum/threads/1688221/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1689847/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 22th of June 2024</em> https://forum.paradoxplaza.com/forum/threads/1689847/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1692414/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 29th of June 2024</em> https://forum.paradoxplaza.com/forum/threads/1692414/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1694036/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 6th of Julu 2024</em> https://forum.paradoxplaza.com/forum/threads/1694036/</a></li>
+<!--
+ <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 22th of Julu 2024</em> </a></li>
+-->
 </ol>
 </section>
 
