@@ -364,7 +364,7 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <tr><td colspan="2">市場アクセスの喪失（100% ～ 0％）</td>
 <td>0 ～ <span class="plus">+1.0</span></td></tr>
 <tr><td colspan="2">他の従属国の併合</td>
-<td><span class="plus">+0.2</span>（5年）</td></tr>
+<td><span class="plus">+0.2</span>（5年）※ただし併合を拒否され、戦争に至ったときのみ</td></tr>
 <tr><td colspan="2">貢納の増額</td>
 <td><span class="plus">+25%（増加時）</span><br>
 <span class="minus">-25%（減少時）</span></td></tr>
@@ -390,8 +390,6 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <tr><td>兵役の免除</td><td>
 外交戦に参加させない<br>
 週ごとの自由願望 <span class="minus">-0.05</span></td></tr>
-<tr><td>兵役の免除の取り消し</td><td>
-自由願望 <span class="plus">+10</span></td></tr>
 <tr><td>総督の指名</td><td>
 総督の指名イベント発生<br>
 自由願望 <span class="plus">+5</span>（本国人を選択した場合）＆その人物の所属IGの支持+2<br>
@@ -399,8 +397,8 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <tr><td>市場管理権を与える</td><td>
 市場を切り離す<br>
 経済的依存度が高いと自由願望<span class="plus">増加（大）</span> 低いと自由願望<span class="minus">減少（中）</span></td></tr>
-<tr><td>市場管理権を取り消す</td><td>
-自由願望 <span class="minus">-25</span></td></tr>
+<!--tr><td>市場管理権を取り消す</td><td>
+自由願望 <span class="minus">-25</span></td></tr-->
 <tr><td>自治権の縮小</td><td>
 （自由願望25未満で可能）<br>
 対象従属国に自由願望 <span class="plus">+50</span><br>
@@ -416,14 +414,15 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 宗主国正当性 -10<br>
 対象国正当性 +20<br>
 対象国の政治運動急進主義 -10%<br>
-週ごとの自由願望 <span class="minus">-0.10</span></td></tr>
-<tr><td>政権の支持をやめる</td><td>
-自由願望 <span class="plus">+10</span></td></tr>
+自由願望 <span class="minus">-0.10/週</span></td></tr>
 <tr><td>知識の共有を申し出る<br>（影響力50）</td><td>
 宗主国：技術の普及 -10%<br>
 対象国：技術の普及 +25%<br>
 自由願望 <span class="minus">-0.05/週</span></td></tr>
-<tr><td>知識の共有をやめる</td><td>
+<tr><td>貢納の減額の取り消し<br>
+兵役の免除の取り消し<br>
+政権の支持をやめる<br>
+知識の共有をやめる</td><td>
 自由願望 <span class="plus">+10</span></td></tr>
 <tr><td>伝道する<br>（影響力25）</td><td>
 （主要宗教が異なると不可）<br>
@@ -467,7 +466,7 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 　自国：技術の普及 +25%<br>
 拒否された場合：自由願望 <span class="plus">+10</span>＆外交関係 -20</td></tr>
 <tr><td>州を要求</td>
-<td>（要求できる州になんらかの条件あり）</td></tr>
+<td>（要求できる州に条件あり）</td></tr>
 <tr><td>独立（外交要求）</td>
 <td>（自由願望90以上で可能）<br>
 自国が保護国/朝貢国または5年以内で自治権の拡大を拒否された場合のみ</td></tr>
