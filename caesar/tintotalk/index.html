@@ -306,7 +306,7 @@ section#s-new {
 section#s-new h2 {color: #164284;}
 section#url-list ol {list-style-type: none; font-size: 1.2rem;} 
 section#url-list ol em {font-size: 1.4rem; font-weight: bold;} 
-div.age {
+div.pickup {
   margin: 5px;
   padding: 10px;
   border-radius: 15px;
@@ -314,12 +314,13 @@ div.age {
   background-color: #DAA520;
   background: linear-gradient(to bottom right, #fefaf1, #fdf2df);
 }
-div.age h4 {
+div.pickup h4 {
   margin: 0.3em 0;
   font-size: 1.2em;
 }
-div.age ul { margin-bottom: 0.5em;}
-div.age strong { color: #381609; }
+div.pickup ul { margin-bottom: 0.5em;}
+div.pickup strong { color: #381609; }
+.post .post-content div.pickup p { margin: 0 0.5rem !important; text-indent: 0.5rem; }
 </style>
 
 <div class="toc">
@@ -342,13 +343,14 @@ div.age strong { color: #381609; }
       <li><a href="#s-economy">経済</a></li>
       <li><a href="#s-market">市場</a></li>
       <li><a href="#s-construction">建設</a></li>
-      <li><a href="#s-exploration">探検</a></li>
       <li><a href="#s-warfare">戦争</a></li>
       <li><a href="#s-units">軍隊</a></li>
       <li><a href="#s-logistics">兵站</a></li>
       <li><a href="#s-battle">戦闘</a></li>
       <li><a href="#s-siege">攻城戦</a></li>
       <li><a href="#s-navys">海軍</a></li>
+      <li><a href="#s-exploration">探検</a></li>
+      <li><a href="#s-colonization">植民</a></li>
       <li><a href="#s-io">国際組織</a></li>
       <li><a href="#s-diplomacy">外交</a></li>
       <li><a href="#s-tecnology">進歩(Advances)</a></li>
@@ -370,46 +372,55 @@ div.age strong { color: #381609; }
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer">第25回</a>は<strong>植民地</strong>について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer">第26回</a>は<strong>プレイアブル国家</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
-  <li>植民地獲得ゲームの重要な要素の1つが<strong>戦力投射</strong></li>
-  <li>戦力投射は<strong>高い国が低い国を搾取できる</strong>ことを示すバロメータ</li>
-  <li>戦力投射は<strong>進歩の獲得度に大きく依存</strong>しており、<strong>社会的価値観や国のランク</strong>などで補正される</li>
-  <li>戦力投射は一度獲得した分が減ることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829347" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>戦力投射が高い相手の土地に植民することはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827672" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li><strong>戦力投射が相手より十分に高ければどこでも植民できる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29828622" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>ただし<strong>同じ宗教グループ</strong>の土地に植民することはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829495" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>まず一定の金額を消費して<strong>植民総督府を開くことで植民を開始</strong>できる</li>
-  <li><strong>植民総督府は州ごと</strong>に設定するが、<strong>領有化の判定は地区ごと</strong>に行われる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827810" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li><strong>同じ州に複数の国が植民することも可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827721" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>維持費もかかり、減らすと植民するPOPの数も減る</li>
-  <li><strong>対象州の人口が多く、距離が遠い</strong>ほど植民にかかる費用も高くなる</li>
-  <li>毎月、<strong>POPの一部が本土から植民地に実際に移動</strong>し、無から生じることはない</li>
-  <li>序盤は植民するPOPの数はかなり少ないが、<strong>進歩で増加</strong>し、社会的価値観や植民地までの距離も影響する</li>
-  <li>そのため人口の少ない国では巨大な植民地帝国を築くことは現実的ではないだろう</li>
-  <li>貧しいPOPの方が移住しやすい<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827679" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>差別POPのみを選抜して送る方法はない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829337" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>植民のひとつの壁として病気がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827683" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>本国から移住した人数すべてが植民地にたどり着けるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829416" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>植民者数を増やすには大航海時代の進歩により、内閣で2つのコマンドが使用可能になる<br>　「<strong>植民総督府の支援</strong>」は特定の自国領からPOPの植民を増やす<br>　「<strong>植民地国家の支援</strong>」は特定の自国領から植民地国家の州に毎月100POP移住させる</li>
-  <li>植民地を完成させるには<strong>少なくとも1,000のPOP</strong>を有し、<strong>一定割合が国教と需要文化</strong>を持っている必要がある</li>
-  <li>その割合は自国と植民先の国の戦力投射の差に大きく依存する</li>
-  <li>領有化の判定は現地POP数も計算に入る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829324" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>植民先の国が植民地化にどう反応するか、ひいてはどこに植民できるかは、また後日の開発日記を期待してほしい。元朝がもっと近ければ理論的にはヨーロッパの植民地化を開始できたかもしれない</li>
-  <li>完成した州は、十分に制御できるくらい近ければ自国領とすることもできるし、植民地国家に渡したりもできる</li>
-  <li><strong>植民地国家は併合できない従属国</strong>で、通常の従属国より貢納金が少なくなるが、代わりに<strong>人的資源や水夫、商人の一部を提供</strong>する</li>
-  <li>植民地国家は植民地化できるマップ上のどこにでも作成できる</li>
-  <li><strong>外交条約などで他の国が植民地化するのをブロックする方法</strong>がある </li>
-  <li>たとえば、ノールランド、フィンランド、カレリア、コラは、スウェーデンとノヴゴロドの権利下にある</li>
-  <li>当然「トルデシリャス条約」もあり、多くの興味深いギミックを用意している</li>
-  <li><strong>他国が請求権を持つ州に植民するには戦争が必要</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829346" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>植民地の距離判定は最寄りの自国領ではなく首都から判定される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829409" target="_new" rel="noopener noreferrer">(#25)</a></sup>予定だが最寄りからに再検討するかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29830443" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>州の文化はもっとも多いPOPの文化に塗り替わる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827663" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>病気などで人口がゼロにまでなると空白地になる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829414" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>プレイ可能な国家は4タイプ</li>
+</ul>
 
-  <li>食料としての価値は<strong>米/10, 小麦/8, じゃがいも/8, トウモロコシ/8, 畜肉/8, 大豆/6, 雑穀/5, 豆類/5, 羊肉/5, 魚/5, デーツ/4, 果物/4, 狩猟肉/2.5</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1699684/post-29832803" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+<div class="pickup">
+<h4>■土地ベース</h4>
+<p>土地を所有し、建物を建設し、軍隊を育成できる通常の国家</li>
+</div>
 
+<div class="pickup">
+<h4>■軍隊ベース</h4>
+<p>通常国家と同じことが可能だが、軍隊がある限りは土地を失っても滅びることはない</li>
+</div>
+
+<div class="pickup">
+<h4>■建物ベース</h4>
+
+<p>土地を所有することはできず、他の国にある建物をベースとした組織国家</p>
+<ul><li>銀行組織<br>
+PeruzziやBardi、後にFuggersなど<br>
+他国からの融資要請を受けて貸し出しを行う。他国の階級が持つローンを引き受けたりもできる</li>
+  <li>貿易会社<br>
+宗主国の利益のために貿易を進める従属国。宗教改革の時代から設立可能</li>
+  <li>ハンザ同盟<br>
+通常の土地ベース国を従属国に持つ建物ベースの組織<br>
+プレイ可能国であり、純粋に貿易ゲームをしたいときには非常に楽しい国</li>
+  <li>聖職者団<br>
+カラトラバ騎士団など。詳細は後日</li>
+</ul>
+
+<p><strong>日本の大名は建物ベースの国</strong>の仕組みを使用する</p>
+</div>
+
+<div class="pickup">
+<h4>■人民ベース</h4>
+<p>土地を所有せず、POPを引き連れて移動する（おそらく遊牧民的な国家）</p>
+<p>土地を所有していないため、自ら資源を掘り出したりせず、建物を建てることもできない</p>
+<p>POPから直接徴税することができ、軍隊はどこでも移動し、どの土地でも食料を集めることができる</p>
+<p>新世界では土地ベース国と人民ベース国が混在している</p>
+<p>リリース時には AI のみになる可能性が非常に高い</p>
+</div>
+
+<ul>
+  <li>軍隊ベース国と人民ベース国は土地ベース国になるギミックがあるが、原則として国のタイプを変更する方法はない</li>
+
+  <li>自国領内の他国の建物を取り壊すには原則として戦争が必要<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/post-29839476" target="_new" rel="noopener noreferrer">(#26)</a></sup></li>
+  <li>いずれの国家もない土地でもPOPは存在し、統括する政府のない集落として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/post-29844056" target="_new" rel="noopener noreferrer">(#Map15)</a></sup></li>
 </ul>
 </section>
 <br><!--
@@ -620,21 +631,21 @@ div.age strong { color: #381609; }
   <li><strong>新世界では植民者が現れるまで制度を利用できない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743202" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
 </sup></li>
 </ul>
-<div class="age">
+<div class="pickup">
 <h4>■伝統の時代 / Age of Traditions</h4>
 <ul>
 <li><strong>律法主義</strong>／ローマ（都市名は歴史的出現地点）<br>旧世界のほとんどはゲーム開始時にこの制度が受け入れられている</li>
 <li><strong>実力主義</strong>／北京<br>ゲーム開始時には東アジアにのみ広がっている</li>
 <li><strong>封建制</strong>／アーヘン<br>旧世界のほとんどの地域に広まっている</li>
 </div>
-<div class="age">
+<div class="pickup">
 <h4>■ルネッサンスの時代 / Age of Renaissance</h4>
 <ul>
 <li><strong>ルネッサンス</strong>／フィレンツェ<br>時代が始まって間もなく、大学のある北イタリアの都市で誕生する</li>
 <li><strong>銀行業</strong>／ジェノバ<br>「資本経済」の強い社会的価値を持っていて、ヨーロッパ・北アフリカ・中東の1k以上の市民がいる町や都市で発生する</li>
 <li><strong>職業軍人</strong>／パリ<br>「軍質重視」の社会的価値を持つヨーロッパのどの地区にでも出現する</li>
 </div>
-<div class="age">
+<div class="pickup">
 <h4>■大航海時代 / Age of Discovery</h4>
 <ul>
 <li><strong>新世界</strong>／セビリア<br>2k以上の市民を擁し、アゾレス諸島と西アフリカの海岸線を発見した西ヨーロッパまたは北アフリカのどの港でも出現する</li>
@@ -642,21 +653,21 @@ div.age strong { color: #381609; }
 <li><strong>パイク・アンド・ショット</strong>（テルシオ）／インスブルック<br>職業軍人を受容済みで20超の軍事伝統、「土地」の社会的価値観を持ち、火薬技術を持っている場所で発生
 </li>
 </div>
-<div class="age">
+<div class="pickup">
 <h4>■宗教改革の時代 / Age of Reformation</h4>
 <ul>
 <li><strong>信仰告白主義</strong>／アウクスブルク<br>印刷機を持ち、支配的な宗教がカトリックであり、「唯心論」の社会的価値がある欧州の町や都市で発生</li>
 <li><strong>グローバル貿易</strong>／リスボン<br>世界中で最も価値の高い商品が取引されている都市の市場センターで発生</li>
 <li><strong>砲兵</strong>／イスタンブール<br>銃器職人と金属工房があり、「攻撃的」な社会的価値を持つ世界中のどの都市でも発生</li>
 </div>
-<div class="age">
+<div class="pickup">
 <h4>■絶対主義の時代 / Age of Absolutism</h4>
 <ul>
 <li><strong>工場</strong>／ダービー<br>建物レベルが100を超え、市民が20k以上おり、「資本経済」の社会的価値を持っている地区に生成</li>
 <li><strong>科学革命</strong>／ケンブリッジ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
 <li><strong>軍事革命</strong>／ストックホルム<br>軍事施設が多く、人口が50k人を超える首都であればどこでも発生</li>
 </div>
-<div class="age">
+<div class="pickup">
 <h4>■革命の時代 / Age of Revolutions</h4>
 <ul>
 <li><strong>啓蒙</strong>／パリ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
@@ -868,6 +879,7 @@ div.age strong { color: #381609; }
   <li><strong>市場アクセスは購入の優先度と量の両方に影響</strong>される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1693040/post-29742449" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>市場アクセスは川などにも影響される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1693040/post-29743617" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>お金の単位はダカットで共通だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761227" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>食料としての価値は<strong>米/10, 小麦/8, じゃがいも/8, トウモロコシ/8, 畜肉/8, 大豆/6, 雑穀/5, 豆類/5, 羊肉/5, 魚/5, デーツ/4, 果物/4, 狩猟肉/2.5</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1699684/post-29832803" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -902,37 +914,6 @@ div.age strong { color: #381609; }
   <li><strong>階級特権を付与した場合にのみ建設できる建物</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/threads/1688221/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>階級固有の建物は不要になれば破壊</strong>することはできるが、<strong>高い支配権が必要で階級の満足度も低下</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/threads/1688221/post-29698896" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>条件を満たすと削除される建物もある</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1689847/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-</ul>
-</section>
-<hr>
-
-<section id="s-exploration">
-<h2>探検 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/" target="_new" rel="noopener noreferrer">#21</a>)</h2>
-<ul>
-  <li><strong>探検は地域(Area)ごと</strong>に行う（地区＜州＜地域）</li>
-  <li>細かくユニットを動かす煩雑さを減らすため、軍隊ユニットとは切り離した仕組みにした</li>
-  <li>地政学タブに探検、植民地化、海事、私掠船がある</li>
-  <li><strong>探検済み地域の隣接地域のみ探検でき</strong>、内陸の場合は隣接地区を所有している必要がある</li>
-  <li><strong>探検ミッションにはゴールドと人的資源が必要。維持費もかかり、道中イベントが発生する</strong></li>
-  <li>探検ミッションは<strong>失敗するとリーダーが死亡する可能性があり、進行状況も失われる</strong></li>
-  <li>探検が失敗した場合の進捗は完全にゼロに戻る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775216" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>0/0/0の後継者を探索に行かせることは可能ですか？→Yes<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775945" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li><strong>探検を開始するにはいくつかの技術が必要</strong>になることもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775255" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>予算とキャラクターが用意できるかぎり<strong>一度に可能な探検ミッションに制限はない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775424" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>リーダー能力の<strong>管理は維持費減、外交は成功可能性、軍事は探検スピード</strong>を左右する</li>
-  <li>独自の特性<strong>「探検家」を持つリーダー</strong>はよりうまくやるだろう</li>
-  <li><strong>「探検家」持ちは歴史的イベントで登場する</strong>場合もあるし、<strong>新たに募集することもできる</strong></li>
-  <li>ただし<strong>募集には大航海時代の「新世界」機関の進歩ツリー「探検家の任命」の進歩</strong>が必要</li>
-  <li>進歩には探検をスピードアップしたり、失敗しづらくしたりするものもある</li>
-  <li><strong>探検家ではない人物では完了までに数年かかる</strong>かもしれない</li>
-  <li><strong>海路の貿易風</strong>もどれだけ早く探索できるかに大きな影響を与える</li>
-  <li>他の国に<strong>スパイ網を構築している場合は地図の一部を盗む</strong>こともできる</li>
-  <li>探索ミッション完了後は<strong>同じ亜大陸に首都がある他の国にも約150年かけて広がっていく</strong></li>
-  <li>未探索の州の商品はランダムではなく固定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776817" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>発見した場所に独自な命名をするメカニズムは予定していない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776822" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>探索に必要な人的資源は開始時に「消費」され、探索後に戻ってくることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776848" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li>ランダム新世界は二度と採用しない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775426" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
-  <li><strong>日本が太平洋経由でアメリカを探索するのは難しくなる</strong>だろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775951" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1113,6 +1094,78 @@ div.age strong { color: #381609; }
   <li>旗艦システムは予定してない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-24-7th-of-august-2024.1698427/post-29814424" target="_new" rel="noopener noreferrer">(#24)</a></sup></li>
   <li><strong>ガレー船は内海でボーナス</strong>があり、狭い海域ならさらに有用だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-24-7th-of-august-2024.1698427/post-29814809" target="_new" rel="noopener noreferrer">(#24)</a></sup></li>
   <li>海戦に勝利後、<strong>拿捕するメカニズム</strong>はある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-24-7th-of-august-2024.1698427/post-29816306" target="_new" rel="noopener noreferrer">(#24)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-exploration">
+<h2>探検 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/" target="_new" rel="noopener noreferrer">#21</a>)</h2>
+<ul>
+  <li><strong>探検は地域(Area)ごと</strong>に行う（地区＜州＜地域）</li>
+  <li>細かくユニットを動かす煩雑さを減らすため、軍隊ユニットとは切り離した仕組みにした</li>
+  <li>地政学タブに探検、植民地化、海事、私掠船がある</li>
+  <li><strong>探検済み地域の隣接地域のみ探検でき</strong>、内陸の場合は隣接地区を所有している必要がある</li>
+  <li><strong>探検ミッションにはゴールドと人的資源が必要。維持費もかかり、道中イベントが発生する</strong></li>
+  <li>探検ミッションは<strong>失敗するとリーダーが死亡する可能性があり、進行状況も失われる</strong></li>
+  <li>探検が失敗した場合の進捗は完全にゼロに戻る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775216" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>0/0/0の後継者を探索に行かせることは可能ですか？→Yes<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775945" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li><strong>探検を開始するにはいくつかの技術が必要</strong>になることもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775255" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>予算とキャラクターが用意できるかぎり<strong>一度に可能な探検ミッションに制限はない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775424" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>リーダー能力の<strong>管理は維持費減、外交は成功可能性、軍事は探検スピード</strong>を左右する</li>
+  <li>独自の特性<strong>「探検家」を持つリーダー</strong>はよりうまくやるだろう</li>
+  <li><strong>「探検家」持ちは歴史的イベントで登場する</strong>場合もあるし、<strong>新たに募集することもできる</strong></li>
+  <li>ただし<strong>募集には大航海時代の「新世界」機関の進歩ツリー「探検家の任命」の進歩</strong>が必要</li>
+  <li>進歩には探検をスピードアップしたり、失敗しづらくしたりするものもある</li>
+  <li><strong>探検家ではない人物では完了までに数年かかる</strong>かもしれない</li>
+  <li><strong>海路の貿易風</strong>もどれだけ早く探索できるかに大きな影響を与える</li>
+  <li>他の国に<strong>スパイ網を構築している場合は地図の一部を盗む</strong>こともできる</li>
+  <li>探索ミッション完了後は<strong>同じ亜大陸に首都がある他の国にも約150年かけて広がっていく</strong></li>
+  <li>未探索の州の商品はランダムではなく固定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776817" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>発見した場所に独自な命名をするメカニズムは予定していない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776822" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>探索に必要な人的資源は開始時に「消費」され、探索後に戻ってくることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29776848" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li>ランダム新世界は二度と採用しない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775426" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+  <li><strong>日本が太平洋経由でアメリカを探索するのは難しくなる</strong>だろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/post-29775951" target="_new" rel="noopener noreferrer">(#21)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-colonization">
+<h2>植民 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer">#25</a>)</h2>
+<ul>
+  <li>植民地獲得ゲームの重要な要素の1つが<strong>戦力投射</strong></li>
+  <li>戦力投射は<strong>高い国が低い国を搾取できる</strong>ことを示すバロメータ</li>
+  <li>戦力投射は<strong>進歩の獲得度に大きく依存</strong>しており、<strong>社会的価値観や国のランク</strong>などで補正される</li>
+  <li>戦力投射は一度獲得した分が減ることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829347" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>戦力投射が高い相手の土地に植民することはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827672" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li><strong>戦力投射が相手より十分に高ければどこでも植民できる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29828622" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>ただし<strong>同じ宗教グループ</strong>の土地に植民することはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829495" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>まず一定の金額を消費して<strong>植民総督府を開くことで植民を開始</strong>できる</li>
+  <li><strong>植民総督府は州ごと</strong>に設定するが、<strong>領有化の判定は地区ごと</strong>に行われる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827810" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li><strong>同じ州に複数の国が植民することも可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827721" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>維持費もかかり、減らすと植民するPOPの数も減る</li>
+  <li><strong>対象州の人口が多く、距離が遠い</strong>ほど植民にかかる費用も高くなる</li>
+  <li>毎月、<strong>POPの一部が本土から植民地に実際に移動</strong>し、無から生じることはない</li>
+  <li>序盤は植民するPOPの数はかなり少ないが、<strong>進歩で増加</strong>し、社会的価値観や植民地までの距離も影響する</li>
+  <li>そのため人口の少ない国では巨大な植民地帝国を築くことは現実的ではないだろう</li>
+  <li>貧しいPOPの方が移住しやすい<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827679" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>差別POPのみを選抜して送る方法はない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829337" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>植民のひとつの壁として病気がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827683" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>本国から移住した人数すべてが植民地にたどり着けるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829416" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>植民者数を増やすには大航海時代の進歩により、内閣で2つのコマンドが使用可能になる<br>　「<strong>植民総督府の支援</strong>」は特定の自国領からPOPの植民を増やす<br>　「<strong>植民地国家の支援</strong>」は特定の自国領から植民地国家の州に毎月100POP移住させる</li>
+  <li>植民地を完成させるには<strong>少なくとも1,000のPOP</strong>を有し、<strong>一定割合が国教と需要文化</strong>を持っている必要がある</li>
+  <li>その割合は自国と植民先の国の戦力投射の差に大きく依存する</li>
+  <li>領有化の判定は現地POP数も計算に入る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829324" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>植民先の国が植民地化にどう反応するか、ひいてはどこに植民できるかは、また後日の開発日記を期待してほしい。元朝がもっと近ければ理論的にはヨーロッパの植民地化を開始できたかもしれない</li>
+  <li>完成した州は、十分に制御できるくらい近ければ自国領とすることもできるし、植民地国家に渡したりもできる</li>
+  <li><strong>植民地国家は併合できない従属国</strong>で、通常の従属国より貢納金が少なくなるが、代わりに<strong>人的資源や水夫、商人の一部を提供</strong>する</li>
+  <li>植民地国家は植民地化できるマップ上のどこにでも作成できる</li>
+  <li><strong>外交条約などで他の国が植民地化するのをブロックする方法</strong>がある </li>
+  <li>たとえば、ノールランド、フィンランド、カレリア、コラは、スウェーデンとノヴゴロドの権利下にある</li>
+  <li>当然「トルデシリャス条約」もあり、多くの興味深いギミックを用意している</li>
+  <li><strong>他国が請求権を持つ州に植民するには戦争が必要</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829346" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>植民地の距離判定は最寄りの自国領ではなく首都から判定される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829409" target="_new" rel="noopener noreferrer">(#25)</a></sup>予定だが最寄りからに再検討するかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29830443" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>州の文化はもっとも多いPOPの文化に塗り替わる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827663" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
+  <li>病気などで人口がゼロにまでなると空白地になる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829414" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1305,6 +1358,7 @@ div.age strong { color: #381609; }
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1697510/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#23 兵站と攻囲</em> https://forum.paradoxplaza.com/forum/developer-diary/1697510/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698427/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#24 海軍</em> https://forum.paradoxplaza.com/forum/developer-diary/1698427/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20</em> </a></li>
 -->
@@ -1323,6 +1377,8 @@ div.age strong { color: #381609; }
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#11 スカンジナビア</em> https://forum.paradoxplaza.com/forum/developer-diary/1695964/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1696699/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#12 神聖ローマ</em> https://forum.paradoxplaza.com/forum/developer-diary/1696699/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1697711/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#13 マグレブ</em> https://forum.paradoxplaza.com/forum/developer-diary/1697711/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698675/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#14 西アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1698675/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#15 東アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1700540/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
@@ -1347,6 +1403,7 @@ div.age strong { color: #381609; }
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1697850/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 3rd of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1697850/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1698737/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 10th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1698737/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1699684/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1699684/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1700555/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 24th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1700555/</a></li>
 <!--
  <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of August 2024</em> </a></li>
 -->
