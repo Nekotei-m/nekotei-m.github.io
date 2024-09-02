@@ -330,6 +330,7 @@ div.pickup strong { color: #381609; }
     <ul>
       <li><a href="#s-new"><strong>最新情報</strong></a></li>
       <li><a href="#s-playabletime">プレイ期間</a></li>
+      <li><a href="#s-playablecountry">プレイアブル国家</a></li>
       <li><a href="#s-map">Map</a></li>
       <li><a href="#s-locations">地区(Locations)</a></li>
       <li><a href="#s-pops">POP</a></li>
@@ -372,9 +373,38 @@ div.pickup strong { color: #381609; }
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer">第26回</a>は<strong>プレイアブル国家</strong>について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer">第27回</a>は<strong>外国の建物</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
+  <li>友好的な外国の町や都市に建てることができる一般的な建物の1つは<strong>貿易事務所</strong></li>
+  <li>同じランク以上の国の首都に建てることができる建物として<strong>大使館</strong>がある</li>
+  <li>一部の建物は、その地区に所有者がいない必要があるものもある</li>
+  <li>たとえば植民地に建てたい建物の1つが<strong>伝道所</strong>で、毎月100人のPOPを改宗させる</li>
+  <li>各国専用の建物もあり、<strong>ハンザ同盟にはユニークな造船所</strong>がある。従属国を含むどの港にも建設でき、水夫を増やし、その地区の造船能力も高める</li>
+  <li>銀行組織をプレイしている場合は、各地の都市に<strong>銀行事務所</strong>を置くことができる。少量の商人パワーが得られると同時に、かなりの金も得られる</li>
+  <li>カトリックの軍事組織は他のカトリック国に後援を交渉して<strong>騎士団司令部</strong>を設立できる。いくらかの金と人的資源をもたらす</li>
+
+  <li>地区の人口が足りないときに雇用が埋まる順番は法律による<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29852494" target="_new" rel="noopener noreferrer">(#27)</a></sup></li>
+  <li>商品の消費優先度は市場アクセスの高い順に決まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29853060" target="_new" rel="noopener noreferrer">(#27)</a></sup></li>
+</ul>
+</section>
+<br><!--
+
+#ProjectCaesar
+
+-->
+<section id="s-playabletime">
+<h2>プレイ期間</h2>
+<ul>
+<li><strong>1337年から約500年</strong>の予定<sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>世界征服は不可能にするのが目標だが、プレイヤーはいつも上手だ<sup><a href="https://forum.paradoxplaza.com/forum/threads/1680010/post-29638911" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-playablecountry">
+<h2>プレイアブル国家</h2>
+<ul>
   <li>プレイ可能な国家は4タイプ</li>
 </ul>
 
@@ -418,20 +448,6 @@ PeruzziやBardi、後にFuggersなど<br>
 
 <ul>
   <li>軍隊ベース国と人民ベース国は土地ベース国になるギミックがあるが、原則として国のタイプを変更する方法はない</li>
-
-  <li>自国領内の他国の建物を取り壊すには原則として戦争が必要<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/post-29839476" target="_new" rel="noopener noreferrer">(#26)</a></sup></li>
-  <li>いずれの国家もない土地でもPOPは存在し、統括する政府のない集落として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/post-29844056" target="_new" rel="noopener noreferrer">(#Map15)</a></sup></li>
-</ul>
-</section>
-<br><!--
-
-#ProjectCaesar
--->
-<section id="s-playabletime">
-<h2>プレイ期間</h2>
-<ul>
-<li><strong>1337年から約500年</strong>の予定<sup><a href="https://forum.paradoxplaza.com/forum/threads/1667364/post-29569711" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-  <li>世界征服は不可能にするのが目標だが、プレイヤーはいつも上手だ<sup><a href="https://forum.paradoxplaza.com/forum/threads/1680010/post-29638911" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -453,6 +469,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <li>森林は軍隊の移動速度を低下させ、視界を遮断（戦場の霧）する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29615763" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
 <li>サンクトペテルブルクなどはイベントで地名が変化する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29616415" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
 <li>マップをピクセル数で表現すると16384 x 8192（EU4は5632 x 1048）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675505/post-29617396" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
+  <li>いずれの国家もない土地でもPOPは存在し、統括する政府のない集落として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/post-29844056" target="_new" rel="noopener noreferrer">(#Map15)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -914,6 +931,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><strong>階級特権を付与した場合にのみ建設できる建物</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/threads/1688221/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>階級固有の建物は不要になれば破壊</strong>することはできるが、<strong>高い支配権が必要で階級の満足度も低下</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/threads/1688221/post-29698896" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>条件を満たすと削除される建物もある</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1689847/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>自国領内の他国の建物を取り壊すには原則として戦争が必要<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/post-29839476" target="_new" rel="noopener noreferrer">(#26)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1359,7 +1377,9 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698427/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#24 海軍</em> https://forum.paradoxplaza.com/forum/developer-diary/1698427/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#27 外国の建物</em> https://forum.paradoxplaza.com/forum/developer-diary/1701189/</a></li>
 <!--
+
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20</em> </a></li>
 -->
 </ol>
@@ -1379,6 +1399,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1697711/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#13 マグレブ</em> https://forum.paradoxplaza.com/forum/developer-diary/1697711/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698675/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#14 西アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1698675/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#15 東アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1700540/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701443/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#16 中央・南アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1701443/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
