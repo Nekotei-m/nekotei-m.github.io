@@ -291,6 +291,7 @@
           <div class="post-content markdown">
             <div class="main-content-wrap">
               <p>Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。</p>
+
 <style type="text/css">
 a:hover {color: #0000C0;}
 secton > ul > li::before {list-style-type: none, content: "・"}
@@ -304,8 +305,8 @@ section#s-new {
   background: linear-gradient(to bottom right, #FCFEFF, #F4F9FF);
 }
 section#s-new h2 {color: #164284;}
-section#url-list ol {list-style-type: none; font-size: 1.2rem;} 
-section#url-list ol em {font-size: 1.4rem; font-weight: bold;} 
+section#s-url ol {list-style-type: none; font-size: 1.2rem;} 
+section#s-url ol em {font-size: 1.4rem; font-weight: bold;} 
 div.pickup {
   margin: 5px;
   padding: 10px;
@@ -360,7 +361,8 @@ div.pickup strong { color: #381609; }
       <li><a href="#s-countries">各国詳細</a></li>
       <li><a href="#s-archivement">実績</a></li>
       <li><a href="#s-etc">その他</a></li>
-    <!--li><a href="#"></a>
+      <li><a href="#s-url">参考URLリスト</a></li>
+   <!--li><a href="#"></a>
       <ul>
         <li><a href="#"></a></li>
       </ul>
@@ -373,24 +375,32 @@ div.pickup strong { color: #381609; }
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer">第27回</a>は<strong>外国の建物</strong>について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer">第28回</a>は<strong>冬</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
-  <li>友好的な外国の町や都市に建てることができる一般的な建物の1つは<strong>貿易事務所</strong></li>
-  <li>同じランク以上の国の首都に建てることができる建物として<strong>大使館</strong>がある</li>
-  <li>一部の建物は、その地区に所有者がいない必要があるものもある</li>
-  <li>たとえば植民地に建てたい建物の1つが<strong>伝道所</strong>で、毎月100人のPOPを改宗させる</li>
-  <li>各国専用の建物もあり、<strong>ハンザ同盟にはユニークな造船所</strong>がある。従属国を含むどの港にも建設でき、水夫を増やし、その地区の造船能力も高める</li>
-  <li>銀行組織をプレイしている場合は、各地の都市に<strong>銀行事務所</strong>を置くことができる。少量の商人パワーが得られると同時に、かなりの金も得られる</li>
-  <li>カトリックの軍事組織は他のカトリック国に後援を交渉して<strong>騎士団司令部</strong>を設立できる。いくらかの金と人的資源をもたらす</li>
-
-  <li>地区の人口が足りないときに雇用が埋まる順番は法律による<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29852494" target="_new" rel="noopener noreferrer">(#27)</a></sup></li>
-  <li>商品の消費優先度は市場アクセスの高い順に決まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29853060" target="_new" rel="noopener noreferrer">(#27)</a></sup></li>
+  <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
+  <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
+  <li>冬の厳しさは<strong>穏やかな冬、普通の冬、厳しい冬</strong>の3段階</li>
+  <li>冬にはその影響の大きさによって<strong>兵士の損耗がおきる</strong></li>
+  <li>また<strong>寒冷地域のPOPは毛皮の需要が高くなる</strong></li>
+  <li><strong>冬になると食料の生産が大幅に減少</strong>し、穏やかな冬は25%の減少だが、厳しい冬だと0になる</li>
+  <li>通常の冬と厳しい冬は<strong>建設にまで影響</strong>を与え、建物の建設から船の建造まで<strong>すべてが止まる</strong></li>
+  <li>スウェーデンやノルウェーなどの国では、1年のうち数か月を失うこともあり、難易度が上がるだろう</li>
+  <li><strong>海峡、内海、湖は冬季に凍結する可能性</strong>がある</li>
+  <li>海軍は氷が解けるまで動けなくなり、凍結した海域に入ることもできない</li>
+  <li><strong>凍結した海域は軍隊が通過できるが、氷が解けて壊滅的な結果を招く可能性</strong>も考えておくべきだ</li>
+  <li><strong>地形が「山」の場所は、通常の冬と厳冬の間は軍隊の通過が不可能</strong>になり、戦略に影響することになる</li>
+  <li><strong>台風の影響</strong>に関する実装も検討中だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863260" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+  <li>海域の凍結は貿易や支配権の伝搬にも影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863367" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+  <li>カスピ海は制海権を表現するために海扱いとし、港で船を建造できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/post-29879246" target="_new" rel="noopener noreferrer">(Map#18)</a></sup></li>
+</sup></li>
 </ul>
 </section>
 <br><!--
 
 #ProjectCaesar
+第29回はについて
+
 
 -->
 <section id="s-playabletime">
@@ -895,6 +905,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>トレードノードには言語に関するメカニズムがある（※文化とは別に言語のパラメタがある？）<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597511" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
   <li><strong>市場アクセスは購入の優先度と量の両方に影響</strong>される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1693040/post-29742449" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>市場アクセスは川などにも影響される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1693040/post-29743617" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>商品の消費優先度は市場アクセスの高い順に決まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29853060" target="_new" rel="noopener noreferrer">(#27)</a>
   <li>お金の単位はダカットで共通だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761227" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
   <li>食料としての価値は<strong>米/10, 小麦/8, じゃがいも/8, トウモロコシ/8, 畜肉/8, 大豆/6, 雑穀/5, 豆類/5, 羊肉/5, 魚/5, デーツ/4, 果物/4, 狩猟肉/2.5</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1699684/post-29832803" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 </ul>
@@ -902,7 +913,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <hr>
 
 <section id="s-construction">
-<h2>建設 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">#9</a>)</h2>
+<h2>建設 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">#9</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer">#27</a>)</h2>
 <ul>
 <li><strong>建設に必要な産品</strong>と<strong>維持or生産に必要な産品</strong>があり、地元市場で入手可能になっている必要がある</li>
 <li><strong>建物種類は100以上</strong>あり、農村のみや街のみ、沿岸のみ、他国にのみ、無主地のみなど様々</li>
@@ -932,6 +943,15 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><strong>階級固有の建物は不要になれば破壊</strong>することはできるが、<strong>高い支配権が必要で階級の満足度も低下</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/threads/1688221/post-29698896" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>条件を満たすと削除される建物もある</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1689847/" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>自国領内の他国の建物を取り壊すには原則として戦争が必要<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/post-29839476" target="_new" rel="noopener noreferrer">(#26)</a></sup></li>
+  <li>友好的な外国の町や都市に建てることができる一般的な建物の1つは<strong>貿易事務所</strong></li>
+  <li>同じランク以上の国の首都に建てることができる建物として<strong>大使館</strong>がある</li>
+  <li>一部の建物は、その地区に所有者がいない必要があるものもある</li>
+  <li>たとえば植民地に建てたい建物の1つが<strong>伝道所</strong>で、毎月100人のPOPを改宗させる</li>
+  <li>各国専用の建物もあり、<strong>ハンザ同盟にはユニークな造船所</strong>がある。従属国を含むどの港にも建設でき、水夫を増やし、その地区の造船能力も高める</li>
+  <li>銀行組織をプレイしている場合は、各地の都市に<strong>銀行事務所</strong>を置くことができる。少量の商人パワーが得られると同時に、かなりの金も得られる</li>
+  <li>カトリックの軍事組織は他のカトリック国に後援を交渉して<strong>騎士団司令部</strong>を設立できる。いくらかの金と人的資源をもたらす</li>
+
+  <li>地区の人口が足りないときに雇用が埋まる順番は法律による<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/post-29852494" target="_new" rel="noopener noreferrer">(#27)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1347,7 +1367,8 @@ PeruzziやBardi、後にFuggersなど<br>
 </ul>
 </section>
 <hr>
-<section id="url-list">
+
+<section id="s-url">
 <h3 style="font-style: italic;">参考URLリスト</h3>
 <ol id="devdiary-list">
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#1 Project Caesar</em> https://forum.paradoxplaza.com/forum/developer-diary/1625360/</a></li>
@@ -1378,9 +1399,9 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#27 外国の建物</em> https://forum.paradoxplaza.com/forum/developer-diary/1701189/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#28</em> 冬</a>https://forum.paradoxplaza.com/forum/developer-diary/1702099/</li>
 <!--
-
-  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20</em> </a></li>
+  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#2</em> </a></li>
 -->
 </ol>
 <ol>
@@ -1400,6 +1421,8 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698675/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#14 西アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1698675/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700540/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#15 東アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1700540/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701443/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#16 中央・南アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1701443/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702377/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#17 アラビア</em> https://forum.paradoxplaza.com/forum/developer-diary/1702377/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#18 ペルシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1703150/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
@@ -1425,8 +1448,11 @@ PeruzziやBardi、後にFuggersなど<br>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1698737/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 10th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1698737/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1699684/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1699684/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1700555/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 24th of August 2024</em> https://forum.paradoxplaza.com/forum/threads/1700555/</a></li>
+ <!--li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 31th of August 2024</em> </a></li-->
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1702461/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 7th of September 2024</em> https://forum.paradoxplaza.com/forum/threads/1702461/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1703163/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 14th of September 2024</em> https://forum.paradoxplaza.com/forum/threads/1703163/</a></li>
 <!--
- <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of August 2024</em> </a></li>
+ <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of September 2024</em> </a></li>
 -->
 </ol>
 </section>
