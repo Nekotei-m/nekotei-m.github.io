@@ -334,6 +334,7 @@ div.pickup strong { color: #381609; }
       <li><a href="#s-playablecountry">プレイアブル国家</a></li>
       <li><a href="#s-map">Map</a></li>
       <li><a href="#s-locations">地区(Locations)</a></li>
+      <li><a href="#s-climates">気候/冬</a></li>
       <li><a href="#s-pops">POP</a></li>
       <li><a href="#s-religions">宗教</a></li>
       <li><a href="#s-ages">時代と制度</a></li>
@@ -375,31 +376,50 @@ div.pickup strong { color: #381609; }
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer">第28回</a>は<strong>冬</strong>について</p>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer">第29回</a>は地区の発展具合を示す<strong>「繁栄度・開発度・道路」</strong>について</p>
 <ul>
   <!--li><strong></strong></li-->
-  <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
-  <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
-  <li>冬の厳しさは<strong>穏やかな冬、普通の冬、厳しい冬</strong>の3段階</li>
-  <li>冬にはその影響の大きさによって<strong>兵士の損耗がおきる</strong></li>
-  <li>また<strong>寒冷地域のPOPは毛皮の需要が高くなる</strong></li>
-  <li><strong>冬になると食料の生産が大幅に減少</strong>し、穏やかな冬は25%の減少だが、厳しい冬だと0になる</li>
-  <li>通常の冬と厳しい冬は<strong>建設にまで影響</strong>を与え、建物の建設から船の建造まで<strong>すべてが止まる</strong></li>
-  <li>スウェーデンやノルウェーなどの国では、1年のうち数か月を失うこともあり、難易度が上がるだろう</li>
-  <li><strong>海峡、内海、湖は冬季に凍結する可能性</strong>がある</li>
-  <li>海軍は氷が解けるまで動けなくなり、凍結した海域に入ることもできない</li>
-  <li><strong>凍結した海域は軍隊が通過できるが、氷が解けて壊滅的な結果を招く可能性</strong>も考えておくべきだ</li>
-  <li><strong>地形が「山」の場所は、通常の冬と厳冬の間は軍隊の通過が不可能</strong>になり、戦略に影響することになる</li>
-  <li><strong>台風の影響</strong>に関する実装も検討中だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863260" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
-  <li>海域の凍結は貿易や支配権の伝搬にも影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863367" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
-  <li>カスピ海は制海権を表現するために海扱いとし、港で船を建造できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/post-29879246" target="_new" rel="noopener noreferrer">(Map#18)</a></sup></li>
-</sup></li>
+  <li><strong>繁栄度（Devastation）は-100％～+100％</strong>の値を取る</li>
+  <li>繁栄度の<strong>増加は時間経過でゆっくり</strong>としか進まないが、<strong>占領や港の封鎖をされると急速に減少</strong>する</li>
+  <li><strong>繁栄度が高いと開発度が増加</strong>する</li>
+  <li>逆に繁栄度がマイナスになると<strong>荒廃し、食料や産物の生産と人口が減少</strong>しはじめる</li>
+  <li>州の荒廃は占領だけではなく、<strong>敵軍の駐留や戦闘</strong>によっても起こりうる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887645" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li>ルネッサンスの時代になれば進歩により内閣に荒廃の回復をさせることもできる</li>
+  <li><strong>開発度（Development）が高いほど人口上限が上昇し、資源の活用も進む</strong></li>
+  <li>内閣に州全体の開発度を上昇させるよう命じることができるようになる</li>
+  <li>ほとんどの定住国は最初から<strong>砂利道</strong>を建設できる</li>
+  <li>後の時代の<strong>3つの進歩で新しいタイプの道路</strong>を建設できるようになる</li>
+  <li><strong>道路は近接性を改善し、軍隊の移動速度を上げ、貿易にも貢献する</strong></li>
+  <li>他国の土地でも好意的であれば道路を建設できる</li>
+  <li>道路はある地区に建設するのではなく、<strong>地区と地区の間に引かれる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887745" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li>道路の最終系は<strong>鉄道</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887856" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+
+  <li>いくつかの異なる方法で<strong>私掠船の後援のロックを解除</strong>できる</li>
+  <li>ルネッサンスの時代に外交のフォーカスを選択すると、早い段階で私掠船を後援できる</li>
+  <li>大航海時代には一部の国が私掠船を雇える独自の進歩がある</li>
+  <li>絶対主義の時代には私掠免許の進歩で、より頑丈かつ低コストの私掠船を雇える</li>
+  <li>EU4とは違い自国の艦隊を私掠船にするわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887638" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li><strong>海賊/私掠船は、そのエリアの海域のすべての非友好国の制海権を低下</strong>させる</li>
+  <li>もちろん関係は悪化し、開戦理由を与えることにもなるだろう</li>
+  <li>逆に<strong>海賊/私掠船から防衛するには、その海域に船団を置いておけば積極的に討伐に向かう</strong></li>
+  <li>ガレー船は海賊狩りでは重量船よりも向いているが、<strong>圧倒的に優れているのは軽量船</strong>だ</li>
+  <li><strong>16世紀後半には特定のエリアで海賊行為が活発化しはじめるシチュエーション</strong>が起きる</li>
+  <li>支配力が非常に低い沿岸の地区には<strong>農民が海賊の集会所</strong>を建てることもある</li>
+
+  <li>平均寿命によってキャラクターの寿命が変わってくる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29888159" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li>インドのトゥグルク朝は「デリーの没落」というシチュエーションで始まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-19-20th-of-september-2024-india.1704372/post-29891360" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
+  <li><strong>シク教はシチュエーションによって出現</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-19-20th-of-september-2024-india.1704372/post-29891499" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
 </ul>
 </section>
 <br><!--
 
 #ProjectCaesar
-第29回はについて
+開発日記第30回は
+
+
+
+
+
 
 
 -->
@@ -528,6 +548,29 @@ PeruzziやBardi、後にFuggersなど<br>
 </ul>
 </section>
 <hr>
+
+
+<section id="s-climates">
+<h2>気候/冬 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#28</a>)</h2>
+<ul>
+  <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
+  <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
+  <li>冬の厳しさは<strong>穏やかな冬、普通の冬、厳しい冬</strong>の3段階</li>
+  <li>冬にはその影響の大きさによって<strong>兵士の損耗がおきる</strong></li>
+  <li>また<strong>寒冷地域のPOPは毛皮の需要が高くなる</strong></li>
+  <li><strong>冬になると食料の生産が大幅に減少</strong>し、穏やかな冬は25%の減少だが、厳しい冬だと0になる</li>
+  <li>通常の冬と厳しい冬は<strong>建設にまで影響</strong>を与え、建物の建設から船の建造まで<strong>すべてが止まる</strong></li>
+  <li>スウェーデンやノルウェーなどの国では、1年のうち数か月を失うこともあり、難易度が上がるだろう</li>
+  <li><strong>海峡、内海、湖は冬季に凍結する可能性</strong>がある</li>
+  <li>海軍は氷が解けるまで動けなくなり、凍結した海域に入ることもできない</li>
+  <li><strong>凍結した海域は軍隊が通過できるが、氷が解けて壊滅的な結果を招く可能性</strong>も考えておくべきだ</li>
+  <li><strong>地形が「山」の場所は、通常の冬と厳冬の間は軍隊の通過が不可能</strong>になり、戦略に影響することになる</li>
+  <li><strong>台風の影響</strong>に関する実装も検討中だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863260" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+  <li>海域の凍結は貿易や支配権の伝搬にも影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863367" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+</ul>
+</section>
+<hr>
+
 
 <section id="s-pops">
 <h2>POP (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#3</a>)</h2>
@@ -1336,6 +1379,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>デンマークには現在統治する国王がいない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
   <li>サーミ、スオメヌスコ、ロムヴァ、さらにごくわずかにノース宗教も残っている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
   <li><strong>HREは皇帝、4人の世俗選帝侯、3人の大司教選帝侯、23の自由帝国都市、2の帝国農民共和国、44の司教領、および280の諸侯、合計357か国</strong>で構成されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1696699/" target="_new" rel="noopener noreferrer">(#Map12)</a></sup></li>
+  <li>カスピ海は制海権を表現するために海扱いとし、港で船を建造できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/post-29879246" target="_new" rel="noopener noreferrer">(Map#18)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1399,7 +1443,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#27 外国の建物</em> https://forum.paradoxplaza.com/forum/developer-diary/1701189/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#28</em> 冬</a>https://forum.paradoxplaza.com/forum/developer-diary/1702099/</li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#28 冬</em> https://forum.paradoxplaza.com/forum/developer-diary/1702099/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#2</em> </a></li>
 -->
@@ -1423,6 +1467,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701443/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#16 中央・南アフリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1701443/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702377/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#17 アラビア</em> https://forum.paradoxplaza.com/forum/developer-diary/1702377/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#18 ペルシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1703150/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704372/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#19 インド</em> https://forum.paradoxplaza.com/forum/developer-diary/1704372/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
@@ -1451,6 +1496,7 @@ PeruzziやBardi、後にFuggersなど<br>
  <!--li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 31th of August 2024</em> </a></li-->
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1702461/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 7th of September 2024</em> https://forum.paradoxplaza.com/forum/threads/1702461/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1703163/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 14th of September 2024</em> https://forum.paradoxplaza.com/forum/threads/1703163/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1704647/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 21st of September 2024</em> https://forum.paradoxplaza.com/forum/threads/1704647/</a></li>
 <!--
  <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of September 2024</em> </a></li>
 -->
