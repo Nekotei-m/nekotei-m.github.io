@@ -6,8 +6,15 @@
     <description>Recent content on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 01 Jul 2024 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2024 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>企業一覧（正引き・逆引き）</title>
+      <link>https://nekotei-m.github.io/vic3/company-list/</link>
+      <pubDate>Fri, 22 Nov 2024 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/company-list/</guid>
+      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。（1.8.2で確認）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>従属国について</title>
       <link>https://nekotei-m.github.io/vic3/subjects/</link>
@@ -63,13 +70,6 @@
       <pubDate>Tue, 07 Nov 2023 21:00:00 +0900</pubDate>
       <guid>https://nekotei-m.github.io/7dtd/a21-loot-block/</guid>
       <description>&lt;p&gt;各ブロックをルートしたときに入手できるアイテムの「個数の期待値」です。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>企業一覧（正引き・逆引き）</title>
-      <link>https://nekotei-m.github.io/vic3/company-list/</link>
-      <pubDate>Mon, 06 Nov 2023 21:00:00 +0900</pubDate>
-      <guid>https://nekotei-m.github.io/vic3/company-list/</guid>
-      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。（1.7.2で確認）&lt;/p&gt;</description>
     </item>
     <item>
       <title>このサイトについて</title>
