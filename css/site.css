@@ -69,6 +69,19 @@ sup {
   line-height: 1.9rem;
 }
 
+.bad {
+  color: #E03030;
+}
+
+.good {
+  color: #6060E0;
+}
+
+.term {
+  color: #933;
+}
+
+
 /* SIDEBAR */
 #sidebar .sidebar-profile .sidebar-profile-picture {
   width: 180px !important;
