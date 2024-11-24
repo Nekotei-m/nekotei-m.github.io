@@ -81,6 +81,15 @@ sup {
   color: #933;
 }
 
+.kerning {
+  letter-spacing: -1px;
+}
+
+.line-adj {
+  content: '';
+  display: block;
+  margin: -0.8rem 0;
+ }
 
 /* SIDEBAR */
 #sidebar .sidebar-profile .sidebar-profile-picture {
