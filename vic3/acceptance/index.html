@@ -16,7 +16,7 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "受容度",
+  "headline": "受容",
   
   "image": "https://nekotei-m.github.io/img/vic3/thumb_accept.png",
   
@@ -58,8 +58,8 @@
 
 <meta property="og:description" content="受容度と法の関係表です。（1.8.2で確認）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="受容度">
-<meta name="twitter:title" content="受容度">
+<meta property="og:title" content="受容">
+<meta name="twitter:title" content="受容">
 <meta property="og:url" content="https://nekotei-m.github.io/vic3/acceptance/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/vic3/acceptance/">
 <meta property="og:site_name" content="ねこメモ">
@@ -115,7 +115,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="https://nekotei-m.github.io/img/layout/icon-512x512.png">
   <link rel="manifest" href="https://nekotei-m.github.io/img/layout/manifest.json">
 
-    <title>受容度</title>
+    <title>受容</title>
 
     <link rel="icon" href="https://nekotei-m.github.io/img/layout/favicon.png">
     
@@ -264,7 +264,7 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      受容度
+      受容
     </h1>
   
   
@@ -323,13 +323,14 @@ table#religion td {
 
 </style>
 
-<p><strong class="term">受容度</strong>は<del>法でのみ変化するようです。</del> 主に法によって決まり、その文化の母国州には+10、新しくできた文化的コミュニティの文化には-30（毎月0.25ずつ10年で減衰）の補正がつきます。<span class="note">※ご指摘いただきました。ありがとうございます！</span></p>
+<p><strong class="term">受容度</strong>は<del>法でのみ変化するようです。</del> 主に法によって決まり、その文化の<strong>母国州には+10</strong>、<strong>新しくできた文化的コミュニティの文化には-30 (?)</strong>（毎月0.25ずつ10年で減衰）の補正がつきます。<span class="note">※ご指摘いただきました。ありがとうございます！</span>
+<span class="note">※正確には新文化的コミュニティのペナルティは最大受容の30%となっていますが、どれに対する最大需要なのか不明確です（少なくとも主要文化や新しくコミュニティができた文化に対するものではなさそう）。</span></p>
 
 <p>補正を抜きにすると例えば、<strong class="term">人種隔離</strong>と<strong class="term">国教</strong>の法を採用している国家で、<strong>主要文化(+100)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大75</strong>までしか受容度が上がらずに二流市民に留まり、<strong class="term">多文化主義</strong>と<strong class="term">完全分離</strong>の法を採用している国家では<strong>完全異文化(+75)</strong>で<strong>異教(+15)</strong>のPOPでも<strong>最大90</strong>まで受容度が上がります。</p>
 
 <p><strong class="term">同化</strong>は<strong class="term">文化的抹消</strong>以上であれば行われますが、 <strong class="term">国民至上</strong>と<strong class="term">国教</strong>の法を採用していると、<strong>共通の文化系統のみ(+40)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大15</strong>までしか受容度が上がらず、<strong class="term">暴力的な敵対</strong>に留まり同化されません。</p>
 
-<p><strong class="term">改宗</strong>も受容度でのみ可否が判定されますので、以前とは異なり完全分離でも<strong class="term">文化的抹消</strong><strong>以上であれば行われます</strong>。逆に<strong class="term">暴力的な敵対</strong><strong>では改宗が行われない</strong>ため、直前の例のような共通の文化系統のみ(+40)で異教(-25)のPOPは改宗すれば同化もできますが、<strong>受容度が足りないため改宗も同化も進まない</strong>ことになります。<br>（ただしそのPOPがいるのが母国州であれば+10の補正により受容度は25となりますので、文化系統が共通していれば同化改宗可能な範囲は意外に広いです）</p>
+<p><strong class="term">改宗</strong>も受容度でのみ可否が判定されますので、以前とは異なり完全分離でも<strong class="term">文化的抹消</strong><strong>以上であれば行われます</strong>。逆に<strong class="term">暴力的な敵対</strong><strong>では改宗が行われない</strong>ため、直前の例のような共通の文化系統のみ(+40)で異教(-25)のPOPは改宗すれば同化もできますが、<strong>受容度が足りないため改宗も同化も進まない</strong>ことになります。<br>（ただしそのPOPがいるのが母国州であれば+10の補正により受容度は25となりますので、改宗可能な範囲に関しては意外に広いです。※同化は母国州では不可）</p>
 
 <br>
 <h3 id="citizenship">市民権</h3>
@@ -371,7 +372,8 @@ table#religion td {
   <tr><td>体制派の増加<span class="good">+20%</span></td><td>体制派の増加<span class="good">+10%</span></td><td></td><td></td><td></td></tr>
   <tr class="line-break"><td>急進派の増加<span class="good">-10%</span></td><td></td><td></td><td></td><td></td></tr>
 
-  <tr><th rowspan="4">全受容<br>(80～100)</th><td>政治力<span class="good">+25%</span></td><td>政治力<span class="good">+20%</span></td><td>政治力<span class="good">+10%</span></td><td>政治力<span class="good">+10%</span></td><td></td></tr>
+  <tr><th rowspan="5">全受容<br>(80～100)</th><td>同化<span class="bad">不可</span></td><td>同化<span class="bad">不可</span></td><td>同化<span class="bad">不可</span></td><td>同化<span class="bad">不可</span></td><td>同化<span class="bad">不可</span></td></tr>
+  <tr><td>政治力<span class="good">+25%</span></td><td>政治力<span class="good">+20%</span></td><td>政治力<span class="good">+10%</span></td><td>政治力<span class="good">+10%</span></td><td></td></tr>
   <tr><td>賃金<span class="good">+25%</span></td><td>賃金<span class="good">+20%</span></td><td>賃金<span class="good">+15%</span></td><td>賃金<span class="good">+5%</span></td><td></td></tr>
   <tr><td>体制派の増加<span class="good">+33%</span></td><td>体制派の増加<span class="good">+20%</span></td><td></td><td></td><td></td></tr>
   <tr class="line-break"><td>急進派の増加<span class="good">-20%</span></td><td>急進派の増加<span class="good">-10%</span></td><td></td><td></td><td></td></tr>
