@@ -577,7 +577,7 @@ https://forum.paradoxplaza.com/forum/developer-diary/1709991/
 
 ■ライバル
 ・近隣の国のうち、自国と同等以上のランクであるか、文化グループが同じ国から選ばれる
-・十分な数のライバルを選択肢ないと、攻撃的拡大が増加し安くなり、スパイ網も弱くなる
+・十分な数のライバルを選択肢しないと、侵略的拡大が増加し安くなり、スパイ網も弱くなる
 ・スパイ網が構築されていればライバルにはいつでもCBを捏造できる
 ・ライバルはいつでも変更できるが、代わりに安定性を25損なう
 ・ライバルを共有する国はお互いに高い評価を得る
@@ -844,8 +844,59 @@ https://forum.paradoxplaza.com/forum/threads/1716232/
 次回はこれまでの内容から変更があったものを取り上げる
 
 
+#ProjectCaesar
+開発日記 第39回は列強と覇権の再設計について
+https://forum.paradoxplaza.com/forum/developer-diary/1717971/
 
+■国家ランク
+・単なる外交行動のロック解除ではなくフレーバーと内部メカニズムに関するものに変更する
 
+■列強
+・列強という風格を維持するためにはそれなりの金銭的コストがかかるだろう
+・列強同士は-25のネガティブオピニオンがつく
+・列強内の順位により獲得するボーナスは増減する
+・列強の数は流動的になり、最小数と最大数は世界の国の総数によって決まる
+
+■覇権
+・進歩によるロック解除ではなく、大航海時代が始まると自動的に選抜が始まる
+・各分野で最も影響力の大きい列強が覇権国としてみなされる
+・覇権国の地位を奪うには20％以上強力でなければならない
+・複数の分野の覇権を保持できるようになった
+・保持している覇権ごとに、すべての国からの評価が-20され、侵略的拡大が20%増加する
+・また宮廷費用の増加と毎月の威信も向上する
+・各覇権ごとに外交と内閣に1つずつ特殊コマンドが解禁される
+・戦争に負けても覇権を失うことはなくなり、保持する期間が長いほどボーナスが強力になるシステムは削除した
+
+■経済的覇権
+・貿易と税金からの収入が最も多い列強が選ばれる
+・ユニットの食糧消費量が少なくなる
+・「貿易の強制転向」- 独自市場を持っていない非列強のすべての市場で商人の能力と権力の一部を強制的に放棄させる
+
+■海軍覇権
+・最も多くの大型船を保有する列強が選ばれる。
+・海軍ダメージ10%減少
+・「強制禁輸」- 禁輸された市場で取引できなくなり、地区もその市場に属さなくなる
+・「海軍の焦点」- 指定地域内のすべての港の効率が向上する
+
+■軍事覇権
+・最大の軍隊を持つ列強が選ばれる
+・戦争スコアコスト10%削減
+・「主権侵害」- 非列強に軍事および食料のアクセスを強制することができる
+・「兵士を労働力に」- 指定地域内の建設速度が速くなる
+
+■文化的覇権
+・最も文化的な影響力を持つ列強が選ばれる
+・文化伝統の成長率+25%。
+・「宮廷言語の変更強制」- 非列強の宮廷言語を自国と同一にし、文化的影響力を高める
+・「地域の同化」- 一度に地域全体のポップを同化できる（通常は州単位）
+
+外交覇権
+・最も外交的評判の高い列強が選ばれる
+・関係改善の影響+30%
+・「国家への影響」- 非列強からの信頼と評価を高めることができる
+・「外交団」- 外交能力を劇的に高め、毎月より多くの外交官を獲得することができる
+
+来週は政府改革について
 
 -->
 <section id="s-playabletime">
@@ -1879,6 +1930,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#36 文化と言語</em> https://forum.paradoxplaza.com/forum/developer-diary/1713610/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#37 文化と芸術</em> https://forum.paradoxplaza.com/forum/developer-diary/1714711/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#38 社会的価値観</em> https://forum.paradoxplaza.com/forum/threads/1716232/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#39 列強と覇権の再設計</em> https://forum.paradoxplaza.com/forum/developer-diary/1717971/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#32</em> </a></li>
 -->
@@ -1911,6 +1963,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href=">https://forum.paradoxplaza.com/forum/developer-diary/1710914/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#24 日本・朝鮮</em> >https://forum.paradoxplaza.com/forum/developer-diary/1710914/</a></li>
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#25 東南アジア</em> https://forum.paradoxplaza.com/forum/developer-diary/1712922/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714312/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#26 インドネシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1714312/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1716884/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#27 オセアニア</em> https://forum.paradoxplaza.com/forum/developer-diary/1716884/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->

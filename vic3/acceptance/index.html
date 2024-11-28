@@ -323,8 +323,7 @@ table#religion td {
 
 </style>
 
-<p><strong class="term">受容度</strong>は<del>法でのみ変化するようです。</del> 主に法によって決まり、その文化の<strong>母国州には+10</strong>、<strong>新しくできた文化的コミュニティの文化には-30 (?)</strong>（毎月0.25ずつ10年で減衰）の補正がつきます。<span class="note">※ご指摘いただきました。ありがとうございます！</span>
-<span class="note">※正確には新文化的コミュニティのペナルティは最大受容の30%となっていますが、どれに対する最大需要なのか不明確です（少なくとも主要文化や新しくコミュニティができた文化に対するものではなさそう）。</span></p>
+<p><strong class="term">受容度</strong>は<del>法でのみ変化するようです。</del> 主に法によって決まり、その文化の<strong>母国州には+10</strong>、<strong>その国に新しくできた文化的コミュニティの文化には-30</strong>（毎月0.25ずつ10年で減衰）の補正がつきます。また受容度に影響する法律変更時にも、これまでの受容度と変更後の受容度の差が文化コミュニティの減衰ペナルティとして表示されます。<span class="note">※ご指摘いただきました。ありがとうございます！</span>
 
 <p>補正を抜きにすると例えば、<strong class="term">人種隔離</strong>と<strong class="term">国教</strong>の法を採用している国家で、<strong>主要文化(+100)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大75</strong>までしか受容度が上がらずに二流市民に留まり、<strong class="term">多文化主義</strong>と<strong class="term">完全分離</strong>の法を採用している国家では<strong>完全異文化(+75)</strong>で<strong>異教(+15)</strong>のPOPでも<strong>最大90</strong>まで受容度が上がります。</p>
 
@@ -396,9 +395,18 @@ table#religion td {
   <tr class="line-break"><th>全受容<br>(80～100)</th><td colspan="4">改宗可</td></tr>
   <tr><th rowspan="2">その他</th><td>国教のPOPの<br>賃金<span class="good">+10%</span></td><td>国教のPOPの<br>賃金<span class="good">+5%</span></td><td></td><td>改宗<span class="good">+25%</span></td></tr>
   <tr><td>非国教POPの<br>賃金<span class="bad">-10%</span></td><td>非国教POPの<br>賃金<span class="bad">-5%</span></td><td></td><td></td></tr>
-
-
 </table>
+
+<!--
+受容1
+受容2 *0.1
+受容3 *0.3
+受容4 *0.5
+受容5 *0.7
+コミュニティがすでに5以上 *0.5
+コミュニティがすでに10以上 *0.2
+コミュニティがすでに15以上 *0.1
+-->
 
 
 <hr>
