@@ -696,11 +696,19 @@ https://forum.paradoxplaza.com/forum/developer-diary/1712624/
 ・他の国は覇権国に対していつでも開戦事由を持つ
 ・覇権国が戦争に負けると覇権を失い、名声と外交上の評判も損なわれるだろう
 
-来週は新しい文化システムについて
+日本は列強として始まる(#35)
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974095
+神聖ローマ帝国は統一された国ではないため列強ではない(#35)
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974266
+国ランクは一度昇格したら下がることはない(#35)
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974286
+エチオピアは帝国ランクでスタートする(#35)
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974370
+
 
 
 #ProjectCaesar
-開発日記 第36回は文化と言語について。今回はJohan氏ではなくDave氏が担当するようです
+開発日記 第36回は文化と言語について
 https://forum.paradoxplaza.com/forum/developer-diary/1713610/
 
 ■文化
@@ -743,7 +751,17 @@ https://forum.paradoxplaza.com/forum/developer-diary/1713610/
 ・宮廷言語は選択肢の幅が広く、階級の満足度に影響する
 ・貴族はより強力な言語を望み、農民は共通言語を願っている。都市民は市場言語と同じであれば満足し、聖職者は典礼言語であるべきだと考えている
 
-来週はより深い文化の新ギミックについて
+方言を実装したのはキャラクターネームなどを区別し、没入感を阻害しないようにするため
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989593
+スコットランド語が英語の方言となっているのはある程度の共通性はあり、なにより別個の言語にするとゲーム的なデメリットが大きくなるため
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989556
+キャラクターの名前は文化だけでなく宗教の影響もうける
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989838
+州のコア化ができるのは一次文化と受容文化の州のみ
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989905
+一次文化は常にひとつのみ
+https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29993559
+
 
 #ProjectCaesar
 Maps第25回は東南アジア
@@ -897,6 +915,51 @@ https://forum.paradoxplaza.com/forum/developer-diary/1717971/
 ・「外交団」- 外交能力を劇的に高め、毎月より多くの外交官を獲得することができる
 
 来週は政府改革について
+
+
+
+#ProjectCaesar
+Maps第28回は北米です
+https://forum.paradoxplaza.com/forum/developer-diary/1718498/
+広がる大地にポツンと定住国が。カホキアとプエブロの小国だけがかろうじて国家と呼べる体裁を持っているようです。一方POPベースの部族は大量に存在し、大地を埋め尽くしています
+
+やはりEU4から年代を遡ったこともあり、この時代の正確な情報がなく苦労してるとか。またPOPベースの部族は発売当初は十分なプレイアビリティを提供できないだろうということで、現地部族でのプレイは難しいかもしれません。プレイヤーがこの地に関わるのはやはり旧大陸の植民国家としてでしょう
+
+そういえば海流の表現は、この太平洋を横切る帯の四角ひとつひとつが海のLocationとして扱われるのでしょうか
+
+ちなみに第27回はオセアニアでした
+https://forum.paradoxplaza.com/forum/developer-diary/1716884/
+
+
+#ProjectCaesar
+開発日記 第40回は政府改革について
+https://forum.paradoxplaza.com/forum/developer-diary/1719416/
+
+■政府改革とは
+・ゲーム開始時には2つの政府改革が使用可能
+・各時代に少なくとも1つある進歩で、改革のスロットが1つ増加する
+・特定の改革の中にスロットが1つ追加されるものもある
+・ゲーム終盤には平均7～8つの改革を使用可能なはずだ
+・一般的な政府改革の中には時代要件があるものもある
+・いくつかは主要な改革とされ、同時に複数の主要な改革を有効にすることはできない
+・各時代ごとに5つ前後の一般的な改革と、さらに政府の種類ごとに2つ追加される
+・独自の改革は豊富にあり、150種類以上ある
+・政府改革を削除するには安定性を20犠牲にする
+・ただし一部の改革は自由に削除できず、ロック解除可能な状況にする必要がある
+・追加にコストはかからないが、効果が完全に発揮されるまで最大で2年かかる
+
+■一般的な政府改革
+宗教的寛容：異教に寛容になるが、共同体主義よりになっていく
+外交の伝統：外交能力を向上し、協調主義的よりになっていく
+軍事組織：カトリックの神権国家専用で、聖職者からの徴兵が増加し、好戦的で攻撃主義よりになっていく
+
+■ユニークな政府改革
+家族のサガ：アイスランド文化専用で、冒険家を雇用可能にし、海軍主義よりになっていく
+三省制度：中国語または韓国語を宮廷言語とする国専用で、行政改革を容易に
+マグナ・カルタ：イングランド文化専用で、貴族の権限を強化し、自由民化や個人主義を促進する
+
+来週は各国の評議会について
+
 
 -->
 <section id="s-playabletime">
@@ -1931,8 +1994,9 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#37 文化と芸術</em> https://forum.paradoxplaza.com/forum/developer-diary/1714711/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#38 社会的価値観</em> https://forum.paradoxplaza.com/forum/threads/1716232/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#39 列強と覇権の再設計</em> https://forum.paradoxplaza.com/forum/developer-diary/1717971/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1719416/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#40 政府改革</em> https://forum.paradoxplaza.com/forum/developer-diary/1719416/</a></li>
 <!--
-  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#32</em> </a></li>
+  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#4</em> </a></li>
 -->
 
 </ol>
@@ -1964,6 +2028,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#25 東南アジア</em> https://forum.paradoxplaza.com/forum/developer-diary/1712922/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714312/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#26 インドネシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1714312/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1716884/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#27 オセアニア</em> https://forum.paradoxplaza.com/forum/developer-diary/1716884/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1718498/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#28 北アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1718498/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
