@@ -43,7 +43,7 @@
     }
     
   },
-  "description": "従属国についての解説です。（1.7.1で確認）\n",
+  "description": "従属国についての解説です。（1.8.6で確認）\n",
   "keywords": []
 }
 
@@ -53,18 +53,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="ねこてー">
 <meta name="keywords" content="">
-<meta name="description" content="従属国についての解説です。（1.7.1で確認）">
+<meta name="description" content="従属国についての解説です。（1.8.6で確認）">
 
 
-<meta property="og:description" content="従属国についての解説です。（1.7.1で確認）">
+<meta property="og:description" content="従属国についての解説です。（1.8.6で確認）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="従属国について">
 <meta name="twitter:title" content="従属国について">
 <meta property="og:url" content="https://nekotei-m.github.io/vic3/subjects/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/vic3/subjects/">
 <meta property="og:site_name" content="ねこメモ">
-<meta property="og:description" content="従属国についての解説です。（1.7.1で確認）">
-<meta name="twitter:description" content="従属国についての解説です。（1.7.1で確認）">
+<meta property="og:description" content="従属国についての解説です。（1.8.6で確認）">
+<meta name="twitter:description" content="従属国についての解説です。（1.8.6で確認）">
 <meta property="og:locale" content="ja">
 
   
@@ -191,7 +191,7 @@
             <strong>Victoria3</strong>
           </a></li>
           <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.8）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
@@ -291,7 +291,7 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>従属国についての解説です。（1.7.1で確認）</p>
+              <p>従属国についての解説です。（1.8.6で確認）</p>
 
 <style>
 ul { margin-bottom: 0;}
@@ -300,12 +300,43 @@ p strong.term { color: #933; }
 table td span.plus { font-weight: bold; color: #CC4500; }
 table td span.minus { font-weight: bold; color: #483D8B; }
 
+table#subject-type { text-align: center;}
+table#subject-type tr.hr td { border-bottom: dotted 1px #909ba2 }
+table#subject-type td { width: 10rem;}
+table#subject-type td:first-child { width: auto;}
+
 table.change td:first-child { width: 1.8rem; }
 table.change td span { white-space: nowrap; }
 table.change tr:nth-child(6) td:first-child { line-height: 1.3em;}
 
 table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 </style>
+<h3>従属国のタイプ</h3>
+<table id="subject-type">
+<tr><th>タイプ</th><th>外交権</th><th>参戦義務</th><th>貢納額</th><th>輸送船貢献</th></tr>
+<tr><td>朝貢国</td><td>有</td><td></td><td>20%</td><td>25%</td></tr>
+<tr class="hr"><td>属国</td><td></td><td>有</td><td>30%</td><td>50%</td></tr>
+<tr><td>保護国</td><td>有</td><td></td><td>0%</td><td>25%</td></tr>
+<tr><td>傀儡国</td><td></td><td>有</td><td>30%</td><td>50%</td></tr>
+<tr class="hr"><td>同君連合</td><td></td><td>有</td><td>0%</td><td>50%</td></tr>
+<tr><td>自治領</td><td>有</td><td>有</td><td>25%</td><td>50%</td></tr>
+<tr><td>植民地</td><td></td><td>有</td><td>30%</td><td>50%</td></tr>
+<tr><td>勅許会社</td><td>有</td><td>有</td><td>30%</td><td>50%</td></tr>
+</table>
+<hr>
+
+<h3>従属国の関係図</h3>
+<p>
+朝貢国←━→属国<br>
+保護国←┳→傀儡国<br>
+　　 同君連合<br>
+※同君連合からは一方通行です<br>
+自治領←┳→植民地<br>
+勅許会社┛<br>
+※植民地から勅許会社に戻ることはできません<br>
+</p>
+<hr>
+
 <h3>自由への願望</h3>
 <p>自由への願望とは、宗主国に対してどれほど忠実かをあらわします。
 低ければ宗主国との一体化すら望むようになりますし、高ければ独立のための行動を起こすでしょう。</p>
@@ -314,9 +345,9 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <h3>願望レベル</h3>
 <table>
 <tr><th>値</th><th>レベル</th><th>宗主国側</th><th>従属国側</th></tr>
-<tr><td>0～25未満</td><td>低</td><td>自治権の縮小/併合可</td><td>差別と生活水準減少に端を発する急進派-25%</td></tr>
-<tr><td>25以上～75未満</td><td>中</td><td colspan="2">なし</td></tr>
-<tr><td>75以上～100</td><td>高</td><td>自治権の拡大可</td><td>差別と生活水準減少に端を発する急進派+25%</td></tr>
+<tr><td>0～25未満</td><td>低</td><td>自治権の縮小/併合可</td><td>政治運動に端を発する体制派+25%<br>差別レベル1~3に対する急進派-10%</td></tr>
+<tr><td>25以上～75未満</td><td>中</td><td>なし</td><td>自治権の拡大要求可</td></tr>
+<tr><td>75以上～100</td><td>高</td><td>自治権の拡大可</td><td>自治権の拡大/独立要求可<br>政治運動に端を発する急進派+25%<br>差別レベル1~3に対する急進派+10%</td></tr>
 </table>
 <hr>
 
@@ -332,8 +363,8 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <tr><td>関係値</td>
 <td>親しい（80）<br>
 友好的（50）<br>
-親愛（25）<br>
-不信（-25）<br>
+親愛（20）<br>
+不信（-20）<br>
 冷淡（-50）<br>
 敵対的（-80）</td>
 <td><span class="minus">-0.10<br>
@@ -359,14 +390,14 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 2倍を超える相対威信（自治領/同君連合）<br>
 3倍を超える相対威信（傀儡/属国）</span></td>
 <td><span class="minus">-0.05</span> ～ <span class="plus">+2.50</span>（威信差 大～小）</td></tr>
-<tr><td colspan="2"><span>宗主国への経済的依存度（3 ～ 0）</span></td>
+<tr><td colspan="2"><span>宗主国への経済的依存度（5 ～ 0）</span></td>
 <td><span class="minus">-0.20</span> ～ <span class="plus">+0.33</span></td></tr>
 <tr><td colspan="2"><span>圧力団体の影響力（政府内IGなら2倍）</span></td>
 <td><span class="minus">-0.25</span> ～ <span class="plus">+0.25</span>（<span class="minus">-0.50</span> ～ <span class="plus">+0.50</span>）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td colspan="2">市場アクセスの喪失（100% ～ 0％）</td>
 <td>0 ～ <span class="plus">+1.0</span></td></tr>
 <tr><td colspan="2">他の従属国の併合</td>
-<td><span class="plus">+0.2</span>（5年）※ただし併合を拒否され、戦争に至ったときのみ</td></tr>
+<td><span class="plus">+0.2</span>（5年）※1.8から拒否受諾問わず付くようになりました</td></tr>
 <tr><td colspan="2">貢納の増額</td>
 <td><span class="plus">+25%（増加時）</span><br>
 <span class="minus">-25%（減少時）</span></td></tr>
@@ -380,17 +411,18 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 <table class="diplo-overload">
 <tr><th>項目</th><th>効果</th></tr>
 
-<tr><td>従属国の支払いを増額</td><td>
-（自由願望75未満で可能）<br>
+<tr><td>従属国の支払いを増額<br>（影響力25）</td><td>
+（自由願望75未満で従属国が破産していないときのみ可能）<br>
 100日ごとに外交関係 -1<br>
-貢納金 +100%<br>
-週ごとの自由願望 <span class="plus">+25%（増加時）</span>または <span class="minus">-25%（減少時）</span></td></tr>
+貢納金 追加で収入の+10%<br>
+週ごとの自由願望 <span class="plus">+0.1</td></tr>
 
 <tr><td>従属国の支払いを減額する</td><td>
-貢納金 -50%<br>
-週ごとの自由願望 <span class="minus">-33%（増加時のみ）</span></td></tr>
+貢納金 収入の-10%<br>
+週ごとの自由願望 <span class="minus">-0.5</span></td></tr>
 <tr><td>兵役の免除</td><td>
 外交戦に参加させない<br>
+※戦線もできなくなるので注意<br>
 週ごとの自由願望 <span class="minus">-0.05</span></td></tr>
 <tr><td>総督の指名</td><td>
 総督の指名イベント発生<br>
@@ -439,9 +471,9 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 現在戦争中の場合に強制参戦させる<br>
 自由願望 <span class="plus">+20</span></td></tr>
 <tr><td>併合（外交要求）</td><td>
-併合を要求し、戦争になるとすべての従属国に自由願望 <span class="plus">+25</span><br>
+他のすべての従属国に自由願望 <span class="plus">+1～+25</span>（威信比による）<br>
 さらに週ごとの自由願望 <span class="plus">+0.2（5年）</span><br>
-※併合を受諾されれば発生しない
+※1.8から拒否受諾問わず付くようになりました
 </table>
 <hr>
 
@@ -477,6 +509,8 @@ table.diplo-overload td:first-child { font-weight: bold; white-space: nowrap; }
 
 <ul class="reference">
 <li>\Victoria 3\game\common\defines\00_defines.txt</li>
+<li>\Victoria 3\game\common\diplomatic_actions\32~43_*.txt</li>
+<li>\Victoria 3\game\common\diplomatic_plays\00_diplomatic_plays.txt</li>
 <li>\Victoria 3\game\common\script_values\00_diplomacy_values.txt</li>
 </ul>
 <hr>

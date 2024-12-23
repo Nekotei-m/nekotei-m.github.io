@@ -191,7 +191,7 @@
             <strong>Victoria3</strong>
           </a></li>
           <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.8）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
@@ -962,6 +962,102 @@ https://forum.paradoxplaza.com/forum/developer-diary/1719416/
 来週は各国の評議会について
 
 
+#ProjectCaesar
+開発日記 第41回は議会についてその2
+https://forum.paradoxplaza.com/forum/threads/1720391/
+
+・アラゴンでは「Corts」、スウェーデンでは「Riksdag」など国によって議会の呼び名は異なり、現在35個の議会名がある
+
+■議会の種類
+・5つの種類があり、国によってその種類は異なるが、途中で変更することができる
+◎集会（Assembly）: 最初から利用可能。貴族と農民がわずかに議題を提案可能
+◎評議会（Council）: 成文化された法律の進歩が必要。貴族と聖職者がわずかに議題を提案可能
+◎身分制議会（Estate Parliament）: 封建制の進歩が必要。貴族、聖職者、市民が議題を提案可能
+◎独裁議会（Autocratic Parliament）: 絶対主義の時代への進歩が必要。国王の権力を強化し、低コストで議題を強制可決できる
+◎憲法議会（Constitutional Parliament）:絶対主義の時代への進歩が必要。全階級が強い影響力を持って議題を提案可能
+・農民に議会で発言権を与えたい場合は特権を与えることで可能になる
+
+■議会の開催
+・最短5年ごとに招集可能で、逆に10年間招集しないと階級の満足度はどんどん低下する
+・議会をどこで開催するかを選択できる
+・首都で開催すると中央集権化が少し促進される
+・首都以外の場所を選択すると分散化が促進されるが、その地区は議会の期間中（約半年間）素晴らしいボーナスを得る
+・通常は町や都市が選択可能だが、村落で議会を開催できる国もある
+
+■議題の選択
+・各階級につき最大2つの選択肢がある
+・議論の進行中は多くの場合、有益なボーナスが付く
+・現在70を超える通常の議題と、12の国固有の議題がある
+・議題の支持が50%以下の場合、安定性の低下などのペナルティが発生。50%以上で議題が成功し、議題によって異なる利益が国にもたらされる
+・議題には法律の変更、社会的価値観の変更、特権付与なども含まる
+
+■議会の支持
+・支持は国王の権力や選択した議題に依存
+・王権からの基本支持は通常かなり低い
+・議題ごとに異なる潜在的な支持もある
+・また基本支持を増やす政府改革や進歩もある
+・各階級が推進したい議題を認めれば議会の支持が増える
+・支持の増加量は各階級が持つ権力に満足度を掛けたものに基づくため、満足度を高めておく意義がある
+
+■特別な要求
+・議会に特別な要求をすることもできるが、支持率が50%減少する
+・たとえば追加税の徴収、徴兵の増加、法律変更、開戦事由の獲得などだ
+
+■議会用建物
+・議会中に都市民が要求できる「都市議会」は都市民に重要な権限が与えられる
+・不満を持った貴族が田舎に建設する腐敗した自治区は貴族の権力を増大させる
+
+来週は災厄について
+
+
+
+#ProjectCaesar
+Maps第29回は中央アメリカです
+https://forum.paradoxplaza.com/forum/developer-diary/1720739/
+
+中米といえば皆さん御存じプルヘペチェリオ帝国！　…あれ？
+よく見るとテスココ湖の上の島、テノチティトランに新しくできた小さなナワ族の集落がありますね。こんな小さな部族が巨大な帝国を築くことなど決してないでしょう、ね？
+
+一方ユカタン半島には後古典期のマヤであるCocomが見えます。南米との接続点であるダリエン峡谷は通行不能なため、歩いて南米に進出することはできません
+
+黒曜石の剣を表現するため、宝石を入力として武器を生産する生産方法があるようです
+
+
+#ProjectCaesar
+開発日記 第42回は災厄について
+https://forum.paradoxplaza.com/forum/developer-diary/1721548/
+
+■災厄
+・災厄は原則としてバッドイベンドであり、特定の国に対して起こる
+・シチュエーションは複数のシチュエーションと複数の国が関わることがあるが、災厄は1つの国に1つのみ起こる
+・災厄には2種類があり、特定の歴史的な出来事に基づくものと、条件次第でどの国でも発生し得る一般的な災厄がある
+・災厄はただのデバフや条件達成までバッドイベントが起こるだけではなく、積極的に対応するアクションもある
+
+■一般的な災厄
+・宮廷と国家（Court and Country）
+　王権が強い国で中央集権化への反発が危機を引き起こす。危機を乗り越えることで国家はより強化されるだろう。階級から特権を取り上げつつも、満足度を高く保つ必要がある
+・宗教的混乱（Religious Turmoil）
+　宗教的統一度が低く、聖職者階級が弱い国で発生し、宗教内戦の危機が高まる。宗教統一度を高め、聖職者の力を強化する、または人文主義的政策を採用して安定を回復することが解決に導くだろう
+
+■特定の国に関連する災厄
+・サヴォナローラの台頭（The Rise of Savonarola）
+　15世紀後半のカトリック共和国であるフィレンツェに発生し得る。この問題の解決は神権国家になるか、サヴォナローラの死がもたらすだろう
+・バラ戦争（War of the Roses）
+　15世紀のイングランドで、ランカスター家とヨーク家が王位を争う内戦。どちらかの家を支持し、内戦を勝ち抜く必要がある
+
+・来週はクリスマス。何かプレゼントがあるかもしれない
+
+来週は大きな発表がありそうですね
+
+#ProjectCaesar
+Maps第30回は南アメリカ。
+https://forum.paradoxplaza.com/forum/developer-diary/1721947/
+
+こちらも広大な土地が植民者を待っており、1プロビ程度のかろうじて国家と言える小国と点在する部族（SoP）のみです。のちにインカ帝国を気づくQusquも今はまだ数多ある小国の一つにすぎません
+
+それにしてもこの時代のこの地に、これだけの言語設定がなされているということに改めて驚きを禁じ得ないですね…
+
+Map紹介としてはこれがラスト。ただし12/27と1/3にMaps Extraを予定しているとのこと。さらに1/10からはTinto Flavorが始まるとか。何が出てくるか楽しみですね
 -->
 <section id="s-playabletime">
 <h2>プレイ期間</h2>
@@ -1946,7 +2042,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <li>オプションとして台帳を制限する設定を予定している<sup><a href="https://forum.paradoxplaza.com/forum/threads/1659155/post-29542829" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 <li><strong>一時停止、一時停止解除、一時停止切り替え</strong>の3つのホットキーを設定できる<sup><a href="https://forum.paradoxplaza.com/forum/threads/1625651/post-29529615" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
 <li><strong>通知の個別設定は可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1638374/post-29481033" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-<li>必須環境は<strong>メインメモリ32GB以上</strong>になるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580876" target="_new" rel="noopener noreferrer">*</a></sup></li>
+<li>必須環境は<strong>メインメモリ32GB以上</strong>になるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580876" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>適切に並列化できるようにゼロから設計されたシステムにより、現在のパフォーマンスは良好だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597837" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
 </ul>
 </section>
@@ -1996,6 +2092,8 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#38 社会的価値観</em> https://forum.paradoxplaza.com/forum/threads/1716232/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#39 列強と覇権の再設計</em> https://forum.paradoxplaza.com/forum/developer-diary/1717971/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1719416/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#40 政府改革</em> https://forum.paradoxplaza.com/forum/developer-diary/1719416/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1720391/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#41 評議会その2</em> https://forum.paradoxplaza.com/forum/threads/1720391/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#42 災厄</em> https://forum.paradoxplaza.com/forum/developer-diary/1721548/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#4</em> </a></li>
 -->
@@ -2030,6 +2128,8 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714312/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#26 インドネシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1714312/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1716884/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#27 オセアニア</em> https://forum.paradoxplaza.com/forum/developer-diary/1716884/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1718498/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#28 北アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1718498/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1720739/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#29 中央アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1720739/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721947/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#30 南アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1721947/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
