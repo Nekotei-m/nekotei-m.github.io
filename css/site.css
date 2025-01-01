@@ -59,8 +59,26 @@ dl, ol, ul {
   padding-inline-start: 0;/*2.3rem;*/
 }
 
+ol.no-style, ul.no-style {
+  list-style-type: none;
+  margin: 0;
+}
+
+ol.no-style>li, ul.no-style>li {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 0.5rem;
+}
+
 sup {
   line-height: 0;
+}
+
+.del {
+  text-decoration: line-through;
 }
 
 .note {
@@ -242,6 +260,7 @@ div.toc {
   background-image: linear-gradient( 145deg, #f3f2ed 7.1%, #f0efe8 67.4% );
   font-family: sans-serif;
   text-indent: 20px;
+  line-height: 2.5rem;
 }
 
 div.toc:after,
@@ -294,6 +313,14 @@ div.toc ul ul a:before {
 
 div.toc ul ul li:last-child a:before {
   content: "└";
+}
+
+div.toc ul ul ul a:before {
+  content: "│├";
+}
+
+div.toc ul ul ul li:last-child a:before {
+  content: "│└";
 }
 
 ul.reference {

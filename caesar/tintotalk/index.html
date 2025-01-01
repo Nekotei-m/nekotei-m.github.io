@@ -43,7 +43,7 @@
     }
     
   },
-  "description": "Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。\n",
+  "description": "Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。\n",
   "keywords": []
 }
 
@@ -53,18 +53,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="ねこてー">
 <meta name="keywords" content="">
-<meta name="description" content="Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。">
+<meta name="description" content="Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。">
 
 
-<meta property="og:description" content="Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。">
+<meta property="og:description" content="Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="プロジェクトカエサル（要約）">
 <meta name="twitter:title" content="プロジェクトカエサル（要約）">
 <meta property="og:url" content="https://nekotei-m.github.io/caesar/tintotalk/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/caesar/tintotalk/">
 <meta property="og:site_name" content="ねこメモ">
-<meta property="og:description" content="Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。">
-<meta name="twitter:description" content="Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。">
+<meta property="og:description" content="Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。">
+<meta name="twitter:description" content="Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。">
 <meta property="og:locale" content="ja">
 
   
@@ -291,13 +291,15 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>Paradox Interactive社のProject Caesarに関する開発日記を抜粋したものです。</p>
+              <p>Paradox Interactive社のProject Caesarに関する開発日記(Tinto Talks)を要約したものです。</p>
 
 <style type="text/css">
 a:hover {color: #0000C0;}
 secton > ul > li::before {list-style-type: none, content: "・"}
 h2 a, h2 a:visited {font-size:smaller; font-weight: normal; color: #601010;}
 h2 a:hover {color: darkblue;}
+h3 { font-size: 1.8rem !important;}
+
 section#s-new {
   padding: 10px 20px;
   border-radius: 15px;
@@ -308,6 +310,7 @@ section#s-new {
 section#s-new h2 {color: #164284;}
 section#s-url ol {list-style-type: none; font-size: 1.2rem;} 
 section#s-url ol em {font-size: 1.4rem; font-weight: bold;} 
+
 div.pickup {
   margin: 5px;
   padding: 10px;
@@ -322,6 +325,7 @@ div.pickup h4 {
 }
 div.pickup ul { margin-bottom: 0.5em;}
 div.pickup strong { color: #381609; }
+
 .post .post-content div.pickup p { margin: 0 0.5rem !important; text-indent: 0.5rem; }
 </style>
 
@@ -336,31 +340,51 @@ div.pickup strong { color: #381609; }
       <li><a href="#s-map">Map</a></li>
       <li><a href="#s-locations">地区(Locations)</a></li>
       <li><a href="#s-climates">気候/冬</a></li>
-      <li><a href="#s-pops">POP</a></li>
-      <li><a href="#s-religions">宗教</a></li>
       <li><a href="#s-ages">時代と制度</a></li>
-      <li><a href="#s-goverments">政府</a></li>
-      <li><a href="#s-laws">法律</a></li>
-      <li><a href="#s-cabinet">評議会(Cabinet)</a></li>
-      <li><a href="#s-estates">階級(Estates)</a></li>
-      <li><a href="#s-character">キャラクター</a></li>
-      <li><a href="#s-economy">経済</a></li>
-      <li><a href="#s-market">市場</a></li>
-      <li><a href="#s-construction">建設</a></li>
-      <li><a href="#s-warfare">戦争</a></li>
-      <li><a href="#s-units">軍隊</a></li>
-      <li><a href="#s-logistics">兵站</a></li>
-      <li><a href="#s-battle">戦闘</a></li>
-      <li><a href="#s-siege">攻城戦</a></li>
-      <li><a href="#s-navys">海軍</a></li>
-      <li><a href="#s-exploration">探検</a></li>
-      <li><a href="#s-colonization">植民</a></li>
-      <li><a href="#s-io">国際組織</a></li>
-      <li><a href="#s-diplomacy">外交</a></li>
       <li><a href="#s-tecnology">進歩(Advances)</a></li>
       <li><a href="#s-situation">シチュエーション</a></li>
       <li><a href="#s-dhe">動的歴史イベント</a></li>
-      <li><a href="#s-countries">各国詳細</a></li>
+      <li><a href="#s-goverments">政府</a><ul>
+        <li><a href="#s-gov-reforms">政府改革</a></li>
+        <li><a href="#s-societal-values">社会的価値観</a></li>
+        <li><a href="#s-laws">法律</a></li>
+        <li><a href="#s-parliaments">議会(Parliaments)</a></li>
+        <li><a href="#s-cabinet">評議員(Cabinet)</a></li>
+        <li><a href="#s-character">キャラクター</a></li>
+        <li><a href="#s-estates">階級(Estates)</a></li>
+        <li><a href="#s-pops">POP</a></li>
+        <li><a href="#s-slaves">奴隷制度</a></li>
+        <li><a href="#s-rebels">反乱</a></li>
+        <li><a href="#s-disasters">災厄(Disasters)</a></li>
+      </ul></li>
+      <li><a href="#s-cultures">文化</a><ul>
+        <li><a href="#s-languages">言語</a></li>
+        <li><a href="#s-arts">芸術作品</a></li>
+      </ul></li>
+      <li><a href="#s-religions">宗教</a></li>
+      <li><a href="#s-economy">経済</a><ul>
+        <li><a href="#s-market">市場</a></li>
+        <li><a href="#s-construction">建設</a></li>
+        <li><a href="#s-privateer">私掠船</a></li>
+      </ul></li>
+      <li><a href="#s-diplomacy">外交</a><ul>
+        <li><a href="#s-io">国際組織</a></li>
+        <li><a href="#s-greatpower">国家ランク/列強</a></li>
+        <li><a href="#s-hegemony">覇権</a></li>
+      </ul></li>
+      <li><a href="#s-warfare">戦争</a><ul>
+        <li><a href="#s-units">軍隊</a></li>
+        <li><a href="#s-logistics">兵站</a></li>
+        <li><a href="#s-battle">戦闘</a></li>
+        <li><a href="#s-siege">攻城戦</a></li>
+        <li><a href="#s-navys">海軍</a></li>
+      </ul></li>
+      <li><a href="#s-exploration">探検</a><ul>
+        <li><a href="#s-colonization">植民</a></li>
+      </ul></li>
+      <li><a href="#s-countries">各国詳細</a><ul>
+        <li><a href="#s-japan">日本</a></li>
+      </ul></li>
       <li><a href="#s-archivement">実績</a></li>
       <li><a href="#s-etc">その他</a></li>
       <li><a href="#s-url">参考URLリスト</a></li>
@@ -377,688 +401,66 @@ div.pickup strong { color: #381609; }
 
 <section id="s-new">
 <h2>最新情報</h2>
-<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer">第29回</a>は地区の発展具合を示す<strong>「繁栄度・開発度・道路」</strong>について</p>
-<ul>
+<p><a href="https://forum.paradoxplaza.com/forum/developer-diary/1723027/" target="_new" rel="noopener noreferrer">第43回</a>クリスマスにちなんで（？）ノルウェーのプレイレポ</p>
   <!--li><strong></strong></li-->
-  <li><strong>繁栄度（Devastation）は-100％～+100％</strong>の値を取る</li>
-  <li>繁栄度の<strong>増加は時間経過でゆっくり</strong>としか進まないが、<strong>占領や港の封鎖をされると急速に減少</strong>する</li>
-  <li><strong>繁栄度が高いと開発度が増加</strong>する</li>
-  <li>逆に繁栄度がマイナスになると<strong>荒廃し、食料や産物の生産と人口が減少</strong>しはじめる</li>
-  <li>州の荒廃は占領だけではなく、<strong>敵軍の駐留や戦闘</strong>によっても起こりうる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887645" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
-  <li>ルネッサンスの時代になれば進歩により内閣に荒廃の回復をさせることもできる</li>
-  <li><strong>開発度（Development）が高いほど人口上限が上昇し、資源の活用も進む</strong></li>
-  <li>内閣に州全体の開発度を上昇させるよう命じることができるようになる</li>
-  <li>ほとんどの定住国は最初から<strong>砂利道</strong>を建設できる</li>
-  <li>後の時代の<strong>3つの進歩で新しいタイプの道路</strong>を建設できるようになる</li>
-  <li><strong>道路は近接性を改善し、軍隊の移動速度を上げ、貿易にも貢献する</strong></li>
-  <li>他国の土地でも好意的であれば道路を建設できる</li>
-  <li>道路はある地区に建設するのではなく、<strong>地区と地区の間に引かれる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887745" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
-  <li>道路の最終系は<strong>鉄道</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887856" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+<p>ゲーム開始時、ノルウェーはスウェーデンとの同君連合にあります。悩みはとにかく人口が少ないこと。さらに黒死病の魔の手がひそかに忍び寄っていることを忘れてはいけません</p>
 
-  <li>いくつかの異なる方法で<strong>私掠船の後援のロックを解除</strong>できる</li>
-  <li>ルネッサンスの時代に外交のフォーカスを選択すると、早い段階で私掠船を後援できる</li>
-  <li>大航海時代には一部の国が私掠船を雇える独自の進歩がある</li>
-  <li>絶対主義の時代には私掠免許の進歩で、より頑丈かつ低コストの私掠船を雇える</li>
-  <li>EU4とは違い自国の艦隊を私掠船にするわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29887638" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
-  <li><strong>海賊/私掠船は、そのエリアの海域のすべての非友好国の制海権を低下</strong>させる</li>
-  <li>もちろん関係は悪化し、開戦理由を与えることにもなるだろう</li>
-  <li>逆に<strong>海賊/私掠船から防衛するには、その海域に船団を置いておけば積極的に討伐に向かう</strong></li>
-  <li>ガレー船は海賊狩りでは重量船よりも向いているが、<strong>圧倒的に優れているのは軽量船</strong>だ</li>
-  <li><strong>16世紀後半には特定のエリアで海賊行為が活発化しはじめるシチュエーション</strong>が起きる</li>
-  <li>支配力が非常に低い沿岸の地区には<strong>農民が海賊の集会所</strong>を建てることもある</li>
+<p>ノルウェーはリューベック市場の一員であり、独自の市場はありません。メリットとしては豊富な商品の入手がありますが、一方で市場アクセスがわるい州が出てくるデメリットもあります</p>
 
-  <li>平均寿命によってキャラクターの寿命が変わってくる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-29-18th-of-september-2024.1704098/post-29888159" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
-  <li>インドのトゥグルク朝は「デリーの没落」というシチュエーションで始まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-19-20th-of-september-2024-india.1704372/post-29891360" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
-  <li><strong>シク教はシチュエーションによって出現</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-19-20th-of-september-2024-india.1704372/post-29891499" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
-</ul>
+<p>需要の不足で目に付くのは銀、ビール、ワインです。そこでコングスベルグの鉱山を拡張して、需要の充足と増収の両取りをしましょう。都市民に特権を与えれば生産性を高めることもできます<p>
+<p>ビールなどは貿易で賄うか、AIが醸造所を建設してくれることを期待しましょう。その後は海岸沿いのすべての町に埠頭を建設し、貿易容量の向上させます。幸い建設に必要な木材や石材は豊富にあります<p>
+
+<p>そして評議員で王の正統性を高めることも重要です。</p>
+<p>長期的計画としては、さらなる経済発展のためにオスロからニダロスまでの道路建設が目標です。果たして迫りくる黒死病を乗り越えて、繁栄へと導くことができるでしょうか</p>
+
+<p>来年は貿易品について</p>
+</section>
+<hr>
+
+
+
+
+
 </section>
 <br><!--
-
-#ProjectCaesar
-開発日記第30回は領土の征服について
-
-■開戦事由
-・CBがない状態で戦争を始めると、侵略的拡大(AE)が増加し、安定性も失われる
-・EU4のようにどこでも使える「請求権の捏造」はない。代わりに3つの方法がある
-1)イベントからCBを取得する
-2)議会を招集して戦争の正当な理由を考え出すように求める
-　高い王権を持っていない限り、支持を得るために階級と交渉する必要がある
-3)何らかの理由があればCBを作成できる
-　対象国にスパイネットワークを持っている必要があり、加えて「コアがある」「相手が私掠船を使用している」「ライバルの屈辱」、特別なものとして「花の戦争」「タタールのくびきの解消」など50種類ほどの事由が設定されている
-・No CBも悪い選択肢ではないかもしれない
-
-■戦争目標
-・開戦理由により異なる戦争目標が設定される
-・戦争目標は和平時の征服コストに影響する
-・州の征服ではその州全体を占領する必要があり、海軍優勢では敵を封鎖して海軍を倒すことでボーナススコアが得られる
-・戦争スコアは戦争目標の達成は最大25、戦闘は最大50。占領と封鎖には上限がなく100を超えることもある
-・これまでのように常に全面戦争にならないことを目標にしている。戦争目標を達成し、重要な戦いに勝利するか、いくつかの土地を占領すれば、妥当な和平を得られるはずだ
-
-■統合
-・未統合、統合済み、統合済み中核州、植民地の4つの統合状態がある
-・征服した直後は分離主義が高く、支配力が低く、POPが改宗したり同化したりする可能性は低い
-・分離主義は主要文化に属していないポップの満足度の低下につながり、その州の生産的が低下する
-・統合されると、分離主義は以前のレベルの5分の1に低下し、支配力の最大値が高くなる
-・中核になると、支配力の最小値が高くなり、主要文化がより成長する
-・植民地化された場所は最大支配力が低い
-・統合または植民地化された地区のPOPの半数が主要文化なれば自動的にコアになる
-・統合にはEU4のように君主点の消費ではなく、評議会のメンバーの1人を使って統合する必要がある
-・評議会以外の統合方法はなく(#30)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-30-25th-september-2024.1705317/post-29900287
-、統合の一時停止はできる(#30)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-30-25th-september-2024.1705317/post-29900348
-・ゲーム開始時には統合は州ごとになるが、絶対主義の時代には地域単位で統合できる進歩がある
-・統合にかかる期間は人口など多くの要因に影響されるが、平均して25年から50年かかるようになっている
-
-・国境を細く伸ばすような征服の仕方は支配権の観点から得策ではないだろう(#30)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-30-25th-september-2024.1705317/post-29900246
-・統合を早めたり遅らせたりする進歩や補正はある(#30)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-30-25th-september-2024.1705317/post-29900530
-
-
-#ProjectCaesar
-開発日記 第31回は和平条約について
-https://forum.paradoxplaza.com/forum/developer-diary/1706918/
-
-■和平交渉
-・和平交渉は相手側指導国と行う
-・または戦争指導国は相手国と個別に和平交渉を行うことができる
-・州の征服の戦争目標で宣戦布告した場合、戦争目標を達成しない限りは他の土地を獲得することはできない
-・さらに地区の譲渡にはその地区の州都も占領している必要がある
-
-■和平スコア
-・合計で最大100の和平スコアの範囲で交渉する
-・地区、州ごと、または地域ごとの譲渡
-・他には私掠船の停止、金の譲渡、要塞の解体、屈辱、その他多数の項目がある
-・必要なスコアは、戦争目標の一部かどうか、人口、条約の種類など多くの要因によって異なる
-
-■侵略的拡大 (Agressive Expansion)
-・州の征服はAEを増大させ、近隣国のオピニオンに影響する
-・AEが高いと対抗連合を結成する可能性が高まる
-・対抗連合は国際組織として表現される
-
-■戦意 (War Enthusiasm)
-・戦意が高い間はAIが不利な和平を受け入れる可能性は低い
-・戦争疲弊、首都の占領、軍事バランスが大きな要因となる
-
-■戦争貢献度 (War Participation)
-・同盟国の戦争貢献度は戦闘、封鎖、包囲などで判定される
-・攻撃側で戦争目標を約束して参戦させた場合、実際の和平条約にそれが含まれていなければ同盟国は怒るだろう
-
-EU4の好意と同様のシステムで同盟国を呼べる(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914108
-AEは社会的価値観の変化、外交評判の低下、文化的影響力の減少、スパイ網構築の困難さなどを引き起こす(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914158
-CBの有効期間は基本5年(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914167
-戦争目標と異なる和平に一定の制限をかけるのはプレイヤーの悪用を防ぐため(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914172
-和平は強制するかされるかで、Vic3のようにお互い条件を出し合うことはできない(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914266
-休戦期間は和平コストにより変化する(#31)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-31-2nd-of-october-2024.1706918/post-29914483
-
-
-
-#ProjectCaesar
-開発日記 第32回は反乱について
-https://forum.paradoxplaza.com/forum/developer-diary/1708363/
-
-■反乱の種類
-・反乱派閥は5つのタイプがある
-1) 分離主義者：独立を目指す
-2) 僭称者内乱：統治者を挿げ替える
-3) 奴隷反乱：解放を望む
-4) 宗教反乱：独立するか国教の変更を迫る
-5) 階級の蜂起：社会の変革を求める
-
-■満足度と反乱
-・POPは満足度が低くなると反乱派閥に加わる
-・たとえば平民の領地の満足度は通常+25%が最大限で、それ以上上げるには税金を減らしたり、特権を与えたりする必要がある
-・征服地では-50%のペナルティがあるため、速やかに統合して-10%まで減らしたいところだが、それには約25年ほどかかるので反乱を押さえられないかもしれない
-・城を建設すれば満足度を10%増やすことができる
-・軍隊を駐留させるのも良い方法だ
-・あるいは他国の市場アクセス拒否したりして必要な商品を市場内で満たすのも役に立つかもしれない
-・絶対主義の時代には「民衆平定」の評議会アクションを使用することもできる
-・また安定した国では反乱軍が参加するために必要な閾値が高くなる
-
-■反乱の進行
-・進行値が100%に達すると反乱が起きる
-・占領地では通常23年ほどで到達するので統合完了より前に反乱が起きる可能性が高い
-・反乱には「独立反乱」または「内乱」の2種類がある
-・「独立反乱」は勃発時に別の国を形成し、通常の戦争と同じように戦闘や占領を行って和平する必要がある
-・再併合では侵略的拡大(AE)は増加しない
-・「内乱」は僭称者または一部の宗教反乱で、こちらは通常の戦争とは異り、占領後即所有者が変わるので和平を必要としない
-
-■反乱後
-・内戦に負けてもゲームオーバーにはならない
-・代わりに勝利した側として続行することができる
-・ただし異なる統治者、または異なる宗教、あるいは新しい政府タイプや法律、特権などに変わっているだろう
-
-主要な文化や宗教を変えるためのゲームルールはオプションで選択可能(#32)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-32-9th-of-october-2024.1708363/post-29928597
-州が統合中の場合、進捗が即座に失われることはないが、取り戻すまではマイナスになる(#32)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-32-9th-of-october-2024.1708363/post-29928605
-ゲーム後半には通常と異なる反乱が起きる可能性がある(#32)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-32-9th-of-october-2024.1708363/post-29928607
-内戦が長く続いたとしても、分裂したまま現状維持で終わることはできない(#32)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-32-9th-of-october-2024.1708363/post-29928620
-複数の反乱が共同して蜂起することもある(#32)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-32-9th-of-october-2024.1708363/post-29928796
-
-
-
-
-#ProjectCaesar
-開発日記 第33回は外交について
-https://forum.paradoxplaza.com/forum/developer-diary/1709991/
-
-・外交のUIは2種類。国を選択してから使用できる外交コマンドが表示されるか、外交コマンドを選択してから受諾しそうな国を表示させるか
-・外交に必要な外交団は毎月少しずつ補充され、また国ランク等により最大値もある。外交コマンドによっては毎月”消費”されることもある
-・同盟や属国維持に使用する外交官はその国の規模によっても変わってくる
-
-■オピニオン・信頼・好意
-・国同士のオピニオンはA→BとB→Aでは異なる
-・信頼が高い国は誠実に扱われる。信頼は得にくく失いやすい
-・好意はどの程度借りがあるかを表す。同盟国を助けたり、外交官でお互いに好意を与え合うこともできる
-・好意を使用して頼まれたことを拒否すると、信頼や外交評判を失うだろう
-
-■外交評判
-・ 外交評判は進歩や威信により高まり、AEにより低下する
-・ 外交評判は外交の受諾値に大きく影響するだろう
-
-■外交範囲
-・外交可能な範囲は進歩と国のランクにより拡大する
-・範囲は首都同士の距離により判定される
-
-■スパイ
-・スパイ網の構築を開始するには外交官を使用し、毎月いくらかの外交官を消費する
-・スパイ網を拡大することで包囲戦で有利になったり、AEを押さえることができる
-
-■ライバル
-・近隣の国のうち、自国と同等以上のランクであるか、文化グループが同じ国から選ばれる
-・十分な数のライバルを選択肢しないと、侵略的拡大が増加し安くなり、スパイ網も弱くなる
-・スパイ網が構築されていればライバルにはいつでもCBを捏造できる
-・ライバルはいつでも変更できるが、代わりに安定性を25損なう
-・ライバルを共有する国はお互いに高い評価を得る
-
-■外交コマンドの一部
-・軍隊の食糧アクセス
-・防衛同盟
-・独立保証
-・統治者の変更
-・地図の共有
-・戦争への介入 - 帝国は友好的な国に対し防衛側として参加できる
-・同盟国破棄 - 好意を消費して相手の同盟を破棄させる
-・侮辱を送る -評価は下がり、あなたに対して開戦理由を得る
-・脅迫 - 州に対するCBがある場合、譲渡するよう脅迫できる
-
-■スパイ活動コマンドの一部
-・役人を腐敗させる - 評議会の効率を低下させる
-・政権への潜入 - 戦場の霧をしばらく除去する
-・地図を盗む
-・反乱軍の支援
-
-■経済アクションの一部
-・国外建設の禁止 - 自国内への建設をブロックする
-・禁輸 - 対象の国の市場との取引を禁止する
-・借金の申請
-
-■アクセス アクション
-・軍事アクセス - 他国の領土に侵入できる。対価を払って依頼することも可能になった
-・食料アクセス - 他国の領土で補給できる
-・艦隊基地権 - 他国の港に駐留させることができる
-
-スパイ網は包囲戦の効率を少し上げる
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-33-16th-of-october-2024.1709991/post-29943163
-必要な外交団を超過すると威信の低下、従属国の不忠、外交評判の悪化などを引き起こす
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-33-16th-of-october-2024.1709991/post-29943293
-支出スライダーで外交団を増やすことができる
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-33-16th-of-october-2024.1709991/post-29943462
-
-
-地区名は郡のような地域の名前でなく、集落の名前を基準にするようにしている
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-23-18th-of-october-2024-china.1709509/post-29950393
-
-
-
-#ProjectCaesar
-開発日記 第34回は奴隷制について
-https://forum.paradoxplaza.com/forum/developer-diary/1711421/
-
-■奴隷POP
-・奴隷は移住禁止で人口は維持するのがやっとで、収入も政治力もない
-・もし何らかの理由で識字率があがったら社会不安を起こすのに十分な理由がある
-・ゲーム開始時点でヨーロッパにはほどんどいないが、他ではよく見かけるだろう
-
-■奴隷の用途
-・主に原材料（RGO）の収集を行う
-・人的や水夫を提供する奴隷兵の建物もある（イェニチェリ兵舎もその一つ）
-・プランテーションは通常の農地より効率的だが奴隷が必須だ
-・宗教によっては神にささげるために奴隷を必要とするかもしれない
-
-■奴隷の獲得方法
-・奴隷は奴隷市場で売買される
-・征服時に住民の一部を奴隷化できる（文化による）
-・私掠船を使って奴隷を捕まえることもできる
-・奴隷市場を建てると異教徒や異文化民を少しずつ奴隷化する
-・パワープロジェクションが低い相手に奴隷市場を建て、奴隷を集めることも可能だ
-・奴隷を必要とする建物は奴隷市場から奴隷を取引する
-・これらにより新大陸との三角貿易も上手く表現可能なはずだ
-
-相手国で奴隷となっている自文化民を取り戻す和平条約を追加する予定だ
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-34-23rd-of-october-2024.1711421/post-29958406
-奴隷兵士だからといって何かのペナルティがあるわけではない
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-34-23rd-of-october-2024.1711421/post-29958642
-奴隷市場での取引は200人で1単位で行われる
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-34-23rd-of-october-2024.1711421/post-29958688
-
-
-
-・琉球は北山、中山、南山の3つに分かれている(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・日本の州割は律令国に基づくがいくつかは統合されており、それでも1400地区ほどある(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・日本の文化は東国、西国、東北、九州に加え、アイヌ、琉球の6つがある(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・日本の宗教は神道であるが、古来神道でも明治以降の国家神道でもなく仏教神道として扱われる。またアイヌ宗教や琉球には御嶽（ウタキ）宗教もある(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・各守護大名は土地を持たない建物ベースの国家として扱われており、国際組織として表現される北朝または南朝の下にある(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・現時点で南北皇統、足利氏の他に143の守護大名が存在している(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-・各大名は戦国時代が始まると土地を持つ通常の国家へ移行する(Map#24)
-https://forum.paradoxplaza.com/forum/developer-diary/1710914/
-
-
-
-#ProjectCaesar
-開発日記 第35回は国ランクについて
-https://forum.paradoxplaza.com/forum/developer-diary/1712624/
-
-■国ランク
-・4つのランクがあり、順に伯・公国・王国・帝国
-・公国ランクになると独立保証が可能になり、外交能力と戦力投射にボーナスがつく
-・公国に昇格するには主要文化の人口が少なくとも10万必要
-・王国ランクには主要文化の人口が100万必要で、外交範囲の拡大などさらにボーナスが増える
-・帝国ランクは主要文化の人口が500万以上で尚且つ列強である必要がある。より多様な外交行動が可能になるが、カトリック諸国が教皇の許可なく皇帝を名乗ることには制限がある
-
-■列強
-・列強とは、進歩・人口・領土・開発度などで列強スコア上位の独立国が選ばれる
-・現在、常に上位8か国が指定されるが、時代などで変化するようにするかもしれない
-
-■覇権
-・大航海時代を進めることで覇権システムが解禁される
-・軍事、海軍、経済の3種類の覇権の中から1つを選んで宣言する
-・4種類目として文化の覇権を追加するかもしれない
-・覇権の宣言には、自身が大国であり、他のすべての大国よりも大きな陸軍、海軍、経済力が必要
-・宣言後ボーナスが得られ、覇権を保持していた期間に応じて増加する
-・他の国は覇権国に対していつでも開戦事由を持つ
-・覇権国が戦争に負けると覇権を失い、名声と外交上の評判も損なわれるだろう
-
-日本は列強として始まる(#35)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974095
-神聖ローマ帝国は統一された国ではないため列強ではない(#35)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974266
-国ランクは一度昇格したら下がることはない(#35)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974286
-エチオピアは帝国ランクでスタートする(#35)
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-35-30th-of-october.1712624/post-29974370
-
-
-
-#ProjectCaesar
-開発日記 第36回は文化と言語について
-https://forum.paradoxplaza.com/forum/developer-diary/1713610/
-
-■文化
-・「文化グループ」と「言語」の組み合わせで構成される
-・文化グループとはお互いに共通のアイデンティティを持つ文化
-・同じ文化グループは小さなオピニオンボーナスを与え、文化の受容コストを大幅に低減する
-・ある文化が複数の異なる文化グループに属することがあるし、まったく孤立した文化もある
-
-■文化的オピニオン
-・ほとんどの場合はお互いを中立と見なすが、特定の文化に好意や敵意を持つ文化もある
-・「敵対」「否定」「中立」「好意」「同族」の5段階で表現される
-・外交アクションで増減させることは可能
-
-■文化キャパシティ
-・文化キャパシティとは受容可能な文化の最大量
-・各時代の進捗や政府の改革、政策などで増やすことができる
-・相対的な規模、オピニオン、文化グループ、言語により必要な文化キャパシティに補正がある
-
-■文化の受容
-・「非受容」…主要文化以外のほとんどはこの分類になる
-・「寛容」…POPの満足度が少し上がる
-・「受容」…人的資源などが多く得られるようになり、州の中核化が可能かにも影響する。受容POPは奴隷になれない
-・条件により主要文化を受容文化の中から変更することもできる
-
-■言語
-・「言語ファミリー」「言語」「方言」の3層の設定がある
-・共通した言語ファミリーには小さなオピニオンボーナスがあり、文化の受容や市場の魅力などのコストをわずかに低減する
-・世界で使用される言語のパーセンテージにより、その言語から得られるボーナスの強さに影響がある
-・方言は単にフレーバーのためだけのものでゲームプレイには影響しない
-
-■言語の種類
-・「共通言語」「典礼言語」「市場言語」「宮廷言語」の4つがある
-・共通言語は主要文化で決定される
-・典礼言語とは聖職者が儀式や聖典で使用したり、さらには学者が使用する言語
-・言語勢力の強い典礼言語を採用すると研究速度にボーナスがある
-・市場言語は商人同士が使用する共通語
-・市場力が高いほど、そこで使用される市場言語の言語勢力は高まる
-・言語を共有する市場に対して市場選択時により高い魅力を持つ
-・宮廷言語は政府の正式な手続きで使用される言語
-・宮廷言語は選択肢の幅が広く、階級の満足度に影響する
-・貴族はより強力な言語を望み、農民は共通言語を願っている。都市民は市場言語と同じであれば満足し、聖職者は典礼言語であるべきだと考えている
-
-方言を実装したのはキャラクターネームなどを区別し、没入感を阻害しないようにするため
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989593
-スコットランド語が英語の方言となっているのはある程度の共通性はあり、なにより別個の言語にするとゲーム的なデメリットが大きくなるため
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989556
-キャラクターの名前は文化だけでなく宗教の影響もうける
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989838
-州のコア化ができるのは一次文化と受容文化の州のみ
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29989905
-一次文化は常にひとつのみ
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-36-6th-of-november.1713610/post-29993559
-
-
-
-
-#ProjectCaesar
-開発日記 第37回は芸術と文化について。
-https://forum.paradoxplaza.com/forum/developer-diary/1714711/
-
-■文化的影響
-・他の文化に対してどれほど影響力があるかを表す
-・威信や文化的建造物に応じて毎月増加し、芸術作品によっても増加する
-
-■文化的伝統
-・文化の伝統に人々がどれだけ強く共鳴しているかを表す
-・一部の建物に応じて毎月変化し、芸術作品や貴族の平均識字率も大きな影響がある
-
-■文化戦争
-・「文化的影響」が攻撃力として、「文化的伝統」が防御力として機能する
-・プラスの場合はボーナスが得られるが、マイナスの場合はペナルティを受ける
-・優勢な文化は外交アクションを受け入れさせやすくし、スパイネットワークの構築もはるかに速くなる
-・また征服後に領土をより早く統合し、人々をより早く同化させ、包囲効率にも少し影響がある
-
-■文化投資
-・ルネッサンス時代の最も重要な進歩の1つ「芸術のパトロン」で文化に投資できるようになる
-・毎月の文化投資に応じて、威信を増加させ、芸術家が作る芸術作品の質を向上する
-
-■芸術家
-・文化に投資している国に登場し、新しい芸術作品を生み出す
-・文化投資により、時間の経過でスキルが向上するほか、直接資金を出して芸術作品を依頼することもでる
-・建物や進歩が芸術家のスキルの下限と上限に影響を与える
-・自国の芸術家が少ない場合、裕福でない国から芸術家を引き抜くことができる
-・引き抜いた芸術家が作成する芸術作品は自国のものとなるが、芸術家の元居た国の文化の影響が増加することに注意しなくてはならない
-・芸術家のタイプは以下のとおり
-　-画家
-　-彫刻家
-　-作曲家
-　-作詞家
-　-建築家
-　-哲学者
-　-法学者
-　-科学者
-　-イコノグラファー（特定の宗教のみ）
-　-金属細工師（冶金学を持っている場合）
-
-■芸術作品
-・芸術作品により、その国の文化の文化的影響力が高まる
-・地区が占領されると芸術作品が略奪されたり破壊されたりする可能性がある
-・国に芸術作品があると威信や伝統が増すなど、作品ごとにさまざまな効果がある
-
-■威信
-・0から100で表され、基本的に0へと減少していく
-・文化のメカニズムと大きく結びついており、外交と貿易に影響を及ぼす
-
-芸術作品のほとんどは作られた場所から自由には動かせない
-https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-37-13th-of-november-2024.1714711/post-30004809
-
-
-#ProjectCaesar
-開発日記 第38回は社会的価値観について
-https://forum.paradoxplaza.com/forum/threads/1716232/
-
-・社会的価値観は各項目が -100 ～ +100で表される国の特性
-・階級の特権、政府改革、または法律の影響を受けてゆっくり変化する
-・評議会を使って社会的価値観を別の方向に動かすこともできる
-・共通の社会的価値観が13個あり、絶対主義の時代に1つ追加される
-・また中国とその周辺の国に固有の価値観が1つある
-◎中央集権 vs 分権 - 中央集権は王権が強化され、分権は統治を容易にする
-◎伝統主義 vs 革新主義 - 伝統主義は安定性や伝統を重視し、革新主義は識字率向上や制度の採用を早める
-◎宗教主義 vs 人文主義 - 宗教主義は改宗を早め、人文主義は異端や異教に寛容で同化を早める
-◎貴族政治 vs 富豪政治 - 貴族政治は外交力を強化し、富豪政治は貿易効率を向上させる
-◎農奴制 vs 自由民 - 農奴制は税収増加、自由民は繁栄やポップの昇進を促進
-◎好戦的 vs 協調的 - 好戦的は外交評判を犠牲に戦争を容易にし、協調的は外交評判や属国の忠誠心が向上する
-◎軍質 vs 軍量 - 軍質は士気や戦術にボーナスがあり、軍量はコストを抑制できる
-◎攻勢 vs 守勢 - 攻勢は敵国への侵攻を好み、守勢は砦を重視する
-◎陸軍 vs 海軍 - 陸軍重視は陸上貿易や資源産出の向上、海軍重視は海上貿易や海洋影響力を向上させる。軍に関係させなかったのはそうすると99%の人が陸軍を選ぶからだ
-◎資本主義 vs 伝統的経済 - 資本主義は貿易や建築、生産効率を重視し、伝統的経済は食料や原材料生産に特化
-◎個人主義 vs 共同体主義 - 個人主義は軍の士気や移民速度を向上させ、共同体主義は反乱の閾値を下げる
-◎重商主義 vs 自由貿易 - 重商主義は国内市場を保護し、自由貿易は世界貿易から利益を得る
-◎外向性 vs 内向性 - 外向的な国は外交や植民地移民に優れ、内向的な国は文化的伝統や王権を強化
-◎絶対主義 vs 自由主義（絶対主義の時代に解禁）- 絶対主義は王権を強化や統合速度を上げ、自由主義は反乱を抑えたり議会の効率を向上させる
-
-
 国家の分類(#Map27)
 https://forum.paradoxplaza.com/forum/developer-diary/1716884/
 定住国（国家社会）
-州を通じて組織され、公権力を保持することを意味します。
-暴力の独占
-税金徴収
-土木
-筆記/記録保存システム
+  州を通じて組織され、公権力を保持することを意味します。
+  暴力の独占
+  税金徴収
+  土木
+  筆記/記録保存システム
 ポップスの社会（国家のない社会）
-国家は正確には存在しないが、次のような複雑な組織的特徴を持つ社会（必ずしもすべてではないが、いくつかは）：
-首長の権威
-永住地
-農業開発
-何らかの課税
+  国家は正確には存在しないが、次のような複雑な組織的特徴を持つ社会（必ずしもすべてではないが、いくつかは）：
+  首長の権威
+  永住地
+  農業開発
+  何らかの課税
 非タグ文化（バンド/親族グループ）
-狩猟採集民や移動農耕民などの単純な社会は、権力構造を中心に組織化するのではなく、水平的な構造を通じて組織化される。
-彼らのポップは、EU4ネイティブと同様に、いかなる種類のタグにも属さない。
-
-
-
-#ProjectCaesar
-開発日記 第39回は列強と覇権の再設計について
-https://forum.paradoxplaza.com/forum/developer-diary/1717971/
-
-■国家ランク
-・単なる外交行動のロック解除ではなくフレーバーと内部メカニズムに関するものに変更する
-
-■列強
-・列強という風格を維持するためにはそれなりの金銭的コストがかかるだろう
-・列強同士は-25のネガティブオピニオンがつく
-・列強内の順位により獲得するボーナスは増減する
-・列強の数は流動的になり、最小数と最大数は世界の国の総数によって決まる
-
-■覇権
-・進歩によるロック解除ではなく、大航海時代が始まると自動的に選抜が始まる
-・各分野で最も影響力の大きい列強が覇権国としてみなされる
-・覇権国の地位を奪うには20％以上強力でなければならない
-・複数の分野の覇権を保持できるようになった
-・保持している覇権ごとに、すべての国からの評価が-20され、侵略的拡大が20%増加する
-・また宮廷費用の増加と毎月の威信も向上する
-・各覇権ごとに外交と内閣に1つずつ特殊コマンドが解禁される
-・戦争に負けても覇権を失うことはなくなり、保持する期間が長いほどボーナスが強力になるシステムは削除した
-
-■経済的覇権
-・貿易と税金からの収入が最も多い列強が選ばれる
-・ユニットの食糧消費量が少なくなる
-・「貿易の強制転向」- 独自市場を持っていない非列強のすべての市場で商人の能力と権力の一部を強制的に放棄させる
-
-■海軍覇権
-・最も多くの大型船を保有する列強が選ばれる。
-・海軍ダメージ10%減少
-・「強制禁輸」- 禁輸された市場で取引できなくなり、地区もその市場に属さなくなる
-・「海軍の焦点」- 指定地域内のすべての港の効率が向上する
-
-■軍事覇権
-・最大の軍隊を持つ列強が選ばれる
-・戦争スコアコスト10%削減
-・「主権侵害」- 非列強に軍事および食料のアクセスを強制することができる
-・「兵士を労働力に」- 指定地域内の建設速度が速くなる
-
-■文化的覇権
-・最も文化的な影響力を持つ列強が選ばれる
-・文化伝統の成長率+25%。
-・「宮廷言語の変更強制」- 非列強の宮廷言語を自国と同一にし、文化的影響力を高める
-・「地域の同化」- 一度に地域全体のポップを同化できる（通常は州単位）
-
-外交覇権
-・最も外交的評判の高い列強が選ばれる
-・関係改善の影響+30%
-・「国家への影響」- 非列強からの信頼と評価を高めることができる
-・「外交団」- 外交能力を劇的に高め、毎月より多くの外交官を獲得することができる
-
-来週は政府改革について
-
+  狩猟採集民や移動農耕民などの単純な社会は、権力構造を中心に組織化するのではなく、水平的な構造を通じて組織化される。
+  彼らのポップは、EU4ネイティブと同様に、いかなる種類のタグにも属さない。
 
 
 #ProjectCaesar
-Maps第28回は北米です
-https://forum.paradoxplaza.com/forum/developer-diary/1718498/
-広がる大地にポツンと定住国が。カホキアとプエブロの小国だけがかろうじて国家と呼べる体裁を持っているようです。一方POPベースの部族は大量に存在し、大地を埋め尽くしています
-
-やはりEU4から年代を遡ったこともあり、この時代の正確な情報がなく苦労してるとか。またPOPベースの部族は発売当初は十分なプレイアビリティを提供できないだろうということで、現地部族でのプレイは難しいかもしれません。プレイヤーがこの地に関わるのはやはり旧大陸の植民国家としてでしょう
-
-そういえば海流の表現は、この太平洋を横切る帯の四角ひとつひとつが海のLocationとして扱われるのでしょうか
-
-ちなみに第27回はオセアニアでした
-https://forum.paradoxplaza.com/forum/developer-diary/1716884/
-
-
-#ProjectCaesar
-開発日記 第40回は政府改革について
-https://forum.paradoxplaza.com/forum/developer-diary/1719416/
-
-■政府改革とは
-・ゲーム開始時には2つの政府改革が使用可能
-・各時代に少なくとも1つある進歩で、改革のスロットが1つ増加する
-・特定の改革の中にスロットが1つ追加されるものもある
-・ゲーム終盤には平均7～8つの改革を使用可能なはずだ
-・一般的な政府改革の中には時代要件があるものもある
-・いくつかは主要な改革とされ、同時に複数の主要な改革を有効にすることはできない
-・各時代ごとに5つ前後の一般的な改革と、さらに政府の種類ごとに2つ追加される
-・独自の改革は豊富にあり、150種類以上ある
-・政府改革を削除するには安定性を20犠牲にする
-・ただし一部の改革は自由に削除できず、ロック解除可能な状況にする必要がある
-・追加にコストはかからないが、効果が完全に発揮されるまで最大で2年かかる
-
-■一般的な政府改革
-宗教的寛容：異教に寛容になるが、共同体主義よりになっていく
-外交の伝統：外交能力を向上し、協調主義的よりになっていく
-軍事組織：カトリックの神権国家専用で、聖職者からの徴兵が増加し、好戦的で攻撃主義よりになっていく
-
-■ユニークな政府改革
-家族のサガ：アイスランド文化専用で、冒険家を雇用可能にし、海軍主義よりになっていく
-三省制度：中国語または韓国語を宮廷言語とする国専用で、行政改革を容易に
-マグナ・カルタ：イングランド文化専用で、貴族の権限を強化し、自由民化や個人主義を促進する
-
-来週は各国の評議会について
-
-
-#ProjectCaesar
-開発日記 第41回は議会についてその2
-https://forum.paradoxplaza.com/forum/threads/1720391/
-
-・アラゴンでは「Corts」、スウェーデンでは「Riksdag」など国によって議会の呼び名は異なり、現在35個の議会名がある
-
-■議会の種類
-・5つの種類があり、国によってその種類は異なるが、途中で変更することができる
-◎集会（Assembly）: 最初から利用可能。貴族と農民がわずかに議題を提案可能
-◎評議会（Council）: 成文化された法律の進歩が必要。貴族と聖職者がわずかに議題を提案可能
-◎身分制議会（Estate Parliament）: 封建制の進歩が必要。貴族、聖職者、市民が議題を提案可能
-◎独裁議会（Autocratic Parliament）: 絶対主義の時代への進歩が必要。国王の権力を強化し、低コストで議題を強制可決できる
-◎憲法議会（Constitutional Parliament）:絶対主義の時代への進歩が必要。全階級が強い影響力を持って議題を提案可能
-・農民に議会で発言権を与えたい場合は特権を与えることで可能になる
-
-■議会の開催
-・最短5年ごとに招集可能で、逆に10年間招集しないと階級の満足度はどんどん低下する
-・議会をどこで開催するかを選択できる
-・首都で開催すると中央集権化が少し促進される
-・首都以外の場所を選択すると分散化が促進されるが、その地区は議会の期間中（約半年間）素晴らしいボーナスを得る
-・通常は町や都市が選択可能だが、村落で議会を開催できる国もある
-
-■議題の選択
-・各階級につき最大2つの選択肢がある
-・議論の進行中は多くの場合、有益なボーナスが付く
-・現在70を超える通常の議題と、12の国固有の議題がある
-・議題の支持が50%以下の場合、安定性の低下などのペナルティが発生。50%以上で議題が成功し、議題によって異なる利益が国にもたらされる
-・議題には法律の変更、社会的価値観の変更、特権付与なども含まる
-
-■議会の支持
-・支持は国王の権力や選択した議題に依存
-・王権からの基本支持は通常かなり低い
-・議題ごとに異なる潜在的な支持もある
-・また基本支持を増やす政府改革や進歩もある
-・各階級が推進したい議題を認めれば議会の支持が増える
-・支持の増加量は各階級が持つ権力に満足度を掛けたものに基づくため、満足度を高めておく意義がある
-
-■特別な要求
-・議会に特別な要求をすることもできるが、支持率が50%減少する
-・たとえば追加税の徴収、徴兵の増加、法律変更、開戦事由の獲得などだ
-
-■議会用建物
-・議会中に都市民が要求できる「都市議会」は都市民に重要な権限が与えられる
-・不満を持った貴族が田舎に建設する腐敗した自治区は貴族の権力を増大させる
-
-来週は災厄について
+開発日記 第44回の新年最初はについて
 
 
 
-#ProjectCaesar
-Maps第29回は中央アメリカです
-https://forum.paradoxplaza.com/forum/developer-diary/1720739/
-
-中米といえば皆さん御存じプルヘペチェリオ帝国！　…あれ？
-よく見るとテスココ湖の上の島、テノチティトランに新しくできた小さなナワ族の集落がありますね。こんな小さな部族が巨大な帝国を築くことなど決してないでしょう、ね？
-
-一方ユカタン半島には後古典期のマヤであるCocomが見えます。南米との接続点であるダリエン峡谷は通行不能なため、歩いて南米に進出することはできません
-
-黒曜石の剣を表現するため、宝石を入力として武器を生産する生産方法があるようです
 
 
-#ProjectCaesar
-開発日記 第42回は災厄について
-https://forum.paradoxplaza.com/forum/developer-diary/1721548/
 
-■災厄
-・災厄は原則としてバッドイベンドであり、特定の国に対して起こる
-・シチュエーションは複数のシチュエーションと複数の国が関わることがあるが、災厄は1つの国に1つのみ起こる
-・災厄には2種類があり、特定の歴史的な出来事に基づくものと、条件次第でどの国でも発生し得る一般的な災厄がある
-・災厄はただのデバフや条件達成までバッドイベントが起こるだけではなく、積極的に対応するアクションもある
-
-■一般的な災厄
-・宮廷と国家（Court and Country）
-　王権が強い国で中央集権化への反発が危機を引き起こす。危機を乗り越えることで国家はより強化されるだろう。階級から特権を取り上げつつも、満足度を高く保つ必要がある
-・宗教的混乱（Religious Turmoil）
-　宗教的統一度が低く、聖職者階級が弱い国で発生し、宗教内戦の危機が高まる。宗教統一度を高め、聖職者の力を強化する、または人文主義的政策を採用して安定を回復することが解決に導くだろう
-
-■特定の国に関連する災厄
-・サヴォナローラの台頭（The Rise of Savonarola）
-　15世紀後半のカトリック共和国であるフィレンツェに発生し得る。この問題の解決は神権国家になるか、サヴォナローラの死がもたらすだろう
-・バラ戦争（War of the Roses）
-　15世紀のイングランドで、ランカスター家とヨーク家が王位を争う内戦。どちらかの家を支持し、内戦を勝ち抜く必要がある
-
-・来週はクリスマス。何かプレゼントがあるかもしれない
-
-来週は大きな発表がありそうですね
-
-#ProjectCaesar
-Maps第30回は南アメリカ。
-https://forum.paradoxplaza.com/forum/developer-diary/1721947/
-
-こちらも広大な土地が植民者を待っており、1プロビ程度のかろうじて国家と言える小国と点在する部族（SoP）のみです。のちにインカ帝国を気づくQusquも今はまだ数多ある小国の一つにすぎません
-
-それにしてもこの時代のこの地に、これだけの言語設定がなされているということに改めて驚きを禁じ得ないですね…
-
-Map紹介としてはこれがラスト。ただし12/27と1/3にMaps Extraを予定しているとのこと。さらに1/10からはTinto Flavorが始まるとか。何が出てくるか楽しみですね
+<section id="s-">
+<h2> (<a href="" target="_new" rel="noopener noreferrer">#</a>)</h2>
+<h3>テストH3</h3>
+<ul>
+<li>親</li>
+<li><ul><li>入れ子</li></ul></li>
+</ul>
+</section>
+<hr>
 -->
+
 <section id="s-playabletime">
 <h2>プレイ期間</h2>
 <ul>
@@ -1076,12 +478,12 @@ Map紹介としてはこれがラスト。ただし12/27と1/3にMaps Extraを�
 
 <div class="pickup">
 <h4>■土地ベース</h4>
-<p>土地を所有し、建物を建設し、軍隊を育成できる通常の国家</li>
+<p>土地を所有し、建物を建設し、軍隊を育成できる通常の国家</p>
 </div>
 
 <div class="pickup">
 <h4>■軍隊ベース</h4>
-<p>通常国家と同じことが可能だが、軍隊がある限りは土地を失っても滅びることはない</li>
+<p>通常国家と同じことが可能だが、軍隊がある限りは土地を失っても滅びることはない</p>
 </div>
 
 <div class="pickup">
@@ -1123,7 +525,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <ul>
 <li><strong>ゴール平射図法</strong>を採用<br>
 極地をむやみに大きくすることなく、赤道付近を小さくし過ぎず、中緯度地域を適切な大きさにできるから</li>
-<li>マップ単位は州ではなく<strong>地区(Location)＜州(Province)＜地域(Area)＜地方(Region)＜亜大陸(Subcontinent)</strong><br>
+<li>マップ単位は州ではなく<br><strong>地区(Location)＜州(Province)＜地域(Area)＜地方(Region)＜亜大陸(Subcontinent)</strong><br>
 （例：西ヨーロッパ亜大陸のスカンジナビア地方のスヴェアランド地域のウップランド州のストックホルム）</li>
 <li>地区はなるべく均一に分割され、原則として大きさで最大3倍差まで</li>
 <li>ひとつの州にはだいたい4～8の地区を含む<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/post-29439631" target="_new" rel="noopener noreferrer">(#2)</a></sup><br>
@@ -1141,7 +543,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <hr>
 
 <section id="s-locations">
-<h2>地区/Locations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer">#2</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer">#6</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">#8</a>)</h2>
+<h2>地区 / Locations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer">#2</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer">#6</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">#8</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer">#29</a>)</h2>
   <ul>
   <li>地区情報の一覧は以下の通り<sup><a href="https://forum.paradoxplaza.com/forum/threads/1675562/" target="_new" rel="noopener noreferrer">(*)</a></sup>
     <ul>
@@ -1153,41 +555,78 @@ PeruzziやBardi、後にFuggersなど<br>
       <li><strong>原材料</strong>：ウール / コットン / 砂糖 / タバコ / 馬 / 粘土 / 砂 / 石炭 / 鉄 / 銅 / 金 / 銀 / 石 / 錫 / 鉛 / 絹 / 染料 / 香料 / 紅茶 / ココア / コーヒー / 繊維作物 / 象牙 / 毛皮 / 木材 / 塩 / 医薬品 / 宝石 / 真珠 / 琥珀 / 塩硝 / ミョウバン / 香辛料 / ワイン / 象 / 大理石 / 水銀</li>
     </ul>
   </li>
+  <li>その他に人口/産品/主要宗教/主要文化/基礎税額/所属市場/食料収支のパラメタをもつ</li>
   <li>現在の地区数は<strong>27,518</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">(#3)</a></sup></li>
-  <li>中核州の扱いはEU4ともEU3とも異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477263" target="_new" rel="noopener noreferrer">(#4)</a></sup></li>
-  <li>デフォルトではすべての地区は<strong>農村(Rural Settlement)であり、街(Towns)、都市(Cities)</strong>へとアップグレードできる</li>
-  <li>アップグレードするには<strong>一定の人口が必要でコストもかかる</strong></li>
-  <li>アップグレードすると<strong>人口容量が増えるが食料生産が減り、貴族/聖職者/都市民POPが増える</strong></li>
-  <li>アップグレードには数年かかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527279" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
-  <li>農村と街では建物の種類もガラリと変わる（※IRに近い？）</li>
   <li>建設はスロットを埋めていくものではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527378" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
-  <li>地区には<strong>支配権(Control)があり、首都等からの距離と地形によって減少</strong>する（0%～100%）</li>
-  <li>支配権は税収や徴集兵の数に直結し、<strong>低ければ自国市場の魅力も弱まって他国市場へ属してしまう</strong>かもしれない</li>
-  <li>距離のペナルティは<strong>外洋はかなり高く、海岸線沿いや河川沿いは軽減され、陸上では道路を建設して下げることができる</strong></li>
-  <li><strong>土地管理人(Bailiff)</strong>の建物を建設することでも軽減できるが、貴族POPと食料コストが増加する</li>
-  <li><strong>支配権が低すぎれば独立につながる</strong>だろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527397" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
-  <li>地区の海岸線では港などの建物や海軍に応じて、海域の支配権がゆっくり時間をかけて構築される</li>
-  <li><strong>海域の支配権は地区の支配権だけではなく、自国市場にも影響</strong>する</li>
-  <li>敵海軍による封鎖や海賊による襲撃を受けると海域の支配権は急速に失われ、防衛しなかったことを後悔するだろう</li>
-  <li>都市は過疎化することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527206" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
-  <li><strong>飛び地は土地管理人(Bailiff)がいないとコントロールできなくなる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527209" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
-  <li><strong>ヘルレのような飛び地国はHREを介して支配権を伝播する</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-1-10th-of-may-2024.1675505/post-29615456" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
-  <li>地区は人口/産品/主要宗教/主要文化/基礎税額/所属市場/食料収支/気候/地形/植生のパラメタをもつ</li>
   <li>どの地区も必ず<strong>1つの産品</strong>を持つ</li>
   <li>産品の産出量を増加させるにはお金と時間（180日？）、そして別の産品が市場に必要な場合もある（例えば鉱山の拡張に木材）</li>
   <li>どこまで拡張できるかは人口、開発度、技術、社会的価値観によって変わる</li>
   <li>産品の産出には農民か奴隷を必要とし、そこで働くPOPは食料生産には従事しない</li>
+  <li>地区を所有する国の主な文化に基づいて名称を変化するシステムがある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687953/" target="_new" rel="noopener noreferrer">(#Map6)</a></sup></li>
+  <li>地区名は郡のような地域の名前でなく、集落の名前を基準にするようにしている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709509/post-29950393" target="_new" rel="noopener noreferrer">(#Map23 )</a></sup></li>
+</ul>
+<h3>■地区のランク</h3><ul>
+  <li>デフォルトではすべての地区は<strong>村落(Rural Settlement)であり、街(Towns)、都市(Cities)</strong>へとアップグレードできる</li>
+  <li>アップグレードするには<strong>一定の人口が必要でコストもかかる</strong></li>
+  <li>アップグレードすると<strong>人口容量が増えるが食料生産が減り、貴族/聖職者/都市民POPが増える</strong></li>
+  <li>アップグレードには数年かかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527279" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+  <li>村落と街では建物の種類もガラリと変わる（※IRに近い？）</li>
+  <li>都市は過疎化することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527206" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+</ul>
+<h3>■支配権(Control)</h3><ul>
+  <li>地区には<strong>支配権があり、首都等からの距離と地形によって減少</strong>する（0%～100%）</li>
+  <li>支配権は税収や徴集兵の数に直結し、<strong>低ければ自国市場の魅力も弱まって他国市場へ属してしまう</strong>かもしれない</li>
+  <li>距離のペナルティは<strong>外洋はかなり高く、海岸線沿いや河川沿いは軽減され、陸上では道路を建設して下げることができる</strong></li>
+  <li><strong>支配権が低すぎれば独立につながる</strong>だろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527397" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+  <li><strong>土地管理人(Bailiff)</strong>の建物を建設することでも軽減できるが、貴族POPと食料コストが増加する</li>
+  <li><strong>飛び地は土地管理人(Bailiff)がいないとコントロールできなくなる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527209" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
+  <li><strong>ヘルレのような飛び地国はHREを介して支配権を伝播する</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-1-10th-of-may-2024.1675505/post-29615456" target="_new" rel="noopener noreferrer">(#Map1)</a></sup></li>
+  <li>地区の海岸線では港などの建物や海軍に応じて、海域の支配権がゆっくり時間をかけて構築される</li>
+  <li><strong>海域の支配権は地区の支配権だけではなく、自国市場にも影響</strong>する</li>
+  <li>敵海軍による封鎖や海賊による襲撃を受けると海域の支配権は急速に失われ、防衛しなかったことを後悔するだろう</li>
+</ul>
+<h3>■繁栄度（Devastation）</h3><ul>
+  <li><strong>繁栄度は-100％～+100％</strong>の値を取る</li>
+  <li>繁栄度の<strong>増加は時間経過でゆっくり</strong>としか進まないが、<strong>占領や港の封鎖をされると急速に減少</strong>する</li>
+  <li><strong>繁栄度が高いと開発度が増加</strong>する</li>
+  <li>逆に繁栄度がマイナスになると<strong>荒廃し、食料や産物の生産と人口が減少</strong>しはじめる</li>
+  <li>州の荒廃は占領だけではなく、<strong>敵軍の駐留や戦闘</strong>によっても起こりうる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/post-29887645" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li>ルネッサンスの時代になれば進歩により内閣に荒廃の回復をさせることもできる</li>
+</ul>
+<h3>■開発度（Development）</h3><ul>
+  <li><strong>開発度が高いほど人口上限が上昇し、資源の活用も進む</strong></li>
   <li><strong>開発度は地区ごとに0～100%の値</strong>を取り、繁栄度が高いと時間の経過とともに増加する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692551" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li><strong><strong>開発度は人口を支えるすべてのインフラの表現</strong></strong>で<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692684" target="_new" rel="noopener noreferrer">(#16)</a></sup>、例えば井戸や都市の道路などの概念<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692718" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
-  <li>より開発度の高い地区ではより多くの人口を維持できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692573" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
-  <li>地区を所有する国の主な文化に基づいて名称を変化するシステムがある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687953/" target="_new" rel="noopener noreferrer">(#Map6)</a></sup></li>
+  <li>内閣に州全体の開発度を上昇させるよう命じることができるようになる</li>
 </ul>
+<h3>■道路</h3><ul>
+  <li>ほとんどの定住国は最初から<strong>砂利道</strong>を建設できる</li>
+  <li>後の時代の<strong>3つの進歩で新しいタイプの道路</strong>を建設できるようになる</li>
+  <li><strong>道路は近接性を改善し、軍隊の移動速度を上げ、貿易にも貢献する</strong></li>
+  <li>他国の土地でも好意的であれば道路を建設できる</li>
+  <li>道路はある地区に建設するのではなく、<strong>地区と地区の間に引かれる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/post-29887745" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li>道路の最終系は<strong>鉄道</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/post-29887856" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+</ul>
+<h3>■統合</h3><ul>
+  <li>中核州の扱いはEU4ともEU3とも異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477263" target="_new" rel="noopener noreferrer">(#4)</a></sup></li>
+  <li><strong>未統合、統合済み、統合済み中核州、植民地</strong>の4つの統合状態がある</li>
+  <li>征服した直後は分離主義が高く、支配力が低く、POPが改宗したり同化したりする可能性は低い</li>
+  <li>分離主義は主要文化に属していないポップの満足度の低下につながり、その州の生産的が低下する</li>
+  <li><strong>統合されると、分離主義は以前のレベルの5分の1に低下</strong>し、支配力の最大値が高くなる</li>
+  <li>中核になると、支配力の最小値が高くなり、主要文化がより成長する</li>
+  <li>植民地化された場所は最大支配力が低い</li>
+  <li><strong>統合または植民地化された地区のPOPの半数が主要文化なれば自動的にコアになる</strong></li>
+  <li>統合にはEU4のように<strong>君主点の消費ではなく</strong>、<strong>評議員のメンバーの1人を使って統合</strong>する必要がある</li>
+  <li>評議員以外の統合方法はなく<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/post-29900287" target="_new" rel="noopener noreferrer">(#30)</a></sup>、統合の一時停止はできる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/post-29900348" target="_new" rel="noopener noreferrer">(#30)</a></sup></li>
+  <li>ゲーム開始時には<strong>統合は州ごと</strong>になるが、絶対主義の時代には<strong>地域単位で統合できる進歩</strong>がある</li>
+  <li>統合にかかる期間は人口など多くの要因に影響されるが、<strong>平均して25年から50年</strong>かかるようになっている</li>
+  <li>統合を早めたり遅らせたりする進歩や補正はある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/post-29900530" target="_new" rel="noopener noreferrer">(#30)</a></sup></li>
 </section>
 <hr>
 
 
 <section id="s-climates">
-<h2>気候/冬 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#28</a>)</h2>
+<h2>気候 / 冬 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#28</a>)</h2>
 <ul>
   <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
   <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
@@ -1208,117 +647,6 @@ PeruzziやBardi、後にFuggersなど<br>
 <hr>
 
 
-<section id="s-pops">
-<h2>POP (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#3</a>)</h2>
-<ul>
-<li>以下の属性であらわされる人口。1人単位で表示される<br>
-  <ul>
-    <li><strong>文化</strong> - カタルーニャ、アンダルシア、スウェーデンなど</li>
-    <li><strong>宗教</strong> - カトリック、ルーテル派、スンニ派など</li>
-    <li><strong>社会階級</strong> - 6つの異なる階級がある。貴族、聖職者、都市民が上流階級
-    <ul>
-      <li><strong>貴族</strong> - ピラミッドの頂点に立つ人々</li>
-      <li><strong>聖職者</strong> - 司祭、修道士など</li>
-      <li><strong>都市民</strong> - 町や都市に住む商工業者</li>
-      <li><strong>平民</strong> - 大抵の国の国民の大部分</li>
-      <li><strong>部族民</strong> - あるいはこちらが大部分の国も多い</li>
-      <li><strong>奴隷</strong> - 合法である国にのみ存在する</li>
-    </ul></li></ul></li>
-<li><strong>識字率があり</strong>、技術の進歩やPOPの立場に影響する<br>
-　（技術の進歩は識字率だけが影響するものではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/post-29476650" target="_new" rel="noopener noreferrer">*</a></sup>）</li>
-<li><strong>満足度</strong>は以下のものを代表にさまざま影響を受ける<br>
-  <ul>
-    <li><strong>宗教寛容度</strong></li>
-    <li><strong>文化的偏見</strong></li>
-    <li><strong>国内安定度</strong></li>
-  </ul></li>
-<li>POPは時間の経過とともに増加または減少し、<strong>他文化への同化、宗教への改宗、さらには移住する</strong>可能性がある</li>
-<li>POPはゲームの基盤だが、それはバックグラウンドにあるシステムであり、間接的にしか制御できない</li>
-<li>POPは地区単位で設定されるがPCパフォーマンスについては心配してない</li>
-<li>POPに富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-  <li>おもに<strong>市民は経済</strong>に、<strong>国教の聖職者は安定度</strong>に、<strong>受容文化の貴族は外交や戦争</strong>に貢献する</li>
-  <li>社会階級、文化、宗教の組み合わせでPOP集団を形成する</li>
-  <li>POP集団のサイズは1人～2億5000万人</li>
-  <li>各地区には<strong>人口許容量</strong>があり、植生、地形、気候、加えて建物や開発度によって変化する</li>
-  <li><strong>人口が現在の許容量より多い場合、移住の魅力と人口増加に非常に大きなペナルティ</strong></li>
-  <li><strong>自然増するのは農民と部族民</strong>のみで、ほかの階級は増加値がマイナスでなければ均衡し続ける</li>
-  <li>逆に人口過剰、食糧不足、戦争による疲弊、荒廃などによる<strong>自然減はすべての階級で起こりうる</strong></li>
-  <li><strong>各階級のPOP上限に余裕</strong>があると、時間をかけて下の階級から<strong>昇格してくる</strong></li>
-  <li>評議会により昇格速度を早めることは可能だ</li>
-  <li>逆に<strong>階級のPOP上限を超えていると降格</strong>も起こる</li>
-  <li>上流階級の<strong>POP上限はその階級用のインフラに依存</strong>する</li>
-  <li>他の階級にくらべ貴族階級への昇格はわずかなものになるだろう</li>
-  <li>特定の階級から徴兵すると、その階級の最大人口が減少する</li>
-
-  <li><strong>同化は自然に行われ、非受容文化から国家の主要文化へとゆっくり変化する</strong></li>
-  <li>ある文化を同化されない受容文化にすることは可能だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708553" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li><strong>社会的価値観や支配権、建物が同化速度に影響</strong>し、<strong>評議会による促進</strong>も可能だ</li>
-  <li>豊かな地域では同化速度より人口増の方が早いだろう</li>
-  <li>自然な移住は<strong>市場内でより魅力の高い地区へと移住</strong>する</li>
-  <li><strong>同じ市場内なら国家間の移住</strong>もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708309" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li>上流階級は基本的に許可されているが、<strong>農民の移住を許可している国は少ない</strong>だろう</li>
-  <li>移住も評議会を通して促進することもでき、建物でも移住求心力を高めることができる</li>
-  <li>たとえば<strong>新世界など市場外への移住は別の仕組み</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708339" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li><strong>イベント、災害などによる特別な移住</strong>もある</li>
-
-  <li><strong>国の平均識字率は研究速度に影響</strong>を与え、<strong>POPの識字率は満足度</strong>に多少影響する</li>
-  <li>各地区の<strong>貴族の平均識字率は支配権</strong>がどれだけ速く高まるかに影響し、各地区の<strong>奴隷の平均識字率は地区の不安度を増大</strong>させる</li>
-
-  <li>社会階級、文化、宗教、および居住地によって異なる<strong>POP需要</strong>がある</li>
-  <li>たとえば寒冷地のPOPはより多くの木材や石炭を欲しがるが、ジャイナ教のPOPは毛皮を欲しがらない</li>
-  <li><strong>POP需要は入手の可否と価格</strong>によっても満足度に影響を与える</li>
-  <li>POPはタバコなど知らない商品には需要を持たない</li>
-  <li>価格の影響は各階級の識字率によって変化する</li>
-
-  <li><strong>満足度は需要の他に、そのPOPの文化の地位、宗教あるいは特定の建物や、軍隊の駐留</strong>によっても変化する</li>
-  <li><strong>満足度の低いPOPは反乱軍を支援</strong>し始めるだろう</li>
-  <li>また<strong>地区のすべてのPOPの平均満足度が繁栄と支配権に影響</strong>する</li>
-</ul>
-</section>
-<hr>
-
-<section id="s-religions">
-<h2>宗教 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">#13</a>)</h2>
-<ul>
-  <li>EU4とは違って<strong>宣教師はおらず、制度やインフラによってゆっくり改宗が行われる</strong></li>
-  <li>他の宗教に対する態度は<strong>親和的、好意的、中立、否定的、敵視の5段階</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644429" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li>国ごとに<strong>真の信仰、異端、異教に対する独自の寛容さ</strong>を持つ</li>
-  <li>宗教グループは<strong>キリスト教、イスラム教、東方宗教、ダルマ教、ゾロアスター教、マニ教、ユダヤ教、アンデス、異教</strong></li>
-  <li><strong>カトリック、正教、合性論者、プロテスタント、イスラム教、仏教、神道、ナワトル、ヒンドゥー教、インティ宗教には独自のギミック</strong>がある</li>
-  <li>例えばジャイナ教は開戦理由なしに戦争を始めることができず、カルヴァン主義では戦闘でサイコロを振り直すことはなく、すべてが予め定められている</li>
-  <li>その他の宗教については今後追加する余地がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643487" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li><strong>日本の主な宗教は神道</strong>だが仏教の要素も含まれている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643660" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li>中国は儒教と道教のメカニズムが存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/\1680927/post-29643667" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li>インドにはジャイナ教、大乗仏教、上座部仏教が存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643848" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li><strong>国教を変えることは可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644156" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-  <li><strong>改宗は評議会による強制</strong>が必要で、<strong>逆に国教から異なる宗教へ改宗するメカニズム</strong>もある</li>
-  <li><strong>建物の種類、社会的価値観、法律、または聖職者の特権</strong>により改宗速度は変化する</li>
-</ul>
-</section>
-<hr>
-
-<section id="s-laws">
-<h2>法律 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer">#18</a>)</h2>
-<ul>
-  <li><strong>法律とはある法律（たとえば徴兵法など）について複数の法案の中からコストを払って選択する</strong>もの</li>
-  <li>特定の国、宗教、文化、その他により選択できる法案は増減する</li>
-  <li></trong>単なる修正スタックではなく、メカニズムを有効または無効にしたり、社会的価値観に影響を与えるものを目指している</strong>（※ただし例を見るとEU4のアイディアにちょっと近いような）</li>
-  <li><strong>開始時点では大抵12～15件</strong>ほどの法律について法案が選択されており、ゲームが進むにつれ増えていく</li>
-  <li><strong>新しい法律の制定には金銭のみ</strong>で可能だが、<strong>変更には安定性を犠牲</strong>にする</li>
-  <li><strong>王権が高ければ安定性の減少は軽減されるが、逆に低ければさらに大きくなる</strong></li>
-  <li>安定性の犠牲を避けたければ、<strong>法変更を議会にかけて承認をもらう方法</strong>もある</li>
-  <li>変更すると以前の効果はすぐ失われるが、あらたな法の効果が発揮されるのは数年かかる場合がある</li>
-  <li><strong>国際機関にも法律があり</strong>、HREの皇帝などが独自に制定できる法も存在する</li>
-  <li>報道の自由（ゲーム後半）の法による建物など、<strong>法によって建設可能になる建物</strong>もある</li>
-  <li>指導者の相続に関する法もあるが、<strong>継承法そのものはまた別の仕組み</strong>だ</li>
-  <li>継承法にはサリカ法、セミサリカ法、共和国のさまざな選挙、教皇選出法など国ごとに異なる</li>
-  <li>封建制でも複数の種類がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726760" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
-  <li>異端審問法にも複数の種類がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726811" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
-  <li><strong>強い権力を持つ階級がいると彼らの好む法律を強制される</strong>かもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726820" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
-</ul>
-</section>
-<hr>
-
 <section id="s-ages">
 <h2>時代と制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer">#19</a>)</h2>
 <ul>
@@ -1331,7 +659,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>制度の動的な出現は「歴史的」モードに設定して固定位置にもできる</li>
   <li>歴史的な出現地点をオンにしている場合は、たとえその地区が条件を満たしていなくてもその地区で発生する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743174" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
   <li>ひとつの制度が複数の場所で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743322" target="_new" rel="noopener noreferrer">(#19)</a>  <li>制度の拡散には時間がかかり、<strong>隣接地区や海路を通してか、市場の貿易ルート</strong>を通じて広がる</li>
-  <li>制度の広がりは主に貿易<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743240" target="_new" rel="noopener noreferrer">(#19)</a></sup>で、大航海時代以降になると評議会を利用できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743304" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>制度の広がりは主に貿易<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743240" target="_new" rel="noopener noreferrer">(#19)</a></sup>で、大航海時代以降になると評議員を利用できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743304" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
   <li>貿易による普及は輸入元で広がる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743386" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
   <li>制度が<strong>自国の人口の10%以上に広がったら受け入れる</strong>ことができる。</li>
   <li><strong>新世界では植民者が現れるまで制度を利用できない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743202" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
@@ -1384,6 +712,79 @@ PeruzziやBardi、後にFuggersなど<br>
 </section>
 <hr>
 
+
+<section id="s-tecnology">
+<h2></h2>
+<h2>進歩（技術）/ Advances (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer">#20</a>)</h2>
+<ul>
+  <li>「<strong>進歩/Advances</strong>」と呼ばれるメカニズムに再構成された</li>
+  <li>進歩により<strong>新しいコマンド、ユニット、法律、相続法、制度、CB…様々なものがアンロック</strong>される</li>
+  <li>ツリーには<strong>現在100の進歩</strong>があり、<strong>固有の進歩</strong>もある</li>
+  <li>ゲーム開始時の国選択画面でその国独自要素を確認できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761238" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>文化や宗教、ある地区を所有しているか、政府の種類などにより固有の進歩が出現する</li>
+  <li><strong>各時代の開始時に各国に固有の新しい進歩ツリーが作成</strong>される</li>
+  <li>伝統の時代以外は<strong>共通、行政、外交、軍事の4つのツリー</strong>が用意されている。たとえば<br>　<strong>行政</strong> - 優れた行政効率、低金利、より良い近接拡散、安価な傭兵など<br>　<strong>外交</strong> - 優れた商人、より高い外交評判、従属国の設立、戦争スコアコスト減など<br>　<strong>軍事</strong> - 戦闘でのより高い名声、毎月の伝統獲得など</li>
+  <li>すべてのツリーですべての進歩を得ることはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761034" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li><strong>時代の開始時に行政、外交、軍事から1つの分野をフォーカス</strong>することで、<strong>その分野に10の追加の進歩</strong>が出現する</li>
+  <li><strong>選ばなかった追加の進歩の研究はできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761140" target="_new" rel="noopener noreferrer">(#20)</a></sup><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761186" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>選択せずに得られなかった追加の進歩が致命的になることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761315" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>非現実的だが利便性のために進歩を研究せずに<strong>最大1年分の研究を蓄積する</strong>こともできる</li>
+  <li>基本的には同じ研究コストがかかるが、<strong>「文字」などコストの高いキーストーンとなる進歩</strong>もある</li>
+  <li><strong>以前の時代の進歩は現在の時代よりも安価（約33%引き<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761193" target="_new" rel="noopener noreferrer">(#20)</a></sup>）</strong>になり、キャッチアップを可能にしている</li>
+  <li>研究の進捗は、<strong>定住国か遊牧民か、典礼言語、聖職者の満足度と国の平均識字率</strong>で変わる</li>
+  <li>大学や図書館などは識字率を向上させ、間接的に研究に貢献する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29762206" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+
+  <li>一度得た進歩は前提となる宗教や政府を変えたとしても残る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761033" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li><strong>ゲーム開始時のツリーの一部はランダム化</strong>されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761229" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-situation">
+<h2>シチュエーションシステム / Situation System (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/" target="_new" rel="noopener noreferrer">#14</a>)</h2>
+<ul>
+  <li><strong>シチュエーションシステムとは一定期間にわたって複数の国が関与するコンテンツ群</strong></li>
+  <li><strong>独自のアクション、トリガーとなるイベント、独自のUIやマップモード</strong>もある</li>
+  <li>例えば<strong>黒死病、イタリア戦争、紅巾の乱</strong>などが含まれる</li>
+  <li><strong>黒死病は1346年から</strong>流行の兆しが見え、<strong>中央アジアのどこか</strong>で腺ペストが発生して旧世界に広がり、影響を受けた地域の<strong>人口の40～60%が死亡</strong>する</li>
+  <li>黒死病は<strong>隣接地域、軍隊の移動、または貿易を通じて広がる</strong></li>
+  <li>黒死病を<strong>軽減する方法はいくつかあるが、効率は低いうえにコストは高い</strong>（宮廷の隔離や病人の追放、少数派を非難など）</li>
+  <li>黒死病の発生地域をランダムにすることはできるが新大陸で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29659868" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>黒死病の一度だけではなくほかの流行り病が蔓延することもあるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658189" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>一般的な病気の仕組みも存在</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658205" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>イタリア戦争はフランスやイベリア主要国、またはHRE皇帝がイタリアの国に宣戦布告すると即座に開始</strong>する</li>
+  <li>イタリア戦争は<strong>フランスリーグ、イベリアリーグ、皇帝リーグ、3つのイタリアリーグ</strong>の計6つの勢力がイタリアの覇権を相争う</li>
+  <li>イタリア戦争には<strong>イタリアに拠点を所有していれば誰でも参加でき、また放棄することもできる</strong></li>
+  <li><strong>紅巾の乱は1350年以降</strong>に元の安定度が25を下回り、いずれかの階級が不満を抱えている場合、発生する可能性がある</li>
+  <li>条件は厳しいが、<strong>大航海時代に到達すれば紅巾の乱を回避</strong>できる</li>
+  <li>紅巾の乱が始まると歴史をなぞって<strong>各地が独立し、紅巾賊と呼ばれる国際組織を作る</strong></li>
+  <li>各紅巾賊は<strong>独立時にプレイ可能</strong>であり、互いに戦争を行うこともできる</li>
+  <li>各紅巾賊は<strong>-100から100までの範囲で元に対する忠誠心を持ち、忠誠度が0を超えると自動的に紅巾の乱の国際組織から離脱する</strong></li>
+  <li>元は<strong>20年以内に安定度を取り戻し、紅巾の乱からすべての勢力が離脱</strong>すれば事態は収束する</li>
+  <li>紅巾の乱収束時に忠誠度が50を超えるすべての紅巾賊は自動的に元に併合される</li>
+  <li><strong>紅巾賊が中華の大部分（7割）を押さえると元から中華皇帝の座を奪って</strong>乱は終了する</li>
+  <li>特別な外交コマンドとして、元は紅巾賊に称号を下賜して費用と引き換えに忠誠度を獲得したり、忠誠度の高い紅巾賊を同盟に呼んだりできる。一方紅巾賊は特別なCBで征服コストが低減され、征服地の統合速度も大幅に早めることができる</li>
+  <li>その他にも<strong>大シスマ、百年戦争、日本の戦国時代</strong>もあるが、これらは後日詳しく取り上げる予定だ</li>
+ 
+  <li>現在のシチュエーション数は13だが、まだまだ追加予定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658249" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>シチュエーションは動的には作成されない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658598" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>宗教改革</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658295" target="_new" rel="noopener noreferrer">(#14)</a></sup>や<strong>宗教戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658141" target="_new" rel="noopener noreferrer">(#14)</a></sup>、<strong>フス戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658579" target="_new" rel="noopener noreferrer">(#14)</a></sup>もシチュエーションとして表現されるだろう</li>
+  <li><strong>日本の南北朝時代はシチュエーションになる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29660152" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+<section id="s-dhe">
+<h2>動的歴史イベント</h2>
+<ul>
+  <li><strong>小規模なものは動的歴史イベント</strong>（Dynamic Historical Event）として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658091" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>AIが動的歴史イベントでどう振る舞うかはオプション設定で選べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658588" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
 <section id="s-goverments">
 <h2>政府 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">#4</a>)</h2>
 <ul>
@@ -1401,7 +802,7 @@ PeruzziやBardi、後にFuggersなど<br>
 　（国や文化宗教、その他により使用可能なものが異なる）</li>
 <li><strong>議会</strong>があり、各階級からの議題の要求がある（※どんな国家制度でも？）<br>
 　（現在は2年のクールダウンがあり、一方5年以上開催されないと不安が高まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/post-29477185" target="_new" rel="noopener noreferrer">*</a></sup>）</li>
-<li><strong>評議会</strong>が存在し、国が大きくなるにつれて可能な行動が増える<br>
+<li><strong>評議員</strong>が存在し、国が大きくなるにつれて可能な行動が増える<br>
 　（EU4の顧問とCK2の評議会の複合）</li>
 <li>法律や政府改革により<strong>13の社会的価値観</strong>に変化を及ぼす<br>
 　（非/中央集権化、貴族制/富豪制、農奴/自由農etc）</li>
@@ -1410,15 +811,168 @@ PeruzziやBardi、後にFuggersなど<br>
 <li>奴隷の反乱もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29503004" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
 <li>同君連合の仕組みはEU4とは変わる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29503906" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
 <li>安定度は<strong>各階級の満足度、POPの昇進速度（部族民から平民、都市民…）、POPの満足度が影響</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/threads/1664941/post-29557569" target="_new" rel="noopener noreferrer">*</a></sup></li>
-<li>安定度は他にも<strong>評議会の方針、国教聖職者の割合、経費支出</strong>でも影響される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1662820/post-29548063" target="_new" rel="noopener noreferrer">*</a></sup></li>
+<li>安定度は他にも<strong>評議員の方針、国教聖職者の割合、経費支出</strong>でも影響される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1662820/post-29548063" target="_new" rel="noopener noreferrer">*</a></sup></li>
 </ul>
 </section>
 <hr>
 
-<section id="s-cabinet">
-<h2>評議会/Cabinet (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/" target="_new" rel="noopener noreferrer">#16</a>)</h2>
+
+<section id="s-gov-reforms">
+<h2>政府改革 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1719416/" target="_new" rel="noopener noreferrer">#40</a>)</h2>
+<h3>■政府改革とは</h3><ul>
+  <li>ゲーム開始時には<strong>2つの政府改革</strong>が使用可能</li>
+  <li>各時代に少なくとも1つある<strong>進歩</strong>で、<strong>改革のスロットが1つ増加</strong>する</li>
+  <li>特定の改革の中にスロットが1つ追加されるものもある</li>
+  <li>ゲーム終盤には平均7～8つの改革を使用可能なはずだ</li>
+  <li><strong>一般的な政府改革</strong>の中には時代要件があるものもある</li>
+  <li>各時代ごとに5つ前後の一般的な改革と、さらに政府の種類ごとに2つ追加される</li>
+  <li><strong>独自の改革</strong>は豊富にあり、150種類以上ある</li>
+  <li>いくつかの改革は<strong>主要な改革</strong>とされ、同時に複数の主要な改革を有効にすることはできない</li>
+  <li>政府改革を削除するには安定性を20犠牲にする</li>
+  <li>ただし一部の改革は自由に削除できず、ロック解除可能な状況にする必要がある</li>
+  <li>追加にコストはかからないが、効果が完全に発揮されるまで最大で2年かかる</li>
+</ul>
+
+<h3>■一般的な政府改革</h3><ul>
+  <li><strong>宗教的寛容</strong>：異教に寛容になるが、共同体主義よりになっていく</li>
+  <li><strong>外交の伝統</strong>：外交能力を向上し、協調主義的よりになっていく</li>
+  <li><strong>軍事組織</strong>：カトリックの神権国家専用で、聖職者からの徴兵が増加し、好戦的で攻撃主義よりになっていく</li>
+</ul>
+
+<h3>■ユニークな政府改革</h3><ul>
+  <li><strong>家族のサガ</strong>：アイスランド文化専用で、冒険家を雇用可能にし、海軍主義よりになっていく</li>
+  <li><strong>三省制度</strong>：中国語または韓国語を宮廷言語とする国専用で、行政改革コストを低減する</li>
+  <li><strong>マグナ・カルタ</strong>：イングランド文化専用で、貴族の権限を強化し、自由民化や個人主義を促進する</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-societal-values">
+<h2>社会的価値観 (<a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer">#38</a>)</h2>
 <ul>
-  <li><strong>ゲーム開始時のほとんどの評議会の規模は2(名？)</strong>で<strong>時代ごとに1以上増える</strong></li>
+  <li><strong>社会的価値観</strong>は各項目が<strong> -100 ～ +100で表される国の特性</strong></li>
+  <li><strong>階級の特権、政府改革、または法律の影響</strong>を受けてゆっくり変化する</li>
+  <li><strong>評議員</strong>を使って社会的価値観を別の方向に動かすこともできる</li>
+  <li>共通の社会的価値観が13個あり、絶対主義の時代に1つ追加される</li>
+  <li>また中国とその周辺の国に固有の価値観が1つある</li>
+</ul>
+<div class="pickup">
+  <h4>社会的価値観の一覧</h4>
+  <ul class="no-style">
+    <li>◎<strong>中央集権 vs 分権</strong><br>中央集権は王権が強化され、分権は統治を容易にする</li>
+    <li>◎<strong>伝統主義 vs 革新主義</strong><br>伝統主義は安定性や伝統を重視し、革新主義は識字率向上や制度の採用を早める</li>
+    <li>◎<strong>宗教主義 vs 人文主義</strong><br>宗教主義は改宗を早め、人文主義は異端や異教に寛容で同化を早める</li>
+    <li>◎<strong>貴族政治 vs 富豪政治</strong><br>貴族政治は外交力を強化し、富豪政治は貿易効率を向上させる</li>
+    <li>◎<strong>農奴制 vs 自由民</strong><br>農奴制は税収増加、自由民は繁栄やポップの昇進を促進</li>
+    <li>◎<strong>好戦的 vs 協調的</strong><br>好戦的は外交評判を犠牲に戦争を容易にし、協調的は外交評判や属国の忠誠が上がる</li>
+    <li>◎<strong>軍質 vs 軍量</strong><br>軍質は士気や戦術にボーナスがあり、軍量はコストを抑制できる</li>
+    <li>◎<strong>攻勢 vs 守勢</strong><br>攻勢は敵国への侵攻を好み、守勢は砦を重視する</li>
+    <li>◎<strong>陸軍 vs 海軍</strong><br>陸軍重視は陸上貿易や資源産出の向上、海軍重視は海上貿易や海洋影響力を向上させる。軍に関係させなかったのはそうすると99%の人が陸軍を選ぶからだ</li>
+    <li>◎<strong>資本主義 vs 伝統的経済</strong><br>資本主義は貿易や建築、生産効率を重視し、伝統的経済は食料や原材料生産に特化</li>
+    <li>◎<strong>個人主義 vs 共同体主義</strong><br>個人主義は軍の士気や移民速度を向上させ、共同体主義は反乱の閾値を下げる</li>
+    <li>◎<strong>重商主義 vs 自由貿易</strong><br>重商主義は国内市場を保護し、自由貿易は世界貿易から利益を得る</li>
+    <li>◎<strong>外向性 vs 内向性</strong><br>外向的な国は外交や植民地移民に優れ、内向的な国は文化的伝統や王権を強化</li>
+    <li>◎<strong>絶対主義 vs 自由主義</strong>（絶対主義の時代に解禁）<br>絶対主義は王権を強化や統合速度を上げ、自由主義は反乱を抑えたり議会の効率を向上させる</li>
+  </ul>
+</div>
+</section>
+<hr>
+
+
+<section id="s-laws">
+<h2>法律 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer">#18</a>)</h2>
+<ul>
+  <li><strong>法律とはある法律（たとえば徴兵法など）について複数の法案の中からコストを払って選択する</strong>もの</li>
+  <li>特定の国、宗教、文化、その他により選択できる法案は増減する</li>
+  <li></trong>単なる修正スタックではなく、メカニズムを有効または無効にしたり、社会的価値観に影響を与えるものを目指している</strong>（※ただし例を見るとEU4のアイディアにちょっと近いような）</li>
+  <li><strong>開始時点では大抵12～15件</strong>ほどの法律について法案が選択されており、ゲームが進むにつれ増えていく</li>
+  <li><strong>新しい法律の制定には金銭のみ</strong>で可能だが、<strong>変更には安定性を犠牲</strong>にする</li>
+  <li><strong>王権が高ければ安定性の減少は軽減されるが、逆に低ければさらに大きくなる</strong></li>
+  <li>安定性の犠牲を避けたければ、<strong>法変更を議会にかけて承認をもらう方法</strong>もある</li>
+  <li>変更すると以前の効果はすぐ失われるが、あらたな法の効果が発揮されるのは数年かかる場合がある</li>
+  <li><strong>国際機関にも法律があり</strong>、HREの皇帝などが独自に制定できる法も存在する</li>
+  <li>報道の自由（ゲーム後半）の法による建物など、<strong>法によって建設可能になる建物</strong>もある</li>
+  <li>指導者の相続に関する法もあるが、<strong>継承法そのものはまた別の仕組み</strong>だ</li>
+  <li>継承法にはサリカ法、セミサリカ法、共和国のさまざな選挙、教皇選出法など国ごとに異なる</li>
+  <li>封建制でも複数の種類がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726760" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
+  <li>異端審問法にも複数の種類がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726811" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
+  <li><strong>強い権力を持つ階級がいると彼らの好む法律を強制される</strong>かもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726820" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-parliaments">
+<h2>議会 / Parliaments (<a href="https://forum.paradoxplaza.com/forum/threads/1720391/" target="_new" rel="noopener noreferrer">#41</a>)</h2>
+<h3>■議会の種類</h3><ul>
+  <li>5つの種類があり、国によってその種類は異なるが、途中で変更することができる
+  <ul class="no-style">
+  <li>◎<strong>集会</strong>（Assembly）: 最初から利用可能。貴族と農民がわずかに議題を提案可能</li>
+  <li>◎<strong>評議会</strong>（Council）: 成文化された法律の進歩が必要。貴族と聖職者がわずかに議題を提案可能</li>
+  <li>◎<strong>身分制議会</strong>（Estate Parliament）: 封建制の進歩が必要。貴族、聖職者、市民が議題を提案可能</li>
+  <li>◎<strong>独裁議会</strong>（Autocratic Parliament）: 絶対主義の時代への進歩が必要。国王の権力を強化し、低コストで議題を強制可決できる</li>
+  <li>◎<strong>憲法議会</strong>（Constitutional Parliament）:絶対主義の時代への進歩が必要。全階級が強い影響力を持って議題を提案可能</li>
+  </ul></li>
+  <li>農民に議会で十分な発言権を与えたい場合は特権を与える必要があるが、その結果はよく考えなければならない</li>
+  <li>アラゴンでは「Corts」、スウェーデンでは「Riksdag」など国によって議会の呼び名は異なり、現在35個の議会名がある</li>
+</ul>
+
+<h3>■議会の開催</h3><ul>
+  <li><strong>最短5年ごとに招集可能</strong>で、逆に<strong>10年間招集しないと階級の満足度はどんどん低下</strong>する</li>
+  <li>議会を<strong>どこで開催するかを選択</strong>できる</li>
+  <li>首都で開催すると中央集権化が少し促進される</li>
+  <li>首都以外の場所を選択すると分散化が促進されるが、その地区は議会の期間中（約半年間）素晴らしいボーナスを得る</li>
+  <li>通常は町や都市が選択可能だが、村落で議会を開催できる国もある</li>
+</ul>
+
+<h3>■議題の選択</h3><ul>
+  <li><strong>各階級につき最大2つの選択肢</strong>がある</li>
+  <li>議論の進行中は多くの場合、有益なボーナスが付く</li>
+  <li>現在70を超える通常の議題と、12の国固有の議題がある</li>
+  <li>議題の支持が50%以下の場合、安定性の低下などのペナルティが発生。<strong>50%以上で議題が成功</strong>し、議題によって異なる利益が国にもたらされる</li>
+  <li>議題には法律の変更、社会的価値観の変更、特権付与なども含まる</li>
+</ul>
+
+<h3>■議会の支持</h3><ul>
+  <li><strong>支持は国王の権力や選択した議題に依存</strong></li>
+  <li><strong>王権からの基本支持は通常かなり低い</strong></li>
+  <li>議題ごとに異なる潜在的な支持もある</li>
+  <li>また基本支持を増やす政府改革や進歩もある</li>
+  <li>各階級が推進したい議題を認めれば議会の支持が増える</li>
+  <li>支持の増加量は各階級が持つ権力に満足度を掛けたものに基づくため、<strong>満足度を高めておく意義</strong>がある</li>
+</ul>
+
+<h3>■特別な要求</h3><ul>
+  <li>議会に<strong>特別な要求をすることもできるが、支持率が50%減少</strong>する</li>
+  <li>たとえば追加税の徴収、徴兵の増加、法律変更、開戦事由の獲得などだ</li>
+  <li>要求の例
+  <ul>
+    <li>政府の強化（Bolster the Government）</li>
+    <li>国勢調査の実施（Conduct a Census）</li>
+    <li>新しい狩猟地の設立（Establish New Hunting Grounds）</li>
+    <li>森林開発の拡張（Expand Forest Exploitation）</li>
+    <li>鉱山事業の拡張（Expand Mining Operations）</li>
+    <li>評議員リストを拡大（Expand Officer Lists）</li>
+    <li>農場への資金援助（Fund Farming Estates）</li>
+    <li>城砦費用の推進（Promote Castle Cost Works）</li>
+    <li>都市民への昇格を推進（Promote Member of the Burghers）</li>
+    <li>聖職者への昇格を推進（Promote Member of the Clergy）</li>
+  </ul></li>
+</ul>
+
+<h3>■議会用建物</h3><ul>
+  <li>議会中に都市民が要求できる<strong>都市議会</strong>は都市民に重要な権限が与えられる</li>
+  <li>不満を持った貴族が田舎に建設する<strong>腐敗した自治区</strong>は貴族の権力を増大させる</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-cabinet">
+<h2>評議員/Cabinet (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/" target="_new" rel="noopener noreferrer">#16</a>)</h2>
+<ul>
+  <li><strong>ゲーム開始時のほとんどの評議員の規模は2(名？)</strong>で<strong>時代ごとに1以上増える</strong></li>
   <li>評議員の席は<strong>一部の政府改革や法律で増えることもある</strong>（ただしデメリットも）</li>
   <li><strong>最大議席数は8～10名</strong>になるよう調整している<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692417" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li>各階級の評議員はその<strong>階級に+10%の権力を与る</strong></li>
@@ -1429,44 +983,14 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>アクションは<strong>国全体や州単独に効果がある</strong>ものがあり、<strong>社会的価値観、法律、政府改革、階級特権や評議員との関係で効率が変わる</strong></li>
   <li>新しい評議員を<strong>割り当てるにはゴールドが必要</strong>で、<strong>置き換えるには安定性が犠牲</strong>に<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692463" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li>強い権力を持つ階級は評議員の地位を要求するかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692533" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
-  <li>キャラクターに「評議会長」という称号を与えることができ、行動の効率が25%増加する。ゴールドを消費するが階級の権力と幸福度が上がる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692618" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
-  <li>評議会の費用は宮廷費用に含まれ、キャラクターの能力やスキルでは変わらない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692661" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
+  <li>キャラクターに「評議員長」という称号を与えることができ、行動の効率が25%増加する。ゴールドを消費するが階級の権力と幸福度が上がる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692618" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
+  <li>評議員の費用は宮廷費用に含まれ、キャラクターの能力やスキルでは変わらない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692661" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li>評議員で支配権を上げたあとに解任すると支配権は低下するが、比較的短期間で元に戻るだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692694" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li>評議員が戦争を要求することはないが、議会はあるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692779" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
 </ul>
 </section>
 <hr>
 
-<section id="s-estates">
-<h2>階級/Estates (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">#5</a>)</h2>
-<ul>
-<li>4つの階級が存在し、<strong>統治者(Crown)も含めて100%の権力を分け合っている</strong><br>
-  <ul>
-    <li><strong>貴族(Nobility)</strong></li>
-    <li><strong>聖職者(Clergy)</strong></li>
-    <li><strong>都市民(Burghers)</strong></li>
-    <li><strong>平民(Commoners)</strong></li>
-  </ul></li>
-<li><strong>貴族と平民は同じPOP数で1000倍の権力差</strong>がある（例：1000人で貴族50、平民0.05）</li>
-<li>POPのいない階級は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502805" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li>奴隷は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502863" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li><strong>統治者の権力ベースは国の総人口</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502867" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li>統治者の権力の大小により、<strong>特権の取り消し、法律変更、宮廷の各種コストや評議会の効率に影響する</strong></li>
-<li>各階級には現在の満足度から特権/法律/安定度などに影響された均衡点へと向かっていく</li>
-<li>現在の<strong>満足度が50%超でボーナス、50%未満でペナルティ。25%未満になると税金を払わない</strong>
-  <ul>
-    <li>貴族はあなたの<strong>名声の獲得と対スパイ活動</strong>に影響</li>
-    <li>聖職者は<strong>研究速度と外交上の評判</strong>に影響</li>
-    <li>都市民は<strong>販売者の力と生産効率</strong>に影響</li>
-    <li>平民は<strong>食糧生産と安定度コスト</strong>に影響</li>
-  </ul></li>
-  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-<li>国や政府タイプに応じて<strong>独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響</strong>を及ぼす</li>
-<li><strong>徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資</strong>を行う（多く場合国にも利益となる）</li>
-<li>各階級が持つ資金は建物の他に<strong>国家へのローンを提供するプールともなる</strong>(#8)</li>
-</ul>
-</section>
-<hr>
 
 <section id="s-character">
 <h2>キャラクター (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/" target="_new" rel="noopener noreferrer">#15</a>)</h2>
@@ -1496,9 +1020,376 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>キャラクターのステータスはベル曲線になる傾向がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/post-29692768" target="_new" rel="noopener noreferrer">(#16)</a></sup></li>
   <li><strong>ステータスは低い方から銅色→銀色→金色→紫色の順</strong>で表示される<sup><a href="https://forum.paradoxplaza.com/forum/threads/1691918/post-29728175" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li><strong>継承者は外国のキャラクターの場合もある</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726941" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
+  <li>国の平均寿命によってキャラクターの寿命が変わってくる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/post-29888159" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
 </ul>
 </section>
 <hr>
+
+
+<section id="s-estates">
+<h2>階級 / Estates (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">#5</a>)</h2>
+<ul>
+<li>4つの階級が存在し、<strong>統治者(Crown)も含めて100%の権力を分け合っている</strong><br>
+  <ul>
+    <li><strong>貴族(Nobility)</strong></li>
+    <li><strong>聖職者(Clergy)</strong></li>
+    <li><strong>都市民(Burghers)</strong></li>
+    <li><strong>平民(Commoners)</strong></li>
+  </ul></li>
+<li><strong>貴族と平民は同じPOP数で1000倍の権力差</strong>がある（例：1000人で貴族50、平民0.05）</li>
+<li>POPのいない階級は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502805" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li>奴隷は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502863" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li><strong>統治者の権力ベースは国の総人口</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502867" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li>統治者の権力の大小により、<strong>特権の取り消し、法律変更、宮廷の各種コストや評議員の効率に影響する</strong></li>
+<li>各階級には現在の満足度から特権/法律/安定度などに影響された均衡点へと向かっていく</li>
+<li>現在の<strong>満足度が50%超でボーナス、50%未満でペナルティ。25%未満になると税金を払わない</strong>
+  <ul>
+    <li>貴族はあなたの<strong>名声の獲得と対スパイ活動</strong>に影響</li>
+    <li>聖職者は<strong>研究速度と外交上の評判</strong>に影響</li>
+    <li>都市民は<strong>販売者の力と生産効率</strong>に影響</li>
+    <li>平民は<strong>食糧生産と安定度コスト</strong>に影響</li>
+  </ul></li>
+  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+<li>国や政府タイプに応じて<strong>独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響</strong>を及ぼす</li>
+<li><strong>徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資</strong>を行う（多く場合国にも利益となる）</li>
+<li>各階級が持つ資金は建物の他に<strong>国家へのローンを提供するプールともなる</strong>(#8)</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-pops">
+<h2>POP (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#3</a>)</h2>
+<ul>
+<li>以下の属性であらわされる人口。1人単位で表示される<br>
+  <ul>
+    <li><strong>文化</strong> - カタルーニャ、アンダルシア、スウェーデンなど</li>
+    <li><strong>宗教</strong> - カトリック、ルーテル派、スンニ派など</li>
+    <li><strong>社会階級</strong> - 6つの異なる階級がある。貴族、聖職者、都市民が上流階級
+    <ul>
+      <li><strong>貴族</strong> - ピラミッドの頂点に立つ人々</li>
+      <li><strong>聖職者</strong> - 司祭、修道士など</li>
+      <li><strong>都市民</strong> - 町や都市に住む商工業者</li>
+      <li><strong>平民</strong> - 大抵の国の国民の大部分</li>
+      <li><strong>部族民</strong> - あるいはこちらが大部分の国も多い</li>
+      <li><strong>奴隷</strong> - 合法である国にのみ存在する</li>
+    </ul></li></ul></li>
+<li>POPは時間の経過とともに増加または減少し、<strong>他文化への同化、宗教への改宗、さらには移住する</strong>可能性がある</li>
+<li>POPはゲームの基盤だが、それはバックグラウンドにあるシステムであり、間接的にしか制御できない</li>
+<li>POPは地区単位で設定されるがPCパフォーマンスについては心配してない</li>
+  <li>おもに<strong>市民は経済</strong>に、<strong>国教の聖職者は安定度</strong>に、<strong>受容文化の貴族は外交や戦争</strong>に貢献する</li>
+  <li>社会階級、文化、宗教の組み合わせでPOP集団を形成する</li>
+  <li>POP集団のサイズは1人～2億5000万人</li>
+</ul>
+
+<h3>■人口</h3><ul>
+  <li>各地区には<strong>人口許容量</strong>があり、植生、地形、気候、加えて建物や開発度によって変化する</li>
+  <li><strong>人口が現在の許容量より多い場合、移住の魅力と人口増加に非常に大きなペナルティ</strong></li>
+  <li><strong>自然増するのは農民と部族民</strong>のみで、ほかの階級は増加値がマイナスでなければ均衡し続ける</li>
+  <li>逆に人口過剰、食糧不足、戦争による疲弊、荒廃などによる<strong>自然減はすべての階級で起こりうる</strong></li>
+  <li><strong>各階級のPOP上限に余裕</strong>があると、時間をかけて下の階級から<strong>昇格してくる</strong></li>
+  <li>評議員により昇格速度を早めることは可能だ</li>
+  <li>逆に<strong>階級のPOP上限を超えていると降格</strong>も起こる</li>
+  <li>上流階級の<strong>POP上限はその階級用のインフラに依存</strong>する</li>
+  <li>他の階級にくらべ貴族階級への昇格はわずかなものになるだろう</li>
+  <li>特定の階級から<strong>徴兵</strong>すると、<strong>その階級の人口が減少</strong>する</li>
+</ul>
+
+<h3>■識字率</h3><ul>
+  <li><strong>国の平均識字率は研究速度に影響</strong>を与え、<strong>POPの識字率は満足度</strong>に多少影響する（研究速度は識字率だけが影響するものではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/post-29476650" target="_new" rel="noopener noreferrer">*</a></sup>）</li>
+  <li>各地区の<strong>貴族の平均識字率は支配権</strong>がどれだけ速く高まるかに影響し、各地区の<strong>奴隷の平均識字率は地区の不安度を増大</strong>させる</li>
+</ul>
+
+<h3>■需要</h3><ul>
+  <li>社会階級、文化、宗教、および居住地によって異なる<strong>POP需要</strong>がある</li>
+  <li>たとえば寒冷地のPOPはより多くの木材や石炭を欲しがるが、ジャイナ教のPOPは毛皮を欲しがらない</li>
+  <li><strong>POP需要は入手の可否と価格</strong>によっても満足度に影響を与える</li>
+  <li>POPはタバコなど知らない商品には需要を持たない</li>
+  <li>価格の影響は各階級の識字率によって変化する</li>
+  <li>POPにVic3の富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
+</ul>
+
+<h3>■満足度</h3><ul>
+<li><strong>満足度</strong>は以下のものを代表にさまざま影響を受ける<br>
+  <ul>
+    <li><strong>宗教寛容度</strong></li>
+    <li><strong>文化的偏見</strong></li>
+    <li><strong>国内安定度</strong></li>
+  </ul></li>
+  <li><strong>満足度は需要の他に、そのPOPの文化の地位、宗教あるいは特定の建物や、軍隊の駐留</strong>によっても変化する</li>
+  <li><strong>満足度の低いPOPは反乱軍を支援</strong>し始めるだろう</li>
+  <li>また<strong>地区のすべてのPOPの平均満足度が繁栄と支配権に影響</strong>する</li>
+</ul>
+
+<h3>■同化</h3><ul>
+  <li><strong>同化は自然に行われ、非受容文化から国家の主要文化へとゆっくり変化する</strong></li>
+  <li>ある文化を同化されない受容文化にすることは可能だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708553" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li><strong>社会的価値観や支配権、建物が同化速度に影響</strong>し、<strong>評議員による促進</strong>も可能だ</li>
+  <li>豊かな地域では同化速度より人口増の方が早いだろう</li>
+</ul>
+
+<h3>■移住</h3><ul>
+  <li>自然な移住は<strong>市場内でより魅力の高い地区へと移住</strong>する</li>
+  <li><strong>同じ市場内なら国家間の移住</strong>もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708309" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li>上流階級は基本的に許可されているが、<strong>農民の移住を許可している国は少ない</strong>だろう</li>
+  <li>移住も評議員を通して促進することもでき、建物でも移住求心力を高めることができる</li>
+  <li>たとえば<strong>新世界など市場外への移住は別の仕組み</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708339" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li><strong>イベント、災害などによる特別な移住</strong>もある</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-slaves">
+<h2>奴隷制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/" target="_new" rel="noopener noreferrer">#34</a>)</h2>
+<h3>■奴隷POP</h3><ul>
+  <li>奴隷は移住禁止で人口は維持するのがやっとで、収入も政治力もない</li>
+  <li>もし何らかの理由で識字率があがったら社会不安を起こすのに十分な理由がある</li>
+  <li>ゲーム開始時点でヨーロッパにはほどんどいないが、他ではよく見かけるだろう</li>
+</ul>
+
+<h3>■奴隷の用途</h3><ul>
+  <li><strong>主に原材料（RGO）の収集を行う</strong></li>
+  <li>人的や水夫を提供する奴隷兵の建物もある（イェニチェリ兵舎もその一つ）</li>
+  <li>プランテーションは通常の農地より効率的だが奴隷が必須だ</li>
+  <li>宗教によっては神にささげるために奴隷を必要とするかもしれない</li>
+</ul>
+
+<h3>■奴隷の獲得方法</h3><ul>
+  <li><strong>奴隷は奴隷市場で売買</strong>される</li>
+  <li><strong>征服時に住民の一部を奴隷化</strong>できる（文化による）</li>
+  <li><strong>私掠船を使って奴隷を捕まえる</strong>こともできる</li>
+  <li><strong>奴隷市場を建てると異教徒や異文化民を少しずつ奴隷化</strong>する</li>
+  <li><strong>パワープロジェクションが低い相手に奴隷市場を建てる</strong>ことも可能だ</li>
+  <li><strong>奴隷を必要とする建物は奴隷市場から奴隷を取引する</strong></li>
+  <li>これらにより新大陸との三角貿易も上手く表現可能なはずだ</li>
+</ul>
+
+  <li><strong>相手国で奴隷となっている自文化民を取り戻す和平条約</strong>を追加する予定だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958406" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
+  <li>奴隷兵士だからといって何かのペナルティがあるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958642" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
+  <li>奴隷市場での取引は200人で1単位で行われる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958688" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
+</section>
+<hr>
+
+
+<section id="s-rebels">
+<h2>反乱 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/" target="_new" rel="noopener noreferrer">#32</a>)</h2>
+<h3>■反乱の種類</h3><ul>
+  <li><strong>反乱派閥は5つ</strong>のタイプがある
+  <ol class="no-style">
+    <li>1) <strong>分離主義者</strong>：独立を目指す</li>
+    <li>2) <strong>僭称者内乱</strong>：統治者を挿げ替える</li>
+    <li>3) <strong>奴隷反乱</strong>：解放を望む</li>
+    <li>4) <strong>宗教反乱</strong>：独立するか国教の変更を迫る</li>
+    <li>5) <strong>階級の蜂起</strong>：社会の変革を求める</li>
+  </ol></li>
+</ul>
+
+<h3>■満足度と反乱</h3><ul>
+  <li>POPは<strong>満足度が低くなると反乱派閥に加わる</strong></li>
+  <li>たとえば<strong>平民階級の満足度は通常+25%が最大</strong>で、それ以上上げるには<strong>税金を減らしたり、特権を与えたり</strong>する必要がある</li>
+  <li>征服地では-50%のペナルティがあるため、速やかに統合して-10%まで減らしたい</li>
+  <li>しかし統合には通常25年ほどかかるので、何も手立てをしなければ反乱を抑えられないだろう</li>
+  <li>城を建設すれば満足度を10%増やすことができる</li>
+  <li>軍隊を駐留させるのも良い方法だ</li>
+  <li>あるいは他国の市場アクセス拒否したりして必要な商品を市場内で満たすのも役に立つかもしれない</li>
+  <li>絶対主義の時代には「民衆平定」の評議員アクションを使用することもできる</li>
+  <li>また安定した国では反乱軍が参加するために必要な閾値が高くなる</li>
+</ul>
+
+<h3>■反乱の進行</h3><ul>
+  <li><strong>進行値が100%に達すると反乱</strong>が起きる</li>
+  <li>占領地では通常23年ほどで到達するので統合完了より前に反乱が起きる可能性が高い</li>
+  <li>反乱には「<strong>独立反乱</strong>」または「<strong>内乱</strong>」の2種類がある</li>
+  <li>「<strong>独立反乱</strong>」は勃発時に別の国を形成し、<strong>通常の戦争と同じ</strong>ように戦闘や占領を行って和平する必要がある</li>
+  <li>再併合では侵略的拡大(AE)は増加しない</li>
+  <li><strong>複数の反乱が共同して蜂起</strong>することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928796" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>州が統合中の場合、反乱で進捗が即座に失われることはないが、取り戻すまではマイナスになる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928605" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>ゲーム後半には通常と異なる反乱が起きる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928607" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>「<strong>内乱</strong>」は僭称者または一部の宗教反乱で、こちらは通常の戦争とは異なり、<strong>占領後即所有者が変わる</strong>ので和平を必要としない</li>
+  <li><strong>内乱</strong>が長く続いたとしても、分裂したまま<strong>現状維持で終わることはできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928620" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+</ul>
+
+<h3>■反乱後</h3><ul>
+  <li><strong>内乱に負けてもゲームオーバーにはならない</strong></li>
+  <li>代わりに勝利した側として続行することができる</li>
+  <li>ただし異なる統治者、または異なる宗教、あるいは新しい政府タイプや法律、特権などに変わっているだろう</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-disasters">
+<h2>災厄 / Disasters (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/" target="_new" rel="noopener noreferrer">#42</a>)</h2>
+
+<h3>■災厄</h3><ul>
+  <li>災厄は<strong>原則としてバッドイベンド</strong>であり、特定の国に対して起こる</li>
+  <li>シチュエーションは複数のシチュエーションと複数の国が関わることがあるが、<strong>災厄は1つの国に1つのみ</strong>起こる</li>
+  <li>災厄には2種類があり、<strong>特定の歴史的な出来事に基づくもの</strong>と、条件次第でどの国でも発生し得る<strong>一般的な災厄</strong>がある</li>
+  <li>災厄はただのデバフや条件達成までバッドイベントが続くだけのものではなく、積極的に対応するアクションもある</li>
+</ul>
+
+<h3>■一般的な災厄</h3><ul>
+    <li><strong>宮廷と国家</strong>（Court and Country）<br>
+    王権が強い国で中央集権化への反発が危機を引き起こす。危機を乗り越えることで国家はより強化されるだろう。階級から特権を取り上げつつも、満足度を高く保つ必要がある</li>
+    <li><strong>宗教的混乱</strong>（Religious Turmoil）<br>
+    宗教的統一度が低く、聖職者階級が弱い国で発生し、宗教内戦の危機が高まる。宗教統一度を高め、聖職者の力を強化する、または人文主義的政策を採用して安定を回復することが解決に導くだろう</li>
+    <li><strong>継承戦争は一般的な災厄</strong>となり、新しい同君連合のシステムが導入される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/post-30077001" target="_new" rel="noopener noreferrer">(#42)</a></sup></li>
+  <li>紅巾の乱はシチュエーションだが、それ以外にも<strong>王朝の危機</strong>という一般的な災厄もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/post-30077017" target="_new" rel="noopener noreferrer">(#42)</a></sup></li>
+</ul>
+
+<h3>■特定の国に関連する災厄</h3><ul>
+    <li><strong>サヴォナローラの台頭</strong>（The Rise of Savonarola）<br>
+    15世紀後半のカトリック共和国であるフィレンツェに発生し得る。この問題の解決は神権国家になるか、サヴォナローラの死がもたらすだろう</li>
+    <li><strong>バラ戦争</strong>（War of the Roses）<br>
+    15世紀のイングランドで、ランカスター家とヨーク家が王位を争う内戦。どちらかの家を支持し、内戦を勝ち抜く必要がある</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-cultures">
+<h2>文化 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/" target="_new" rel="noopener noreferrer">#36</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer">#37</a>)</h2>
+<h3>■文化</h3><ul>
+  <li>「<strong>文化グループ</strong>」と「<strong>言語</strong>」の組み合わせで構成される</li>
+  <li>文化グループとはお互いに共通のアイデンティティを持つ文化</li>
+  <li>同じ文化グループは小さなオピニオンボーナスを与え、文化の受容コストを大幅に低減する</li>
+  <li>ある文化が<strong>複数の異なる文化グループに属する</strong>ことがあるし、まったく<strong>孤立した文化</strong>もある</li>
+  <li>キャラクターの名前は文化だけでなく宗教の影響もうける<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/post-29989838" target="_new" rel="noopener noreferrer">(#36)</a></sup></li>
+  <li>州の<strong>コア化</strong>ができるのは<strong>一次文化と受容文化</strong>の州のみ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/post-29989905" target="_new" rel="noopener noreferrer">(#36)</a></sup></li>
+  <li><strong>一次文化は常にひとつ</strong>のみ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/post-29993559" target="_new" rel="noopener noreferrer">(#36)</a></sup></li>
+  <li><strong>主要な文化や宗教を変える</strong>ためのゲームルールは<strong>オプションで選択可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928597" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+</ul>
+
+<h3>■文化的オピニオン</h3><ul>
+  <li>ほとんどの場合はお互いを中立と見なすが、特定の文化に好意や敵意を持つ文化もある</li>
+  <li>「<strong>敵対</strong>」「<strong>忌避</strong>」「<strong>中立</strong>」「<strong>好意</strong>」「<strong>同族</strong>」の5段階で表現される</li>
+  <li><strong>外交アクションで増減</strong>させることは可能</li>
+</ul>
+
+<h3>■文化キャパシティ</h3><ul>
+  <li>文化キャパシティとは<strong>受容可能な文化の最大量</strong></li>
+  <li>各時代の進捗や政府の改革、政策などで増やすことができる</li>
+  <li>相対的な規模、オピニオン、文化グループ、言語により必要な文化キャパシティに補正がある</li>
+</ul>
+
+<h3>■文化の受容</h3><ul>
+  <li>「<strong>非受容</strong>」…主要文化以外のほとんどはこの分類になる</li>
+  <li>「<strong>寛容</strong>」…POPの満足度が少し上がる</li>
+  <li>「<strong>受容</strong>」…人的資源などが多く得られるようになり、州の中核化が可能かにも影響する。受容POPは奴隷になれない</li>
+  <li>条件により主要文化を受容文化の中から変更することもできる</li>
+</ul>
+
+<h3>■文化的影響</h3><ul>
+  <li><strong>他の文化に対してどれほど影響力があるか</strong>を表す</li>
+  <li>威信や文化的建造物に応じて毎月増加し、芸術作品によっても増加する</li>
+</ul>
+
+<h3>■文化的伝統</h3><ul>
+  <li><strong>その文化に人々がどれだけ強く共鳴しているか</strong>を表す</li>
+  <li>一部の建物に応じて毎月変化し、芸術作品や貴族の平均識字率も大きな影響がある</li>
+</ul>
+
+<h3>■文化戦争</h3><ul>
+  <li>「文化的影響」が<strong>攻撃力</strong>として、「文化的伝統」が<strong>防御力</strong>として機能する</li>
+  <li>プラスの場合はボーナスが得られるが、マイナスの場合はペナルティを受ける</li>
+  <li><strong>優勢な文化は外交アクションを受け入れさせやすくし</strong>、スパイネットワークの構築もはるかに速くなる</li>
+  <li>また征服後に領土を<strong>より早く統合</strong>し、人々を<strong>より早く同化</strong>させ、包囲効率にも少し影響がある</li>
+</ul>
+
+<h3>■威信</h3><ul>
+  <li>0から100で表され、基本的に0へと減少していく</li>
+  <li>文化のメカニズムと大きく結びついており、外交と貿易に影響を及ぼす</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-languages">
+<h2> 言語(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/" target="_new" rel="noopener noreferrer">#36</a>)</h2>
+<h3>■言語</h3><ul>
+  <li>「<strong>言語ファミリー</strong>」「<strong>言語</strong>」「<strong>方言</strong>」の3層の設定がある</li>
+  <li>共通した言語ファミリーには小さなオピニオンボーナスがあり、文化の受容や市場の魅力などのコストをわずかに低減する</li>
+  <li><strong>世界で使用される言語のパーセンテージ</strong>により、その言語から得られる<strong>ボーナスの強さに影響</strong>がある</li>
+  <li>方言は単にフレーバーのためだけのものでゲームプレイには影響しない</li>
+  <li>方言を実装したのはキャラクターネームなどを区別し、没入感を阻害しないようにするため<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/post-29989593" target="_new" rel="noopener noreferrer">(#36)</a></sup></li>
+</ul>
+
+<h3>■言語の種類</h3><ul>
+  <li>「<strong>共通言語</strong>」「<strong>典礼言語</strong>」「<strong>市場言語</strong>」「<strong>宮廷言語</strong>」の4つがある</li>
+  <li><strong>共通言語は主要文化</strong>で決定される</li>
+  <li><strong>典礼言語</strong>とは<strong>聖職者</strong>が儀式や聖典で使用したり、さらには<strong>学者が使用</strong>する言語</li>
+  <li>言語勢力の強い典礼言語を採用すると<strong>研究速度にボーナス</strong>がある</li>
+  <li><strong>市場言語</strong>は<strong>商人同士が使用</strong>する共通語</li>
+  <li>市場力が高いほど、そこで使用される市場言語の言語勢力は高まる</li>
+  <li>言語を共有する市場に対して市場選択時により高い魅力を持つ</li>
+  <li><strong>宮廷言語</strong>は<strong>政府</strong>の正式な手続きで使用される言語</li>
+  <li>宮廷言語は選択肢の幅が広く、<strong>階級の満足度に影響</strong>する</li>
+  <li>貴族はより強力な言語を望み、農民は共通言語を願っている。都市民は市場言語と同じであれば満足し、聖職者は典礼言語であるべきだと考えている</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-arts">
+<h2> 芸術作品(<a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer">#37</a>)</h2>
+<h3>■文化投資</h3><ul>
+  <li>ルネッサンス時代の最も重要な進歩の1つ「<strong>芸術のパトロン</strong>」で<strong>文化に投資</strong>できるようになる</li>
+  <li>毎月の文化投資に応じて、<strong>威信を増加させ、芸術家が作る芸術作品の質を向上</strong>する</li>
+</ul>
+
+<h3>■芸術家</h3><ul>
+  <li>文化に投資している国に登場し、<strong>新しい芸術作品を生み出す</strong></li>
+  <li>文化投資により、時間の経過でスキルが向上するほか、直接資金を出して芸術作品を依頼することもでる</li>
+  <li>建物や進歩が芸術家のスキルの下限と上限に影響を与える</li>
+  <li>自国の芸術家が少ない場合、裕福でない国から<strong>芸術家を引き抜くことができる</strong></li>
+  <li>引き抜いた芸術家が作成する芸術作品は自国のものとなるが、芸術家の<strong>元居た国の文化の影響が増加する</strong>ことに注意しなくてはならない</li>
+  <li>芸術家のタイプは以下のとおり
+  <ul>
+    <li>画家</li>
+    <li>彫刻家</li>
+    <li>作曲家</li>
+    <li>作詞家</li>
+    <li>建築家</li>
+    <li>哲学者</li>
+    <li>法学者</li>
+    <li>科学者</li>
+    <li>イコノグラファー（特定の宗教のみ）</li>
+    <li>金属細工師（冶金学を持っている場合）</li>
+  </ul></li>
+</ul>
+
+<h3>■芸術作品</h3><ul>
+  <li><strong>芸術作品</strong>により、その国の文化の<strong>文化的影響力が高まる</strong></li>
+  <li>地区が<strong>占領されると芸術作品が略奪されたり破壊されたり</strong>する可能性がある</li>
+  <li>国に<strong>芸術作品があると</strong>威信や伝統が増すなど、<strong>作品ごとにさまざまな効果</strong>がある</li>
+  <li>芸術作品のほとんどは作られた場所から自由には動かせない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/post-30004809" target="_new" rel="noopener noreferrer">(#37)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-religions">
+<h2>宗教 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer">#13</a>)</h2>
+<ul>
+  <li>EU4とは違って<strong>宣教師はおらず、制度やインフラによってゆっくり改宗が行われる</strong></li>
+  <li>他の宗教に対する態度は<strong>親和的、好意的、中立、否定的、敵視の5段階</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644429" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>国ごとに<strong>真の信仰、異端、異教に対する独自の寛容さ</strong>を持つ</li>
+  <li>宗教グループは<strong>キリスト教、イスラム教、東方宗教、ダルマ教、ゾロアスター教、マニ教、ユダヤ教、アンデス、異教</strong></li>
+  <li><strong>カトリック、正教、合性論者、プロテスタント、イスラム教、仏教、神道、ナワトル、ヒンドゥー教、インティ宗教には独自のギミック</strong>がある</li>
+  <li>例えばジャイナ教は開戦理由なしに戦争を始めることができず、カルヴァン主義では戦闘でサイコロを振り直すことはなく、すべてが予め定められている</li>
+  <li>その他の宗教については今後追加する余地がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643487" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>日本の主な宗教は神道</strong>だが仏教の要素も含まれている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643660" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>中国は儒教と道教のメカニズムが存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/\1680927/post-29643667" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li>インドにはジャイナ教、大乗仏教、上座部仏教が存在する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643848" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>国教を変えることは可能</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29644156" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+  <li><strong>改宗は評議員による強制</strong>が必要で、<strong>逆に国教から異なる宗教へ改宗するメカニズム</strong>もある</li>
+  <li><strong>建物の種類、社会的価値観、法律、または聖職者の特権</strong>により改宗速度は変化する</li>
+  <li><strong>シク教はシチュエーションによって出現</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704372/post-29891499" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
+</ul>
+</section>
+<hr>
+
 
 <section id="s-economy">
 <h2>経済 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer">#7</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">#8</a>)</h2>
@@ -1595,7 +1486,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <h2>建設 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer">#9</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer">#27</a>)</h2>
 <ul>
 <li><strong>建設に必要な産品</strong>と<strong>維持or生産に必要な産品</strong>があり、地元市場で入手可能になっている必要がある</li>
-<li><strong>建物種類は100以上</strong>あり、農村のみや街のみ、沿岸のみ、他国にのみ、無主地のみなど様々</li>
+<li><strong>建物種類は100以上</strong>あり、村落のみや街のみ、沿岸のみ、他国にのみ、無主地のみなど様々</li>
 <li>文化や宗教、地域や国固有のものもある</li>
 <li>たとえばオランダには干拓地がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29581146" target="_new" rel="noopener noreferrer">*</a></sup></li>
 <li>建物にはレベルがあり、1またはあるレベルで固定のものや人口などに応じて増えるものがある</li>
@@ -1612,7 +1503,7 @@ PeruzziやBardi、後にFuggersなど<br>
 <li>逆に建物を一時的に閉鎖して、POPを別の建物で働かせたり、産品の価格を変化させたりすることもできる</li>
 <li><strong>各階級が建てた建物は閉鎖できない。破壊はできるが不満が貯まる</strong>だろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580644" target="_new" rel="noopener noreferrer">*</a></sup></li>
 <li><strong>建物の利益はその地区の基礎税額に加算</strong>される</li>
-<li>基本的な原材料となる産品は農村に建てられる製材場、牧羊場、採石場などや貿易から入手できる</li>
+<li>基本的な原材料となる産品は村落に建てられる製材場、牧羊場、採石場などや貿易から入手できる</li>
 <li><strong>産品の備蓄の概念</strong>もある</li>
 <li><strong>戦争で建物が破壊される</strong>可能性もあるかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580494" target="_new" rel="noopener noreferrer">*</a></sup></li>
 <li>占領中の地区の建物は市場への供給量が減るだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580546" target="_new" rel="noopener noreferrer">*</a></sup></li>
@@ -1635,9 +1526,212 @@ PeruzziやBardi、後にFuggersなど<br>
 </section>
 <hr>
 
-<section id="s-warfare">
-<h2>戦争</h2>
+
+<section id="s-privateer">
+<h2>私掠船 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer">#29</a>)</h2>
 <ul>
+  <li>いくつかの異なる方法で<strong>私掠船の後援のロックを解除</strong>できる</li>
+  <li>ルネッサンスの時代に外交のフォーカスを選択すると、早い段階で私掠船を後援できる</li>
+  <li>大航海時代には一部の国が私掠船を雇える独自の進歩がある</li>
+  <li>絶対主義の時代には私掠免許の進歩で、より頑丈かつ低コストの私掠船を雇える</li>
+  <li>EU4とは違い自国の艦隊を私掠船にするわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/post-29887638" target="_new" rel="noopener noreferrer">(#29)</a></sup></li>
+  <li><strong>海賊/私掠船は、そのエリアの海域のすべての非友好国の制海権を低下</strong>させる</li>
+  <li>もちろん関係は悪化し、開戦理由を与えることにもなるだろう</li>
+  <li>逆に<strong>海賊/私掠船から防衛するには、その海域に船団を置いておけば積極的に討伐に向かう</strong></li>
+  <li>ガレー船は海賊狩りでは重量船よりも向いているが、<strong>圧倒的に優れているのは軽量船</strong>だ</li>
+  <li><strong>16世紀後半には特定のエリアで海賊行為が活発化しはじめるシチュエーション</strong>が起きる</li>
+  <li>支配力が非常に低い沿岸の地区には<strong>農民が海賊の集会所</strong>を建てることもある</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-diplomacy">
+<h2>外交 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/" target="_new" rel="noopener noreferrer">#33</a>)</h2>
+<ul>
+  <li>外交は外交官スロットではなく<strong>外交キャパシティというポイント制</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>外交のUIは2種類。国を選択してから使用できる外交コマンドが表示されるか、外交コマンドを選択してから受諾しそうな国を表示させるか</li>
+  <li><strong>外交に必要な外交団は毎月少しずつ補充</strong>され、また国ランク等により最大値もある。外交コマンドによっては毎月”消費”されることもある</li>
+  <li><strong>同盟や属国維持に使用する外交官</strong>はその国の<strong>規模によって変わってくる</strong></li>
+  <li>自治領は同君連合のように統治者は同じであるが、従属国となる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/post-29781953" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
+  <li>必要な<strong>外交団を超過</strong>すると<strong>威信の低下、従属国の不忠、外交評判の悪化</strong>などを引き起こす<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/post-29943293" target="_new" rel="noopener noreferrer">(#33)</a></sup></li>
+  <li><strong>支出スライダーで外交団を増やす</strong>ことができる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/post-29943462" target="_new" rel="noopener noreferrer">(#33)</a></sup></li>
+</ul>
+
+<h3>■オピニオン・信頼・好意</h3><ul>
+  <li><strong>国同士のオピニオンはA→BとB→Aでは異なる</strong></li>
+  <li><strong>信頼が高い国は誠実に扱われる</strong>。信頼は得にくく失いやすい</li>
+  <li><strong>好意はどの程度借りがあるか</strong>を表す。同盟国を助けたり、外交官でお互いに好意を与え合うこともできる</li>
+  <li>好意を使用して頼まれたことを拒否すると、信頼や外交評判を失うだろう</li>
+</ul>
+
+<h3>■外交評判</h3><ul>
+  <li><strong>外交評判は進歩や威信により高まり、AEにより低下</strong>する</li>
+  <li><strong>外交評判は外交の受諾値に大きく影響する</strong>だろう</li>
+</ul>
+
+<h3>■外交範囲</h3><ul>
+  <li><strong>外交可能な範囲は進歩と国のランクにより拡大</strong>する</li>
+  <li>範囲は首都同士の距離により判定される</li>
+</ul>
+
+<h3>■スパイ</h3><ul>
+  <li><strong>スパイ網の構築を開始するには外交官を使用</strong>し、毎月いくらかの外交官を消費する</li>
+  <li>スパイ網を拡大することで包囲戦で有利になったり、AEを抑えることができる</li>
+  <li><strong>スパイ網は包囲戦の効率を少し上げる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/post-29943163" target="_new" rel="noopener noreferrer">(#33)</a></sup></li>
+</ul>
+
+<h3>■ライバル</h3><ul>
+  <li>近隣の国のうち、<strong>自国と同等以上のランクであるか、文化グループが同じ国</strong>から選ばれる</li>
+  <li>十分な数のライバルを選択肢しないと、<strong>侵略的拡大が増加しやすくなり、スパイ網も弱く</strong>なる</li>
+  <li>スパイ網が構築されていればライバルにはいつでもCBを捏造できる</li>
+  <li>ライバルはいつでも変更できるが、代わりに安定性を25損なう</li>
+  <li>ライバルを共有する国はお互いに高い評価を得る</li>
+</ul>
+
+<h3>■外交コマンドの一例</h3><ul>
+  <li>防衛同盟</li>
+  <li>独立保証</li>
+  <li>統治者の変更</li>
+  <li>地図の共有</li>
+  <li>戦争への介入 - 帝国は友好的な国に対し防衛側として参加できる</li>
+  <li>同盟国破棄 - 好意を消費して相手の同盟を破棄させる</li>
+  <li>侮辱を送る -評価は下がり、あなたに対して開戦理由を得る</li>
+  <li>脅迫 - 州に対するCBがある場合、譲渡するよう脅迫できる</li>
+</ul>
+
+<h3>■スパイ活動コマンドの一例</h3><ul>
+  <li>役人を腐敗させる - 評議員の効率を低下させる</li>
+  <li>政権への潜入 - 戦場の霧をしばらく除去する</li>
+  <li>地図を盗む</li>
+  <li>反乱軍の支援</li>
+</ul>
+
+<h3>■経済アクションの一例</h3><ul>
+  <li>国外建設の禁止 - 自国内への建設をブロックする</li>
+  <li>禁輸 - 対象の国の市場との取引を禁止する</li>
+  <li>借金の申し入れ</li>
+</ul>
+
+<h3>■アクセスアクション</h3><ul>
+  <li>軍事アクセス - 他国の領土に侵入できる。対価を払って依頼することも可能になった</li>
+  <li>食料アクセス - 他国の領土で補給できる</li>
+  <li>艦隊基地権 - 他国の港に駐留させることができる</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-io">
+<h2>国際組織/International Organizations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#12</a>)</h2>
+<ul>
+  <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
+  <li>以下のような仕組みによってそれぞれ特色を持つ
+    <ul>
+      <li>リーダーがいるか、またリーダーが<strong>個人か国家か</strong></li>
+      <li>団体が<strong>独自のもの</strong>か、同様なものが<strong>複数存在する</strong>か</li>
+      <li><strong>地区を所有</strong>しているか</li>
+      <li>メンバーの<strong>特典やペナルティ</strong></li>
+      <li>持つことができる<strong>法律や政策</strong></li>
+      <li>組織内の<strong>特別な地位</strong></li>
+      <li><strong>戦争中のメンバーの振る舞い</strong></li>
+    </ul>
+  </li>
+  <li><strong>複数の国際組織に所属することができ</strong>、教皇派や皇帝派のようなある国際組織に所属してる場合のみ参加できる組織もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626418" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>朝貢は朝貢国に支払いをすることで権威を獲得する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626456" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>EU4とは異なり<strong>同君連合は従属国ではない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626602" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>HREの選帝侯は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
+  <li><strong>選帝侯は統治者ではなく国を選ぶ</strong>ので、同君連合の場合はどちらか片方の国が選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643480" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-greatpower">
+<h2>国家ランク/列強 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/" target="_new" rel="noopener noreferrer">#35</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer">#39</a>)</h2>
+<h3>■国家ランク</h3><ul>
+  <li><strong>4つのランク</strong>があり、順に<strong>伯・公国・王国・帝国</strong>となる</li>
+  <li class="del">公国ランクになると独立保証が可能になり、外交能力と戦力投射にボーナスがつく</li>
+  <li class="del">公国に昇格するには主要文化の人口が少なくとも10万必要</li>
+  <li class="del">王国ランクには主要文化の人口が100万必要で、外交範囲の拡大などさらにボーナスが増える</li>
+  <li class="del">帝国ランクは主要文化の人口が500万以上で尚且つ列強である必要がある。より多様な外交行動が可能になるが、カトリック諸国が教皇の許可なく皇帝を名乗ることには制限がある</li>
+  <li>単なる外交行動のロック解除ではなくフレーバーと内部メカニズムに関するものに変更する</li>
+  <li>国家ランクは一度昇格したら下がることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/post-29974286" target="_new" rel="noopener noreferrer">(#35)</a></sup></li>
+</ul>
+
+<h3>■列強</h3><ul>
+  <li>列強は<strong>進歩・人口・領土・開発度などで列強スコア上位の独立国</strong>が選ばれる</li>
+  <li>列強の数は流動的で、最小数と最大数は世界の国の総数によって決まる</li>
+  <li>列強という風格を維持するためにはそれなりの金銭的コストがかかるだろう</li>
+  <li>列強同士は-25のネガティブオピニオンがつく</li>
+  <li><strong>列強内の順位により獲得するボーナスは増減</strong>する</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-hegemony">
+<h2>覇権 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/" target="_new" rel="noopener noreferrer">#35</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer">#39</a>)</h2>
+<h3>■覇権</h3><ul>
+  <li><strong>大航海時代</strong>が始まると<strong>自動的に選抜</strong>が始まる</li>
+  <li><strong>各分野で最も影響力の大きい列強が覇権国</strong>としてみなされる</li>
+  <li>覇権国の地位を奪うには20％以上強力でなければならない</li>
+  <li><strong>複数の分野の覇権を保持</strong>できる</li>
+  <li>保持している覇権ごとに、<strong>すべての国からの評価が-20され、侵略的拡大が20%増加</strong>する</li>
+  <li>また宮廷費用の増加と毎月の威信も向上する</li>
+  <li>各覇権ごとに<strong>外交と内閣に1つずつ特殊コマンド</strong>が解禁される</li>
+</ul>
+<div class="pickup">
+<h4>■経済覇権</h4><ul>
+  <li>貿易と税金からの収入が最も多い列強が選ばれる</li>
+  <li>ユニットの食糧消費量が少なくなる</li>
+  <li>「<strong>貿易の強制転向</strong>」- 独自市場を持っていない非列強のすべての市場で商人の能力と権力の一部を強制的に放棄させる</li>
+</ul>
+
+<h4>■海軍覇権</h4><ul>
+  <li>最も多くの大型船を保有する列強が選ばれる。</li>
+  <li>海軍ダメージ10%減少</li>
+  <li>「<strong>強制禁輸</strong>」- 禁輸された市場で取引できなくなり、地区もその市場に属さなくなる</li>
+  <li>「<strong>海軍の焦点</strong>」- 指定地域内のすべての港の効率が向上する</li>
+</ul>
+
+<h4>■陸軍覇権</h4><ul>
+  <li>最大の陸軍を持つ列強が選ばれる</li>
+  <li>戦争スコアコスト10%削減</li>
+  <li>「<strong>主権侵害</strong>」- 非列強に軍事および食料のアクセスを強制することができる</li>
+  <li>「<strong>兵士を労働力に</strong>」- 指定地域内の建設速度が速くなる</li>
+</ul>
+
+<h4>■文化覇権</h4><ul>
+  <li>最も文化的な影響力を持つ列強が選ばれる</li>
+  <li>文化伝統の成長率+25%。</li>
+  <li>「<strong>宮廷言語の変更強制</strong>」- 非列強の宮廷言語を自国と同一にし、文化的影響力を高める</li>
+  <li>「<strong>地域の同化</strong>」- 一度に地域全体のポップを同化できる（通常は州単位）</li>
+</ul>
+
+<h4>■外交覇権</h4><ul>
+  <li>最も外交的評判の高い列強が選ばれる</li>
+  <li>関係改善の影響+30%</li>
+  <li>「<strong>国家への影響</strong>」- 非列強からの信頼と評価を高めることができる</li>
+  <li>「<strong>外交団</strong>」- 外交能力を劇的に高め、毎月より多くの外交官を獲得することができる</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-warfare">
+<h2>戦争 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/" target="_new" rel="noopener noreferrer">#30</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/" target="_new" rel="noopener noreferrer">#31</a>)</h2>
+<ul>
+  <li>EU4の好意と同様のシステムで同盟国を呼べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914108" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+  <li>AEは社会的価値観の変化、外交評判の低下、文化的影響力の減少、スパイ網構築の困難さなどを引き起こす<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914158" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+  <li>CBの有効期間は基本5年<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914167" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+  <li>戦争目標と異なる和平に一定の制限をかけるのはプレイヤーの悪用を防ぐため<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914172" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+  <li>和平は強制するかされるかで、Vic3のようにお互い条件を出し合うことはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914266" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+  <li>休戦期間は和平コストにより変化する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/post-29914483" target="_new" rel="noopener noreferrer">(#31)</a></sup></li>
+
 <li>マップ上の地区でユニットを操作する戦争システム<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/#post-29439618" target="_new" rel="noopener noreferrer">(#2)</a></sup></li>
 <li><strong>常備軍はゲーム中盤から終盤くらいまではゲームに登場しない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502832" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
 <li><strong>マンパワーはPOPに100%依存</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/post-29527282" target="_new" rel="noopener noreferrer">(#6)</a></sup></li>
@@ -1648,6 +1742,57 @@ PeruzziやBardi、後にFuggersなど<br>
 <li>ZoCはEU4/IR的なものになる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580492" target="_new" rel="noopener noreferrer">(#9)</a></sup>。時代によっては無視できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580525" target="_new" rel="noopener noreferrer">(#9)</a></sup></li>
 <li><strong>ユニット維持のために産品を消費</strong>する必要がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/post-29580669" target="_new" rel="noopener noreferrer">*</a></sup></li>
 </ul>
+
+<h3>■開戦事由</h3><ul>
+  <li><strong>CBがない</strong>状態で戦争を始めると、<strong>侵略的拡大(AE)が増加し、安定性も失われる</strong></li>
+  <li>EU4のようにどこでも使える<strong>「請求権の捏造」はない</strong>。代わりに<strong>3つの方法</strong>がある<ol class="no-style">
+  <li>1) イベントからCBを取得する</li>
+  <li>2) 議会を招集して戦争の正当な理由を考え出すように求める<br>
+  高い王権を持っていない限り、支持を得るために階級と交渉する必要がある</li>
+  <li>3) 何らかの理由があればCBを作成できる<br>
+  対象国にスパイネットワークを持っている必要があり、加えて「コアがある」「相手が私掠船を使用している」「ライバルの屈辱」、特別なものとして「花の戦争」「タタールのくびきの解消」など50種類ほどの事由が設定されている</li>
+  </ol></li>
+  <li>No CBも悪い選択肢ではないかもしれない</li>
+</ul>
+
+<h3>■戦争目標</h3><ul>
+  <li><strong>開戦理由により異なる戦争目標が設定</strong>される</li>
+  <li>戦争目標は和平時の<strong>征服コストに影響</strong>する</li>
+  <li>州の征服ではその州全体を占領する必要があり、海軍優勢では敵を封鎖して海軍を倒すことでボーナススコアが得られる</li>
+  <li>戦争スコアは戦争目標の達成は最大25、戦闘は最大50。占領と封鎖には上限がなく100を超えることもある</li>
+  <li>これまでのように<strong>常に全面戦争にならないことを目標</strong>にしている。戦争目標を達成し、重要な戦いに勝利するか、いくつかの土地を占領すれば、妥当な和平を得られるはずだ</li>
+  <li>国境を細く伸ばすような征服の仕方は支配権の観点から得策ではないだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/post-29900246" target="_new" rel="noopener noreferrer">(#30)</a></sup></li>
+</ul>
+<h3>■和平交渉</h3><ul>
+  <li><strong>和平交渉は相手側指導国と</strong>行う</li>
+  <li>または<strong>戦争指導国は</strong>相手国と<strong>個別に和平交渉</strong>を行うことができる</li>
+  <li>州の征服の戦争目標で宣戦布告した場合、<strong>戦争目標を達成しない限りは他の土地を獲得することはできない</strong></li>
+  <li>さらに<strong>地区の譲渡にはその地区の州都も占領</strong>している必要がある</li>
+</ul>
+
+<h3>■和平スコア</h3><ul>
+  <li>合計で<strong>最大100の和平スコア</strong>の範囲で交渉する</li>
+  <li>地区、州ごと、または地域ごとの譲渡</li>
+  <li>他には私掠船の停止、金の譲渡、要塞の解体、屈辱、その他多数の項目がある</li>
+  <li>必要なスコアは、戦争目標の一部かどうか、人口、条約の種類など多くの要因によって異なる</li>
+</ul>
+
+<h3>■侵略的拡大 (Agressive Expansion)</h3><ul>
+  <li><strong>州の征服はAEを増大</strong>させ、近隣国のオピニオンに影響する</li>
+  <li>AEが高いと対抗連合を結成する可能性が高まる</li>
+  <li><strong>対抗連合は国際組織</strong>として表現される</li>
+</ul>
+
+<h3>■戦意 (War Enthusiasm)</h3><ul>
+  <li><strong>戦意が高い</strong>間はAIが不利な<strong>和平を受け入れる可能性は低い</strong></li>
+  <li>戦争疲弊、首都の占領、軍事バランスが大きな要因となる</li>
+</ul>
+
+<h3>■戦争貢献度 (War Participation)</h3><ul>
+  <li>同盟国の<strong>戦争貢献度は戦闘、封鎖、包囲などで判定</strong>される</li>
+  <li>攻撃側で戦争目標を約束して参戦させた場合、実際の和平条約にそれが含まれていなければ同盟国は怒るだろう</li>
+</ul>
+
 </section>
 <hr>
 
@@ -1670,7 +1815,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><strong>通常の騎兵と弓騎兵の混在も可</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610324" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
   <li><strong>人的資源も建物から</strong>得られる</li>
   <li>たとえばクリルタイは毎月50のMPを提供し、最大3000MP（5年分）まで備蓄できる。また<strong>100人の射手</strong>を<strong>雇用するには100MPを消費</strong>し、加えて<strong>毎月1MPの維持コスト</strong>がかかる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610591" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
-  <li>需要文化以外は人的資源が少なくなる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610168" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
+  <li>受容文化以外は人的資源が少なくなる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610168" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
   <li>徴兵や常備軍は<strong>部隊に損失があればPOPも減少</strong>する</li>
   <li><strong>常備軍が回復するには自国領にいる必要</strong>があり、<strong>傭兵は賄賂で寝返る</strong>こともある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/post-29610287" target="_new" rel="noopener noreferrer">(#11)</a></sup></li>
   <li>固定の<strong>部隊数上限はない</strong>が人的資源や消費産品で制限されるだろう</li>
@@ -1868,8 +2013,10 @@ PeruzziやBardi、後にFuggersなど<br>
   <li>差別POPのみを選抜して送る方法はない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829337" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
   <li>植民のひとつの壁として病気がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29827683" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
   <li>本国から移住した人数すべてが植民地にたどり着けるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829416" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
-  <li>植民者数を増やすには大航海時代の進歩により、評議会で2つのコマンドが使用可能になる<br>　「<strong>植民総督府の支援</strong>」は特定の自国領からPOPの植民を増やす<br>　「<strong>植民地国家の支援</strong>」は特定の自国領から植民地国家の州に毎月100POP移住させる</li>
-  <li>植民地を完成させるには<strong>少なくとも1,000のPOP</strong>を有し、<strong>一定割合が国教と需要文化</strong>を持っている必要がある</li>
+  <li>植民者数を増やすには大航海時代の進歩により、評議員で2つのコマンドが使用可能になる<br>
+  「<strong>植民総督府の支援</strong>」は特定の自国領からPOPの植民を増やす<br>
+  「<strong>植民地国家の支援</strong>」は特定の自国領から植民地国家の州に毎月100POP移住させる</li>
+  <li>植民地を完成させるには<strong>少なくとも1,000のPOP</strong>を有し、<strong>一定割合が国教と受容文化</strong>を持っている必要がある</li>
   <li>その割合は自国と植民先の国の戦力投射の差に大きく依存する</li>
   <li>領有化の判定は現地POP数も計算に入る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/post-29829324" target="_new" rel="noopener noreferrer">(#25)</a></sup></li>
   <li>植民先の国が植民地化にどう反応するか、ひいてはどこに植民できるかは、また後日の開発日記を期待してほしい。元朝がもっと近ければ理論的にはヨーロッパの植民地化を開始できたかもしれない</li>
@@ -1887,111 +2034,6 @@ PeruzziやBardi、後にFuggersなど<br>
 </section>
 <hr>
 
-<section id="s-io">
-<h2>国際組織/International Organizations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer">#12</a>)</h2>
-<ul>
-  <li><strong>国際組織</strong>とは<strong>高度に汎用化された国家をまたがるシステム</strong>であり、<strong>HRE、包囲網、同君連合、宗教組織や十字軍、タタールの軛、中国の朝貢</strong>すら表現される</li>
-  <li>以下のような仕組みによってそれぞれ特色を持つ
-    <ul>
-      <li>リーダーがいるか、またリーダーが<strong>個人か国家か</strong></li>
-      <li>団体が<strong>独自のもの</strong>か、同様なものが<strong>複数存在する</strong>か</li>
-      <li><strong>地区を所有</strong>しているか</li>
-      <li>メンバーの<strong>特典やペナルティ</strong></li>
-      <li>持つことができる<strong>法律や政策</strong></li>
-      <li>組織内の<strong>特別な地位</strong></li>
-      <li><strong>戦争中のメンバーの振る舞い</strong></li>
-    </ul>
-  </li>
-  <li><strong>複数の国際組織に所属することができ</strong>、教皇派や皇帝派のようなある国際組織に所属してる場合のみ参加できる組織もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626418" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>朝貢は朝貢国に支払いをすることで権威を獲得する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626456" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>EU4とは異なり<strong>同君連合は従属国ではない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626602" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>チュートン騎士団</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626669" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>ハンザ同盟</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626673" target="_new" rel="noopener noreferrer">(#12)</a></sup>、<strong>植民地国家や貿易会社</strong>は国際組織ではなく<strong>国扱い</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626683" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>スイスは独立都市間の国際組織</strong>として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29626767" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li>国際組織が消滅する条件は様々でそれぞれに異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29627798" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>HREの選帝侯は増やすこともでき、また土地に固定されているわけでもない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/post-29628612" target="_new" rel="noopener noreferrer">(#12)</a></sup></li>
-  <li><strong>選帝侯は統治者ではなく国を選ぶ</strong>ので、同君連合の場合はどちらか片方の国が選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/post-29643480" target="_new" rel="noopener noreferrer">(#13)</a></sup></li>
-</ul>
-</section>
-<hr>
-
-<section id="s-diplomacy">
-<h2>外交</h2>
-<ul>
-  <li>外交は外交官スロットではなく<strong>外交キャパシティというポイント制</strong><sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-  <li>自治領は同君連合のように統治者は同じであるが、従属国となる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/post-29781953" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
-</ul>
-</section>
-<hr>
-
-<section id="s-tecnology">
-<h2></h2>
-<h2>進歩（技術）/ Advances (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer">#20</a>)</h2>
-<ul>
-  <li>「<strong>進歩/Advances</strong>」と呼ばれるメカニズムに再構成された</li>
-  <li>進歩により<strong>新しいコマンド、ユニット、法律、相続法、制度、CB…様々なものがアンロック</strong>される</li>
-  <li>ツリーには<strong>現在100の進歩</strong>があり、<strong>固有の進歩</strong>もある</li>
-  <li>ゲーム開始時の国選択画面でその国独自要素を確認できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761238" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>文化や宗教、ある地区を所有しているか、政府の種類などにより固有の進歩が出現する</li>
-  <li><strong>各時代の開始時に各国に固有の新しい進歩ツリーが作成</strong>される</li>
-  <li>伝統の時代以外は<strong>共通、行政、外交、軍事の4つのツリー</strong>が用意されている。たとえば<br>　<strong>行政</strong> - 優れた行政効率、低金利、より良い近接拡散、安価な傭兵など<br>　<strong>外交</strong> - 優れた商人、より高い外交評判、従属国の設立、戦争スコアコスト減など<br>　<strong>軍事</strong> - 戦闘でのより高い名声、毎月の伝統獲得など</li>
-  <li>すべてのツリーですべての進歩を得ることはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761034" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li><strong>時代の開始時に行政、外交、軍事から1つの分野をフォーカス</strong>することで、<strong>その分野に10の追加の進歩</strong>が出現する</li>
-  <li><strong>選ばなかった追加の進歩の研究はできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761140" target="_new" rel="noopener noreferrer">(#20)</a></sup><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761186" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>選択せずに得られなかった追加の進歩が致命的になることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761315" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>非現実的だが利便性のために進歩を研究せずに<strong>最大1年分の研究を蓄積する</strong>こともできる</li>
-  <li>基本的には同じ研究コストがかかるが、<strong>「文字」などコストの高いキーストーンとなる進歩</strong>もある</li>
-  <li><strong>以前の時代の進歩は現在の時代よりも安価（約33%引き<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761193" target="_new" rel="noopener noreferrer">(#20)</a></sup>）</strong>になり、キャッチアップを可能にしている</li>
-  <li>研究の進捗は、<strong>定住国か遊牧民か、典礼言語、聖職者の満足度と国の平均識字率</strong>で変わる</li>
-  <li>大学や図書館などは識字率を向上させ、間接的に研究に貢献する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29762206" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-
-  <li>一度得た進歩は前提となる宗教や政府を変えたとしても残る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761033" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li><strong>ゲーム開始時のツリーの一部はランダム化</strong>されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761229" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-</ul>
-</section>
-<hr>
-
-<section id="s-situation">
-<h2>シチュエーションシステム/Situation System (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/" target="_new" rel="noopener noreferrer">#14</a>)</h2>
-<ul>
-  <li><strong>シチュエーションシステムとは一定期間にわたって複数の国が関与するコンテンツ群</strong></li>
-  <li><strong>独自のアクション、トリガーとなるイベント、独自のUIやマップモード</strong>もある</li>
-  <li>例えば<strong>黒死病、イタリア戦争、紅巾の乱</strong>などが含まれる</li>
-  <li><strong>黒死病は1346年から</strong>流行の兆しが見え、<strong>中央アジアのどこか</strong>で腺ペストが発生して旧世界に広がり、影響を受けた地域の<strong>人口の40～60%が死亡</strong>する</li>
-  <li>黒死病は<strong>隣接地域、軍隊の移動、または貿易を通じて広がる</strong></li>
-  <li>黒死病を<strong>軽減する方法はいくつかあるが、効率は低いうえにコストは高い</strong>（宮廷の隔離や病人の追放、少数派を非難など）</li>
-  <li>黒死病の発生地域をランダムにすることはできるが新大陸で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29659868" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>黒死病の一度だけではなくほかの流行り病が蔓延することもあるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658189" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>一般的な病気の仕組みも存在</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658205" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>イタリア戦争はフランスやイベリア主要国、またはHRE皇帝がイタリアの国に宣戦布告すると即座に開始</strong>する</li>
-  <li>イタリア戦争は<strong>フランスリーグ、イベリアリーグ、皇帝リーグ、3つのイタリアリーグ</strong>の計6つの勢力がイタリアの覇権を相争う</li>
-  <li>イタリア戦争には<strong>イタリアに拠点を所有していれば誰でも参加でき、また放棄することもできる</strong></li>
-  <li><strong>紅巾の乱は1350年以降</strong>に元の安定度が25を下回り、いずれかの階級が不満を抱えている場合、発生する可能性がある</li>
-  <li>条件は厳しいが、<strong>大航海時代に到達すれば紅巾の乱を回避</strong>できる</li>
-  <li>紅巾の乱が始まると歴史をなぞって<strong>各地が独立し、紅巾賊と呼ばれる国際組織を作る</strong></li>
-  <li>各紅巾賊は<strong>独立時にプレイ可能</strong>であり、互いに戦争を行うこともできる</li>
-  <li>各紅巾賊は<strong>-100から100までの範囲で元に対する忠誠心を持ち、忠誠度が0を超えると自動的に紅巾の乱の国際組織から離脱する</strong></li>
-  <li>元は<strong>20年以内に安定度を取り戻し、紅巾の乱からすべての勢力が離脱</strong>すれば事態は収束する</li>
-  <li>紅巾の乱収束時に忠誠度が50を超えるすべての紅巾賊は自動的に元に併合される</li>
-  <li><strong>紅巾賊が中華の大部分（7割）を押さえると元から中華皇帝の座を奪って</strong>乱は終了する</li>
-  <li>特別な外交コマンドとして、元は紅巾賊に称号を下賜して費用と引き換えに忠誠度を獲得したり、忠誠度の高い紅巾賊を同盟に呼んだりできる。一方紅巾賊は特別なCBで征服コストが低減され、征服地の統合速度も大幅に早めることができる</li>
-  <li>その他にも<strong>大シスマ、百年戦争、日本の戦国時代</strong>もあるが、これらは後日詳しく取り上げる予定だ</li>
- 
-  <li>現在のシチュエーション数は13だが、まだまだ追加予定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658249" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>シチュエーションは動的には作成されない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658598" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>宗教改革</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658295" target="_new" rel="noopener noreferrer">(#14)</a></sup>や<strong>宗教戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658141" target="_new" rel="noopener noreferrer">(#14)</a></sup>、<strong>フス戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658579" target="_new" rel="noopener noreferrer">(#14)</a></sup>もシチュエーションとして表現されるだろう</li>
-  <li><strong>日本の南北朝時代はシチュエーションになる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29660152" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-</ul>
-</section>
-<hr>
-
-<section id="s-dhe">
-<h2>動的歴史イベント</h2>
-<ul>
-  <li><strong>小規模なものは動的歴史イベント</strong>（Dynamic Historical Event）として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658091" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>AIが動的歴史イベントでどう振る舞うかはオプション設定で選べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658588" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-</ul>
-</section>
-<hr>
 
 <section id="s-countries">
 <h2>各国詳細</h2>
@@ -2004,21 +2046,41 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><strong>継承戦争はシチュエーションではなく別のメカニズム</strong>だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658146" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
   <li>デンマークに王朝がないのは空位時代で摂政制のような状態になっているから<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675212" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
   <li>スウェーデンとノルウェーは連合国で、スコーネはスウェーデンの自治領、アイスランドとグリーンランドはノルウェーの自治領<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/post-29675287" target="_new" rel="noopener noreferrer">(#15)</a></sup></li>
+  <li>サーミ、スオメヌスコ、ロムヴァ、さらにごくわずかにノース宗教も残っている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
   <li><strong>現在の教皇庁はアヴィニョン</strong>であり、教皇領の支配権を取り戻してローマに戻すには時間と労力がかかるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1686051/" target="_new" rel="noopener noreferrer">(#Map5)</a></sup></li>
   <li>教皇派（ゲルフ）と皇帝派（ギベリン）はシチュエーションによる国際組織<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1686051/" target="_new" rel="noopener noreferrer">(#Map5)</a></sup></li>
   <li>ヴェネツィアは島ではなくなるかも<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1686051/" target="_new" rel="noopener noreferrer">(#Map5)</a></sup></li>
   <li>検討した結果、ノーサンブリア文化、マーシア文化は導入せずイングランド文化に統一した<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687953/" target="_new" rel="noopener noreferrer">(#Map6)</a></sup></li>
   <li>イングランドの首都はウェストミンスター<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687953/post-29696833" target="_new" rel="noopener noreferrer">(#Map6)</a></sup></li>
-  <li><strong>アナトリアには「オスマントルコの台頭」という国際組織がある</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-7-21st-of-june-2024-anatolia.1689600/post-29713950" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+  <li>スコットランド語が英語の方言となっているのは、ある程度の共通性はあり、なにより別個の言語にするとゲーム的なデメリットが大きくなるため<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/post-29989556" target="_new" rel="noopener noreferrer">(#36)</a></sup></li>
   <li>アイルランドにはブレホン法とタニストリーがある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29726952" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
   <li>ポーランドの議会名は Sejm、カスティーリャの議会名は Cortes、スウェーデンの議会名は Riksdagなど国によって呼び方は異なる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/post-29729981" target="_new" rel="noopener noreferrer">(#18)</a></sup></li>
-  <li>デンマークには現在統治する国王がいない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
-  <li>サーミ、スオメヌスコ、ロムヴァ、さらにごくわずかにノース宗教も残っている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695964/" target="_new" rel="noopener noreferrer">(#Map11)</a></sup></li>
   <li><strong>HREは皇帝、4人の世俗選帝侯、3人の大司教選帝侯、23の自由帝国都市、2の帝国農民共和国、44の司教領、および280の諸侯、合計357か国</strong>で構成されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1696699/" target="_new" rel="noopener noreferrer">(#Map12)</a></sup></li>
+ <li>神聖ローマ帝国は統一された国ではないため列強ではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/post-29974266" target="_new" rel="noopener noreferrer">(#35)</a></sup></li>
+  <li><strong>アナトリアには「オスマントルコの台頭」という国際組織がある</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-maps-7-21st-of-june-2024-anatolia.1689600/post-29713950" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
   <li>カスピ海は制海権を表現するために海扱いとし、港で船を建造できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1703150/post-29879246" target="_new" rel="noopener noreferrer">(Map#18)</a></sup></li>
+  <li>インドのトゥグルク朝は「デリーの没落」というシチュエーションで始まる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704372/post-29891360" target="_new" rel="noopener noreferrer">(Map#19)</a></sup></li>
+   <li>エチオピアは帝国ランクでスタートする<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/post-29974370" target="_new" rel="noopener noreferrer">(#35)</a></sup>  <li>黒曜石の剣を表現するため、宝石から武器を生産する生産方法が新大陸限定である<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1720739/" target="_new" rel="noopener noreferrer">(#Map29)</a></sup></li>
+</li>
 </ul>
 </section>
 <hr>
+
+<section id="s-japan">
+<h2>日本 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1710914/" target="_new" rel="noopener noreferrer">#Map24</a>)</h2>
+<ul>
+  <li>日本の州割は律令国に基づくがいくつかは統合されており、それでも1400地区ほどある</li>
+  <li>琉球は北山、中山、南山の3つに分かれている</li>
+  <li>日本の文化は東国、西国、東北、九州に加え、アイヌ、琉球の6つがある</li>
+  <li>日本の宗教は神道であるが、古来神道でも明治以降の国家神道でもなく仏教神道として扱われる。またアイヌ宗教や琉球には御嶽（ウタキ）宗教もある</li>
+  <li>各守護大名は土地を持たない建物ベースの国家として扱われており、国際組織として表現される北朝または南朝の下にある</li>
+  <li>現時点で南北皇統、足利氏の他に143の守護大名が存在している</li>
+  <li>各大名は戦国時代が始まると土地を持つ通常の国家へ移行する</li>
+  <li>日本は列強として始まるが<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/post-29974095" target="_new" rel="noopener noreferrer">(#35)</a></sup>、見直すかもしれない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/post-30034280" target="_new" rel="noopener noreferrer">(#39)</a></sup></li>
+</ul>
+</section>
+<hr>
+
 
 <section id="s-archivement">
 <h2>実績</h2>
@@ -2051,51 +2113,52 @@ PeruzziやBardi、後にFuggersなど<br>
 <section id="s-url">
 <h3 style="font-style: italic;">参考URLリスト</h3>
 <ol id="devdiary-list">
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#1 Project Caesar</em> https://forum.paradoxplaza.com/forum/developer-diary/1625360/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#2 Map</em> https://forum.paradoxplaza.com/forum/developer-diary/1626415/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#3 POP</em> https://forum.paradoxplaza.com/forum/developer-diary/1630154/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#4 政府</em> https://forum.paradoxplaza.com/forum/developer-diary/1636860/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#5 階級</em> https://forum.paradoxplaza.com/forum/developer-diary/1647775/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#6 地区</em> https://forum.paradoxplaza.com/forum/developer-diary/1657435/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#7 経済</em> https://forum.paradoxplaza.com/forum/developer-diary/1662356/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#8 経済その2</em> https://forum.paradoxplaza.com/forum/developer-diary/1666167/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#9 建設</em> https://forum.paradoxplaza.com/forum/developer-diary/1670510/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#10 市場</em> https://forum.paradoxplaza.com/forum/developer-diary/1673745/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#11 軍隊</em> https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#12 国際組織</em> https://forum.paradoxplaza.com/forum/developer-diary/1677441/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#13 宗教</em> https://forum.paradoxplaza.com/forum/developer-diary/1680927/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/.1682450/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#14 シチュエーション</em> https://forum.paradoxplaza.com/forum/developer-diary/1682450/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#15 キャラクター</em> https://forum.paradoxplaza.com/forum/developer-diary/1685161/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#16 評議会</em> https://forum.paradoxplaza.com/forum/developer-diary/1687571/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#17 POPその2</em> https://forum.paradoxplaza.com/forum/developer-diary/1689183/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#18 法律</em> https://forum.paradoxplaza.com/forum/developer-diary/1689850/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#19 時代と制度</em> https://forum.paradoxplaza.com/forum/developer-diary/1693447/</a></li
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#20 進歩</em> https://forum.paradoxplaza.com/forum/developer-diary/1694744/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#21 探検</em> https://forum.paradoxplaza.com/forum/developer-diary/1695632/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1696537/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#22 戦闘</em> https://forum.paradoxplaza.com/forum/developer-diary/1696537/
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1625360/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#1 Project Caesar</em> https://forum.paradoxplaza.com/forum/developer-diary/1625360/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#2 Map</em> https://forum.paradoxplaza.com/forum/developer-diary/1626415/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#3 POP</em> https://forum.paradoxplaza.com/forum/developer-diary/1630154/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1636860/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#4 政府</em> https://forum.paradoxplaza.com/forum/developer-diary/1636860/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#5 階級</em> https://forum.paradoxplaza.com/forum/developer-diary/1647775/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#6 地区</em> https://forum.paradoxplaza.com/forum/developer-diary/1657435/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1662356/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#7 経済</em> https://forum.paradoxplaza.com/forum/developer-diary/1662356/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#8 経済その2</em> https://forum.paradoxplaza.com/forum/developer-diary/1666167/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1670510/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#9 建設</em> https://forum.paradoxplaza.com/forum/developer-diary/1670510/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#10 市場</em> https://forum.paradoxplaza.com/forum/developer-diary/1673745/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1675078/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#11 軍隊</em> https://forum.paradoxplaza.com/forum/developer-diary/1675078/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1677441/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#12 国際組織</em> https://forum.paradoxplaza.com/forum/developer-diary/1677441/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1680927/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#13 宗教</em> https://forum.paradoxplaza.com/forum/developer-diary/1680927/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/.1682450/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#14 シチュエーション</em> https://forum.paradoxplaza.com/forum/developer-diary/1682450/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1685161/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#15 キャラクター</em> https://forum.paradoxplaza.com/forum/developer-diary/1685161/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1687571/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#16 評議員</em> https://forum.paradoxplaza.com/forum/developer-diary/1687571/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#17 POPその2</em> https://forum.paradoxplaza.com/forum/developer-diary/1689183/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689850/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#18 法律</em> https://forum.paradoxplaza.com/forum/developer-diary/1689850/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#19 時代と制度</em> https://forum.paradoxplaza.com/forum/developer-diary/1693447/</a></li
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#20 進歩</em> https://forum.paradoxplaza.com/forum/developer-diary/1694744/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1695632/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#21 探検</em> https://forum.paradoxplaza.com/forum/developer-diary/1695632/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1696537/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#22 戦闘</em> https://forum.paradoxplaza.com/forum/developer-diary/1696537/
 </a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1697510/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#23 兵站と攻囲</em> https://forum.paradoxplaza.com/forum/developer-diary/1697510/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698427/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#24 海軍</em> https://forum.paradoxplaza.com/forum/developer-diary/1698427/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#27 外国の建物</em> https://forum.paradoxplaza.com/forum/developer-diary/1701189/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#28 冬</em> https://forum.paradoxplaza.com/forum/developer-diary/1702099/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#29 繁栄度・開発度・道路</em> https://forum.paradoxplaza.com/forum/developer-diary/1704098/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#30 領土の征服</em> https://forum.paradoxplaza.com/forum/developer-diary/1705317/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#31 和平条約</em> https://forum.paradoxplaza.com/forum/developer-diary/1706918/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#32 反乱</em> https://forum.paradoxplaza.com/forum/developer-diary/1708363/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#33 外交</em> https://forum.paradoxplaza.com/forum/developer-diary/1709991/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#34 奴隷制度</em> https://forum.paradoxplaza.com/forum/developer-diary/1711421/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#35 国ランク</em> https://forum.paradoxplaza.com/forum/developer-diary/1712624/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#36 文化と言語</em> https://forum.paradoxplaza.com/forum/developer-diary/1713610/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#37 文化と芸術</em> https://forum.paradoxplaza.com/forum/developer-diary/1714711/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#38 社会的価値観</em> https://forum.paradoxplaza.com/forum/threads/1716232/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#39 列強と覇権の再設計</em> https://forum.paradoxplaza.com/forum/developer-diary/1717971/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1719416/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#40 政府改革</em> https://forum.paradoxplaza.com/forum/developer-diary/1719416/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/threads/1720391/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#41 評議会その2</em> https://forum.paradoxplaza.com/forum/threads/1720391/</a></li>
-  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/" target="_new" rel="noopener noreferrer"><em>Tinto Talk#42 災厄</em> https://forum.paradoxplaza.com/forum/developer-diary/1721548/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1697510/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#23 兵站と攻囲</em> https://forum.paradoxplaza.com/forum/developer-diary/1697510/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1698427/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#24 海軍</em> https://forum.paradoxplaza.com/forum/developer-diary/1698427/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1699250/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#25 植民地</em> https://forum.paradoxplaza.com/forum/developer-diary/1699250/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1700025/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#26 プレイアブル国家</em> https://forum.paradoxplaza.com/forum/developer-diary/1700025/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1701189/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#27 外国の建物</em> https://forum.paradoxplaza.com/forum/developer-diary/1701189/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#28 冬</em> https://forum.paradoxplaza.com/forum/developer-diary/1702099/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#29 繁栄度・開発度・道路</em> https://forum.paradoxplaza.com/forum/developer-diary/1704098/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1705317/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#30 領土の征服</em> https://forum.paradoxplaza.com/forum/developer-diary/1705317/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1706918/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#31 和平条約</em> https://forum.paradoxplaza.com/forum/developer-diary/1706918/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#32 反乱</em> https://forum.paradoxplaza.com/forum/developer-diary/1708363/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709991/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#33 外交</em> https://forum.paradoxplaza.com/forum/developer-diary/1709991/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#34 奴隷制度</em> https://forum.paradoxplaza.com/forum/developer-diary/1711421/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1712624/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#35 国家ランク/列強/覇権</em> https://forum.paradoxplaza.com/forum/developer-diary/1712624/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1713610/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#36 文化と言語</em> https://forum.paradoxplaza.com/forum/developer-diary/1713610/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714711/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#37 文化と芸術</em> https://forum.paradoxplaza.com/forum/developer-diary/1714711/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1716232/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#38 社会的価値観</em> https://forum.paradoxplaza.com/forum/threads/1716232/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1717971/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#39 列強と覇権の再設計</em> https://forum.paradoxplaza.com/forum/developer-diary/1717971/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1719416/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#40 政府改革</em> https://forum.paradoxplaza.com/forum/developer-diary/1719416/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1720391/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#41 議会</em> https://forum.paradoxplaza.com/forum/threads/1720391/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721548/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#42 災厄</em> https://forum.paradoxplaza.com/forum/developer-diary/1721548/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1723027/" target="_new" rel="noopener noreferrer"><em>Tinto Talks#43 ノルウェープレイレポ</em> https://forum.paradoxplaza.com/forum/developer-diary/1723027/</a></li>
 <!--
-  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talk#4</em> </a></li>
+  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Talks#4</em> </a></li>
 -->
 
 </ol>
@@ -2123,13 +2186,17 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/1706913/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#21 チベット</em> https://forum.paradoxplaza.com/forum/1706913/</a>  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1707613/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#22 シベリア</em> https://forum.paradoxplaza.com/forum/developer-diary/1707613/</a></li>
 </li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1709509/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#23 中華</em> https://forum.paradoxplaza.com/forum/developer-diary/1709509/</a></li>
-  <li><a href=">https://forum.paradoxplaza.com/forum/developer-diary/1710914/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#24 日本・朝鮮</em> >https://forum.paradoxplaza.com/forum/developer-diary/1710914/</a></li>
-  <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#25 東南アジア</em> https://forum.paradoxplaza.com/forum/developer-diary/1712922/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1710914/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#24 日本・朝鮮</em> https://forum.paradoxplaza.com/forum/developer-diary/1710914/</a></li>
+  <li><a href="tps://forum.paradoxplaza.com/forum/developer-diary/1712922/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#25 東南アジア</em> https://forum.paradoxplaza.com/forum/developer-diary/1712922/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1714312/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#26 インドネシア</em> https://forum.paradoxplaza.com/forum/developer-diary/1714312/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1716884/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#27 オセアニア</em> https://forum.paradoxplaza.com/forum/developer-diary/1716884/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1718498/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#28 北アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1718498/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1720739/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#29 中央アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1720739/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/developer-diary/1721947/" target="_new" rel="noopener noreferrer"><em>Tinto Maps#30 南アメリカ</em> https://forum.paradoxplaza.com/forum/developer-diary/1721947/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1699128/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#1 北大西洋</em> https://forum.paradoxplaza.com/forum/threads/1699128/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1700906/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#2 サハラ</em> https://forum.paradoxplaza.com/forum/threads/1700906/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1719127/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#3 インド洋</em> https://forum.paradoxplaza.com/forum/threads/1719127/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1723566/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#4 南大西洋</em> https://forum.paradoxplaza.com/forum/threads/1723566/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
@@ -2164,8 +2231,16 @@ PeruzziやBardi、後にFuggersなど<br>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1709195/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 12th of October 2024</em> https://forum.paradoxplaza.com/forum/threads/1709195/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1710672/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 19th of October 2024</em> https://forum.paradoxplaza.com/forum/threads/1710672/</a></li>
  <li><a href="https://forum.paradoxplaza.com/forum/threads/1711924/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 26th of October 2024</em> https://forum.paradoxplaza.com/forum/threads/1711924/</a></li>
+<li><a href="https://forum.paradoxplaza.com/forum/threads/1713037/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 2th of November 2024</em> https://forum.paradoxplaza.com/forum/threads/1713037/</a></li>
+<li><a href="https://forum.paradoxplaza.com/forum/threads/1714121/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 9th of November 2024</em> https://forum.paradoxplaza.com/forum/threads/1714121/</a></li>
+<li><a href="https://forum.paradoxplaza.com/forum/threads/1715263/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 16th of November 2024</em> https://forum.paradoxplaza.com/forum/threads/1715263/</a></li>
+<li><a href="https://forum.paradoxplaza.com/forum/threads/1716850/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 23th of November 2024</em> https://forum.paradoxplaza.com/forum/threads/1716850/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1718535/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 30th of November 2024</em> https://forum.paradoxplaza.com/forum/threads/1718535/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1719704/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 7th of December  2024</em> https://forum.paradoxplaza.com/forum/threads/1719704/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1720752/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 14th of December  2024</em> https://forum.paradoxplaza.com/forum/threads/1720752/</a></li>
+ <li><a href="https://forum.paradoxplaza.com/forum/threads/1722011/" target="_new" rel="noopener noreferrer"><em>Saturday Building - 20th of December  2024</em> https://forum.paradoxplaza.com/forum/threads/1722011/</a></li>
 <!--
- <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of October 2024</em> </a></li>
+ <li><a href="" target="_new" rel="noopener noreferrer"><em>Saturday Building - 17th of December  2024</em> </a></li>
 -->
 </ol>
 </section>
@@ -2245,7 +2320,7 @@ PeruzziやBardi、後にFuggersなど<br>
         </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2024 ねこてー. All Rights Reserved
+    &copy; 2025 ねこてー. All Rights Reserved
   </span>
 </footer>
 
