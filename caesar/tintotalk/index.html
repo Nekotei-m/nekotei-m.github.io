@@ -337,13 +337,15 @@ div.pickup strong { color: #381609; }
       <li><a href="#s-new"><strong>最新情報</strong></a></li>
       <li><a href="#s-playabletime">プレイ期間</a></li>
       <li><a href="#s-playablecountry">プレイアブル国家</a></li>
-      <li><a href="#s-map">Map</a></li>
-      <li><a href="#s-locations">地区(Locations)</a></li>
-      <li><a href="#s-climates">気候/冬</a></li>
-      <li><a href="#s-ages">時代と制度</a></li>
-      <li><a href="#s-tecnology">進歩(Advances)</a></li>
-      <li><a href="#s-situation">シチュエーション</a></li>
-      <li><a href="#s-dhe">動的歴史イベント</a></li>
+      <li><a href="#s-map">Map</a><ul>
+        <li><a href="#s-climates">気候/冬</a></li>
+        <li><a href="#s-locations">地区(Locations)</a></li>
+      </ul></li>
+      <li><a href="#s-pops">POP</a><ul>
+        <li><a href="#s-estates">階級(Estates)</a></li>
+        <li><a href="#s-slaves">奴隷制度</a></li>
+        <li><a href="#s-rebels">反乱</a></li>
+      </ul></li>
       <li><a href="#s-goverments">政府</a><ul>
         <li><a href="#s-gov-reforms">政府改革</a></li>
         <li><a href="#s-societal-values">社会的価値観</a></li>
@@ -351,12 +353,12 @@ div.pickup strong { color: #381609; }
         <li><a href="#s-parliaments">議会(Parliaments)</a></li>
         <li><a href="#s-cabinet">評議員(Cabinet)</a></li>
         <li><a href="#s-character">キャラクター</a></li>
-        <li><a href="#s-estates">階級(Estates)</a></li>
-        <li><a href="#s-pops">POP</a></li>
-        <li><a href="#s-slaves">奴隷制度</a></li>
-        <li><a href="#s-rebels">反乱</a></li>
-        <li><a href="#s-disasters">災厄(Disasters)</a></li>
       </ul></li>
+      <li><a href="#s-ages">時代と制度</a></li>
+      <li><a href="#s-tecnology">進歩(Advances)</a></li>
+      <li><a href="#s-situation">シチュエーション</a></li>
+      <li><a href="#s-disasters">災厄(Disasters)</a></li>
+      <li><a href="#s-dhe">動的歴史イベント</a></li>
       <li><a href="#s-cultures">文化</a><ul>
         <li><a href="#s-languages">言語</a></li>
         <li><a href="#s-arts">芸術作品</a></li>
@@ -542,6 +544,29 @@ PeruzziやBardi、後にFuggersなど<br>
 </section>
 <hr>
 
+
+<section id="s-climates">
+<h2>気候 / 冬 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#28</a>)</h2>
+<ul>
+  <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
+  <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
+  <li>冬の厳しさは<strong>穏やかな冬、普通の冬、厳しい冬</strong>の3段階</li>
+  <li>冬にはその影響の大きさによって<strong>兵士の損耗がおきる</strong></li>
+  <li>また<strong>寒冷地域のPOPは毛皮の需要が高くなる</strong></li>
+  <li><strong>冬になると食料の生産が大幅に減少</strong>し、穏やかな冬は25%の減少だが、厳しい冬だと0になる</li>
+  <li>通常の冬と厳しい冬は<strong>建設にまで影響</strong>を与え、建物の建設から船の建造まで<strong>すべてが止まる</strong></li>
+  <li>スウェーデンやノルウェーなどの国では、1年のうち数か月を失うこともあり、難易度が上がるだろう</li>
+  <li><strong>海峡、内海、湖は冬季に凍結する可能性</strong>がある</li>
+  <li>海軍は氷が解けるまで動けなくなり、凍結した海域に入ることもできない</li>
+  <li><strong>凍結した海域は軍隊が通過できるが、氷が解けて壊滅的な結果を招く可能性</strong>も考えておくべきだ</li>
+  <li><strong>地形が「山」の場所は、通常の冬と厳冬の間は軍隊の通過が不可能</strong>になり、戦略に影響することになる</li>
+  <li><strong>台風の影響</strong>に関する実装も検討中だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863260" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+  <li>海域の凍結は貿易や支配権の伝搬にも影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863367" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+</ul>
+</section>
+<hr>
+
+
 <section id="s-locations">
 <h2>地区 / Locations (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1626415/" target="_new" rel="noopener noreferrer">#2</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1657435/" target="_new" rel="noopener noreferrer">#6</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1666167/" target="_new" rel="noopener noreferrer">#8</a>,<a href="https://forum.paradoxplaza.com/forum/developer-diary/1704098/" target="_new" rel="noopener noreferrer">#29</a>)</h2>
   <ul>
@@ -625,161 +650,194 @@ PeruzziやBardi、後にFuggersなど<br>
 <hr>
 
 
-<section id="s-climates">
-<h2>気候 / 冬 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#28</a>)</h2>
+<section id="s-pops">
+<h2>POP (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#3</a>, <a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/" target="_new" rel="noopener noreferrer">#17</a>)</h2>
 <ul>
-  <li>冬の影響の大きさは主に気候によって決まり、いま何月か、また<strong>3段階の冬の厳しさ</strong>によっても変わる</li>
-  <li><strong>北半球と南半球では冬になる時期は異なる</strong></li>
-  <li>冬の厳しさは<strong>穏やかな冬、普通の冬、厳しい冬</strong>の3段階</li>
-  <li>冬にはその影響の大きさによって<strong>兵士の損耗がおきる</strong></li>
-  <li>また<strong>寒冷地域のPOPは毛皮の需要が高くなる</strong></li>
-  <li><strong>冬になると食料の生産が大幅に減少</strong>し、穏やかな冬は25%の減少だが、厳しい冬だと0になる</li>
-  <li>通常の冬と厳しい冬は<strong>建設にまで影響</strong>を与え、建物の建設から船の建造まで<strong>すべてが止まる</strong></li>
-  <li>スウェーデンやノルウェーなどの国では、1年のうち数か月を失うこともあり、難易度が上がるだろう</li>
-  <li><strong>海峡、内海、湖は冬季に凍結する可能性</strong>がある</li>
-  <li>海軍は氷が解けるまで動けなくなり、凍結した海域に入ることもできない</li>
-  <li><strong>凍結した海域は軍隊が通過できるが、氷が解けて壊滅的な結果を招く可能性</strong>も考えておくべきだ</li>
-  <li><strong>地形が「山」の場所は、通常の冬と厳冬の間は軍隊の通過が不可能</strong>になり、戦略に影響することになる</li>
-  <li><strong>台風の影響</strong>に関する実装も検討中だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863260" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
-  <li>海域の凍結は貿易や支配権の伝搬にも影響を与える<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1702099/post-29863367" target="_new" rel="noopener noreferrer">(#28)</a></sup></li>
+<li>以下の属性であらわされる人口。1人単位で表示される<br>
+  <ul>
+    <li><strong>文化</strong> - カタルーニャ、アンダルシア、スウェーデンなど</li>
+    <li><strong>宗教</strong> - カトリック、ルーテル派、スンニ派など</li>
+    <li><strong>社会階級</strong> - 6つの異なる階級がある。貴族、聖職者、都市民が上流階級
+    <ul>
+      <li><strong>貴族</strong> - ピラミッドの頂点に立つ人々</li>
+      <li><strong>聖職者</strong> - 司祭、修道士など</li>
+      <li><strong>都市民</strong> - 町や都市に住む商工業者</li>
+      <li><strong>平民</strong> - 大抵の国の国民の大部分</li>
+      <li><strong>部族民</strong> - あるいはこちらが大部分の国も多い</li>
+      <li><strong>奴隷</strong> - 合法である国にのみ存在する</li>
+    </ul></li></ul></li>
+<li>POPは時間の経過とともに増加または減少し、<strong>他文化への同化、宗教への改宗、さらには移住する</strong>可能性がある</li>
+<li>POPはゲームの基盤だが、それはバックグラウンドにあるシステムであり、間接的にしか制御できない</li>
+<li>POPは地区単位で設定されるがPCパフォーマンスについては心配してない</li>
+  <li>おもに<strong>市民は経済</strong>に、<strong>国教の聖職者は安定度</strong>に、<strong>受容文化の貴族は外交や戦争</strong>に貢献する</li>
+  <li>社会階級、文化、宗教の組み合わせでPOP集団を形成する</li>
+  <li>POP集団のサイズは1人～2億5000万人</li>
+</ul>
+
+<h3>■人口</h3><ul>
+  <li>各地区には<strong>人口許容量</strong>があり、植生、地形、気候、加えて建物や開発度によって変化する</li>
+  <li><strong>人口が現在の許容量より多い場合、移住の魅力と人口増加に非常に大きなペナルティ</strong></li>
+  <li><strong>自然増するのは農民と部族民</strong>のみで、ほかの階級は増加値がマイナスでなければ均衡し続ける</li>
+  <li>逆に人口過剰、食糧不足、戦争による疲弊、荒廃などによる<strong>自然減はすべての階級で起こりうる</strong></li>
+  <li><strong>各階級のPOP上限に余裕</strong>があると、時間をかけて下の階級から<strong>昇格してくる</strong></li>
+  <li>評議員により昇格速度を早めることは可能だ</li>
+  <li>逆に<strong>階級のPOP上限を超えていると降格</strong>も起こる</li>
+  <li>上流階級の<strong>POP上限はその階級用のインフラに依存</strong>する</li>
+  <li>他の階級にくらべ貴族階級への昇格はわずかなものになるだろう</li>
+  <li>特定の階級から<strong>徴兵</strong>すると、<strong>その階級の人口が減少</strong>する</li>
+</ul>
+
+<h3>■識字率</h3><ul>
+  <li><strong>国の平均識字率は研究速度に影響</strong>を与え、<strong>POPの識字率は満足度</strong>に多少影響する（研究速度は識字率だけが影響するものではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/post-29476650" target="_new" rel="noopener noreferrer">*</a></sup>）</li>
+  <li>各地区の<strong>貴族の平均識字率は支配権</strong>がどれだけ速く高まるかに影響し、各地区の<strong>奴隷の平均識字率は地区の不安度を増大</strong>させる</li>
+</ul>
+
+<h3>■需要</h3><ul>
+  <li>社会階級、文化、宗教、および居住地によって異なる<strong>POP需要</strong>がある</li>
+  <li>たとえば寒冷地のPOPはより多くの木材や石炭を欲しがるが、ジャイナ教のPOPは毛皮を欲しがらない</li>
+  <li><strong>POP需要は入手の可否と価格</strong>によっても満足度に影響を与える</li>
+  <li>POPはタバコなど知らない商品には需要を持たない</li>
+  <li>価格の影響は各階級の識字率によって変化する</li>
+  <li>POPにVic3の富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
+</ul>
+
+<h3>■満足度</h3><ul>
+<li><strong>満足度</strong>は以下のものを代表にさまざま影響を受ける<br>
+  <ul>
+    <li><strong>宗教寛容度</strong></li>
+    <li><strong>文化的偏見</strong></li>
+    <li><strong>国内安定度</strong></li>
+  </ul></li>
+  <li><strong>満足度は需要の他に、そのPOPの文化の地位、宗教あるいは特定の建物や、軍隊の駐留</strong>によっても変化する</li>
+  <li><strong>満足度の低いPOPは反乱軍を支援</strong>し始めるだろう</li>
+  <li>また<strong>地区のすべてのPOPの平均満足度が繁栄と支配権に影響</strong>する</li>
+</ul>
+
+<h3>■同化</h3><ul>
+  <li><strong>同化は自然に行われ、非受容文化から国家の主要文化へとゆっくり変化する</strong></li>
+  <li>ある文化を同化されない受容文化にすることは可能だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708553" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li><strong>社会的価値観や支配権、建物が同化速度に影響</strong>し、<strong>評議員による促進</strong>も可能だ</li>
+  <li>豊かな地域では同化速度より人口増の方が早いだろう</li>
+</ul>
+
+<h3>■移住</h3><ul>
+  <li>自然な移住は<strong>市場内でより魅力の高い地区へと移住</strong>する</li>
+  <li><strong>同じ市場内なら国家間の移住</strong>もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708309" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li>上流階級は基本的に許可されているが、<strong>農民の移住を許可している国は少ない</strong>だろう</li>
+  <li>移住も評議員を通して促進することもでき、建物でも移住求心力を高めることができる</li>
+  <li>たとえば<strong>新世界など市場外への移住は別の仕組み</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708339" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
+  <li><strong>イベント、災害などによる特別な移住</strong>もある</li>
 </ul>
 </section>
 <hr>
 
 
-<section id="s-ages">
-<h2>時代と制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer">#19</a>)</h2>
+<section id="s-estates">
+<h2>階級 / Estates (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">#5</a>)</h2>
 <ul>
-  <li>ゲームには<strong>6つの時代</strong>があり、<strong>各時代は約100年ごとに次へ進む</strong></li>
-  <li>時代は時間経過でのみ移り変わる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743406" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-  <li>各時代には<strong>3つの制度</strong>が出現し、それぞれが世界中に広がる</li>
-  <li>時代ごとに税収額が増加し、保有できる軍隊の規模が増加する</li>
-  <li><strong>制度の出現場所は、最初の時代はより厳格に歴史的な位置に、後の時代はより柔軟になる</strong></li>
-  <li><strong>複数の発生可能な地区がある場合、人口によって重み付けされたランダム</strong>で選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743168" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-  <li>制度の動的な出現は「歴史的」モードに設定して固定位置にもできる</li>
-  <li>歴史的な出現地点をオンにしている場合は、たとえその地区が条件を満たしていなくてもその地区で発生する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743174" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-  <li>ひとつの制度が複数の場所で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743322" target="_new" rel="noopener noreferrer">(#19)</a>  <li>制度の拡散には時間がかかり、<strong>隣接地区や海路を通してか、市場の貿易ルート</strong>を通じて広がる</li>
-  <li>制度の広がりは主に貿易<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743240" target="_new" rel="noopener noreferrer">(#19)</a></sup>で、大航海時代以降になると評議員を利用できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743304" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-  <li>貿易による普及は輸入元で広がる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743386" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-  <li>制度が<strong>自国の人口の10%以上に広がったら受け入れる</strong>ことができる。</li>
-  <li><strong>新世界では植民者が現れるまで制度を利用できない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743202" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
-</sup></li>
-</ul>
-<div class="pickup">
-<h4>■伝統の時代 / Age of Traditions</h4>
-<ul>
-<li><strong>律法主義</strong>／ローマ（都市名は歴史的出現地点）<br>旧世界のほとんどはゲーム開始時にこの制度が受け入れられている</li>
-<li><strong>実力主義</strong>／北京<br>ゲーム開始時には東アジアにのみ広がっている</li>
-<li><strong>封建制</strong>／アーヘン<br>旧世界のほとんどの地域に広まっている</li>
-</div>
-<div class="pickup">
-<h4>■ルネッサンスの時代 / Age of Renaissance</h4>
-<ul>
-<li><strong>ルネッサンス</strong>／フィレンツェ<br>時代が始まって間もなく、大学のある北イタリアの都市で誕生する</li>
-<li><strong>銀行業</strong>／ジェノバ<br>「資本経済」の強い社会的価値を持っていて、ヨーロッパ・北アフリカ・中東の1k以上の市民がいる町や都市で発生する</li>
-<li><strong>職業軍人</strong>／パリ<br>「軍質重視」の社会的価値を持つヨーロッパのどの地区にでも出現する</li>
-</div>
-<div class="pickup">
-<h4>■大航海時代 / Age of Discovery</h4>
-<ul>
-<li><strong>新世界</strong>／セビリア<br>2k以上の市民を擁し、アゾレス諸島と西アフリカの海岸線を発見した西ヨーロッパまたは北アフリカのどの港でも出現する</li>
-<li><strong>印刷機</strong>／マインツ<br>所有者が5枚以上の紙を生産し、「外向きの」社会的価値がある、2k以上の市民がいる地区であればどこでも発生する</li>
-<li><strong>パイク・アンド・ショット</strong>（テルシオ）／インスブルック<br>職業軍人を受容済みで20超の軍事伝統、「土地」の社会的価値観を持ち、火薬技術を持っている場所で発生
-</li>
-</div>
-<div class="pickup">
-<h4>■宗教改革の時代 / Age of Reformation</h4>
-<ul>
-<li><strong>信仰告白主義</strong>／アウクスブルク<br>印刷機を持ち、支配的な宗教がカトリックであり、「唯心論」の社会的価値がある欧州の町や都市で発生</li>
-<li><strong>グローバル貿易</strong>／リスボン<br>世界中で最も価値の高い商品が取引されている都市の市場センターで発生</li>
-<li><strong>砲兵</strong>／イスタンブール<br>銃器職人と金属工房があり、「攻撃的」な社会的価値を持つ世界中のどの都市でも発生</li>
-</div>
-<div class="pickup">
-<h4>■絶対主義の時代 / Age of Absolutism</h4>
-<ul>
-<li><strong>工場</strong>／ダービー<br>建物レベルが100を超え、市民が20k以上おり、「資本経済」の社会的価値を持っている地区に生成</li>
-<li><strong>科学革命</strong>／ケンブリッジ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
-<li><strong>軍事革命</strong>／ストックホルム<br>軍事施設が多く、人口が50k人を超える首都であればどこでも発生</li>
-</div>
-<div class="pickup">
-<h4>■革命の時代 / Age of Revolutions</h4>
-<ul>
-<li><strong>啓蒙</strong>／パリ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
-<li><strong>工業化</strong>／ブラックバーン(イングランド)<br>250以上の建物レベルと少なくとも20kの市民がいて、「資本経済」の社会的価値を持っている地区であればどこでも発生</li>
-<li><strong>国民皆兵</strong>／パリ<br>軍事施設が多く、人口が200kを超え、「防御的」な社会的価値を持つ首都で発生</li>
-</div>
+<li>4つの階級が存在し、<strong>統治者(Crown)も含めて100%の権力を分け合っている</strong><br>
+  <ul>
+    <li><strong>貴族(Nobility)</strong></li>
+    <li><strong>聖職者(Clergy)</strong></li>
+    <li><strong>都市民(Burghers)</strong></li>
+    <li><strong>平民(Commoners)</strong></li>
+  </ul></li>
+<li><strong>貴族と平民は同じPOP数で1000倍の権力差</strong>がある（例：1000人で貴族50、平民0.05）</li>
+<li>POPのいない階級は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502805" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li>奴隷は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502863" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li><strong>統治者の権力ベースは国の総人口</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502867" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
+<li>統治者の権力の大小により、<strong>特権の取り消し、法律変更、宮廷の各種コストや評議員の効率に影響する</strong></li>
+<li>各階級には現在の満足度から特権/法律/安定度などに影響された均衡点へと向かっていく</li>
+<li>現在の<strong>満足度が50%超でボーナス、50%未満でペナルティ。25%未満になると税金を払わない</strong>
+  <ul>
+    <li>貴族はあなたの<strong>名声の獲得と対スパイ活動</strong>に影響</li>
+    <li>聖職者は<strong>研究速度と外交上の評判</strong>に影響</li>
+    <li>都市民は<strong>販売者の力と生産効率</strong>に影響</li>
+    <li>平民は<strong>食糧生産と安定度コスト</strong>に影響</li>
+  </ul></li>
+  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
+<li>国や政府タイプに応じて<strong>独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響</strong>を及ぼす</li>
+<li><strong>徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資</strong>を行う（多く場合国にも利益となる）</li>
+<li>各階級が持つ資金は建物の他に<strong>国家へのローンを提供するプールともなる</strong>(#8)</li>
 </ul>
 </section>
 <hr>
 
 
-<section id="s-tecnology">
-<h2></h2>
-<h2>進歩（技術）/ Advances (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer">#20</a>)</h2>
-<ul>
-  <li>「<strong>進歩/Advances</strong>」と呼ばれるメカニズムに再構成された</li>
-  <li>進歩により<strong>新しいコマンド、ユニット、法律、相続法、制度、CB…様々なものがアンロック</strong>される</li>
-  <li>ツリーには<strong>現在100の進歩</strong>があり、<strong>固有の進歩</strong>もある</li>
-  <li>ゲーム開始時の国選択画面でその国独自要素を確認できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761238" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>文化や宗教、ある地区を所有しているか、政府の種類などにより固有の進歩が出現する</li>
-  <li><strong>各時代の開始時に各国に固有の新しい進歩ツリーが作成</strong>される</li>
-  <li>伝統の時代以外は<strong>共通、行政、外交、軍事の4つのツリー</strong>が用意されている。たとえば<br>　<strong>行政</strong> - 優れた行政効率、低金利、より良い近接拡散、安価な傭兵など<br>　<strong>外交</strong> - 優れた商人、より高い外交評判、従属国の設立、戦争スコアコスト減など<br>　<strong>軍事</strong> - 戦闘でのより高い名声、毎月の伝統獲得など</li>
-  <li>すべてのツリーですべての進歩を得ることはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761034" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li><strong>時代の開始時に行政、外交、軍事から1つの分野をフォーカス</strong>することで、<strong>その分野に10の追加の進歩</strong>が出現する</li>
-  <li><strong>選ばなかった追加の進歩の研究はできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761140" target="_new" rel="noopener noreferrer">(#20)</a></sup><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761186" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>選択せずに得られなかった追加の進歩が致命的になることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761315" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li>非現実的だが利便性のために進歩を研究せずに<strong>最大1年分の研究を蓄積する</strong>こともできる</li>
-  <li>基本的には同じ研究コストがかかるが、<strong>「文字」などコストの高いキーストーンとなる進歩</strong>もある</li>
-  <li><strong>以前の時代の進歩は現在の時代よりも安価（約33%引き<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761193" target="_new" rel="noopener noreferrer">(#20)</a></sup>）</strong>になり、キャッチアップを可能にしている</li>
-  <li>研究の進捗は、<strong>定住国か遊牧民か、典礼言語、聖職者の満足度と国の平均識字率</strong>で変わる</li>
-  <li>大学や図書館などは識字率を向上させ、間接的に研究に貢献する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29762206" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-
-  <li>一度得た進歩は前提となる宗教や政府を変えたとしても残る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761033" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
-  <li><strong>ゲーム開始時のツリーの一部はランダム化</strong>されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761229" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+<section id="s-slaves">
+<h2>奴隷制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/" target="_new" rel="noopener noreferrer">#34</a>)</h2>
+<h3>■奴隷POP</h3><ul>
+  <li>奴隷は移住禁止で人口は維持するのがやっとで、収入も政治力もない</li>
+  <li>もし何らかの理由で識字率があがったら社会不安を起こすのに十分な理由がある</li>
+  <li>ゲーム開始時点でヨーロッパにはほどんどいないが、他ではよく見かけるだろう</li>
 </ul>
+
+<h3>■奴隷の用途</h3><ul>
+  <li><strong>主に原材料（RGO）の収集を行う</strong></li>
+  <li>人的や水夫を提供する奴隷兵の建物もある（イェニチェリ兵舎もその一つ）</li>
+  <li>プランテーションは通常の農地より効率的だが奴隷が必須だ</li>
+  <li>宗教によっては神にささげるために奴隷を必要とするかもしれない</li>
+</ul>
+
+<h3>■奴隷の獲得方法</h3><ul>
+  <li><strong>奴隷は奴隷市場で売買</strong>される</li>
+  <li><strong>征服時に住民の一部を奴隷化</strong>できる（文化による）</li>
+  <li><strong>私掠船を使って奴隷を捕まえる</strong>こともできる</li>
+  <li><strong>奴隷市場を建てると異教徒や異文化民を少しずつ奴隷化</strong>する</li>
+  <li><strong>パワープロジェクションが低い相手に奴隷市場を建てる</strong>ことも可能だ</li>
+  <li><strong>奴隷を必要とする建物は奴隷市場から奴隷を取引する</strong></li>
+  <li>これらにより新大陸との三角貿易も上手く表現可能なはずだ</li>
+</ul>
+
+  <li><strong>相手国で奴隷となっている自文化民を取り戻す和平条約</strong>を追加する予定だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958406" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
+  <li>奴隷兵士だからといって何かのペナルティがあるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958642" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
+  <li>奴隷市場での取引は200人で1単位で行われる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958688" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
 </section>
 <hr>
 
 
-<section id="s-situation">
-<h2>シチュエーションシステム / Situation System (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/" target="_new" rel="noopener noreferrer">#14</a>)</h2>
-<ul>
-  <li><strong>シチュエーションシステムとは一定期間にわたって複数の国が関与するコンテンツ群</strong></li>
-  <li><strong>独自のアクション、トリガーとなるイベント、独自のUIやマップモード</strong>もある</li>
-  <li>例えば<strong>黒死病、イタリア戦争、紅巾の乱</strong>などが含まれる</li>
-  <li><strong>黒死病は1346年から</strong>流行の兆しが見え、<strong>中央アジアのどこか</strong>で腺ペストが発生して旧世界に広がり、影響を受けた地域の<strong>人口の40～60%が死亡</strong>する</li>
-  <li>黒死病は<strong>隣接地域、軍隊の移動、または貿易を通じて広がる</strong></li>
-  <li>黒死病を<strong>軽減する方法はいくつかあるが、効率は低いうえにコストは高い</strong>（宮廷の隔離や病人の追放、少数派を非難など）</li>
-  <li>黒死病の発生地域をランダムにすることはできるが新大陸で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29659868" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>黒死病の一度だけではなくほかの流行り病が蔓延することもあるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658189" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>一般的な病気の仕組みも存在</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658205" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>イタリア戦争はフランスやイベリア主要国、またはHRE皇帝がイタリアの国に宣戦布告すると即座に開始</strong>する</li>
-  <li>イタリア戦争は<strong>フランスリーグ、イベリアリーグ、皇帝リーグ、3つのイタリアリーグ</strong>の計6つの勢力がイタリアの覇権を相争う</li>
-  <li>イタリア戦争には<strong>イタリアに拠点を所有していれば誰でも参加でき、また放棄することもできる</strong></li>
-  <li><strong>紅巾の乱は1350年以降</strong>に元の安定度が25を下回り、いずれかの階級が不満を抱えている場合、発生する可能性がある</li>
-  <li>条件は厳しいが、<strong>大航海時代に到達すれば紅巾の乱を回避</strong>できる</li>
-  <li>紅巾の乱が始まると歴史をなぞって<strong>各地が独立し、紅巾賊と呼ばれる国際組織を作る</strong></li>
-  <li>各紅巾賊は<strong>独立時にプレイ可能</strong>であり、互いに戦争を行うこともできる</li>
-  <li>各紅巾賊は<strong>-100から100までの範囲で元に対する忠誠心を持ち、忠誠度が0を超えると自動的に紅巾の乱の国際組織から離脱する</strong></li>
-  <li>元は<strong>20年以内に安定度を取り戻し、紅巾の乱からすべての勢力が離脱</strong>すれば事態は収束する</li>
-  <li>紅巾の乱収束時に忠誠度が50を超えるすべての紅巾賊は自動的に元に併合される</li>
-  <li><strong>紅巾賊が中華の大部分（7割）を押さえると元から中華皇帝の座を奪って</strong>乱は終了する</li>
-  <li>特別な外交コマンドとして、元は紅巾賊に称号を下賜して費用と引き換えに忠誠度を獲得したり、忠誠度の高い紅巾賊を同盟に呼んだりできる。一方紅巾賊は特別なCBで征服コストが低減され、征服地の統合速度も大幅に早めることができる</li>
-  <li>その他にも<strong>大シスマ、百年戦争、日本の戦国時代</strong>もあるが、これらは後日詳しく取り上げる予定だ</li>
- 
-  <li>現在のシチュエーション数は13だが、まだまだ追加予定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658249" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>シチュエーションは動的には作成されない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658598" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li><strong>宗教改革</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658295" target="_new" rel="noopener noreferrer">(#14)</a></sup>や<strong>宗教戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658141" target="_new" rel="noopener noreferrer">(#14)</a></sup>、<strong>フス戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658579" target="_new" rel="noopener noreferrer">(#14)</a></sup>もシチュエーションとして表現されるだろう</li>
-  <li><strong>日本の南北朝時代はシチュエーションになる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29660152" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+<section id="s-rebels">
+<h2>反乱 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/" target="_new" rel="noopener noreferrer">#32</a>)</h2>
+<h3>■反乱の種類</h3><ul>
+  <li><strong>反乱派閥は5つ</strong>のタイプがある
+  <ol class="no-style">
+    <li>1) <strong>分離主義者</strong>：独立を目指す</li>
+    <li>2) <strong>僭称者内乱</strong>：統治者を挿げ替える</li>
+    <li>3) <strong>奴隷反乱</strong>：解放を望む</li>
+    <li>4) <strong>宗教反乱</strong>：独立するか国教の変更を迫る</li>
+    <li>5) <strong>階級の蜂起</strong>：社会の変革を求める</li>
+  </ol></li>
 </ul>
-</section>
-<hr>
 
-<section id="s-dhe">
-<h2>動的歴史イベント</h2>
-<ul>
-  <li><strong>小規模なものは動的歴史イベント</strong>（Dynamic Historical Event）として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658091" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
-  <li>AIが動的歴史イベントでどう振る舞うかはオプション設定で選べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658588" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+<h3>■満足度と反乱</h3><ul>
+  <li>POPは<strong>満足度が低くなると反乱派閥に加わる</strong></li>
+  <li>たとえば<strong>平民階級の満足度は通常+25%が最大</strong>で、それ以上上げるには<strong>税金を減らしたり、特権を与えたり</strong>する必要がある</li>
+  <li>征服地では-50%のペナルティがあるため、速やかに統合して-10%まで減らしたい</li>
+  <li>しかし統合には通常25年ほどかかるので、何も手立てをしなければ反乱を抑えられないだろう</li>
+  <li>城を建設すれば満足度を10%増やすことができる</li>
+  <li>軍隊を駐留させるのも良い方法だ</li>
+  <li>あるいは他国の市場アクセス拒否したりして必要な商品を市場内で満たすのも役に立つかもしれない</li>
+  <li>絶対主義の時代には「民衆平定」の評議員アクションを使用することもできる</li>
+  <li>また安定した国では反乱軍が参加するために必要な閾値が高くなる</li>
+</ul>
+
+<h3>■反乱の進行</h3><ul>
+  <li><strong>進行値が100%に達すると反乱</strong>が起きる</li>
+  <li>占領地では通常23年ほどで到達するので統合完了より前に反乱が起きる可能性が高い</li>
+  <li>反乱には「<strong>独立反乱</strong>」または「<strong>内乱</strong>」の2種類がある</li>
+  <li>「<strong>独立反乱</strong>」は勃発時に別の国を形成し、<strong>通常の戦争と同じ</strong>ように戦闘や占領を行って和平する必要がある</li>
+  <li>再併合では侵略的拡大(AE)は増加しない</li>
+  <li><strong>複数の反乱が共同して蜂起</strong>することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928796" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>州が統合中の場合、反乱で進捗が即座に失われることはないが、取り戻すまではマイナスになる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928605" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>ゲーム後半には通常と異なる反乱が起きる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928607" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+  <li>「<strong>内乱</strong>」は僭称者または一部の宗教反乱で、こちらは通常の戦争とは異なり、<strong>占領後即所有者が変わる</strong>ので和平を必要としない</li>
+  <li><strong>内乱</strong>が長く続いたとしても、分裂したまま<strong>現状維持で終わることはできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928620" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
+</ul>
+
+<h3>■反乱後</h3><ul>
+  <li><strong>内乱に負けてもゲームオーバーにはならない</strong></li>
+  <li>代わりに勝利した側として続行することができる</li>
+  <li>ただし異なる統治者、または異なる宗教、あるいは新しい政府タイプや法律、特権などに変わっているだろう</li>
 </ul>
 </section>
 <hr>
@@ -1026,194 +1084,130 @@ PeruzziやBardi、後にFuggersなど<br>
 <hr>
 
 
-<section id="s-estates">
-<h2>階級 / Estates (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/" target="_new" rel="noopener noreferrer">#5</a>)</h2>
+<section id="s-ages">
+<h2>時代と制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/" target="_new" rel="noopener noreferrer">#19</a>)</h2>
 <ul>
-<li>4つの階級が存在し、<strong>統治者(Crown)も含めて100%の権力を分け合っている</strong><br>
-  <ul>
-    <li><strong>貴族(Nobility)</strong></li>
-    <li><strong>聖職者(Clergy)</strong></li>
-    <li><strong>都市民(Burghers)</strong></li>
-    <li><strong>平民(Commoners)</strong></li>
-  </ul></li>
-<li><strong>貴族と平民は同じPOP数で1000倍の権力差</strong>がある（例：1000人で貴族50、平民0.05）</li>
-<li>POPのいない階級は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502805" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li>奴隷は権力を持たない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502863" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li><strong>統治者の権力ベースは国の総人口</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1647775/post-29502867" target="_new" rel="noopener noreferrer">(#5)</a></sup></li>
-<li>統治者の権力の大小により、<strong>特権の取り消し、法律変更、宮廷の各種コストや評議員の効率に影響する</strong></li>
-<li>各階級には現在の満足度から特権/法律/安定度などに影響された均衡点へと向かっていく</li>
-<li>現在の<strong>満足度が50%超でボーナス、50%未満でペナルティ。25%未満になると税金を払わない</strong>
-  <ul>
-    <li>貴族はあなたの<strong>名声の獲得と対スパイ活動</strong>に影響</li>
-    <li>聖職者は<strong>研究速度と外交上の評判</strong>に影響</li>
-    <li>都市民は<strong>販売者の力と生産効率</strong>に影響</li>
-    <li>平民は<strong>食糧生産と安定度コスト</strong>に影響</li>
-  </ul></li>
-  <li><strong>ズィンミー、部族民の階級</strong>が追加された<sup><a href="https://forum.paradoxplaza.com/forum/threads/1684788/post-29672475" target="_new" rel="noopener noreferrer">(*)</a></sup></li>
-<li>国や政府タイプに応じて<strong>独自の特権が多数あり、階級の権力や満足度、社会的価値観などに影響</strong>を及ぼす</li>
-<li><strong>徴集されなかった税金は各階級の富となり、裕福になれば自らの利益となる建物に投資</strong>を行う（多く場合国にも利益となる）</li>
-<li>各階級が持つ資金は建物の他に<strong>国家へのローンを提供するプールともなる</strong>(#8)</li>
+  <li>ゲームには<strong>6つの時代</strong>があり、<strong>各時代は約100年ごとに次へ進む</strong></li>
+  <li>時代は時間経過でのみ移り変わる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743406" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>各時代には<strong>3つの制度</strong>が出現し、それぞれが世界中に広がる</li>
+  <li>時代ごとに税収額が増加し、保有できる軍隊の規模が増加する</li>
+  <li><strong>制度の出現場所は、最初の時代はより厳格に歴史的な位置に、後の時代はより柔軟になる</strong></li>
+  <li><strong>複数の発生可能な地区がある場合、人口によって重み付けされたランダム</strong>で選ばれる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743168" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>制度の動的な出現は「歴史的」モードに設定して固定位置にもできる</li>
+  <li>歴史的な出現地点をオンにしている場合は、たとえその地区が条件を満たしていなくてもその地区で発生する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743174" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>ひとつの制度が複数の場所で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743322" target="_new" rel="noopener noreferrer">(#19)</a>  <li>制度の拡散には時間がかかり、<strong>隣接地区や海路を通してか、市場の貿易ルート</strong>を通じて広がる</li>
+  <li>制度の広がりは主に貿易<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743240" target="_new" rel="noopener noreferrer">(#19)</a></sup>で、大航海時代以降になると評議員を利用できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743304" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>貿易による普及は輸入元で広がる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743386" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+  <li>制度が<strong>自国の人口の10%以上に広がったら受け入れる</strong>ことができる。</li>
+  <li><strong>新世界では植民者が現れるまで制度を利用できない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1693447/post-29743202" target="_new" rel="noopener noreferrer">(#19)</a></sup></li>
+</sup></li>
 </ul>
-</section>
-<hr>
-
-
-<section id="s-pops">
-<h2>POP (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/" target="_new" rel="noopener noreferrer">#3</a>)</h2>
+<div class="pickup">
+<h4>■伝統の時代 / Age of Traditions</h4>
 <ul>
-<li>以下の属性であらわされる人口。1人単位で表示される<br>
-  <ul>
-    <li><strong>文化</strong> - カタルーニャ、アンダルシア、スウェーデンなど</li>
-    <li><strong>宗教</strong> - カトリック、ルーテル派、スンニ派など</li>
-    <li><strong>社会階級</strong> - 6つの異なる階級がある。貴族、聖職者、都市民が上流階級
-    <ul>
-      <li><strong>貴族</strong> - ピラミッドの頂点に立つ人々</li>
-      <li><strong>聖職者</strong> - 司祭、修道士など</li>
-      <li><strong>都市民</strong> - 町や都市に住む商工業者</li>
-      <li><strong>平民</strong> - 大抵の国の国民の大部分</li>
-      <li><strong>部族民</strong> - あるいはこちらが大部分の国も多い</li>
-      <li><strong>奴隷</strong> - 合法である国にのみ存在する</li>
-    </ul></li></ul></li>
-<li>POPは時間の経過とともに増加または減少し、<strong>他文化への同化、宗教への改宗、さらには移住する</strong>可能性がある</li>
-<li>POPはゲームの基盤だが、それはバックグラウンドにあるシステムであり、間接的にしか制御できない</li>
-<li>POPは地区単位で設定されるがPCパフォーマンスについては心配してない</li>
-  <li>おもに<strong>市民は経済</strong>に、<strong>国教の聖職者は安定度</strong>に、<strong>受容文化の貴族は外交や戦争</strong>に貢献する</li>
-  <li>社会階級、文化、宗教の組み合わせでPOP集団を形成する</li>
-  <li>POP集団のサイズは1人～2億5000万人</li>
-</ul>
-
-<h3>■人口</h3><ul>
-  <li>各地区には<strong>人口許容量</strong>があり、植生、地形、気候、加えて建物や開発度によって変化する</li>
-  <li><strong>人口が現在の許容量より多い場合、移住の魅力と人口増加に非常に大きなペナルティ</strong></li>
-  <li><strong>自然増するのは農民と部族民</strong>のみで、ほかの階級は増加値がマイナスでなければ均衡し続ける</li>
-  <li>逆に人口過剰、食糧不足、戦争による疲弊、荒廃などによる<strong>自然減はすべての階級で起こりうる</strong></li>
-  <li><strong>各階級のPOP上限に余裕</strong>があると、時間をかけて下の階級から<strong>昇格してくる</strong></li>
-  <li>評議員により昇格速度を早めることは可能だ</li>
-  <li>逆に<strong>階級のPOP上限を超えていると降格</strong>も起こる</li>
-  <li>上流階級の<strong>POP上限はその階級用のインフラに依存</strong>する</li>
-  <li>他の階級にくらべ貴族階級への昇格はわずかなものになるだろう</li>
-  <li>特定の階級から<strong>徴兵</strong>すると、<strong>その階級の人口が減少</strong>する</li>
-</ul>
-
-<h3>■識字率</h3><ul>
-  <li><strong>国の平均識字率は研究速度に影響</strong>を与え、<strong>POPの識字率は満足度</strong>に多少影響する（研究速度は識字率だけが影響するものではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1630154/post-29476650" target="_new" rel="noopener noreferrer">*</a></sup>）</li>
-  <li>各地区の<strong>貴族の平均識字率は支配権</strong>がどれだけ速く高まるかに影響し、各地区の<strong>奴隷の平均識字率は地区の不安度を増大</strong>させる</li>
-</ul>
-
-<h3>■需要</h3><ul>
-  <li>社会階級、文化、宗教、および居住地によって異なる<strong>POP需要</strong>がある</li>
-  <li>たとえば寒冷地のPOPはより多くの木材や石炭を欲しがるが、ジャイナ教のPOPは毛皮を欲しがらない</li>
-  <li><strong>POP需要は入手の可否と価格</strong>によっても満足度に影響を与える</li>
-  <li>POPはタバコなど知らない商品には需要を持たない</li>
-  <li>価格の影響は各階級の識字率によって変化する</li>
-  <li>POPにVic3の富レベルのような消費が増えるメカニズムはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1673745/post-29597210" target="_new" rel="noopener noreferrer">(#10)</a></sup></li>
-</ul>
-
-<h3>■満足度</h3><ul>
-<li><strong>満足度</strong>は以下のものを代表にさまざま影響を受ける<br>
-  <ul>
-    <li><strong>宗教寛容度</strong></li>
-    <li><strong>文化的偏見</strong></li>
-    <li><strong>国内安定度</strong></li>
-  </ul></li>
-  <li><strong>満足度は需要の他に、そのPOPの文化の地位、宗教あるいは特定の建物や、軍隊の駐留</strong>によっても変化する</li>
-  <li><strong>満足度の低いPOPは反乱軍を支援</strong>し始めるだろう</li>
-  <li>また<strong>地区のすべてのPOPの平均満足度が繁栄と支配権に影響</strong>する</li>
-</ul>
-
-<h3>■同化</h3><ul>
-  <li><strong>同化は自然に行われ、非受容文化から国家の主要文化へとゆっくり変化する</strong></li>
-  <li>ある文化を同化されない受容文化にすることは可能だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708553" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li><strong>社会的価値観や支配権、建物が同化速度に影響</strong>し、<strong>評議員による促進</strong>も可能だ</li>
-  <li>豊かな地域では同化速度より人口増の方が早いだろう</li>
-</ul>
-
-<h3>■移住</h3><ul>
-  <li>自然な移住は<strong>市場内でより魅力の高い地区へと移住</strong>する</li>
-  <li><strong>同じ市場内なら国家間の移住</strong>もある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708309" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li>上流階級は基本的に許可されているが、<strong>農民の移住を許可している国は少ない</strong>だろう</li>
-  <li>移住も評議員を通して促進することもでき、建物でも移住求心力を高めることができる</li>
-  <li>たとえば<strong>新世界など市場外への移住は別の仕組み</strong>がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1689183/post-29708339" target="_new" rel="noopener noreferrer">(#17)</a></sup></li>
-  <li><strong>イベント、災害などによる特別な移住</strong>もある</li>
+<li><strong>律法主義</strong>／ローマ（都市名は歴史的出現地点）<br>旧世界のほとんどはゲーム開始時にこの制度が受け入れられている</li>
+<li><strong>実力主義</strong>／北京<br>ゲーム開始時には東アジアにのみ広がっている</li>
+<li><strong>封建制</strong>／アーヘン<br>旧世界のほとんどの地域に広まっている</li>
+</div>
+<div class="pickup">
+<h4>■ルネッサンスの時代 / Age of Renaissance</h4>
+<ul>
+<li><strong>ルネッサンス</strong>／フィレンツェ<br>時代が始まって間もなく、大学のある北イタリアの都市で誕生する</li>
+<li><strong>銀行業</strong>／ジェノバ<br>「資本経済」の強い社会的価値を持っていて、ヨーロッパ・北アフリカ・中東の1k以上の市民がいる町や都市で発生する</li>
+<li><strong>職業軍人</strong>／パリ<br>「軍質重視」の社会的価値を持つヨーロッパのどの地区にでも出現する</li>
+</div>
+<div class="pickup">
+<h4>■大航海時代 / Age of Discovery</h4>
+<ul>
+<li><strong>新世界</strong>／セビリア<br>2k以上の市民を擁し、アゾレス諸島と西アフリカの海岸線を発見した西ヨーロッパまたは北アフリカのどの港でも出現する</li>
+<li><strong>印刷機</strong>／マインツ<br>所有者が5枚以上の紙を生産し、「外向きの」社会的価値がある、2k以上の市民がいる地区であればどこでも発生する</li>
+<li><strong>パイク・アンド・ショット</strong>（テルシオ）／インスブルック<br>職業軍人を受容済みで20超の軍事伝統、「土地」の社会的価値観を持ち、火薬技術を持っている場所で発生
+</li>
+</div>
+<div class="pickup">
+<h4>■宗教改革の時代 / Age of Reformation</h4>
+<ul>
+<li><strong>信仰告白主義</strong>／アウクスブルク<br>印刷機を持ち、支配的な宗教がカトリックであり、「唯心論」の社会的価値がある欧州の町や都市で発生</li>
+<li><strong>グローバル貿易</strong>／リスボン<br>世界中で最も価値の高い商品が取引されている都市の市場センターで発生</li>
+<li><strong>砲兵</strong>／イスタンブール<br>銃器職人と金属工房があり、「攻撃的」な社会的価値を持つ世界中のどの都市でも発生</li>
+</div>
+<div class="pickup">
+<h4>■絶対主義の時代 / Age of Absolutism</h4>
+<ul>
+<li><strong>工場</strong>／ダービー<br>建物レベルが100を超え、市民が20k以上おり、「資本経済」の社会的価値を持っている地区に生成</li>
+<li><strong>科学革命</strong>／ケンブリッジ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
+<li><strong>軍事革命</strong>／ストックホルム<br>軍事施設が多く、人口が50k人を超える首都であればどこでも発生</li>
+</div>
+<div class="pickup">
+<h4>■革命の時代 / Age of Revolutions</h4>
+<ul>
+<li><strong>啓蒙</strong>／パリ<br>大学があり、平均的な識字率が高く、「革新的な」社会的価値を持っている地区で発生</li>
+<li><strong>工業化</strong>／ブラックバーン(イングランド)<br>250以上の建物レベルと少なくとも20kの市民がいて、「資本経済」の社会的価値を持っている地区であればどこでも発生</li>
+<li><strong>国民皆兵</strong>／パリ<br>軍事施設が多く、人口が200kを超え、「防御的」な社会的価値を持つ首都で発生</li>
+</div>
 </ul>
 </section>
 <hr>
 
 
-<section id="s-slaves">
-<h2>奴隷制度 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/" target="_new" rel="noopener noreferrer">#34</a>)</h2>
-<h3>■奴隷POP</h3><ul>
-  <li>奴隷は移住禁止で人口は維持するのがやっとで、収入も政治力もない</li>
-  <li>もし何らかの理由で識字率があがったら社会不安を起こすのに十分な理由がある</li>
-  <li>ゲーム開始時点でヨーロッパにはほどんどいないが、他ではよく見かけるだろう</li>
-</ul>
+<section id="s-tecnology">
+<h2></h2>
+<h2>進歩（技術）/ Advances (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1694744/" target="_new" rel="noopener noreferrer">#20</a>)</h2>
+<ul>
+  <li>「<strong>進歩/Advances</strong>」と呼ばれるメカニズムに再構成された</li>
+  <li>進歩により<strong>新しいコマンド、ユニット、法律、相続法、制度、CB…様々なものがアンロック</strong>される</li>
+  <li>ツリーには<strong>現在100の進歩</strong>があり、<strong>固有の進歩</strong>もある</li>
+  <li>ゲーム開始時の国選択画面でその国独自要素を確認できる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761238" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>文化や宗教、ある地区を所有しているか、政府の種類などにより固有の進歩が出現する</li>
+  <li><strong>各時代の開始時に各国に固有の新しい進歩ツリーが作成</strong>される</li>
+  <li>伝統の時代以外は<strong>共通、行政、外交、軍事の4つのツリー</strong>が用意されている。たとえば<br>　<strong>行政</strong> - 優れた行政効率、低金利、より良い近接拡散、安価な傭兵など<br>　<strong>外交</strong> - 優れた商人、より高い外交評判、従属国の設立、戦争スコアコスト減など<br>　<strong>軍事</strong> - 戦闘でのより高い名声、毎月の伝統獲得など</li>
+  <li>すべてのツリーですべての進歩を得ることはできない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761034" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li><strong>時代の開始時に行政、外交、軍事から1つの分野をフォーカス</strong>することで、<strong>その分野に10の追加の進歩</strong>が出現する</li>
+  <li><strong>選ばなかった追加の進歩の研究はできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761140" target="_new" rel="noopener noreferrer">(#20)</a></sup><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761186" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>選択せずに得られなかった追加の進歩が致命的になることはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761315" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li>非現実的だが利便性のために進歩を研究せずに<strong>最大1年分の研究を蓄積する</strong>こともできる</li>
+  <li>基本的には同じ研究コストがかかるが、<strong>「文字」などコストの高いキーストーンとなる進歩</strong>もある</li>
+  <li><strong>以前の時代の進歩は現在の時代よりも安価（約33%引き<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761193" target="_new" rel="noopener noreferrer">(#20)</a></sup>）</strong>になり、キャッチアップを可能にしている</li>
+  <li>研究の進捗は、<strong>定住国か遊牧民か、典礼言語、聖職者の満足度と国の平均識字率</strong>で変わる</li>
+  <li>大学や図書館などは識字率を向上させ、間接的に研究に貢献する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29762206" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
 
-<h3>■奴隷の用途</h3><ul>
-  <li><strong>主に原材料（RGO）の収集を行う</strong></li>
-  <li>人的や水夫を提供する奴隷兵の建物もある（イェニチェリ兵舎もその一つ）</li>
-  <li>プランテーションは通常の農地より効率的だが奴隷が必須だ</li>
-  <li>宗教によっては神にささげるために奴隷を必要とするかもしれない</li>
+  <li>一度得た進歩は前提となる宗教や政府を変えたとしても残る<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761033" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
+  <li><strong>ゲーム開始時のツリーの一部はランダム化</strong>されている<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/tinto-talks-20-10th-of-july-2024.1694744/post-29761229" target="_new" rel="noopener noreferrer">(#20)</a></sup></li>
 </ul>
-
-<h3>■奴隷の獲得方法</h3><ul>
-  <li><strong>奴隷は奴隷市場で売買</strong>される</li>
-  <li><strong>征服時に住民の一部を奴隷化</strong>できる（文化による）</li>
-  <li><strong>私掠船を使って奴隷を捕まえる</strong>こともできる</li>
-  <li><strong>奴隷市場を建てると異教徒や異文化民を少しずつ奴隷化</strong>する</li>
-  <li><strong>パワープロジェクションが低い相手に奴隷市場を建てる</strong>ことも可能だ</li>
-  <li><strong>奴隷を必要とする建物は奴隷市場から奴隷を取引する</strong></li>
-  <li>これらにより新大陸との三角貿易も上手く表現可能なはずだ</li>
-</ul>
-
-  <li><strong>相手国で奴隷となっている自文化民を取り戻す和平条約</strong>を追加する予定だ<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958406" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
-  <li>奴隷兵士だからといって何かのペナルティがあるわけではない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958642" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
-  <li>奴隷市場での取引は200人で1単位で行われる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1711421/post-29958688" target="_new" rel="noopener noreferrer">(#34)</a></sup></li>
 </section>
 <hr>
 
 
-<section id="s-rebels">
-<h2>反乱 (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/" target="_new" rel="noopener noreferrer">#32</a>)</h2>
-<h3>■反乱の種類</h3><ul>
-  <li><strong>反乱派閥は5つ</strong>のタイプがある
-  <ol class="no-style">
-    <li>1) <strong>分離主義者</strong>：独立を目指す</li>
-    <li>2) <strong>僭称者内乱</strong>：統治者を挿げ替える</li>
-    <li>3) <strong>奴隷反乱</strong>：解放を望む</li>
-    <li>4) <strong>宗教反乱</strong>：独立するか国教の変更を迫る</li>
-    <li>5) <strong>階級の蜂起</strong>：社会の変革を求める</li>
-  </ol></li>
-</ul>
-
-<h3>■満足度と反乱</h3><ul>
-  <li>POPは<strong>満足度が低くなると反乱派閥に加わる</strong></li>
-  <li>たとえば<strong>平民階級の満足度は通常+25%が最大</strong>で、それ以上上げるには<strong>税金を減らしたり、特権を与えたり</strong>する必要がある</li>
-  <li>征服地では-50%のペナルティがあるため、速やかに統合して-10%まで減らしたい</li>
-  <li>しかし統合には通常25年ほどかかるので、何も手立てをしなければ反乱を抑えられないだろう</li>
-  <li>城を建設すれば満足度を10%増やすことができる</li>
-  <li>軍隊を駐留させるのも良い方法だ</li>
-  <li>あるいは他国の市場アクセス拒否したりして必要な商品を市場内で満たすのも役に立つかもしれない</li>
-  <li>絶対主義の時代には「民衆平定」の評議員アクションを使用することもできる</li>
-  <li>また安定した国では反乱軍が参加するために必要な閾値が高くなる</li>
-</ul>
-
-<h3>■反乱の進行</h3><ul>
-  <li><strong>進行値が100%に達すると反乱</strong>が起きる</li>
-  <li>占領地では通常23年ほどで到達するので統合完了より前に反乱が起きる可能性が高い</li>
-  <li>反乱には「<strong>独立反乱</strong>」または「<strong>内乱</strong>」の2種類がある</li>
-  <li>「<strong>独立反乱</strong>」は勃発時に別の国を形成し、<strong>通常の戦争と同じ</strong>ように戦闘や占領を行って和平する必要がある</li>
-  <li>再併合では侵略的拡大(AE)は増加しない</li>
-  <li><strong>複数の反乱が共同して蜂起</strong>することもある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928796" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
-  <li>州が統合中の場合、反乱で進捗が即座に失われることはないが、取り戻すまではマイナスになる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928605" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
-  <li>ゲーム後半には通常と異なる反乱が起きる可能性がある<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928607" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
-  <li>「<strong>内乱</strong>」は僭称者または一部の宗教反乱で、こちらは通常の戦争とは異なり、<strong>占領後即所有者が変わる</strong>ので和平を必要としない</li>
-  <li><strong>内乱</strong>が長く続いたとしても、分裂したまま<strong>現状維持で終わることはできない</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1708363/post-29928620" target="_new" rel="noopener noreferrer">(#32)</a></sup></li>
-</ul>
-
-<h3>■反乱後</h3><ul>
-  <li><strong>内乱に負けてもゲームオーバーにはならない</strong></li>
-  <li>代わりに勝利した側として続行することができる</li>
-  <li>ただし異なる統治者、または異なる宗教、あるいは新しい政府タイプや法律、特権などに変わっているだろう</li>
+<section id="s-situation">
+<h2>シチュエーションシステム / Situation System (<a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/" target="_new" rel="noopener noreferrer">#14</a>)</h2>
+<ul>
+  <li><strong>シチュエーションシステムとは一定期間にわたって複数の国が関与するコンテンツ群</strong></li>
+  <li><strong>独自のアクション、トリガーとなるイベント、独自のUIやマップモード</strong>もある</li>
+  <li>例えば<strong>黒死病、イタリア戦争、紅巾の乱</strong>などが含まれる</li>
+  <li><strong>黒死病は1346年から</strong>流行の兆しが見え、<strong>中央アジアのどこか</strong>で腺ペストが発生して旧世界に広がり、影響を受けた地域の<strong>人口の40～60%が死亡</strong>する</li>
+  <li>黒死病は<strong>隣接地域、軍隊の移動、または貿易を通じて広がる</strong></li>
+  <li>黒死病を<strong>軽減する方法はいくつかあるが、効率は低いうえにコストは高い</strong>（宮廷の隔離や病人の追放、少数派を非難など）</li>
+  <li>黒死病の発生地域をランダムにすることはできるが新大陸で発生することはない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29659868" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>黒死病の一度だけではなくほかの流行り病が蔓延することもあるだろう<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658189" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>一般的な病気の仕組みも存在</strong>する<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658205" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>イタリア戦争はフランスやイベリア主要国、またはHRE皇帝がイタリアの国に宣戦布告すると即座に開始</strong>する</li>
+  <li>イタリア戦争は<strong>フランスリーグ、イベリアリーグ、皇帝リーグ、3つのイタリアリーグ</strong>の計6つの勢力がイタリアの覇権を相争う</li>
+  <li>イタリア戦争には<strong>イタリアに拠点を所有していれば誰でも参加でき、また放棄することもできる</strong></li>
+  <li><strong>紅巾の乱は1350年以降</strong>に元の安定度が25を下回り、いずれかの階級が不満を抱えている場合、発生する可能性がある</li>
+  <li>条件は厳しいが、<strong>大航海時代に到達すれば紅巾の乱を回避</strong>できる</li>
+  <li>紅巾の乱が始まると歴史をなぞって<strong>各地が独立し、紅巾賊と呼ばれる国際組織を作る</strong></li>
+  <li>各紅巾賊は<strong>独立時にプレイ可能</strong>であり、互いに戦争を行うこともできる</li>
+  <li>各紅巾賊は<strong>-100から100までの範囲で元に対する忠誠心を持ち、忠誠度が0を超えると自動的に紅巾の乱の国際組織から離脱する</strong></li>
+  <li>元は<strong>20年以内に安定度を取り戻し、紅巾の乱からすべての勢力が離脱</strong>すれば事態は収束する</li>
+  <li>紅巾の乱収束時に忠誠度が50を超えるすべての紅巾賊は自動的に元に併合される</li>
+  <li><strong>紅巾賊が中華の大部分（7割）を押さえると元から中華皇帝の座を奪って</strong>乱は終了する</li>
+  <li>特別な外交コマンドとして、元は紅巾賊に称号を下賜して費用と引き換えに忠誠度を獲得したり、忠誠度の高い紅巾賊を同盟に呼んだりできる。一方紅巾賊は特別なCBで征服コストが低減され、征服地の統合速度も大幅に早めることができる</li>
+  <li>その他にも<strong>大シスマ、百年戦争、日本の戦国時代</strong>もあるが、これらは後日詳しく取り上げる予定だ</li>
+ 
+  <li>現在のシチュエーション数は13だが、まだまだ追加予定<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658249" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>シチュエーションは動的には作成されない<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658598" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li><strong>宗教改革</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658295" target="_new" rel="noopener noreferrer">(#14)</a></sup>や<strong>宗教戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658141" target="_new" rel="noopener noreferrer">(#14)</a></sup>、<strong>フス戦争</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658579" target="_new" rel="noopener noreferrer">(#14)</a></sup>もシチュエーションとして表現されるだろう</li>
+  <li><strong>日本の南北朝時代はシチュエーションになる</strong><sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29660152" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
 </ul>
 </section>
 <hr>
@@ -1243,6 +1237,16 @@ PeruzziやBardi、後にFuggersなど<br>
     15世紀後半のカトリック共和国であるフィレンツェに発生し得る。この問題の解決は神権国家になるか、サヴォナローラの死がもたらすだろう</li>
     <li><strong>バラ戦争</strong>（War of the Roses）<br>
     15世紀のイングランドで、ランカスター家とヨーク家が王位を争う内戦。どちらかの家を支持し、内戦を勝ち抜く必要がある</li>
+</ul>
+</section>
+<hr>
+
+
+<section id="s-dhe">
+<h2>動的歴史イベント</h2>
+<ul>
+  <li><strong>小規模なものは動的歴史イベント</strong>（Dynamic Historical Event）として表現される<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658091" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
+  <li>AIが動的歴史イベントでどう振る舞うかはオプション設定で選べる<sup><a href="https://forum.paradoxplaza.com/forum/developer-diary/1682450/post-29658588" target="_new" rel="noopener noreferrer">(#14)</a></sup></li>
 </ul>
 </section>
 <hr>
