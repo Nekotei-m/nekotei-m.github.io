@@ -187,6 +187,7 @@
             <strong>Project Caesar</strong>
           </a></li>
           <li><a href="https://nekotei-m.github.io/caesar/tintotalk/">開発日記要約</a></li>
+          <li><a href="https://nekotei-m.github.io/caesar/trade-goods/">貿易品</a></li>
           <li class="game-title vic3"><a href="https://nekotei-m.github.io/categories/victoria3/">
             <strong>Victoria3</strong>
           </a></li>
@@ -198,7 +199,7 @@
           <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ（1.6）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.7）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/acceptance/">受容度（1.8）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/misc-notes/">未分類のメモ</a></li>
+          &lt;--li><a href="https://nekotei-m.github.io/vic3/misc-notes/">未分類のメモ</a></li-->
           <li class="game-title impr"><a href="https://nekotei-m.github.io/categories/imperator_rome/">
             <strong>Imperator: Rome</strong>
           </a></li>
@@ -366,6 +367,7 @@ div.pickup strong { color: #381609; }
       <li><a href="#s-religions">宗教</a></li>
       <li><a href="#s-economy">経済</a><ul>
         <li><a href="#s-market">市場</a></li>
+        <li><a href="https://nekotei-m.github.io/caesar/trade-goods/">貿易品（別ページ）</a></li>
         <li><a href="#s-construction">建設</a></li>
         <li><a href="#s-privateer">私掠船</a></li>
       </ul></li>
@@ -445,11 +447,23 @@ https://forum.paradoxplaza.com/forum/developer-diary/1716884/
 
 
 #ProjectCaesar
-開発日記 第44回の新年最初はについて
+まさか1/1にあるとは思わず見落としてました。開発日記 第44回の新年最初は貿易品について
 
+・原材料は主に地区ごとに設定されている資源を収集することで入手できるが、一部は代替となる建物もある
+・輸送コストとして一部の貿易品はより多くの貿易容量を必要とする
+・基本価格は時代ごとに変動幅が拡大し、需給に応じて伝統の時代では50%～200%、革命の時代では20%～500%まで変動する
+・需要が供給を上回っている場合、市場の中心から離れた場所にある建物やポップは商品を入手できない
 
+■原材料（36種）
+木材 / 粘土 / 砂 / 石 / 大理石 / 石炭 / 鉄 / 銅 / 金 / 銀 / 錫 / 鉛 / 水銀 / 硝石 / ミョウバン / 毛皮 / 繊維作物 / 綿花 / 絹 / 染料 / 薬品 / 馬 / 象 / 象牙 / 宝石 / 真珠 / 琥珀 / 香料 / 塩 / 砂糖 / 香辛料 / ワイン / 茶 / カカオ / コーヒー / タバコ / 
 
+■食糧品（14種）
+羊毛 / 野生動物の肉 / 魚 / 小麦 / 大豆 / トウモロコシ / 米 / 雑穀 / 豆類 / ジャガイモ / 家畜 / オリーブ / ナツメヤシ / 果物
 
+■生産品（20種）
+道具 / 石材 / 鋼鉄 / 漆器 / 磁器 / ガラス / 布 / 高級布地 / 革 / 紙 / 書物 / 蒸留酒 / ビール / 宝飾品 / タール / 船舶資材 / 武器 / 銃器 / 大砲 / 奴隷
+
+来週は、植生/地形/気候の影響についてより詳しく
 
 
 <section id="s-">
@@ -2201,6 +2215,7 @@ PeruzziやBardi、後にFuggersなど<br>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1700906/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#2 サハラ</em> https://forum.paradoxplaza.com/forum/threads/1700906/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1719127/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#3 インド洋</em> https://forum.paradoxplaza.com/forum/threads/1719127/</a></li>
   <li><a href="https://forum.paradoxplaza.com/forum/threads/1723566/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#4 南大西洋</em> https://forum.paradoxplaza.com/forum/threads/1723566/</a></li>
+  <li><a href="https://forum.paradoxplaza.com/forum/threads/1724889/" target="_new" rel="noopener noreferrer"><em>Tinto Maps Extra#5 太平洋</em> https://forum.paradoxplaza.com/forum/threads/1724889/</a></li>
 <!--
   <li><a href="" target="_new" rel="noopener noreferrer"><em>Tinto Maps#</em> </a></li>
 -->
