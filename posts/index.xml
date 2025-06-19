@@ -9,6 +9,13 @@
     <lastBuildDate>Wed, 01 Jan 2025 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>プロジェクトカエサル - 気候・地形・植生</title>
+      <link>https://nekotei-m.github.io/caesar/environment/</link>
+      <pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/caesar/environment/</guid>
+      <description>&lt;p&gt;Paradox Interactive社のProject Caesarでの気候・地形・植生の一覧です。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>プロジェクトカエサル - 貿易品一覧</title>
       <link>https://nekotei-m.github.io/caesar/trade-goods/</link>
       <pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate>
@@ -27,7 +34,7 @@
       <link>https://nekotei-m.github.io/vic3/company-list/</link>
       <pubDate>Fri, 22 Nov 2024 21:00:00 +0900</pubDate>
       <guid>https://nekotei-m.github.io/vic3/company-list/</guid>
-      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。（1.8.4で確認）&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ver1.5で追加された企業の設立条件・効果の一覧です。（1.9.1で確認）&lt;/p&gt;</description>
     </item>
     <item>
       <title>従属国について</title>
@@ -94,9 +101,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://nekotei-m.github.io/streaming/</link>
+      <link>https://nekotei-m.github.io/prestige-goods/</link>
       <pubDate>Sun, 01 Jan 2023 21:00:00 +0900</pubDate>
-      <guid>https://nekotei-m.github.io/streaming/</guid>
+      <guid>https://nekotei-m.github.io/prestige-goods/</guid>
       <description></description>
     </item>
     <item>
