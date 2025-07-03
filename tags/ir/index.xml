@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IR on ねこメモ</title><link>https://nekotei-m.github.io/tags/ir/</link><description>Recent content in IR on ねこメモ</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Mon, 05 Jul 2021 21:00:00 +0900</lastBuildDate><atom:link href="https://nekotei-m.github.io/tags/ir/index.xml" rel="self" type="application/rss+xml"/><item><title>Imperator:Rome 攻略Tips2.0</title><link>https://nekotei-m.github.io/impr/imperator-rome-tips2.0/</link><pubDate>Mon, 05 Jul 2021 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/impr/imperator-rome-tips2.0/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IR on ねこメモ</title>
+    <link>https://nekotei-m.github.io/tags/ir/</link>
+    <description>Recent content in IR on ねこメモ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 05 Jul 2021 21:00:00 +0900</lastBuildDate>
+    <atom:link href="https://nekotei-m.github.io/tags/ir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Imperator:Rome 攻略Tips2.0</title>
+      <link>https://nekotei-m.github.io/impr/imperator-rome-tips2.0/</link>
+      <pubDate>Mon, 05 Jul 2021 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/impr/imperator-rome-tips2.0/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

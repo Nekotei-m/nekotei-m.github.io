@@ -1,1 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on ねこメモ</title><link>https://nekotei-m.github.io/tags/</link><description>Recent content in Tags on ねこメモ</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Wed, 01 Jan 2025 21:00:00 +0900</lastBuildDate><atom:link href="https://nekotei-m.github.io/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>EU5</title><link>https://nekotei-m.github.io/tags/eu5/</link><pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/eu5/</guid><description/></item><item><title>Europa Universalis V</title><link>https://nekotei-m.github.io/tags/europa-universalis-v/</link><pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/europa-universalis-v/</guid><description/></item><item><title>Project Caesar</title><link>https://nekotei-m.github.io/tags/project-caesar/</link><pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/project-caesar/</guid><description/></item><item><title>Data</title><link>https://nekotei-m.github.io/tags/data/</link><pubDate>Sat, 23 Nov 2024 20:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/data/</guid><description/></item><item><title>Vic3</title><link>https://nekotei-m.github.io/tags/vic3/</link><pubDate>Sat, 23 Nov 2024 20:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/vic3/</guid><description/></item><item><title>Tips</title><link>https://nekotei-m.github.io/tags/tips/</link><pubDate>Mon, 01 Jul 2024 20:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/tips/</guid><description/></item><item><title>Gimmick</title><link>https://nekotei-m.github.io/tags/gimmick/</link><pubDate>Mon, 11 Dec 2023 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/gimmick/</guid><description/></item><item><title>7dtd</title><link>https://nekotei-m.github.io/tags/7dtd/</link><pubDate>Tue, 07 Nov 2023 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/7dtd/</guid><description/></item><item><title>About</title><link>https://nekotei-m.github.io/tags/about/</link><pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate><guid>https://nekotei-m.github.io/tags/about/</guid><description/></item><item><title>Memo</title><link>https://nekotei-m.github.io/tags/memo/</link><pubDate>Wed, 01 Nov 2023 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/memo/</guid><description/></item><item><title>IR</title><link>https://nekotei-m.github.io/tags/ir/</link><pubDate>Mon, 05 Jul 2021 21:00:00 +0900</pubDate><guid>https://nekotei-m.github.io/tags/ir/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ねこメモ</title>
+    <link>https://nekotei-m.github.io/tags/</link>
+    <description>Recent content in Tags on ねこメモ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 01 Jan 2025 21:00:00 +0900</lastBuildDate>
+    <atom:link href="https://nekotei-m.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EU5</title>
+      <link>https://nekotei-m.github.io/tags/eu5/</link>
+      <pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/eu5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Europa Universalis V</title>
+      <link>https://nekotei-m.github.io/tags/europa-universalis-v/</link>
+      <pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/europa-universalis-v/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Caesar</title>
+      <link>https://nekotei-m.github.io/tags/project-caesar/</link>
+      <pubDate>Wed, 01 Jan 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/project-caesar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data</title>
+      <link>https://nekotei-m.github.io/tags/data/</link>
+      <pubDate>Sat, 23 Nov 2024 20:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vic3</title>
+      <link>https://nekotei-m.github.io/tags/vic3/</link>
+      <pubDate>Sat, 23 Nov 2024 20:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/vic3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://nekotei-m.github.io/tags/tips/</link>
+      <pubDate>Mon, 01 Jul 2024 20:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gimmick</title>
+      <link>https://nekotei-m.github.io/tags/gimmick/</link>
+      <pubDate>Mon, 11 Dec 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/gimmick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>7dtd</title>
+      <link>https://nekotei-m.github.io/tags/7dtd/</link>
+      <pubDate>Tue, 07 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/7dtd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://nekotei-m.github.io/tags/about/</link>
+      <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://nekotei-m.github.io/tags/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memo</title>
+      <link>https://nekotei-m.github.io/tags/memo/</link>
+      <pubDate>Wed, 01 Nov 2023 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/memo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IR</title>
+      <link>https://nekotei-m.github.io/tags/ir/</link>
+      <pubDate>Mon, 05 Jul 2021 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/tags/ir/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
