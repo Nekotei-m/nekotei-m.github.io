@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4R2215NGV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S4R2215NGV');
+    </script>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "技術ボーナスイベント",
+  
+  "datePublished": "2025-07-01T21:00:00+09:00",
+  "dateModified": "2025-07-01T21:00:00+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "ねこてー",
+    
+    "image": "https://nekotei-m.github.io/img/icon_profile.png"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/nekotei-m.github.io\/vic3\/tech_event\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ねこメモ",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nekotei-m.github.io/img/icon_profile.png"
+    }
+    
+  },
+  "description": "ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="ねこてー">
+<meta name="keywords" content="">
+<meta name="description" content="ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）">
+
+
+<meta property="og:description" content="ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技術ボーナスイベント">
+<meta name="twitter:title" content="技術ボーナスイベント">
+<meta property="og:url" content="https://nekotei-m.github.io/vic3/tech_event/">
+<meta property="twitter:url" content="https://nekotei-m.github.io/vic3/tech_event/">
+<meta property="og:site_name" content="ねこメモ">
+<meta property="og:description" content="ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）">
+<meta name="twitter:description" content="ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）">
+<meta property="og:locale" content="ja">
+
+  
+    <meta property="article:published_time" content="2025-07-01T21:00:00">
+  
+  
+    <meta property="article:modified_time" content="2025-07-01T21:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Victoria3">
+    
+  
+  
+    
+      <meta property="article:tag" content="Vic3">
+    
+      <meta property="article:tag" content="Tips">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@nekotei_m">
+
+
+  <meta name="twitter:creator" content="@nekotei_m">
+
+
+
+
+
+
+
+
+
+  <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://nekotei-m.github.io/img/layout/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://nekotei-m.github.io/img/layout/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://nekotei-m.github.io/img/layout/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://nekotei-m.github.io/img/layout/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://nekotei-m.github.io/img/layout/icon-512x512.png">
+  <link rel="manifest" href="https://nekotei-m.github.io/img/layout/manifest.json">
+
+    <title>技術ボーナスイベント</title>
+
+    <link rel="icon" href="https://nekotei-m.github.io/img/layout/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://nekotei-m.github.io/vic3/tech_event/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://nekotei-m.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://nekotei-m.github.io/css/site.css">
+      
+    
+
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://nekotei-m.github.io/" aria-label="ホームページへ">ねこメモ</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://nekotei-m.github.io/#about" aria-label="リンクを開く: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://nekotei-m.github.io/img/icon_profile.png" alt="プロフィール画像" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+    <div class="sidebar-profile">
+      <a href="https://nekotei-m.github.io/">
+        <img class="sidebar-profile-picture" src="https://nekotei-m.github.io/img/layout/icon_nekomemo.png" alt="プロフィール画像" />
+      </a>
+    </div>
+    
+    <ul class="sidebar-buttons game-list">
+      <li class="sidebar-button">
+        <span class="sidebar-button-link " title="Home">
+          <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+          <span class="sidebar-button-desc"><strong>カテゴリ</strong></span>
+        </span>
+        <ul>
+          <li class="game-title dtd7"><a href="https://nekotei-m.github.io/categories/7_days_to_die/">
+            <strong>7 days to die</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/7dtd/a21-by-data/">[α21] データで見る7dtd</a></li>
+          <li class="game-title caesar"><a href="https://nekotei-m.github.io/categories/eu5/">
+            <strong>Europa Universalis V</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/tintotalk/">開発日記要約</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/trade-goods/">貿易品</a></li>
+          <li class="game-title vic3"><a href="https://nekotei-m.github.io/categories/victoria3/">
+            <strong>Victoria3</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.8）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/acceptance/">受容度（1.8）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/tech_event/">技術イベント（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ（1.6）</a></li>
+          <li class="game-title impr"><a href="https://nekotei-m.github.io/categories/imperator_rome/">
+            <strong>Imperator: Rome</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/impr/imperator-rome-tips2.0/">Tips</a></li>
+        </ul>
+    </ul>
+    <ul class="sidebar-buttons sns">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nekotei-m.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">プロフィール</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/nekotei_m" target="_blank" rel="noopener" title="Twitter(X)">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-twitter" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Twitter(X)</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youtube.com/@nekotei/" target="_blank" rel="noopener" title="Youtube">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-youtube" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Youtube</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.nicovideo.jp/user/2157109" target="_blank" rel="noopener" title="ニコニコ動画">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-niconico" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">ニコニコ動画</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      技術ボーナスイベント
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2025-07-01T21:00:00&#43;09:00">
+        
+  7月 1, 2025
+
+      </time>
+    
+    
+  
+  
+    <span>カテゴリー</span>
+    
+      <a class="category-link" href="https://nekotei-m.github.io/categories/victoria3">Victoria3</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）</p>
+
+<style>
+td.name { width: 12rem; }
+td.trigger ul { margin: 0 0 0 1.5rem;}
+td.effect { width: 18rem; }
+</style>
+
+<h2>生産技術系イベント</h2>
+<table>
+<tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
+<tr><td class="name">大気圧機関</td><td class="trigger"><ul><li>全鉱山のいずれかでLv3以上</li><li>大気圧機関(P2)研究済み</li><li>①メカニカルツール(P2)研究済みで鉄道(P2)未研究 ②水管ボイラー(P2)未研究</li></ul></td><td class="effect">①鉄道(P2) +3500<br>②水管ボイラー(P2) +3500</td></tr>
+<tr><td class="name">鉄道ブーム</td><td class="trigger"><ul><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超 「全鉱山、伐採所、石油リグ」</li><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超 「全プランテーション系農園」</li><li>発動機産業と鉄道を任意の州に建設済み</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
+<tr><td class="name">進歩の原動力</td><td class="trigger"><ul><li>発動機産業Lv3以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>鉄道建設済みで雇用率75%超</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
+<tr><td class="name">ゴムブーム</td><td class="trigger"><ul><li>ゴム農園Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</ul></td><td class="effect">加硫(P3) +4150</td></tr>
+<tr><td class="name">電力の安定供給</td><td class="trigger"><ul><li>発電所Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>以下のいずれかが未研究で研究可能 「①電気鉄道(P4)※鋼製鉄道車両(P3)研究済み ②蒸気タービン(P4) ③シフト勤務(P3)」</ul></td><td class="effect">①電気鉄道(P4) +6000<br>②蒸気タービン(P4) +6000<br>③シフト勤務(P3) +4150</td></tr>
+<tr><td class="name">石油産業の爆発的成長</td><td class="trigger"><ul><li>石油リグLv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>ロータリーバルブエンジン(P3)研究済みで、内燃機関(P4)未研究</ul></td><td class="effect">内燃機関(P4) +5850</td></tr>
+<tr><td class="name">あなたもその声を聞いたか？</td><td class="trigger"><ul><li>電気産業Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>無線(P4)未研究で研究可能</ul></td><td class="effect">無線(P4) +6000</td></tr>
+</table>
+<hr>
+
+<h2>軍事技術系イベント</h2>
+<table>
+<tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
+<tr><td class="name">武器の取引</td><td class="trigger"><ul><li>弾薬工場Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</li><li>施条(M2)研究可能</ul></td><td class="effect">施条(M2) +3500</td></tr>
+<tr><td class="name">武器庫の近代化</td><td class="trigger"><ul><li>武器工場Lv3以上でライフルPMまたは連発銃PMまたはボルトアクションライフルを使用中で雇用率75%以上</li><li>連発銃(M3)研究可能</ul></td><td class="effect">連発銃(M3) +4150</td></tr>
+<tr><td class="name">進歩の戦争</td><td class="trigger"><ul><li>特性：几帳面を持つ将軍がいる</li><li>連発銃(M3)研究済み</li><li>手動クランク式機関銃(M3)未研究で研究可能</li><li>ボルトアクションライフル(M4)未研究</ul></td><td class="effect">①手動クランク式機関銃(M3) +4150<br>②ボルトアクションライフル(M4) +6000</td></tr>
+<tr><td class="name">塹壕戦線</td><td class="trigger"><ul><li>戦争中</li><li>塹壕歩兵25%以上の部隊が存在する</li><li>①縦深防御(M4)未研究で研究可能 ②戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究で研究可能</ul></td><td class="effect">①縦深防御(M4) +6000<br>②突撃歩兵(M5) +8000</td></tr>
+<tr><td class="name">最新鋭の潜水艦</td><td class="trigger"><ul><li>海軍の潜水艦の割合が25%以上</li><li>潜水艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">駆逐艦(M4) +6000</td></tr>
+<tr><td class="name">海の巨人</td><td class="trigger"><ul><li>戦争中</li><li>海軍の戦艦の割合が25%以上</li><li>戦艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">近代戦艦戦術(M5) +5850</td></tr>
+<tr><td class="name">爆撃の実演</td><td class="trigger"><ul><li>海軍の母艦の割合が25%以上</li><li>母艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">軍用航空(M5) +7500</td></tr>
+</table>
+<hr>
+
+<h2>社会技術系イベント</h2>
+<table>
+<tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
+<tr><td class="name">高度な学習</td><td class="trigger"><ul><li>大学Lv2以上で雇用率90%以上</li><li>①経験論(S1)未研究 ②医学学位(S1)未研究</ul></td><td class="effect">①経験論(S1) +2500<br>②医学学位(S1) +2500</td></tr>
+<tr><td class="name">哲学科</td><td class="trigger"><ul><li>全大学の90%超で哲学部門PM使用中かつ雇用率90%超（Lv5以上の大学含む）</li><li>①労働運動(S2)研究済みで、社会主義(S3)未研究 ②精神医学(S2)研究済みで、哲学的プラグマティズム(S3)未研究</ul></td><td class="effect">①社会主義(S3) +4150<br>②哲学的プラグマティズム(S3) +4150</td></tr>
+<tr><td class="name">哲学研究ジャーナル</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>大学Lv5以上で雇用率90%以上かつ、哲学部門PMまたは分析哲学部門PMを使用中</li><li>精神医学(S2)研究済みで精神分析(S4)未研究</li><li>①哲学的プラグマティズム(S3)未研究または研究可能ではない（？） or ②哲学的プラグマティズム(S3)研究済みで、精神分析(S4)未研究で研究可能</ul></td><td class="effect">①哲学的プラグマティズム(S3) +4150<br>②精神分析(S4) +6000</td></tr>
+<tr><td class="name">書類整理棚</td><td class="trigger"><ul><li>全行政府の75%超で規格化された書類整理システムPM使用中かつ雇用率90%超（Lv10以上の行政府含む）</li><li>身分証明書(S3)が未研究かつ研究可能</ul></td><td class="effect">身分証明書(S3) +4150</td></tr>
+<tr><td class="name">相互利益</td><td class="trigger"><ul><li>公開企業PM使用中の金融街で雇用率75以上で週間利益がマイナスでなく準備金50%以上の施設が全金融街の50%以上</li><li>国際為替基準(S4)未研究かつ研究可能</ul></td><td class="effect">国際為替基準(S4) +6000</td></tr>
+<tr><td class="name">それは空想的なのか？</td><td class="trigger"><ul><li>ジャーナル「ロマン主義の奨励」で発生</li><li>非承認国でないプレイヤー国で、理性主義(S1)研究済みでジャーナル表示</li><li>ロマン主義(S1)研究済みで写実主義(S2)が未研究、かつ市街地が存在でジャーナル有効化</li><li>芸術院Lv2以上で伝統芸術PMを使用中で雇用率90%超</ul></td><td class="effect">写実主義(S2) +3500</td></tr>
+<tr><td class="name">リアリズム運動</td><td class="trigger"><ul><li>ジャーナル「写実芸術の奨励」で発生</li><li>非承認国でないプレイヤー国で、ロマン主義(S1)研究済みで、写真機(S3)未研究でジャーナル表示</li><li>写実主義(S2)研究済みかつ芸術院建設済みでジャーナル有効化</li><li>芸術院Lv1以上で写実芸術PMを使用中で雇用率90%超の施設が全芸術院の100%</ul></td><td class="effect">写真機(S3) +4150</td></tr>
+<tr><td class="name">光と影を捉える</td><td class="trigger"><ul><li>ジャーナル「写真美術の確立」で発生</li><li>非承認国でなく、写実主義(S2)研究済みで、活動写真(S4)未研究でジャーナル表示</li><li>写真機(S3)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で写真美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</ul></td><td class="effect">活動写真(S4) +6000</td></tr>
+<tr><td class="name">動く写真</td><td class="trigger"><ul><li>ジャーナル「映像美術の確立」で発生</li><li>プレイヤー国であり、非承認国でなく、写真機(S3)研究済みでジャーナル表示</li><li>活動写真(S4)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で映像美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</li><li>大衆宣伝(S5)未研究で研究可能</ul></td><td class="effect">大衆宣伝(S5) +5850</td></tr>
+</table>
+<hr>
+
+<h2>ランダムイベント</h2>
+<table>
+<tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
+<tr><td class="name">微粒子病の大流行</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>同じイベントが以前発生していない</li><li>微粒子病の発生している州と微粒子病の発生していない絹農園Lv2以上の併合州が存在する</ul></td><td class="effect">低温殺菌(P4) +4000</td></tr>
+<tr><td class="name">人工的な解決策</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>微粒子病の発生している州が存在する</li><li>資本家IGが非主流派でない</li><li>人絹(P4)研究可能</ul></td><td class="effect">人絹(P4) +4000</td></tr>
+<tr><td class="name">報われた訓練</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>併合州で募兵努力の布告中にランダム発生</li><li>①軍事統計(M3)研究済みで、戦闘作戦(M4)未研究かつ研究可能 or ②軍事統計(M3)および塹壕作業(M4)研究済みで、下士官訓練(M5)未研究かつ研究可能 or ③戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究かつ研究可能</ul></td><td class="effect">①戦闘作戦(M4) +6000<br>②下士官訓練(M5) +5850<br>③突撃歩兵(M5) +5850</td></tr>
+<tr><td class="name">デザインの借用</td><td class="trigger"><ul><li>以下のいずれかのうち、いずれかの市場リーダーが研究済みで自国が研究中にランダム発生 「①銃工(M1) ②銃用雷管(M2) ③施条(M2) ④連発銃(M3) ⑤ボルトアクションライフル(M4)」</li><li>小火器を5ユニット以上輸入している</ul></td><td class="effect">①銃工(M1) +2500<br>②銃用雷管(M2) +3500<br>③施条(M2) +3500<br>④連発銃(M3) +4150<br>⑤ボルトアクションライフル(M4) +6000</td></tr>
+<tr><td class="name">友好的な激励</td><td class="trigger"><ul><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>18250日以内に同じイベントが起きていない</li><li>①民主主義(S1)未研究で研究可能 or ②中央集権化(S1)研究済みで、国際関係(S1)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②国際関係(S1) +2500</td></tr>
+<tr><td class="name">忖度なしの記事</td><td class="trigger"><ul><li>913日以内に同じイベントが起きていない</li><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>①民主主義(S1)未研究で研究可能 or ②弁証法(S2)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②弁証法(S2) +3500</td></tr>
+<tr><td class="name">門前の急進主義者</td><td class="trigger"><ul><li>ジャーナル「民衆の春」進行中に発生</li><li>中央集権化(S1)を研究済みで、中央公文書館(S2)が未研究</li><li>政府内に急進派イデオロギーのIGリーダーがいない</li><li>反乱中の強力なIGリーダーが急進派イデオロギーを持っていない</li><li>国家警備や秘密警察を採用し、治安維持の制度Lv3以上</ul></td><td class="effect">中央公文書館(S2) +3500</td></tr>
+<tr><td class="name">コレラに関するコミュニケーションの流儀</td><td class="trigger"><ul><li>未使用インフラ5以下で市街地Lv10以上の併合州がある</li><li>①都市計画(S1)研究済みで、近代下水道(S2)未研究 or ②医学学位(S1)研究済みで、製薬(S2)未研究</ul></td><td class="effect">①近代下水道(S2) +3500<br>②製薬(S2) +3500</td></tr>
+<tr><td class="name">医学の進歩</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>ロビーが使用可能</li><li>革命中でない</li><li>いずれかの国や宗主国に好意的なロビーがある</li><li>以下のいずれかの技術をロビー対象の国が研究済みかつ、自国が未研究で研究可能 「①医学学位(S1) ②製薬(S2) ③キニーネ(S2) ④マラリア予防(S4) ⑤抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②製薬(S2) +3500<br>③キニーネ(S2) +3500<br>④マラリア予防(S4) +5000 ⑤抗生物質(S5) +5850</td></tr>
+<tr><td class="name">プレハブ病院</td><td class="trigger"><ul><li>7300日以内に同じイベントが起きていない</li><li>戦争中</li><li>死者数が1000人以上</li><li>野戦病院オプション採用中で将軍配備済みの部隊が前線にいる</li><li>以下のいずれかの技術が研究可能 「①医学学位(S1) ②キニーネ(S2) ③マラリア予防(S4) ④抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②キニーネ(S2) +3500<br>③マラリア予防(S4) +6000<br>④抗生物質(S5) +5850</td></tr>
+<tr><td class="name">奇妙な迷信</td><td class="trigger"><ul><li>大衆伝達(S1)研究済みで、抗生物質(S5)未研究で研究可能</li><li>市街地Lv2以上かつ大学未建設かつ農民POPがいる州がある</ul></td><td class="effect">抗生物質(S5) +5850</td></tr>
+</table>
+<hr>
+
+<h2>特殊なイベント</h2>
+<table>
+<tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
+<tr><td class="name">鉄道アドバイザー</td><td class="trigger"><ul><li>ジャーナル「維新：日本の工業化」進行中</li><li>鉄道(P2)未研究かつ研究可能</li><li>鉄道(P2)研究済みの列強国で自国と戦争中でなく関係が0以上の国が存在</ul></td><td class="effect">鉄道(P2) +3500</td></tr>
+<tr><td class="name">破壊: 創造的な衝動</td><td class="trigger"><ul><li>要DLC：VoP</li><li>扇動者スロットの空きがある</li><li>自国がフランス</li><li>1905/1/1以降で1922/1/1以前</li><li>社会主義(S3)研究済み</ul></td><td class="effect">政治的扇動(S4) +5000</td></tr>
+<tr><td class="name">人類の崇拝</td><td class="trigger"><ul><li>1842/6/1以降</li><li>イル・ド・フランス州を領有</li><li>哲学的プラグマティズム(S3)未研究で研究可能</ul></td><td class="effect">哲学的プラグマティズム(S3) 4150</td></tr>
+<tr><td class="name">樹脂生産</td><td class="trigger"><ul><li>ガラス工房Lv5以上でプラスチック製家庭用品PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全ガラス工房の50%以上</li><li>鉄筋コンクリート(P3)研究済みでプラスチック(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”プラスチック(P4) +6000</td></tr>
+<tr><td class="name">無線機生産</td><td class="trigger"><ul><li>電気産業Lv5以上で無線機生産PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全電気産業の50%以上</li><li>電話(P4)研究済みで無線(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”無線(P4) +6000</td></tr>
+</table>
+<hr>
+
+<ul class="reference">
+  <li>\Victoria 3\game\common\journal_entries\*.txt</li>
+  <li>\Victoria 3\game\events\*.txt</li>
+  <li>\Victoria 3\game\common\technology\technologies\*.txt</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">タグ</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/vic3/">Vic3</a>
+
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/tips/">Tips</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nekotei-m.github.io/vic3/tech_event/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nekotei-m.github.io/vic3/tech_event/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=https://nekotei-m.github.io/vic3/tech_event/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2025 ねこてー. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nekotei-m.github.io/vic3/tech_event/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nekotei-m.github.io/vic3/tech_event/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=https://nekotei-m.github.io/vic3/tech_event/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnekotei-m.github.io%2Fvic3%2Ftech_event%2F" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Facebookで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fnekotei-m.github.io%2Fvic3%2Ftech_event%2F" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitterで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.reddit.com/submit?url=https%3A%2F%2Fnekotei-m.github.io%2Fvic3%2Ftech_event%2F" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i><span>Redditで共有</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://nekotei-m.github.io/img/layout/icon_profile.png" alt="プロフィール画像" />
+    
+    <h4 id="about-card-name">ねこてー</h4>
+    
+      <div id="about-card-bio">ねこを愛するひと（愛されるとは言ってない）</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        管理人
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        ニャパン
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://nekotei-m.github.io/img/layout/bg_sidebar.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://nekotei-m.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

@@ -6,8 +6,15 @@
     <description>Recent content in Victoria3 on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 23 Nov 2024 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/categories/victoria3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技術ボーナスイベント</title>
+      <link>https://nekotei-m.github.io/vic3/tech_event/</link>
+      <pubDate>Tue, 01 Jul 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/vic3/tech_event/</guid>
+      <description>&lt;p&gt;ジャーナルからイベントに移行した技術ボーナスの発生条件をまとめました。（1.9.6で確認）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>受容</title>
       <link>https://nekotei-m.github.io/vic3/acceptance/</link>
