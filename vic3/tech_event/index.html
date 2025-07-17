@@ -295,72 +295,72 @@ td.trigger ul { margin: 0 0 0 1.5rem;}
 td.effect { width: 18rem; }
 </style>
 
-<h2>生産技術系イベント</h2>
+<h2>生産技術系イベント（Production）</h2>
 <table>
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
-<tr><td class="name">大気圧機関</td><td class="trigger"><ul><li>全鉱山のいずれかでLv3以上</li><li>大気圧機関(P2)研究済み</li><li>①メカニカルツール(P2)研究済みで鉄道(P2)未研究 ②水管ボイラー(P2)未研究</li></ul></td><td class="effect">①鉄道(P2) +3500<br>②水管ボイラー(P2) +3500</td></tr>
-<tr><td class="name">鉄道ブーム</td><td class="trigger"><ul><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超 「全鉱山、伐採所、石油リグ」</li><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超 「全プランテーション系農園」</li><li>発動機産業と鉄道を任意の州に建設済み</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
-<tr><td class="name">進歩の原動力</td><td class="trigger"><ul><li>発動機産業Lv3以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>鉄道建設済みで雇用率75%超</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
-<tr><td class="name">ゴムブーム</td><td class="trigger"><ul><li>ゴム農園Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</ul></td><td class="effect">加硫(P3) +4150</td></tr>
-<tr><td class="name">電力の安定供給</td><td class="trigger"><ul><li>発電所Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>以下のいずれかが未研究で研究可能 「①電気鉄道(P4)※鋼製鉄道車両(P3)研究済み ②蒸気タービン(P4) ③シフト勤務(P3)」</ul></td><td class="effect">①電気鉄道(P4) +6000<br>②蒸気タービン(P4) +6000<br>③シフト勤務(P3) +4150</td></tr>
-<tr><td class="name">石油産業の爆発的成長</td><td class="trigger"><ul><li>石油リグLv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>ロータリーバルブエンジン(P3)研究済みで、内燃機関(P4)未研究</ul></td><td class="effect">内燃機関(P4) +5850</td></tr>
-<tr><td class="name">あなたもその声を聞いたか？</td><td class="trigger"><ul><li>電気産業Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>無線(P4)未研究で研究可能</ul></td><td class="effect">無線(P4) +6000</td></tr>
+<tr id="production_tech_events.601"><td class="name">大気圧機関</td><td class="trigger"><ul><li>全鉱山のいずれかでLv3以上</li><li>大気圧機関(P2)研究済み</li><li>①メカニカルツール(P2)研究済みで鉄道(P2)未研究 ②水管ボイラー(P2)未研究</li></ul></td><td class="effect">①鉄道(P2) +3500<br>②水管ボイラー(P2) +3500</td></tr>
+<tr id="production_tech_events.501"><td class="name">鉄道ブーム</td><td class="trigger"><ul><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超<br>「全鉱山、伐採所、石油リグ」</li><li>以下のいずれかの施設で鉄道輸送PM使用中かつ雇用率75%以上の施設が全対象施設の20％超<br>「全プランテーション系農園」</li><li>発動機産業と鉄道を任意の州に建設済み</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
+<tr id="production_tech_events.700"><td class="name">進歩の原動力</td><td class="trigger"><ul><li>発動機産業Lv3以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>鉄道建設済みで雇用率75%超</li><li>鋼製鉄道車両(P3)未研究で研究可能</ul></td><td class="effect">鋼製鉄道車両(P3) +4150</td></tr>
+<tr id="production_tech_events.1"><td class="name">ゴムブーム</td><td class="trigger"><ul><li>ゴム農園Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</ul></td><td class="effect">加硫(P3) +4150</td></tr>
+<tr id="production_tech_events.402"><td class="name">電力の安定供給</td><td class="trigger"><ul><li>発電所Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>以下のいずれかが未研究で研究可能<br>「①電気鉄道(P4)※鋼製鉄道車両(P3)研究済み ②蒸気タービン(P4) ③シフト勤務(P3)」</ul></td><td class="effect">①電気鉄道(P4) +6000<br>②蒸気タービン(P4) +6000<br>③シフト勤務(P3) +4150</td></tr>
+<tr id="production_tech_events.401"><td class="name">石油産業の爆発的成長</td><td class="trigger"><ul><li>石油リグLv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>ロータリーバルブエンジン(P3)研究済みで、内燃機関(P4)未研究</ul></td><td class="effect">内燃機関(P4) +5850</td></tr>
+<tr id="production_tech_events.300"><td class="name">あなたもその声を聞いたか？</td><td class="trigger"><ul><li>電気産業Lv5以上で、雇用率75%超で週間利益がマイナスでなく準備金25%超</li><li>無線(P4)未研究で研究可能</ul></td><td class="effect">無線(P4) +6000</td></tr>
 </table>
 <hr>
 
-<h2>軍事技術系イベント</h2>
+<h2>軍事技術系イベント（Military）</h2>
 <table>
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
-<tr><td class="name">武器の取引</td><td class="trigger"><ul><li>弾薬工場Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</li><li>施条(M2)研究可能</ul></td><td class="effect">施条(M2) +3500</td></tr>
-<tr><td class="name">武器庫の近代化</td><td class="trigger"><ul><li>武器工場Lv3以上でライフルPMまたは連発銃PMまたはボルトアクションライフルを使用中で雇用率75%以上</li><li>連発銃(M3)研究可能</ul></td><td class="effect">連発銃(M3) +4150</td></tr>
-<tr><td class="name">進歩の戦争</td><td class="trigger"><ul><li>特性：几帳面を持つ将軍がいる</li><li>連発銃(M3)研究済み</li><li>手動クランク式機関銃(M3)未研究で研究可能</li><li>ボルトアクションライフル(M4)未研究</ul></td><td class="effect">①手動クランク式機関銃(M3) +4150<br>②ボルトアクションライフル(M4) +6000</td></tr>
-<tr><td class="name">塹壕戦線</td><td class="trigger"><ul><li>戦争中</li><li>塹壕歩兵25%以上の部隊が存在する</li><li>①縦深防御(M4)未研究で研究可能 ②戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究で研究可能</ul></td><td class="effect">①縦深防御(M4) +6000<br>②突撃歩兵(M5) +8000</td></tr>
-<tr><td class="name">最新鋭の潜水艦</td><td class="trigger"><ul><li>海軍の潜水艦の割合が25%以上</li><li>潜水艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">駆逐艦(M4) +6000</td></tr>
-<tr><td class="name">海の巨人</td><td class="trigger"><ul><li>戦争中</li><li>海軍の戦艦の割合が25%以上</li><li>戦艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">近代戦艦戦術(M5) +5850</td></tr>
-<tr><td class="name">爆撃の実演</td><td class="trigger"><ul><li>海軍の母艦の割合が25%以上</li><li>母艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">軍用航空(M5) +7500</td></tr>
+<tr id="war_crimes.2"><td class="name">武器の取引</td><td class="trigger"><ul><li>弾薬工場Lv5以上で雇用率50%以上、週間利益がマイナスでなく準備金25%超</li><li>施条(M2)研究可能</ul></td><td class="effect">施条(M2) +3500</td></tr>
+<tr id="military_tech_events.401"><td class="name">武器庫の近代化</td><td class="trigger"><ul><li>武器工場Lv3以上でライフルPMまたは連発銃PMまたはボルトアクションライフルPMを使用中で雇用率75%以上</li><li>連発銃(M3)研究可能</ul></td><td class="effect">連発銃(M3) +4150</td></tr>
+<tr id="trench_warfare.1"><td class="name">塹壕戦線</td><td class="trigger"><ul><li>戦争中</li><li>塹壕歩兵25%以上の部隊が存在する</li><li>①縦深防御(M4)未研究で研究可能 ②戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究で研究可能</ul></td><td class="effect">①縦深防御(M4) +6000<br>②突撃歩兵(M5) +8000</td></tr>
+<tr id="naval_tech_events.4"><td class="name">最新鋭の潜水艦</td><td class="trigger"><ul><li>海軍の潜水艦の割合が25%以上</li><li>潜水艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">駆逐艦(M4) +6000</td></tr>
+<tr id="naval_tech_events.3"><td class="name">海の巨人</td><td class="trigger"><ul><li>戦争中</li><li>海軍の戦艦の割合が25%以上</li><li>戦艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">近代戦艦戦術(M5) +5850</td></tr>
+<tr id="naval_tech_events.5"><td class="name">爆撃の実演</td><td class="trigger"><ul><li>海軍の母艦の割合が25%以上</li><li>母艦の割合が20%以上の部隊に提督配置済み</ul></td><td class="effect">軍用航空(M5) +7500</td></tr>
 </table>
 <hr>
 
-<h2>社会技術系イベント</h2>
+<h2>社会技術系イベント（Social）</h2>
 <table>
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
-<tr><td class="name">高度な学習</td><td class="trigger"><ul><li>大学Lv2以上で雇用率90%以上</li><li>①経験論(S1)未研究 ②医学学位(S1)未研究</ul></td><td class="effect">①経験論(S1) +2500<br>②医学学位(S1) +2500</td></tr>
-<tr><td class="name">哲学科</td><td class="trigger"><ul><li>全大学の90%超で哲学部門PM使用中かつ雇用率90%超（Lv5以上の大学含む）</li><li>①労働運動(S2)研究済みで、社会主義(S3)未研究 ②精神医学(S2)研究済みで、哲学的プラグマティズム(S3)未研究</ul></td><td class="effect">①社会主義(S3) +4150<br>②哲学的プラグマティズム(S3) +4150</td></tr>
-<tr><td class="name">哲学研究ジャーナル</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>大学Lv5以上で雇用率90%以上かつ、哲学部門PMまたは分析哲学部門PMを使用中</li><li>精神医学(S2)研究済みで精神分析(S4)未研究</li><li>①哲学的プラグマティズム(S3)未研究または研究可能ではない（？） or ②哲学的プラグマティズム(S3)研究済みで、精神分析(S4)未研究で研究可能</ul></td><td class="effect">①哲学的プラグマティズム(S3) +4150<br>②精神分析(S4) +6000</td></tr>
-<tr><td class="name">書類整理棚</td><td class="trigger"><ul><li>全行政府の75%超で規格化された書類整理システムPM使用中かつ雇用率90%超（Lv10以上の行政府含む）</li><li>身分証明書(S3)が未研究かつ研究可能</ul></td><td class="effect">身分証明書(S3) +4150</td></tr>
-<tr><td class="name">相互利益</td><td class="trigger"><ul><li>公開企業PM使用中の金融街で雇用率75以上で週間利益がマイナスでなく準備金50%以上の施設が全金融街の50%以上</li><li>国際為替基準(S4)未研究かつ研究可能</ul></td><td class="effect">国際為替基準(S4) +6000</td></tr>
-<tr><td class="name">それは空想的なのか？</td><td class="trigger"><ul><li>ジャーナル「ロマン主義の奨励」で発生</li><li>非承認国でないプレイヤー国で、理性主義(S1)研究済みでジャーナル表示</li><li>ロマン主義(S1)研究済みで写実主義(S2)が未研究、かつ市街地が存在でジャーナル有効化</li><li>芸術院Lv2以上で伝統芸術PMを使用中で雇用率90%超</ul></td><td class="effect">写実主義(S2) +3500</td></tr>
-<tr><td class="name">リアリズム運動</td><td class="trigger"><ul><li>ジャーナル「写実芸術の奨励」で発生</li><li>非承認国でないプレイヤー国で、ロマン主義(S1)研究済みで、写真機(S3)未研究でジャーナル表示</li><li>写実主義(S2)研究済みかつ芸術院建設済みでジャーナル有効化</li><li>芸術院Lv1以上で写実芸術PMを使用中で雇用率90%超の施設が全芸術院の100%</ul></td><td class="effect">写真機(S3) +4150</td></tr>
-<tr><td class="name">光と影を捉える</td><td class="trigger"><ul><li>ジャーナル「写真美術の確立」で発生</li><li>非承認国でなく、写実主義(S2)研究済みで、活動写真(S4)未研究でジャーナル表示</li><li>写真機(S3)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で写真美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</ul></td><td class="effect">活動写真(S4) +6000</td></tr>
-<tr><td class="name">動く写真</td><td class="trigger"><ul><li>ジャーナル「映像美術の確立」で発生</li><li>プレイヤー国であり、非承認国でなく、写真機(S3)研究済みでジャーナル表示</li><li>活動写真(S4)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で映像美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</li><li>大衆宣伝(S5)未研究で研究可能</ul></td><td class="effect">大衆宣伝(S5) +5850</td></tr>
+<tr id="dt_society_events.3"><td class="name">高度な学習</td><td class="trigger"><ul><li>大学Lv2以上で雇用率90%以上</li><li>①経験論(S1)未研究 ②医学学位(S1)未研究</ul></td><td class="effect">①経験論(S1) +2500<br>②医学学位(S1) +2500</td></tr>
+<tr id="dt_society_events.1"><td class="name">哲学科</td><td class="trigger"><ul><li>全大学の90%超で哲学部門PM使用中かつ雇用率90%超（Lv5以上の大学含む）</li><li>①労働運動(S2)研究済みで、社会主義(S3)未研究 ②精神医学(S2)研究済みで、哲学的プラグマティズム(S3)未研究</ul></td><td class="effect">①社会主義(S3) +4150<br>②哲学的プラグマティズム(S3) +4150</td></tr>
+<tr id="psychology_events.6"><td class="name">哲学研究ジャーナル</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>大学Lv5以上で雇用率90%以上かつ、哲学部門PMまたは分析哲学部門PMを使用中</li><li>精神医学(S2)研究済みで精神分析(S4)未研究</li><li>①哲学的プラグマティズム(S3)未研究または研究可能ではない（？） or ②哲学的プラグマティズム(S3)研究済みで、精神分析(S4)未研究で研究可能</ul></td><td class="effect">①哲学的プラグマティズム(S3) +4150<br>②精神分析(S4) +6000</td></tr>
+<tr id="dan_society_tech_events.1"><td class="name">書類整理棚</td><td class="trigger"><ul><li>全行政府の75%超で規格化された書類整理システムPM使用中かつ雇用率90%超（Lv10以上の行政府含む）</li><li>身分証明書(S3)が未研究かつ研究可能</ul></td><td class="effect">身分証明書(S3) +4150</td></tr>
+<tr id="society_tech_events.105"><td class="name">相互利益</td><td class="trigger"><ul><li>公開企業PM使用中の金融街で雇用率75以上で週間利益がマイナスでなく準備金50%以上の施設が全金融街の50%以上</li><li>国際為替基準(S4)未研究かつ研究可能</ul></td><td class="effect">国際為替基準(S4) +6000</td></tr>
+<tr id="society_tech_events.302"><td class="name">それは空想的なのか？</td><td class="trigger"><ul><li>ジャーナル「ロマン主義の奨励」で発生</li><li>非承認国でないプレイヤー国で、理性主義(S1)研究済みでジャーナル表示</li><li>ロマン主義(S1)研究済みで写実主義(S2)が未研究、かつ市街地が存在でジャーナル有効化</li><li>芸術院Lv2以上で伝統芸術PMを使用中で雇用率90%超</ul></td><td class="effect">写実主義(S2) +3500</td></tr>
+<tr id="dt_society_events.2"><td class="name">リアリズム運動</td><td class="trigger"><ul><li>ジャーナル「写実芸術の奨励」で発生</li><li>非承認国でないプレイヤー国で、ロマン主義(S1)研究済みで、写真機(S3)未研究でジャーナル表示</li><li>写実主義(S2)研究済みかつ芸術院建設済みでジャーナル有効化</li><li>芸術院Lv1以上で写実芸術PMを使用中で雇用率90%超の施設が全芸術院の100%</ul></td><td class="effect">写真機(S3) +4150</td></tr>
+<tr id="camera_film_pm_events.1"><td class="name">光と影を捉える</td><td class="trigger"><ul><li>ジャーナル「写真美術の確立」で発生</li><li>非承認国でなく、写実主義(S2)研究済みで、活動写真(S4)未研究でジャーナル表示</li><li>写真機(S3)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で写真美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</ul></td><td class="effect">活動写真(S4) +6000</td></tr>
+<tr id="camera_film_pm_events.2"><td class="name">動く写真</td><td class="trigger"><ul><li>ジャーナル「映像美術の確立」で発生</li><li>プレイヤー国であり、非承認国でなく、写真機(S3)研究済みでジャーナル表示</li><li>活動写真(S4)研究済みかつ芸術院Lv3以上でジャーナル有効化</li><li>芸術院Lv5以上で映像美術PMを使用中で雇用率75%超の施設が全芸術院の75%超</li><li>大衆宣伝(S5)未研究で研究可能</ul></td><td class="effect">大衆宣伝(S5) +5850</td></tr>
 </table>
 <hr>
 
 <h2>ランダムイベント</h2>
 <table>
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
-<tr><td class="name">微粒子病の大流行</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>同じイベントが以前発生していない</li><li>微粒子病の発生している州と微粒子病の発生していない絹農園Lv2以上の併合州が存在する</ul></td><td class="effect">低温殺菌(P4) +4000</td></tr>
-<tr><td class="name">人工的な解決策</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>微粒子病の発生している州が存在する</li><li>資本家IGが非主流派でない</li><li>人絹(P4)研究可能</ul></td><td class="effect">人絹(P4) +4000</td></tr>
-<tr><td class="name">報われた訓練</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>併合州で募兵努力の布告中にランダム発生</li><li>①軍事統計(M3)研究済みで、戦闘作戦(M4)未研究かつ研究可能 or ②軍事統計(M3)および塹壕作業(M4)研究済みで、下士官訓練(M5)未研究かつ研究可能 or ③戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究かつ研究可能</ul></td><td class="effect">①戦闘作戦(M4) +6000<br>②下士官訓練(M5) +5850<br>③突撃歩兵(M5) +5850</td></tr>
-<tr><td class="name">デザインの借用</td><td class="trigger"><ul><li>以下のいずれかのうち、いずれかの市場リーダーが研究済みで自国が研究中にランダム発生 「①銃工(M1) ②銃用雷管(M2) ③施条(M2) ④連発銃(M3) ⑤ボルトアクションライフル(M4)」</li><li>小火器を5ユニット以上輸入している</ul></td><td class="effect">①銃工(M1) +2500<br>②銃用雷管(M2) +3500<br>③施条(M2) +3500<br>④連発銃(M3) +4150<br>⑤ボルトアクションライフル(M4) +6000</td></tr>
-<tr><td class="name">友好的な激励</td><td class="trigger"><ul><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>18250日以内に同じイベントが起きていない</li><li>①民主主義(S1)未研究で研究可能 or ②中央集権化(S1)研究済みで、国際関係(S1)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②国際関係(S1) +2500</td></tr>
-<tr><td class="name">忖度なしの記事</td><td class="trigger"><ul><li>913日以内に同じイベントが起きていない</li><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>①民主主義(S1)未研究で研究可能 or ②弁証法(S2)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②弁証法(S2) +3500</td></tr>
-<tr><td class="name">門前の急進主義者</td><td class="trigger"><ul><li>ジャーナル「民衆の春」進行中に発生</li><li>中央集権化(S1)を研究済みで、中央公文書館(S2)が未研究</li><li>政府内に急進派イデオロギーのIGリーダーがいない</li><li>反乱中の強力なIGリーダーが急進派イデオロギーを持っていない</li><li>国家警備や秘密警察を採用し、治安維持の制度Lv3以上</ul></td><td class="effect">中央公文書館(S2) +3500</td></tr>
-<tr><td class="name">コレラに関するコミュニケーションの流儀</td><td class="trigger"><ul><li>未使用インフラ5以下で市街地Lv10以上の併合州がある</li><li>①都市計画(S1)研究済みで、近代下水道(S2)未研究 or ②医学学位(S1)研究済みで、製薬(S2)未研究</ul></td><td class="effect">①近代下水道(S2) +3500<br>②製薬(S2) +3500</td></tr>
-<tr><td class="name">医学の進歩</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>ロビーが使用可能</li><li>革命中でない</li><li>いずれかの国や宗主国に好意的なロビーがある</li><li>以下のいずれかの技術をロビー対象の国が研究済みかつ、自国が未研究で研究可能 「①医学学位(S1) ②製薬(S2) ③キニーネ(S2) ④マラリア予防(S4) ⑤抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②製薬(S2) +3500<br>③キニーネ(S2) +3500<br>④マラリア予防(S4) +5000 ⑤抗生物質(S5) +5850</td></tr>
-<tr><td class="name">プレハブ病院</td><td class="trigger"><ul><li>7300日以内に同じイベントが起きていない</li><li>戦争中</li><li>死者数が1000人以上</li><li>野戦病院オプション採用中で将軍配備済みの部隊が前線にいる</li><li>以下のいずれかの技術が研究可能 「①医学学位(S1) ②キニーネ(S2) ③マラリア予防(S4) ④抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②キニーネ(S2) +3500<br>③マラリア予防(S4) +6000<br>④抗生物質(S5) +5850</td></tr>
-<tr><td class="name">奇妙な迷信</td><td class="trigger"><ul><li>大衆伝達(S1)研究済みで、抗生物質(S5)未研究で研究可能</li><li>市街地Lv2以上かつ大学未建設かつ農民POPがいる州がある</ul></td><td class="effect">抗生物質(S5) +5850</td></tr>
+<tr id="silkworm_diseases.2"><td class="name">微粒子病の大流行</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>同じイベントが以前発生していない</li><li>微粒子病の発生している州と微粒子病の発生していない絹農園Lv2以上の併合州が存在する</ul></td><td class="effect">低温殺菌(P4) +4000</td></tr>
+<tr id="silkworm_diseases.5"><td class="name">人工的な解決策</td><td class="trigger"><ul><li>要DLC：VoP</li><li>ジャーナル「微粒子病の大流行」進行中にランダム発生</li><li>微粒子病の発生している州が存在する</li><li>資本家IGが非主流派でない</li><li>人絹(P4)研究可能</ul></td><td class="effect">人絹(P4) +4000</td></tr>
+<tr id="commander_events.5"><td class="name">進歩の戦争</td><td class="trigger"><ul><li>特性：几帳面を持つ将軍がいる</li><li>連発銃(M3)研究済み</li><li>手動クランク式機関銃(M3)未研究で研究可能</li><li>ボルトアクションライフル(M4)未研究</ul></td><td class="effect">①手動クランク式機関銃(M3) +4150<br>②ボルトアクションライフル(M4) +6000</td></tr>
+<tr id="decree_events.107"><td class="name">報われた訓練</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>併合州で募兵努力の布告中にランダム発生</li><li>①軍事統計(M3)研究済みで、戦闘作戦(M4)未研究かつ研究可能 or ②軍事統計(M3)および塹壕作業(M4)研究済みで、下士官訓練(M5)未研究かつ研究可能 or ③戦闘作戦(M4)研究済みで、突撃歩兵(M5)未研究かつ研究可能</ul></td><td class="effect">①戦闘作戦(M4) +6000<br>②下士官訓練(M5) +5850<br>③突撃歩兵(M5) +5850</td></tr>
+<tr id="trade_route_events.2"><td class="name">デザインの借用</td><td class="trigger"><ul><li>以下のいずれかのうち、いずれかの市場リーダーが研究済みで自国が研究中にランダム発生<br>「①銃工(M1) ②銃用雷管(M2) ③施条(M2) ④連発銃(M3) ⑤ボルトアクションライフル(M4)」</li><li>小火器を5ユニット以上輸入している</ul></td><td class="effect">①銃工(M1) +2500<br>②銃用雷管(M2) +3500<br>③施条(M2) +3500<br>④連発銃(M3) +4150<br>⑤ボルトアクションライフル(M4) +6000</td></tr>
+<tr id="ig_suppression_events.1001"><td class="name">友好的な激励</td><td class="trigger"><ul><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>18250日以内に同じイベントが起きていない</li><li>①民主主義(S1)未研究で研究可能 or ②中央集権化(S1)研究済みで、国際関係(S1)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②国際関係(S1) +2500</td></tr>
+<tr id="ig_suppression_events.1000"><td class="name">忖度なしの記事</td><td class="trigger"><ul><li>913日以内に同じイベントが起きていない</li><li>ジャーナル「権力の盤石化」中に1/26の確率で発生</li><li>①民主主義(S1)未研究で研究可能 or ②弁証法(S2)未研究で研究可能かつ芸術院を任意の自国州に建築済み</ul></td><td class="effect">①民主主義(S1) +2500<br>②弁証法(S2) +3500</td></tr>
+<tr id="1848.5"><td class="name">門前の急進主義者</td><td class="trigger"><ul><li>ジャーナル「民衆の春」進行中に発生</li><li>中央集権化(S1)を研究済みで、中央公文書館(S2)が未研究</li><li>政府内に急進派イデオロギーのIGリーダーがいない</li><li>反乱中の強力なIGリーダーが急進派イデオロギーを持っていない</li><li>国家警備や秘密警察を採用し、治安維持の制度Lv3以上</ul></td><td class="effect">中央公文書館(S2) +3500</td></tr>
+<tr id="Cholera.1"><td class="name">コレラに関するコミュニケーションの流儀</td><td class="trigger"><ul><li>未使用インフラ5以下で市街地Lv10以上の併合州がある</li><li>①都市計画(S1)研究済みで、近代下水道(S2)未研究 or ②医学学位(S1)研究済みで、製薬(S2)未研究</ul></td><td class="effect">①近代下水道(S2) +3500<br>②製薬(S2) +3500</td></tr>
+<tr id="lobby_events.57"><td class="name">医学の進歩</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>ロビーが使用可能</li><li>革命中でない</li><li>いずれかの国や宗主国に好意的なロビーがある</li><li>以下のいずれかの技術をロビー対象の国が研究済みかつ、自国が未研究で研究可能<br>「①医学学位(S1) ②製薬(S2) ③キニーネ(S2) ④マラリア予防(S4) ⑤抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②製薬(S2) +3500<br>③キニーネ(S2) +3500<br>④マラリア予防(S4) +5000<br>⑤抗生物質(S5) +5850</td></tr>
+<tr id="nursing_events.3"><td class="name">プレハブ病院</td><td class="trigger"><ul><li>7300日以内に同じイベントが起きていない</li><li>戦争中</li><li>死者数が1000人以上</li><li>野戦病院オプション採用中で将軍配備済みの部隊が前線にいる</li><li>以下のいずれかの技術が研究可能<br>「①医学学位(S1) ②キニーネ(S2) ③マラリア予防(S4) ④抗生物質(S5)」</ul></td><td class="effect">①医学学位(S1) +2500<br>②キニーネ(S2) +3500<br>③マラリア予防(S4) +6000<br>④抗生物質(S5) +5850</td></tr>
+<tr id="vampire_panic.1"><td class="name">奇妙な迷信</td><td class="trigger"><ul><li>大衆伝達(S1)研究済みで、抗生物質(S5)未研究で研究可能</li><li>市街地Lv2以上かつ大学未建設かつ農民POPがいる州がある</ul></td><td class="effect">抗生物質(S5) +5850</td></tr>
 </table>
 <hr>
 
 <h2>特殊なイベント</h2>
 <table>
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
-<tr><td class="name">鉄道アドバイザー</td><td class="trigger"><ul><li>ジャーナル「維新：日本の工業化」進行中</li><li>鉄道(P2)未研究かつ研究可能</li><li>鉄道(P2)研究済みの列強国で自国と戦争中でなく関係が0以上の国が存在</ul></td><td class="effect">鉄道(P2) +3500</td></tr>
-<tr><td class="name">破壊: 創造的な衝動</td><td class="trigger"><ul><li>要DLC：VoP</li><li>扇動者スロットの空きがある</li><li>自国がフランス</li><li>1905/1/1以降で1922/1/1以前</li><li>社会主義(S3)研究済み</ul></td><td class="effect">政治的扇動(S4) +5000</td></tr>
-<tr><td class="name">人類の崇拝</td><td class="trigger"><ul><li>1842/6/1以降</li><li>イル・ド・フランス州を領有</li><li>哲学的プラグマティズム(S3)未研究で研究可能</ul></td><td class="effect">哲学的プラグマティズム(S3) 4150</td></tr>
-<tr><td class="name">樹脂生産</td><td class="trigger"><ul><li>ガラス工房Lv5以上でプラスチック製家庭用品PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全ガラス工房の50%以上</li><li>鉄筋コンクリート(P3)研究済みでプラスチック(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”プラスチック(P4) +6000</td></tr>
-<tr><td class="name">無線機生産</td><td class="trigger"><ul><li>電気産業Lv5以上で無線機生産PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全電気産業の50%以上</li><li>電話(P4)研究済みで無線(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”無線(P4) +6000</td></tr>
+<tr id="meiji.7"><td class="name">鉄道アドバイザー</td><td class="trigger"><ul><li>ジャーナル「維新：日本の工業化」進行中</li><li>鉄道(P2)未研究かつ研究可能</li><li>鉄道(P2)研究済みの列強国で自国と戦争中でなく関係が0以上の国が存在</ul></td><td class="effect">鉄道(P2) +3500</td></tr>
+<tr id="historical_agitators.16"><td class="name">破壊: 創造的な衝動</td><td class="trigger"><ul><li>要DLC：VoP</li><li>扇動者スロットの空きがある</li><li>自国がフランス</li><li>1905/1/1以降で1922/1/1以前</li><li>社会主義(S3)研究済み</ul></td><td class="effect">政治的扇動(S4) +5000</td></tr>
+<tr id="positivism.1"><td class="name">人類の崇拝</td><td class="trigger"><ul><li>1842/6/1以降</li><li>イル・ド・フランス州を領有</li><li>哲学的プラグマティズム(S3)未研究で研究可能</ul></td><td class="effect">哲学的プラグマティズム(S3) 4150</td></tr>
+<tr id="production_tech_events.200"><td class="name">樹脂生産</td><td class="trigger"><ul><li>ガラス工房Lv5以上でプラスチック製家庭用品PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全ガラス工房の50%以上</li><li>鉄筋コンクリート(P3)研究済みでプラスチック(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”プラスチック(P4) +6000</td></tr>
+<tr id="production_tech_events.210"><td class="name">無線機生産</td><td class="trigger"><ul><li>電気産業Lv5以上で無線機生産PMを使用し、雇用率75%超で週間利益がマイナスでなく準備金25%超の施設が全電気産業の50%以上</li><li>電話(P4)研究済みで無線(P4)未研究でプレイヤー国でない隣国が存在する</ul></td><td class="effect">“隣国に”無線(P4) +6000</td></tr>
 </table>
 <hr>
 
