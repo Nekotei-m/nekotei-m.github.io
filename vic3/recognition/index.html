@@ -43,7 +43,7 @@
     }
     
   },
-  "description": "国家承認ジャーナルについての解説です。（1.7.1で確認）\n",
+  "description": "国家承認ジャーナルについての解説です。（1.9.7で確認）\n",
   "keywords": []
 }
 
@@ -53,18 +53,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="ねこてー">
 <meta name="keywords" content="">
-<meta name="description" content="国家承認ジャーナルについての解説です。（1.7.1で確認）">
+<meta name="description" content="国家承認ジャーナルについての解説です。（1.9.7で確認）">
 
 
-<meta property="og:description" content="国家承認ジャーナルについての解説です。（1.7.1で確認）">
+<meta property="og:description" content="国家承認ジャーナルについての解説です。（1.9.7で確認）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="国家承認について">
 <meta name="twitter:title" content="国家承認について">
 <meta property="og:url" content="https://nekotei-m.github.io/vic3/recognition/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/vic3/recognition/">
 <meta property="og:site_name" content="ねこメモ">
-<meta property="og:description" content="国家承認ジャーナルについての解説です。（1.7.1で確認）">
-<meta name="twitter:description" content="国家承認ジャーナルについての解説です。（1.7.1で確認）">
+<meta property="og:description" content="国家承認ジャーナルについての解説です。（1.9.7で確認）">
+<meta name="twitter:description" content="国家承認ジャーナルについての解説です。（1.9.7で確認）">
 <meta property="og:locale" content="ja">
 
   
@@ -196,7 +196,7 @@
           <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/acceptance/">受容度（1.8）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/tech_event/">技術イベント（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ（1.6）</a></li>
@@ -292,52 +292,59 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>国家承認ジャーナルについての解説です。（1.7.1で確認）</p>
+              <p>国家承認ジャーナルについての解説です。（1.9.7で確認）</p>
 
 <style>
 ul { margin-bottom: 0;}
 p strong.term { color: #933; }
+div.attention {
+  border: solid 6px #b0c4de;
+  border-radius: 8px;
+  padding: 0 1.5rem;
+  background-color: #f9f9f9;
+}
+div.attention h4 {
+  border-bottom: solid 2px #6060C0;
+  color: #191970;
+}
 </style>
 <h3 id="identity">国家承認について</h3>
 
-<p>非承認国からの脱却のための<strong class="term">国家承認</strong>は<strong class="term">外交要求</strong>から<strong class="term">ジャーナル</strong>に変更されました。<br>
-国家承認ジャーナルを有効にするためには、<strong>国家ランクを<strong class="term">非承認大国</strong>まで上げ、<br><strong class="term">植民地化の技術</strong>（社会T1）を取得する</strong>必要があります。</p>
+<p>Ver1.7から非承認国からの脱却のための<strong class="term">国家承認</strong>は<strong class="term">外交要求</strong>から<strong class="term">ジャーナル</strong>に変更されました。国家承認ジャーナルを有効にするためには、<strong>国家ランクを<strong class="term">非承認大国</strong>まで上げ（または列強国を宗主国にもつ）、<strong class="term">植民地化の技術</strong>（社会T1）を取得する</strong>必要があります。</p>
 
-<p>ジャーナルが有効になると進捗バーが出現し、<strong class="term">進捗を200ポイント</strong>まで進めたうえで、<br><strong>いずれかの列強と</strong><strong class="term">関係80以上</strong>（1.7.2で50以上に変更予定）にすると国家承認ジャーナルが完了します。</p>
+<p>ジャーナルが有効になると進捗バーが出現し、<strong class="term">進捗を200ポイント</strong>まで進めたうえで、<br><strong>いずれかの列強と</strong><strong class="term">関係50以上</strong>にすると国家承認ジャーナルが完了します。</p>
 
-<p>進捗は様々要素で進んだり、減退したりします。</p>
+<p>進捗は様々な要素で進行したり、減退したりします。</p>
+
+<div class="attention">
+<h4>進捗を進行させる要件</h4>
 <strong><ul>
+  <li>GDPランキング10位以内</li>
   <li>一人当たりGDP20位以内</li>
   <li>SoLランキング20位以内</li>
   <li>識字率40%以上</li>
   <li>何らかの選挙法を採用している</li>
 </ul></strong>
-<p>これらを満たすとそれぞれ<strong class="term">毎週+1ポイントの進捗</strong>を得られ、</p>
-
+<p>これらを満たすとそれぞれ<strong class="term">毎週+1ポイントの進捗</strong>を得られます。</p>
+</div>
+<br>
+<div class="attention">
+<h4>進捗を後退させる要件</h4>
 <strong><ul>
-  <li>一人当たりGDP50位圏外</li>
-  <li>SoLランク50位圏外</li>
+  <li>GDPランキング30位以下</li>
   <li>識字率20%以下</li>
   <li>奴隷禁止を採用して<span class="caution">いない</span></li>
+  <li>孤立主義（または広東システム）を採用している</li>
   <li>農奴制を採用している</li>
   <li>伝統主義を採用している</li>
   <li>異議の禁止を採用している</li>
+  <li>大使館設置の条約を締結している（複数可）</li>
 </ul></strong>
-<p>これらの状況にあるとそれぞれ<strong class="term">毎週-1ポイント減退</strong>してしまいます。</p>
+<p>これらの状況にあるとそれぞれ<strong class="term">毎週-1ポイント後退</strong>してしまいます。</p>
+</div>
+<br>
 
 <p>つまりできるだけ<strong>民主的な法律を採用し、経済的に十分な成長</strong>を目指さなければなりません。</p>
-
-<p>また列強と外交関係が良ければ「<strong class="term">使節を要請する</strong>」ことにより、<strong>一時的に</strong><strong class="term">20ポイントの進捗</strong>を得られます。
-ただし受け入れは簡単ではなく、
-<ul>
-  <li>政府のイデオロギーの類似（最大+50）</li>
-  <li>態度が良好（温和+50・保護的+25）</li>
-  <li>関係性高め（親しみ+50・友好+25・親密+10）</li>
-  <li>各種条約（貿易条約+15・投資権付与+25・防衛同盟+35・同盟+50）</li>
-  <li>同じ勢力ブロックメンバー（+25）</li>
-</ul>
-これらで100以上の受諾値を確保しなければいけません。<br>
-特にAI国の態度に左右されるため、狙うよりは可能なら要請するような位置付けでしょうか。</p>
 
 <p>また以前のように<strong>戦争という手段</strong>に訴えることも可能です。<br>
 <strong>大国以上</strong>の相手に対して勝利すると、<strong class="term">要求した戦略目標の戦略ポイント×4の進捗</strong>を得られます。
@@ -346,7 +353,7 @@ p strong.term { color: #933; }
 
 <p>ただし逆に<strong>敗戦</strong>すると、<strong>相手国のランクに関わらず、</strong><strong class="term">戦略ポイント×4の進捗を失います</strong>ので注意してください。</p>
 
-<p>ジャーナルが完了すると晴れて<strong class="term">承認国</strong>となり、ランダムな列強と関係が30改善して好意的なロビーが発生する確率が高くなります。</p>
+<p>ジャーナルが完了すると晴れて<strong class="term">承認国</strong>となり、友好的な列強国の中からランダムで関係が30改善し、好意的なロビーが発生する確率が高くなります。</p>
 <hr>
 
 <ul class="reference">
