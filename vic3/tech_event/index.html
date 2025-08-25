@@ -189,7 +189,7 @@
           <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.9）</a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.8）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/acceptance/">受容度（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.9）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
@@ -325,7 +325,7 @@ td.effect { width: 18rem; }
 <tr><th class="name">イベント名</th><th class="trigger">発生条件</th><th class="effect">効果</th></tr>
 <tr id="dt_society_events.3"><td class="name">高度な学習</td><td class="trigger"><ul><li>大学Lv2以上で雇用率90%以上</li><li>①経験論(S1)未研究 ②医学学位(S1)未研究</ul></td><td class="effect">①経験論(S1) +2500<br>②医学学位(S1) +2500</td></tr>
 <tr id="dt_society_events.1"><td class="name">哲学科</td><td class="trigger"><ul><li>全大学の90%超で哲学部門PM使用中かつ雇用率90%超（Lv5以上の大学含む）</li><li>①労働運動(S2)研究済みで、社会主義(S3)未研究 ②精神医学(S2)研究済みで、哲学的プラグマティズム(S3)未研究</ul></td><td class="effect">①社会主義(S3) +4150<br>②哲学的プラグマティズム(S3) +4150</td></tr>
-<tr id="psychology_events.6"><td class="name">哲学研究ジャーナル</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>大学Lv5以上で雇用率90%以上かつ、哲学部門PMまたは分析哲学部門PMを使用中</li><li>精神医学(S2)研究済みで精神分析(S4)未研究</li><li>①哲学的プラグマティズム(S3)未研究または研究可能ではない（？） or ②哲学的プラグマティズム(S3)研究済みで、精神分析(S4)未研究で研究可能</ul></td><td class="effect">①哲学的プラグマティズム(S3) +4150<br>②精神分析(S4) +6000</td></tr>
+<tr id="psychology_events.6"><td class="name">哲学研究ジャーナル</td><td class="trigger"><ul><li>18250日以内に同じイベントが起きていない</li><li>大学Lv5以上で雇用率90%以上かつ、哲学部門PMまたは分析哲学部門PMを使用中</li><li>精神医学(S2)研究済みで精神分析(S4)未研究</li><li>①哲学的プラグマティズム(S3)未研究または研究可能ではない<span style="color: red; fontsize: smaller;">（※おそらく設定が間違っているため、この条件は発動しない。哲学的プラグマティズム研究前にこのイベントが起きてしまうと技術ボーナスは得られない）</span> or ②哲学的プラグマティズム(S3)研究済みで、精神分析(S4)未研究で研究可能</ul></td><td class="effect">①哲学的プラグマティズム(S3) +4150<br>②精神分析(S4) +6000</td></tr>
 <tr id="dan_society_tech_events.1"><td class="name">書類整理棚</td><td class="trigger"><ul><li>全行政府の75%超で規格化された書類整理システムPM使用中かつ雇用率90%超（Lv10以上の行政府含む）</li><li>身分証明書(S3)が未研究かつ研究可能</ul></td><td class="effect">身分証明書(S3) +4150</td></tr>
 <tr id="society_tech_events.105"><td class="name">相互利益</td><td class="trigger"><ul><li>公開企業PM使用中の金融街で雇用率75以上で週間利益がマイナスでなく準備金50%以上の施設が全金融街の50%以上</li><li>国際為替基準(S4)未研究かつ研究可能</ul></td><td class="effect">国際為替基準(S4) +6000</td></tr>
 <tr id="society_tech_events.302"><td class="name">それは空想的なのか？</td><td class="trigger"><ul><li>ジャーナル「ロマン主義の奨励」で発生</li><li>非承認国でないプレイヤー国で、理性主義(S1)研究済みでジャーナル表示</li><li>ロマン主義(S1)研究済みで写実主義(S2)が未研究、かつ市街地が存在でジャーナル有効化</li><li>芸術院Lv2以上で伝統芸術PMを使用中で雇用率90%超</ul></td><td class="effect">写実主義(S2) +3500</td></tr>
@@ -369,6 +369,19 @@ td.effect { width: 18rem; }
   <li>\Victoria 3\game\events\*.txt</li>
   <li>\Victoria 3\game\common\technology\technologies\*.txt</li>
 </ul>
+
+<!--
+・弁証法は真っ先に向かいがちで、T2で一番先に取得してしまうとボーナスが取れない
+
+順番
+高度な学習
+大気圧機関
+哲学科
+書類整理棚
+鉄道ブーム＆進歩の原動力
+武器の取引（弾薬工場Lv5がキツイ）
+武器庫の近代化
+-->
               
 
 
