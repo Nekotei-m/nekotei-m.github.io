@@ -43,7 +43,7 @@
     }
     
   },
-  "description": "受容度と法の関係表です。（1.10で確認）\n",
+  "description": "受容度と法の関係表です。（1.10.1で確認）\n",
   "keywords": []
 }
 
@@ -53,18 +53,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="ねこてー">
 <meta name="keywords" content="">
-<meta name="description" content="受容度と法の関係表です。（1.10で確認）">
+<meta name="description" content="受容度と法の関係表です。（1.10.1で確認）">
 
 
-<meta property="og:description" content="受容度と法の関係表です。（1.10で確認）">
+<meta property="og:description" content="受容度と法の関係表です。（1.10.1で確認）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="受容">
 <meta name="twitter:title" content="受容">
 <meta property="og:url" content="https://nekotei-m.github.io/vic3/acceptance/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/vic3/acceptance/">
 <meta property="og:site_name" content="ねこメモ">
-<meta property="og:description" content="受容度と法の関係表です。（1.10で確認）">
-<meta name="twitter:description" content="受容度と法の関係表です。（1.10で確認）">
+<meta property="og:description" content="受容度と法の関係表です。（1.10.1で確認）">
+<meta name="twitter:description" content="受容度と法の関係表です。（1.10.1で確認）">
 <meta property="og:locale" content="ja">
 
   
@@ -292,7 +292,7 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>受容度と法の関係表です。（1.10で確認）</p>
+              <p>受容度と法の関係表です。（1.10.1で確認）</p>
 
 <style>
 .bad, .good {
@@ -331,10 +331,10 @@ table#religion td {
 
 <p><strong class="term">受容度</strong>は主に法によって決まり、その文化の<strong>母国州には+10</strong>、<strong>その国に新しくできた文化的コミュニティの文化には-30</strong>（毎月0.25ずつ10年で減衰）の補正がつきます。また市民権の法律変更時にも、これまでの受容度と変更後の受容度の差が文化コミュニティの減衰ペナルティとして表示されます。</p>
 
-<p>補正を抜きにすると例えば、<strong class="term">人種隔離</strong>と<strong class="term">国教</strong>の法を採用している国家で、<strong>主要文化(+100)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大75</strong>までしか受容度が上がらずに二流市民に留まり、<strong class="term">多文化主義</strong>と<strong class="term">完全分離</strong>の法を採用している国家では<strong>完全異文化(+75)</strong>で<strong>異教(+15)</strong>のPOPでも<strong>最大90</strong>まで受容度が上がります。</p>
+<p>補正を抜きにすると例えば、<strong class="term">人種隔離</strong>と<strong class="term">国教</strong>の法を採用している国家で、<strong>主要文化(+100)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大75</strong>で二流市民に留まります。一方、<strong class="term">多文化主義</strong>と<strong class="term">完全分離</strong>の法を採用している国家でも<strong>異文化(+20)</strong>で<strong>異言語(+20)</strong>かつ<strong>異教(+15)</strong>のPOPは<strong>最大55</strong>で公然たる偏見までしか扱われません。ここでその国が<strong class="term">国教</strong>の法を採用し、POPが改宗したら国教(+25)で最大65となり、二流市民まで上ることができます。</p>
 
-<p>「<strong class="term">同化</strong>」は<strong class="term">文化的抹消～二流紙民</strong><strong>の受容レベルで行われ</strong>、<strong class="term">暴力的な敵対・全受容</strong>では起こりません。また以前はPOPが母国州にいるときは同化されない制限があり、1.8.4で一旦撤廃されるも、1.8.6で再度制限されました。<br>
-たとえば<strong class="term">国民至上</strong>と<strong class="term">国教</strong>の法を採用していると、<strong>共通の文化系統のみ(+40)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大15</strong>までしか受容度が上がらず、<strong class="term">暴力的な敵対</strong>に留まり同化されません。</p>
+<p>「<strong class="term">同化</strong>」は<strong class="term">文化的抹消</strong><strong>以上の受容レベルで行われ</strong>、<strong class="term">暴力的な敵対</strong>では起こりません。POPが自分の文化の母国州にいるときは同化は制限されますが、<strong class="term">国家価値の促進</strong>布告を行うことで制限を解除することができます（多文化主義採用時を除く）<br>
+たとえば<strong class="term">国民至上</strong>と<strong class="term">国教</strong>の法を採用していると、<strong>同文化系統(+40)</strong>で<strong>異教(-25)</strong>のPOPは<strong>最大15</strong>までしか受容度が上がらず、<strong class="term">暴力的な敵対</strong>に留まり同化されません。</p>
 
 <p>「<strong class="term">改宗</strong>」は教会と国家の法律によって異なりますが、<strong class="term">完全分離</strong>以外では<strong class="term">暴力的な敵対</strong>でも行われます。<strong class="term">暴力的な敵対</strong>でも改宗されれば受容レベルが上がり、同化も進むようになるでしょう。</p>
 
@@ -345,14 +345,14 @@ table#religion td {
 <table>
   <tr class="line-break"><th colspan="2"></th><th>&nbsp;臣民性&nbsp;</th><th>&nbsp;民族国家&nbsp;</th><th>&nbsp;国民至上&nbsp;</th><th>&nbsp;人種隔離&nbsp;</th><th>文化的排斥</th><th>多文化主義</th></tr>
 
-  <tr><th rowspan="12">受容度</th><td class="subdiv">主要文化</td><td>+50</td><td>+100</td><td>+100</td><td>+100</td><td>+100</td><td>+100</td></tr>
+  <tr><th rowspan="12">受容度</th><td class="subdiv">主要文化</td><td>+65</td><td>+100</td><td>+100</td><td>+100</td><td>+100</td><td>+100</td></tr>
   <tr><td class="subdiv">同文化系統</td><td>+20</td><td>+20</td><td>+40</td><td>+60</td><td>+60</td><td>+60</td></tr>
   <tr><td class="subdiv">同文化グループ</td><td>+15</td><td>+10</td><td>+20</td><td>+50</td><td>+50</td><td>+50</td></tr>
   <tr><td class="subdiv">異文化</td><td>±0</td><td><span class="bad">-10</span></td><td><span class="bad">-10</span></td><td><span class="bad">-20</span></td><td>+10</td><td>+20</td></tr>
   <tr><td class="subdiv">同言語系統</td><td>+20</td><td>+15</td><td>+30</td><td>+30</td><td>+50</td><td>+50</td></tr>
   <tr><td class="subdiv">同言語グループ</td><td>+15</td><td>+5</td><td>+15</td><td>+15</td><td>+25</td><td>+30</td></tr>
   <tr><td class="subdiv">異言語</td><td>±0</td><td>±0</td><td><span class="bad">-5</span></td><td><span class="bad">-5</span></td><td>+10</td><td>+20</td></tr>
-  <tr><td class="subdiv">慣習特性あり</td><td>+30</td><td>+10</td><td>+15</td><td>+20</td><td>+25</td><td>+10</td></tr>
+  <tr><td class="subdiv">慣習特性あり</td><td>+25</td><td>+10</td><td>+15</td><td>+20</td><td>+25</td><td>+10</td></tr>
   <tr><td class="subdiv">慣習特性なし</td><td>±0</td><td>±0</td><td>±0</td><td>±0</td><td>±0</td><td>±0</td></tr>
   <tr><td class="subdiv">備考</td><td><span class="note">※各POPの<br>母国州では<br>追加で+30<br>※同化率<br>-25%</span></td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td class="subdiv">その他</td><td colspan="6"><span class="note">※植民地なしの法で母国州の受容+10</span></td></tr>
