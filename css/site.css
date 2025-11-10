@@ -118,7 +118,7 @@ sup {
   /* ------- スクロールバー非表示 ------- */
   scrollbar-width: none;         /* Firefox */
   -ms-overflow-style: none;      /* 旧 Edge / IE 10+ */
-
+  z-index: 0 !important;
   /* Chrome / Safari / Edge (Chromium) / Opera */
 }
 #sidebar::-webkit-scrollbar {

@@ -2,20 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nekotei-m.github.io/posts/</loc>
-    <lastmod>2028-01-01T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/</loc>
-    <lastmod>2028-01-01T21:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://nekotei-m.github.io/categories/</loc>
-    <lastmod>2025-07-01T21:00:00+09:00</lastmod>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/categories/eu5/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/eu5/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/eu5/trade-tips/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/europa-universalis-v/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/posts/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/project-caesar/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/tags/</loc>
-    <lastmod>2025-07-01T21:00:00+09:00</lastmod>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/tags/tips/</loc>
-    <lastmod>2025-07-01T21:00:00+09:00</lastmod>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/tags/trade/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://nekotei-m.github.io/</loc>
+    <lastmod>2025-11-10T06:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/tags/vic3/</loc>
     <lastmod>2025-07-01T21:00:00+09:00</lastmod>
@@ -26,19 +44,7 @@
     <loc>https://nekotei-m.github.io/vic3/tech_event/</loc>
     <lastmod>2025-07-01T21:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://nekotei-m.github.io/categories/eu5/</loc>
-    <lastmod>2025-01-01T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/eu5/</loc>
-    <lastmod>2025-01-01T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/europa-universalis-v/</loc>
-    <lastmod>2025-01-01T21:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://nekotei-m.github.io/eu5/trade-goods/</loc>
-    <lastmod>2025-01-01T21:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://nekotei-m.github.io/tags/project-caesar/</loc>
     <lastmod>2025-01-01T21:00:00+09:00</lastmod>
   </url><url>
     <loc>https://nekotei-m.github.io/tags/data/</loc>
