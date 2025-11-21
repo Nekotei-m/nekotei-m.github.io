@@ -6,8 +6,15 @@
     <description>Recent content in Posts on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 10 Nov 2025 06:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Europa Universalis V - 開戦事由（Casus Belli/CB）一覧</title>
+      <link>https://nekotei-m.github.io/eu5/casus-belli/</link>
+      <pubDate>Thu, 20 Nov 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/eu5/casus-belli/</guid>
+      <description>&lt;p&gt;Paradox Interactive社のEuropa Universalis Vでの開戦事由の一覧です。（Ver1.0.7で確認）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>EU5 - 交易の手引き</title>
       <link>https://nekotei-m.github.io/eu5/trade-tips/</link>
