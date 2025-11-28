@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4R2215NGV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S4R2215NGV');
+    </script>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Europa Universalis V - 議会について",
+  
+  "image": "https://nekotei-m.github.io/img/eu5/icon_parliament.png",
+  
+  "datePublished": "2025-11-26T21:00:00+09:00",
+  "dateModified": "2025-11-26T21:00:00+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "ねこてー",
+    
+    "image": "https://nekotei-m.github.io/img/icon_profile.png"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/nekotei-m.github.io\/eu5\/parliament\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ねこメモ",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nekotei-m.github.io/img/icon_profile.png"
+    }
+    
+  },
+  "description": "EU5での議会についての解説です。（Ver1.0.8βで確認）\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="ねこてー">
+<meta name="keywords" content="">
+<meta name="description" content="EU5での議会についての解説です。（Ver1.0.8βで確認）">
+
+
+<meta property="og:description" content="EU5での議会についての解説です。（Ver1.0.8βで確認）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Europa Universalis V - 議会について">
+<meta name="twitter:title" content="Europa Universalis V - 議会について">
+<meta property="og:url" content="https://nekotei-m.github.io/eu5/parliament/">
+<meta property="twitter:url" content="https://nekotei-m.github.io/eu5/parliament/">
+<meta property="og:site_name" content="ねこメモ">
+<meta property="og:description" content="EU5での議会についての解説です。（Ver1.0.8βで確認）">
+<meta name="twitter:description" content="EU5での議会についての解説です。（Ver1.0.8βで確認）">
+<meta property="og:locale" content="ja">
+
+  
+    <meta property="article:published_time" content="2025-11-26T21:00:00">
+  
+  
+    <meta property="article:modified_time" content="2025-11-26T21:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="EU5">
+    
+  
+  
+    
+      <meta property="article:tag" content="Project Caesar">
+    
+      <meta property="article:tag" content="Europa Universalis V">
+    
+      <meta property="article:tag" content="EU5">
+    
+      <meta property="article:tag" content="Data">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+  <meta name="twitter:site" content="@nekotei_m">
+
+
+  <meta name="twitter:creator" content="@nekotei_m">
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://nekotei-m.github.io/img/eu5/icon_parliament.png">
+  <meta property="twitter:image" content="https://nekotei-m.github.io/img/eu5/icon_parliament.png">
+
+
+  <meta name="msapplication-square310x310logo" content="/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://nekotei-m.github.io/img/layout/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://nekotei-m.github.io/img/layout/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://nekotei-m.github.io/img/layout/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://nekotei-m.github.io/img/layout/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="https://nekotei-m.github.io/img/layout/icon-512x512.png">
+  <link rel="manifest" href="https://nekotei-m.github.io/img/layout/manifest.json">
+
+    <title>Europa Universalis V - 議会について</title>
+
+    <link rel="icon" href="https://nekotei-m.github.io/img/layout/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://nekotei-m.github.io/eu5/parliament/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://nekotei-m.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://nekotei-m.github.io/css/site.css">
+      
+    
+
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://nekotei-m.github.io/" aria-label="ホームページへ">ねこメモ</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://nekotei-m.github.io/#about" aria-label="リンクを開く: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://nekotei-m.github.io/img/icon_profile.png" alt="プロフィール画像" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+    <div class="sidebar-profile">
+      <a href="https://nekotei-m.github.io/">
+        <img class="sidebar-profile-picture" src="https://nekotei-m.github.io/img/layout/icon_nekomemo.png" alt="プロフィール画像" />
+      </a>
+    </div>
+    
+    <ul class="sidebar-buttons game-list">
+      <li class="sidebar-button">
+        <span class="sidebar-button-link " title="Home">
+          <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+          <span class="sidebar-button-desc"><strong>カテゴリ</strong></span>
+        </span>
+        <ul>
+          <li class="game-title dtd7"><a href="https://nekotei-m.github.io/categories/7_days_to_die/">
+            <strong>7 days to die</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/7dtd/a21-by-data/">[α21] データで見る7dtd</a></li>
+          <li class="game-title caesar"><a href="https://nekotei-m.github.io/categories/eu5/">
+            <strong>Europa Universalis V</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/trade-tips/">貿易の手引き（1.0）</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/parliament/">議会について</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/casus-belli/">CB一覧</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/trade-goods/">商品一覧</a></li>
+          <li class="game-title vic3"><a href="https://nekotei-m.github.io/categories/victoria3/">
+            <strong>Victoria3</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.10）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.12）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/acceptance/">受容度（1.10）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/recognition/">国家承認（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/military-units/">ユニット性能（1.7）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/tech_event/">技術イベント（1.9）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/construction-tips/">建築のコツ（1.6）</a></li>
+          <li class="game-title impr"><a href="https://nekotei-m.github.io/categories/imperator_rome/">
+            <strong>Imperator: Rome</strong>
+          </a></li>
+          <li><a href="https://nekotei-m.github.io/impr/imperator-rome-tips2.0/">Tips</a></li>
+        </ul>
+    </ul>
+    <ul class="sidebar-buttons sns">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nekotei-m.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">プロフィール</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/nekotei_m" target="_blank" rel="noopener" title="Twitter(X)">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-twitter" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Twitter(X)</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://youtube.com/@nekotei/" target="_blank" rel="noopener" title="Youtube">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-youtube" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Youtube</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.nicovideo.jp/user/2157109" target="_blank" rel="noopener" title="ニコニコ動画">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-niconico" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">ニコニコ動画</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Europa Universalis V - 議会について
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2025-11-26T21:00:00&#43;09:00">
+        
+  11月 26, 2025
+
+      </time>
+    
+    
+  
+  
+    <span>カテゴリー</span>
+    
+      <a class="category-link" href="https://nekotei-m.github.io/categories/eu5">EU5</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>EU5での議会についての解説です。（Ver1.0.8βで確認）</p>
+
+<style type="text/css">
+th, td {
+  text-align: left;
+  vertical-align: middle;
+}
+th {
+  white-space: nowrap;
+  font-size: smaller;
+  line-height: 1.5;
+}
+td:nth-child(1) {
+  width: 8rem;
+  text-align: center;
+}
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4) {
+  width: 16rem;
+  font-size: smaller;
+  text-align: left;
+}
+td:nth-child(4) {
+  width: 14rem;
+}
+td ul {
+  margin: 0 0 0 12px;
+}
+td h5 {
+  margin: 0 0 0 -0.7rem;
+  font-size: 1.4rem !important;
+  line-height: 1.9em;
+}
+div.on-debate,
+div.passed {
+  line-height: 1.8em;
+}
+div.on-debate {
+  margin-bottom: 8px;
+}
+.on-debate h5 { color: #223a70; }
+.passed h5 { color: #a22041; }
+.good, .bad { font-weight: bold; }
+.peace-cost { display: block; margin-left: 1rem; }
+</style>
+<p>議会は最短で5年ごとに開催でき、半年の審議期間を経て採決されます。表の「効果」のうち、【審議中】のものは議会開催中の間にだけ効果があります。【可決時】は半年後の採決で可決されたときのみ効果を発揮します。議題はランダムで選ばれますが、「提示条件」を満たしていないものは選択肢にあがりません。「提案確率」は基本を1とし、状況によって補正されます。+2されるとおおよそ3倍弱の出現確率になると思って良いでしょう。</p>
+<p>議会の支持を上げてくれる「協議事項」については後日リストアップします。</p>
+<br>
+<h2>議題一覧</h2>
+<div class="toc">
+  <h3>もくじ</h3>
+  <ul>
+    <li><a href="#crown">王室の議題</a></li>
+    <li><a href="#noble">貴族の議題</a></li>
+    <li><a href="#clergy">聖職者の議題</a></li>
+    <li><a href="#burghers">市民の議題</a></li>
+    <li><a href="#commons">庶民の議題</a></li>
+    <li><a href="#disaster">国難専用の議題</a></li>
+    <li><a href="#countries">各国固有の議題</a></li>
+  </ul>
+</div>
+<hr class="none">
+
+<h3 id="crown">王室の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>政府の強化</td><td><div class="on-debate"><h5>【審議中】</h5>月間正統性<span class="good">+1</span></div><div class="passed"><h5>【可決時】</h5>特権剥奪コスト<span class="good">-10%</span><br>君主力<span class="good">+20%</span><br>（各10年）</div></td><td><ul><li>戦争中でない</li><li>議会タイプに制限あり</li><li>君主の政治力50未満</li><li>君主制／共和制／神権制／部族制／遊牧民制</li><li>前回可決してないこと</li></ul></td><td><ul><li>君主の政治力20%未満のとき +2</li><li>君主の政治力40%超のとき x0.5</li></ul></td></tr>
+<tr><td>人口調査の実施</td><td><div class="on-debate"><h5>【審議中】</h5>人口増加<span class="good">+0.5%</span></div><div class="passed"><h5>【可決時】</h5>安定度<span class="good">+7</span></div></td><td><ul><li>議会タイプに制限あり</li></ul></td><td><ul><li>安定度0以下のとき +2</li><li>安定度-40以下のとき +4（上に加算）</li><li>安定度80以上のとき -1</li></ul></td></tr>
+<tr><td>国家の支援</td><td><div class="on-debate"><h5>【審議中】</h5>君主力<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>君主または摂政の各能力値<span class="good">+3</span></div></td><td><ul><li>君主が存在する</li></ul></td><td><ul><li>正統性50未満のとき -1</li><li>正統性90超のとき +2</li></ul></td></tr>
+<tr><td>統制力の強化</td><td><div class="on-debate"><h5>【審議中】</h5>支配度<span class="good">+0.5%</span></div><div class="passed"><h5>【可決時】</h5>会計所が未建設の街／都のうち、人口が多い順に<span class="good">会計所が半額で建設</span>される（対象数の1/10+1か所）</div></td><td><ul><li>君主が存在する</li><li>“会計所"研究済み</li><li>会計所が未建設の街／都がある</li></ul></td><td><ul><li>統合州の平均支配度が50%以下のとき +2</li><li>統合州の平均支配度が70%以上のとき x0.5</li></ul></td></tr>
+<tr><td>列強との関係</td><td><div class="on-debate"><h5>【審議中】</h5>外交評判<span class="good">+2</span></div><div class="passed"><h5>【可決時】</h5>外交官<span class="good">+5</span><br>ライバルや敵対していない列強のうち、陸軍が少ない方から2国の評価<span class="good">+50</span></div></td><td><ul><li>専制議会または立憲議会</li><li>ライバルや敵対しておらず、マップ上で明らかになっている列強が存在する</li></ul></td><td><ul><li>外交官の数が2以下のとき +2</li><li>自国が覇権国のとき x0.1</li></ul></td></tr>
+<tr><td>従属国との結束を強化</td><td><div class="on-debate"><h5>【審議中】</h5>従属国の忠誠度<span class="good">+10</span><br>従属国からの収入<span class="good">+20%</span></div><div class="passed"><h5>【可決時】</h5>すべての従属国の独立欲求<span class="good">-5</span></div></td><td><ul><li>従属国を1つ以上持っている</li><li>専制議会または立憲議会以外</li></ul></td><td><ul><li>従属国を2つ以上持っているとき +2</li></ul></td></tr>
+</table>
+<hr>
+<h3 id="noble">貴族階級の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>城建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"城"研究済み</li><li>"砦"・"星形要塞"・"要塞"をいずれも未研究</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が1.0ダカット未満のとき -10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>砦建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"砦"研究済み</li><li>"星形要塞"・"要塞"をいずれも未研究</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が4.0ダカット未満のとき -10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>星形要塞建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"星形要塞"研究済み</li><li>"要塞"を未研究</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が8.0ダカット未満のとき -10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>星形要塞建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"要塞"研究済み</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が12.0ダカット未満のとき</li><li>-10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>歌劇場への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>文化伝統力<span class="good">+33%</span><br>貴族政治に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>歌劇場が未建設の街／都に<span class="good">歌劇場が1つ半額で建設</span>される（都優先で人口順）</div></td><td><ul><li>議会タイプに制限あり</li><li>"歌劇場"研究済み</li><li>歌劇場が未建設の街／都がある</li><li>"厳格な検閲"を採用していない</li></ul></td><td><ul><li>歌劇場をどこにも未建設のとき +2</li><li>“限定的な検閲"を採用している +1</li><li>“検閲なし"を採用している +2</li><li>文化伝統力20未満のとき x0.5</li></ul></td></tr>
+<tr><td>砂利道の拡張</td><td><div class="on-debate"><h5>【審議中】</h5>街道敷設時間<span class="good">-20%</span><br>砂利道敷設コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">+10</span>傾く</div></td><td><ul><li>議会タイプに制限あり</li><li>"舗装路"・"近代的街道"・"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>舗装路の拡張</td><td><div class="on-debate"><h5>【審議中】</h5>街道敷設時間<span class="good">-20%</span><br>砂利道敷設コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">+10</span>傾く</div></td><td><ul><li>議会タイプに制限あり</li><li>"舗装路"研究済み</li><li>"近代的街道"・"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>農地への投資</td><td><div class="on-debate"><h5>【審議中】</h5>農場RGOの建設コスト<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>農場RGOを持つ州にRGO建築上限<span class="good">+1</span>（人口順に最大で対象数の1/20＋1個まで）<br>対象の繁栄度<span class="good">+15%</span></div></td><td><ul><li>農場RGO（馬・絹・染料・香・茶・ココア・コーヒー・繊維作物・ワイン・象・サフラン・コショウ・クローブ・トウガラシ・綿花・砂糖・タバコ・羊毛・小麦・トウモロコシ・米・雑穀・マメ類・ジャガイモ・家畜・オリーブ・果物・蜜蝋）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>伝統経済に30超傾倒しているとき +2</li><li>資本経済に60超傾倒しているとき x0.5</li></ul></td></tr>
+<tr><td>統合プロセスの推進</td><td><div class="on-debate"><h5>【審議中】</h5>統合速度<span class="good">+20%</span></div><div class="passed"><h5>【可決時】</h5>統合度75%以下のうち、人口が最も多いロケーションの統合度<span class="good">+20%</span></div></td><td><ul><li>議会タイプに制限あり</li><li>統合進行度が60%以下のロケーションが存在する</li></ul></td><td><ul><li>戦争中でない +2</li><li>戦争中 x0.5</li></ul></td></tr>
+<tr><td>戦争努力の後押し</td><td><div class="on-debate"><h5>【審議中】</h5>補充速度<span class="good">+10%</span></div><div class="passed"><h5>【可決時】</h5>戦争疲弊<span class="good">-3</span></div></td><td><ul><li>戦争中</li></ul></td><td><ul><li>基本確率が+1ではなく+4</li><li>戦争疲弊5超のとき +5</li><li>戦争疲弊0.5以下のとき x0.5</li></ul></td></tr>
+<tr><td>武器庫の拡充</td><td><div class="on-debate"><h5>【審議中】</h5>月間人的資源<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>武器庫未建設で主要／受容文化の街／都に<span class="good">武器庫が半額で建設</span>される（人口順に対象数の1/10＋1個まで）</div></td><td><ul><li>議会タイプに制限あり</li><li>"武器庫"研究済み</li><li>"兵舎"未研究</li><li>武器庫未建設で主要／受容文化の街／都がある</li></ul></td><td><ul><li>建設済みの武器庫が6未満のとき +5</li><li>人的資源が上限の50%未満のとき +2</li><li>人的資源が上限の80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>兵舎インフラの拡充</td><td><div class="on-debate"><h5>【審議中】</h5>月間人的資源<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>兵舎未建設で主要／受容文化の街／都に<span class="good">兵舎が半額で建設</span>される（人口順に対象数の1/10＋1個まで）</div></td><td><ul><li>議会タイプに制限あり</li><li>"兵舎"研究済み</li><li>兵舎未建設で主要／受容文化の街／都がある</li></ul></td><td><ul><li>建設済みの兵舎が6未満のとき +5</li><li>人的資源が上限の50%未満のとき +2</li><li>人的資源が上限の80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>軍事演習の開催</td><td><div class="on-debate"><h5>【審議中】</h5>陸軍の伝統減少<span class="good">-0.001</span></div><div class="passed"><h5>【可決時】</h5>陸軍の伝統<span class="good">+10</span></div></td><td><ul><li>戦争中でない</li><li>議会タイプに制限あり</li></ul></td><td><ul><li>"軍事教練"研究済みのとき +2</li><li>"職業軍隊"未受容のとき x0.5</li></ul></td></tr>
+<tr><td>貴族将校の推進</td><td><div class="on-debate"><h5>【審議中】</h5>貴族満足度<span class="good">+20%</span></div><div class="passed"><h5>【可決時】</h5>貴族階級のキャラクター（<span class="good">統治20-60・外交20-60・軍事50-90</span>）が採用される</div></td><td><ul><li>議会タイプに制限あり</li><li>“貴族による指揮官占有"特権付与済み</li></ul></td><td><ul><li>軍事60超のキャラクターがいないとき +2</li><li>貴族特権“貴族の優位性"付与済みのとき +2</li></ul></td></tr>
+<tr><td>貴族内閣を支持</td><td><div class="on-debate"><h5>【審議中】</h5>内閣効率<span class="good">+20%</span><br>閣僚の設定コスト<span class="good">-50%</span></div><div class="passed"><h5>【可決時】</h5>貴族階級の内閣のひとりの能力値各<span class="good">+5</span></div></td><td><ul><li>議会タイプに制限あり</li><li>貴族が内閣にいる</li><li>時代④宗教改革以降不可</li></ul></td><td><ul><li>“常設内閣"研究済みのとき +2</li><li>金権主義に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>隣国との結束を強化</td><td><div class="on-debate"><h5>【審議中】</h5>外交評判<span class="good">+2</span></div><div class="passed"><h5>【可決時】</h5>外交官<span class="good">+5</span><br>ライバルや敵対、同盟もしておらず、こちらにCBを持たない国のうち、陸軍の少ない順に3国の評価<span class="good">+50</span></div></td><td><ul><li>時代③発見まで</li><li>すでに同盟していたり、従属国やライバル国、こちらにCBを持つ国"以外"の国が1つある</li></ul></td><td><ul><li>外交官が3以下のとき +4</li><li>外交官が5以上のとき x0.5</li></ul></td></tr>
+<tr><td>高貴な芸術の支援</td><td><div class="on-debate"><h5>【審議中】</h5>貴族満足度<span class="good">+20%</span><br>貴族満足度回復<span class="good">+2.5%</span></div><div class="passed"><h5>【可決時】</h5>建築家または作曲家または作家いずれかの芸術家が雇用される（<span class="good">芸術スキル0.2～0.9</span>のランダム）<br>貴族政治に<span class="good">10</span>傾く</div></td><td><ul><li>時代②ルネサンスまたは時代③発見または時代⑥革命のいずれか</li></ul></td><td><ul><li>"芸術の後援者"研究済みのとき +2</li><li>金権主義に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>貴族後援傭兵団の編制</td><td><div class="on-debate"><h5>【審議中】</h5>月間陸軍伝統<span class="good">+0.2</span><br>好戦的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>期待陸軍規模が10未満のときは<span class="good">歩兵6騎兵2</span>、20未満のときは<span class="good">歩兵12騎兵4砲兵4</span>、20超のときは<span class="good">歩兵16騎兵4砲兵8</span>の傭兵が出現する<br>貴族政治に<span class="good">10</span>傾く</div></td><td><ul><li>時代④宗教改革または時代⑤絶対主義</li><li>正規軍を編成可能であること</li></ul></td><td><ul><li>基本確率が+1ではなく+2</li><li>局面"宗教戦争"が有効なとき +4</li><li>金権主義に傾いているとき x0.5</li></ul></td></tr>
+</table>
+<hr>
+<h3 id="clergy">聖職者階級の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>儒教学院への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>研究進行<span class="good">+5%</span><br>革新主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い街／都の1つに<span class="good">儒教学院が半額で建設</span>される（都優先）</div></td><td><ul><li>議会タイプに制限あり</li><li>"儒教学院"研究済み</li><li>儒教学院が未建設の街／都がある</li></ul></td><td><ul><li>革新主義へ30超傾いているとき +2</li><li>儒教学院が1つも建っていないとき +4</li><li>伝統主義へ傾いているとき x0.5</li></ul></td></tr>
+<tr><td>聖堂への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>精神主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い街／都の1つに<span class="good">儒教学院が半額で建設</span>される（都優先）</div></td><td><ul><li>"聖堂"研究済み</li><li>聖堂が未建設の街／都がある</li></ul></td><td><ul><li>精神主義へ30超傾いているとき +2</li><li>聖堂が1つも建っていないとき +4</li><li>人文主義へ30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>森林資源開発の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>林業RGOの建設コスト<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない木材RGOのロケーションにRGO建築上限<span class="good">+1</span>（人口順に対象数の1/20+1個まで）</div></td><td><ul><li>木材RGOのロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>資本主義へ30超傾いているとき +2</li><li>伝統経済へ60超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>聖職者内閣を支持</td><td><div class="on-debate"><h5>【審議中】</h5>内閣効率<span class="good">+20%</span><br>安定度減衰<span class="good">-0.001</span></div><div class="passed"><h5>【可決時】</h5>聖職者階級の内閣のひとりの能力値各<span class="good">+5</span><br>精神主義に<span class="good">10</span>傾く</div></td><td><ul><li>議会タイプに制限あり</li><li>聖職者階級の内閣が存在</li><li>時代④宗教改革・時代⑤絶対主義・時代⑥革命のいずれでもない</li></ul></td><td><ul><li>"常設内閣"研究済みのとき +2</li><li>人文主義に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>国教の推進</td><td><div class="on-debate"><h5>【審議中】</h5>聖職者満足度<span class="good">+20%</span><br>聖職者満足度回復<span class="good">+2.5%</span></div><div class="passed"><h5>【可決時】</h5>POP改宗速度<span class="good">+25%</span>（10年）<br>異教徒POPの10%-30%を国教へ改宗（奴隷や改宗禁止POPを除く。近接性を考慮したPOPの多い順に）</div></td><td><ul><li>宗教統一度が90%以下</li></ul></td><td><ul><li>宗教統一度が50%以下のとき +2</li><li>宗教統一度が80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>信仰に働きかける</td><td><div class="on-debate"><h5>【審議中】</h5>外交評判<span class="good">+2</span></div><div class="passed"><h5>【可決時】</h5>外交官<span class="good">+5</span><br>従属国やライバルでなく、こちらにCBを持っていない同宗教国の3か国の評価<span class="good">+50</span>（陸軍の多い順に）</div></td><td><ul><li>時代③発見または時代④宗教改革または時代⑤絶対主義のいずれか</li><li>従属国やライバルでなく、こちらにCBを持っていない同宗教国が存在</li></ul></td><td><ul><li>外交官が2以下のとき +2</li><li>外交官が3以上のとき x0.5</li></ul></td></tr>
+<tr><td>聖職者の登用</td><td><div class="on-debate"><h5>【審議中】</h5>聖職者満足度<span class="good">+20%</span></div><div class="passed"><h5>【可決時】</h5>聖職者階級のキャラクター（<span class="good">統治20-80・外交20-80・軍事10-50</span>）が採用される</div></td><td><ul><li>聖職者階級が存在する</li></ul></td><td><ul><li>階級特権"行政に携わる聖職者"を付与しているとき +2</li><li>聖職者特権"宗教的統治"を付与しているとき +2</li></ul></td></tr>
+<tr><td>宗教芸術の支援</td><td><div class="on-debate"><h5>【審議中】</h5>文化伝統力<span class="good">+33%</span>、精神主義へ毎月<span class="good">+0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>聖像画家または作曲家または作家いずれかの芸術家が雇用される（<span class="good">芸術スキル0.2～0.9</span>のランダム）<br>精神主義に<span class="good">10</span>傾く</div></td><td><ul><li>時代③発見または時代④宗教改革</li></ul></td><td><ul><li>"芸術の後援者"研究済みのとき +2</li><li>人文主義に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>宗教教育の支援</td><td><div class="on-debate"><h5>【審議中】</h5>月間識字率<span class="good">+0.05</span><br>革新主義へ毎月<span class="good">+0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>研究進捗<span class="good">+5</span><br>聖職者／農民階級の国教POPの満足度<span class="good">+10%</span>増加</div></td><td><ul><li>議会タイプに制限あり</li><li>神権制である</li></ul></td><td><ul><li>"教育を受けた官僚"研究済みのとき +2</li><li>法"知識の追求"を採用しているとき +2</li><li>"革新の奨励"または"人文主義"をどちらも未研究のとき x0.5</li></ul></td></tr>
+</table>
+<hr>
+<h3 id="burghers">市民階級の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>大学への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>研究進行<span class="good">+5%</span><br>革新主義へ毎月<span class="good">+0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い中核州の街／都の1つ<span class="good">大学が半額で建設</span>される（都優先）</div></td><td><ul><li>“研究進行"研究済</li><li>聖職者特権"講義の誓約"を付与していない</li><li>大学未建設で中核州の街／都がある</li></ul></td><td><ul><li>革新主義に30超傾いているとき +2</li><li>大学が1つも建っていないとき +2</li><li>伝統主義に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>砂利道の整備</td><td><div class="on-debate"><h5>【審議中】</h5>道路建設時間<span class="good">-20%</span><br>砂利道建設費<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">10</span>傾く</div></td><td><ul><li>"舗装路"・"近代的街道"・"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>舗装道路の整備</td><td><div class="on-debate"><h5>【審議中】</h5>道路建設時間<span class="good">-20%</span><br>舗装道路建設費<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">10</span>傾く</div></td><td><ul><li>"舗装路"研究済</li><li>"近代的街道"・"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>近代道路の整備</td><td><div class="on-debate"><h5>【審議中】</h5>道路建設時間<span class="good">-20%</span><br>近代道路建設費<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">10</span>傾く</div></td><td><ul><li>"近代的街道"研究済</li><li>"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>鉄道の整備</td><td><div class="on-debate"><h5>【審議中】</h5>道路建設時間<span class="good">-20%</span><br>鉄道建設費<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">10</span>傾く</div></td><td><ul><li>"鉄道"研究済</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
+<tr><td>都市化の推進</td><td><div class="on-debate"><h5>【審議中】</h5>POP昇格速度<span class="good">+100%</span></div><div class="passed"><h5>【可決時】</h5>街／都に隣接していない田園を1つ街へ昇格（開発度・人口・建築数の合計が高い順）<br>対象ロケーションの全POP満足度<span class="good">+50%</span></div></td><td><ul><li>時代④宗教改革まで</li><li>戦争中でない</li><li>2つ以上のロケーションを持っている</li><li>街／都が建設可能</li><li>街／都に隣接していない街がある</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>街／都がひとつもないとき +4</li><li>街／都が6つ以上あるとき x0.5</li></ul></td></tr>
+<tr><td>都市の特権を付与</td><td><div class="on-debate"><h5>【審議中】</h5>POP昇格速度<span class="good">+100%</span><br>月間繁栄度<span class="good">+0.5</span></div><div class="passed"><h5>【可決時】</h5>街／都に隣接していない街を1つ都へ昇格（開発度・人口・建築数の合計が高い順）<br>対象ロケーションの全POP満足度<span class="good">+50%</span>・開発度<span class="good">+0.25</span></div></td><td><ul><li>時代④宗教改革以降</li><li>戦争中でない</li><li>２つ以上のロケーションを持っている</li><li>街／都が建設可能</li><li>街／都に隣接していない田園ある</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>街／都が21つ以上あるとき x0.5</li></ul></td></tr>
+<tr><td>鉱業の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>鉱業RGO建設費<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない鉱業RGOのロケーションにRGO建築上限<span class="good">+1</span>（人口順に対象数の1/20+1個まで）<br>対象の繁栄度+15%</div></td><td><ul><li>鉱業RGO（石炭・鉄・銅・金・銀・石材・スズ・鉛・宝石・硝石・ミョウバン・大理石・水銀）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>資本主義に30超傾いているとき +2</li><li>伝統経済に60超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>海軍によるインフラ増強</td><td><div class="on-debate"><h5>【審議中】</h5>造船速度<span class="good">+25%</span></div><div class="passed"><h5>【可決時】</h5>港のある場所の開発度<span class="good">+0.25</span>（人口順に、港が10個以下のとき対象数の1/2+1個まで、港が25以下のとき対象数の1/4+1個まで、港が25超のとき対象数の1/10+1個まで）<br>海軍へ<span class="good">2</span>傾く（ベンガルイベント"造船の伝統"有効時は<span class="good">5</span>）<br>※失敗時は陸軍に<span class="good">2</span>傾く</div></td><td><ul><li>港が1つ以上ある</li></ul></td><td><ul><li>海軍へ30超傾いている +2</li><li>海軍の見込み艦船数が50%以下 +2</li><li>陸軍に30超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>造船施設の拡張</td><td><div class="on-debate"><h5>【審議中】</h5>月間水夫<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>ドック未建設の沿岸の街／都に<span class="good">ドックが半額で建設</span>される（人口順に対象数1/10+1個まで）</div></td><td><ul><li>沿岸の街／都がある</li><li>"ドック"研究済</li><li>"乾ドック"・"造船所"・"大造船所"・"海軍基地"いずれも未研究</li></ul></td><td><ul><li>海軍の見込み艦船数が25%以下 +2</li><li>海軍の見込み艦船数が50%未満 x2</li><li>沿岸ロケーションが10個以上あるとき +2</li></ul></td></tr>
+<tr><td>乾ドック拡張</td><td><div class="on-debate"><h5>【審議中】</h5>月間水夫<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>乾ドック未建設の沿岸の街／都に<span class="good">乾ドックが半額で建設</span>される（人口順に対象数1/10+1個まで）</div></td><td><ul><li>沿岸の街／都がある</li><li>"乾ドック"研究済</li><li>"造船所"・"大造船所"・"海軍基地"いずれも未研究</li></ul></td><td><ul><li>基本確率が+1ではなく+0.5</li><li>海軍の見込み艦船数が25%以下 +2</li><li>海軍の見込み艦船数が100%以下 x2</li><li>沿岸ロケーションが10個以上あるとき +2</li></ul></td></tr>
+<tr><td>造船所拡張</td><td><div class="on-debate"><h5>【審議中】</h5>月間水夫<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>造船所未建設の沿岸の街／都に<span class="good">造船所が半額で建設</span>される（人口順に対象数1/10+1個まで）</div></td><td><ul><li>沿岸の街／都がある</li><li>"造船所"研究済</li><li>"大造船所"・"海軍基地"どちらも未研究</li></ul></td><td><ul><li>基本確率が+1ではなく+0.5</li><li>海軍の見込み艦船数が25%以下 +2</li><li>海軍の見込み艦船数が100%以下 x2</li><li>沿岸ロケーションが10個以上あるとき +2</li></ul></td></tr>
+<tr><td>大造船所拡張</td><td><div class="on-debate"><h5>【審議中】</h5>月間水夫<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>大造船所未建設の沿岸の街／都に<span class="good">大造船所が半額で建設</span>される（人口順に対象数1/10+1個まで）</div></td><td><ul><li>沿岸の街／都がある</li><li>"大造船所"研究済</li><li>"海軍基地"を未研究</li></ul></td><td><ul><li>基本確率が+1ではなく+0.5</li><li>海軍の見込み艦船数が25%以下 +2</li><li>海軍の見込み艦船数が100%以下 x2</li><li>沿岸ロケーションが10個以上あるとき +2</li></ul></td></tr>
+<tr><td>海軍基地拡張</td><td><div class="on-debate"><h5>【審議中】</h5>月間水夫<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>海軍基地未建設の沿岸の街／都に<span class="good">海軍基地が半額で建設</span>される（人口順に対象数1/10+1個まで）</div></td><td><ul><li>沿岸の街／都がある</li><li>"海軍基地"研究済</li></ul></td><td><ul><li>基本確率が+1ではなく+0.5</li><li>海軍の見込み艦船数が25%以下 +2</li><li>海軍の見込み艦船数が100%以下 x2</li><li>沿岸ロケーションが10個以上あるとき +2</li></ul></td></tr>
+<tr><td>重商主義内閣を支持</td><td><div class="on-debate"><h5>【審議中】</h5>内閣効率<span class="good">+20%</span><br>POP昇格速度<span class="good">+100%</span></div><div class="passed"><h5>【可決時】</h5>市民階級の内閣のひとりの能力値各<span class="good">+5</span><br>金権政治に<span class="good">10</span>傾く</div></td><td><ul><li>市民階級の内閣が存在する</li><li>時代③発見まで</li></ul></td><td><ul><li>"常設内閣"研究済のとき +2</li><li>貴族政治に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>収支の調和</td><td><div class="on-debate"><h5>【審議中】</h5>月間インフレ<span class="good">-0.4%</span><br>利子<span class="good">-2%</span></div><div class="passed"><h5>【可決時】</h5>ローンの1つを<span class="good">半減</span><br>インフレ率<span class="good">-2.5%</span></div></td><td><ul><li>ローンがある、またはインフレ率1%以上</li></ul></td><td><ul><li>ローンが5つ以上あるとき +2</li><li>ローンが10以上あるとき +4</li><li>インフレ率5%以上のとき +2</li></ul></td></tr>
+<tr><td>市民の登用</td><td><div class="on-debate"><h5>【審議中】</h5>市民満足度<span class="good">+20%</span><br>市民満足度回復<span class="good">+2.5%</span><br>金権政治へ毎月<span class="good">0.1</span>傾く</div><div class="passed"><h5>【可決時】</h5>市民階級のキャラクター（<span class="good">統治50-80・外交20-80・軍事10-50</span>）が採用される</div></td><td><ul><li>条件なし</li></ul></td><td><ul><li>市民特権"商業顧問団"を付与済みのとき +2</li><li>市民特権"国庫の権利"を付与済みのとき +2</li></ul></td></tr>
+<tr><td>市場拡大活動</td><td><div class="on-debate"><h5>【審議中】</h5>交易維持費<span class="good">-25%</span></div><div class="passed"><h5>【可決時】</h5>民間交易<span class="good">+25%</span>（10年）</div></td><td><ul><li>条件なし</li></ul></td><td><ul><li>自由貿易に傾いているとき +2</li><li>重商主義に50超傾いているとき -10</li><li>交易許容量1未満のとき -10</li></ul></td></tr>
+<tr><td>市場規制</td><td><div class="on-debate"><h5>【審議中】</h5>交易効率<span class="good">+10%</span></div><div class="passed"><h5>【可決時】</h5>交易優位性<span class="good">+20%</span>（10年）</div></td><td><ul><li>条件なし</li></ul></td><td><ul><li>自由貿易に傾いているとき +2</li><li>重商主義に50超傾いているとき -10</li><li>交易許容量1未満のとき -10</li></ul></td></tr>
+<tr><td>交易遠征の後援</td><td><div class="on-debate"><h5>【審議中】</h5>市民満足度<span class="good">+20%</span><br>金権政治へ毎月<span class="good">10</span>傾く</div><div class="passed"><h5>【可決時】</h5>交易許容量<span class="good">+4</span>（10年）<br>首都が田園で市場の村未設置なら市場の村を、街／都で市場未設置なら<span class="good">市場が半額で建設</span>される</div></td><td><ul><li>首都が存在</li></ul></td><td><ul><li>基本確率が+1ではなく0</li><li>交易許容量1未満とき +3</li></ul></td></tr>
+<tr><td>内陸部の開発</td><td><div class="on-debate"><h5>【審議中】</h5>都市系建物コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>内陸の開発度<span class="good">+0.25</span>（人口順に対象数の1/50+1か所まで）<br>陸軍へ2傾く<br>（失敗時は海軍へ2傾く）</div></td><td><ul><li>ロケーションを3つ以上もつ、かつ沿岸州が1つ以上</li></ul></td><td><ul><li>陸軍に30超傾いているとき +2</li><li>海軍に30超傾いているとき x0.5</li></ul></td></tr>
+</table>
+<hr>
+<h3 id="commons">庶民階級の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>新しい狩猟場の設立</td><td><div class="on-debate"><h5>【審議中】</h5>狩猟RGO建設費<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない狩猟RGOのロケーションのうち、人口の多い順にRGO建築上限<span class="good">+1</span>（対象数の1/20+1個まで）<br>対象の繁栄度<span class="good">+15%</span></div></td><td><ul><li>狩猟RGO（象牙・狩猟動物・毛皮）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>伝統経済へ30超傾いているとき +2</li><li>資本経済へ60超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>採取活動の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>採集RGO拡張費<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない採集RGOのロケーションのうち、人口の多い順にRGO建築上限<span class="good">+1</span>（対象数の1/20+1個まで）<br>対象の繁栄度<span class="good">+15%</span></div></td><td><ul><li>採集RGO（粘土・砂・塩・薬剤・真珠・琥珀・魚）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>伝統経済へ30超傾いているとき +2</li><li>資本経済へ60超傾いているとき x0.5</li></ul></td></tr>
+<tr><td>訓練場インフラの拡充</td><td><div class="on-debate"><h5>【審議中】</h5>月間人的資源<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>訓練場未建設で主要／受容文化の田園に<span class="good">訓練場が半額で建設</span>される（人口順に対象数の1/10＋1個まで）</div></td><td><ul><li>"訓練場"研究済</li><li>"連隊兵舎"・"徴兵所"どちらも未研究</li><li>訓練場未建設の主要／受容文化の田園がある</li></ul></td><td><ul><li>訓練場が6つ未満のとき +5</li><li>人的資源が上限の50%以下のとき +2</li><li>人的資源が上限の80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>連隊兵舎インフラの拡充</td><td><div class="on-debate"><h5>【審議中】</h5>月間人的資源<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>連隊兵舎未建設で主要／受容文化の田園に<span class="good">連隊兵舎が半額で建設</span>される（人口順に対象数の1/10＋1個まで）</div></td><td><ul><li>"連隊兵舎"研究済</li><li>"徴兵所"どちらも未研究</li><li>訓練場未建設の主要／受容文化の田園がある</li></ul></td><td><ul><li>連隊兵舎が6つ未満のとき +5</li><li>人的資源が上限の50%以下のとき +2</li><li>人的資源が上限の80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>徴兵所インフラの拡充</td><td><div class="on-debate"><h5>【審議中】</h5>月間人的資源<span class="good">+50%</span></div><div class="passed"><h5>【可決時】</h5>徴兵所未建設で主要／受容文化の街／都に<span class="good">徴兵所が半額で建設</span>される（人口順に対象数の1/10＋1個まで）</div></td><td><ul><li>"徴兵所"研究済</li></ul></td><td><ul><li>徴兵所が6つ未満のとき +5</li><li>人的資源が上限の50%以下のとき +2</li><li>人的資源が上限の80%以上のとき x0.5</li></ul></td></tr>
+<tr><td>将校の増員</td><td><div class="on-debate"><h5>【審議中】</h5>庶民満足度<span class="good">+20%</span></div><div class="passed"><h5>【可決時】</h5>庶民階級のキャラクター（<span class="good">統治20-70・外交20-70・軍事40-80</span>）が採用される</div></td><td>貴族特権"貴族による指揮官占有"を付与していない</td><td>軍事50超のキャラクターがいないとき +2</td></tr>
+<tr><td>庶民内閣を支持</td><td><div class="on-debate"><h5>【審議中】</h5>内閣効率<span class="good">+20%</span><br>月間識字率<span class="good">+0.05</span></div><div class="passed"><h5>【可決時】</h5>庶民階級の内閣のひとりの能力値各<span class="good">+5</span><br>自由民に<span class="good">10</span>傾く</div></td><td><ul><li>庶民階級の内閣が存在する</li><li>時代③発見まで</li></ul></td><td><ul><li>"常設内閣"研究済のとき +2</li><li>農奴制に傾いているとき x0.5</li></ul></td></tr>
+<tr><td>食糧市場在庫の拡充</td><td><div class="on-debate"><h5>【審議中】</h5>食糧購入費<span class="good">-50%</span></div><div class="passed"><h5>【可決時】</h5>穀物庫未建設の街／都に<span class="good">穀物庫が半額で建設</span>される（食料不足が大きい順に対象数の1/10+1個まで）</div></td><td><ul><li>食料備蓄率50%未満の街／都がある</li></ul></td><td><ul><li>食料備蓄率25%未満の街／都があるとき +2</li><li>農奴制に傾いているとき x0.5</li></ul></td></tr>
+</table>
+<hr>
+<h3 id="disaster">国難専用の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>王家の権限を制限</td><td><div class="on-debate"><h5>【審議中】</h5>月間正統性<span class="bad">-2</span></div><div class="passed"><h5>【可決時】</h5>支配度上限<span class="bad">-10%</span><br>君主力<span class="bad">-20%</span>（各10年）<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td>君主制または共和国で災厄"革命"進行中（※イベント限定）</td><td>－</td></tr>
+<tr><td>貴族の特権を剥奪</td><td><div class="on-debate"><h5>【審議中】</h5>貴族満足度<span class="bad">-100%</span></div><div class="passed"><h5>【可決時】</h5>ランダムな<span class="bad">貴族特権を1つ剥奪</span><br>貴族満足度<span class="bad">-20%</span><br>金権政治へ<span class="good">20</span>傾く<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td><ul><li>君主制または共和国で災厄"革命"進行中（※イベント限定）</li><li>貴族特権が3つより多い</li></ul></td><td>－</td></tr>
+<tr><td>農民の税金の軽減</td><td><div class="on-debate"><h5>【審議中】</h5>自由主義へ毎月<span class="good">+1</span>傾く<br>君主力<span class="bad">-50%</span></div><div class="passed"><h5>【可決時】</h5>庶民階級の税率上限<span class="bad">-10%</span>（10年）<br>貴族満足度<span class="bad">-20%</span><br>自由民へ<span class="good">20</span>傾く<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td><ul><li>君主制または共和国で災厄"革命"進行中（※イベント限定）</li><li>庶民階級の税率10%以上</li></ul></td><td>－</td></tr>
+<tr><td>憲法の制定</td><td><div class="on-debate"><h5>【審議中】</h5>自由主義へ毎月<span class="good">+1</span>傾く<br>君主力<span class="bad">-50%</span><br>庶民・市民の反乱進捗<span class="good">-2%</span></div><div class="passed"><h5>【可決時】</h5>議会タイプを<span class="good">立憲議会</span>に変更<br>政府改革"<span class="good">立憲国家</span>"を採用<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td><ul><li>君主制で災厄"革命"進行中（※イベント限定）</li><li>君主力20%未満または正統性20%未満</li><li>議会タイプが立憲議会でない</li></ul></td><td>－</td></tr>
+</table>
+<hr>
+<h3 id="countries">各国固有の議題</h3>
+<table>
+<tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
+<tr><td>（市民）<br>男爵領自治都市の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>街の昇格コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>街／都の開発度<span class="good">+1</span>（人口順に対象数の1/10+1個まで）<br>時代④宗教改革以降は重商主義に<span class="good">2</span>傾く<br>※失敗時、時代④宗教改革以降は自由貿易に<span class="good">2</span>傾く</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>時代③発見以降</li></ul></td><td>1</td></tr>
+<tr><td>（聖職者）<br>教会自治都市の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>街の昇格コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>街／都の開発度<span class="good">+1</span>（人口順に対象数の1/10+1個まで）<br>時代④宗教改革以降は精神主義に<span class="good">2</span>傾く<br>※失敗時、時代④宗教改革以降は人文主義に<span class="good">2</span>傾く</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>時代③発見以降</li></ul></td><td>1</td></tr>
+<tr><td>（貴族）<br>貴族教育法</td><td><div class="on-debate"><h5>【審議中】</h5>月間識字率<span class="good">+0.2</span></div><div class="passed"><h5>【可決時】</h5>貴族特権"貴族の義務教育（<span class="good">貴族識字率上限+15・立法効率+10%・新しい芸術家のスキル+10%</span>）"解禁<br>革新主義・人文主義に<span class="good">2</span>傾く<br>※失敗時、伝統主義・精神主義に<span class="good">2</span>傾く</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>“大学"研究済</li><li>過去に採用していない</li></ul></td><td>50</td></tr>
+<tr><td>（聖職者）<br>長老派教会教育</td><td><div class="on-debate"><h5>【審議中】</h5>人文主義へ毎月<span class="good">0.2</span>傾く<br>自由民へ毎月<span class="good">0.2</span>傾く</div><div class="passed"><h5>【可決時】</h5>聖職者・庶民特権"長老派教会教育（<span class="good">貴族税率上限+10%・聖職者満足度+5%・識字率上限+5・革新主義に毎月10傾く</span>）"解禁<br>革新主義・自由民に<span class="good">2</span>傾く<br>※失敗時、伝統主義・農奴制に<span class="good">2</span>傾く</div></td><td>スコットランドまたはスコットランド文化<br>カルヴァン派<br>過去に採用していない</td><td>50</td></tr>
+<tr><td>（庶民）<br>最高法院の設立</td><td><div class="on-debate"><h5>【審議中】</h5>中央集権へ毎月<span class="good">0.2</span>傾く<br>政策変更コスト<span class="good">-10%</span></div><div class="passed"><h5>【可決時】</h5>法"スコットランド民法（中央集権に毎月<span class="good">10</span>傾く・階級満足度<span class="good">+5%</span>・内閣効率<span class="good">+5%</span>）"解禁</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>時代③以降</li><li>過去に採用していない</li></ul></td><td>50</td></tr>
+<tr><td>（貴族）<br>ヴェネツィアのシニョリーアの設立</td><td><div class="on-debate"><h5>【審議中】</h5>なし</div><div class="passed"><h5>【可決時】</h5>政府改革"四十人評議会"を"ヴェネツィアのシニョリーア"に代替<br>農奴制に<span class="good">2</span>傾く<br>※失敗時、自由民に<span class="good">10</span>傾く</div></td><td><ul><li>ヴェネツィア</li><li>政府改革"四十人評議会"採用中</li><li>政府改革"ヴェネツィアのシニョリーア"未解禁</li><li>イベント"ヴェネツィアのコミューンの進化"発生済み</li></ul></td><td>50</td></tr>
+<tr><td>（庶民）<br>イギリスの民衆をなだめる</td><td><div class="on-debate"><h5>【審議中】</h5>外交容量<span class="good">+1</span></div><div class="passed"><h5>【可決時】</h5>イングランドが同君下位とき独立欲求<span class="good">-10</span><br>互いに評価<span class="good">+50</span></div></td><td><ul><li>ネーデルラント</li><li>イベント"名誉革命"発生済み</li><li>イングランドが同君連合</li></ul></td><td>10</td></tr>
+<tr><td>（王室）<br>イギリスの支配を強化</td><td><div class="on-debate"><h5>【審議中】</h5>月間支配度<span class="good">+0.1</span></div><div class="passed"><h5>【可決時】</h5>イングランド地方の支配度80%以下の街／都の支配度<span class="good">+10%</span>（人口順に対象州の1/10+1個まで）</div></td><td><ul><li>ネーデルラント</li><li>イベント"ブリテンの統合"発生済み</li><li>イングランド地域の街／都を10%以上領有している</li></ul></td><td>10</td></tr>
+<tr><td>（庶民）<br>異教徒の容認</td><td><div class="on-debate"><h5>【審議中】</h5>人文主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>領内のすべての異教徒POP満足度<span class="good">+15%</span></div></td><td><ul><li>イベント"ヴィジャヤナガルのの方針"発生済み</li><li>国教がヒンドゥー教</li><li>異教徒POPが5%以上いるロケーションがある</li></ul></td><td>25</td></tr>
+<tr><td>（庶民）<br>異教徒の制圧</td><td><div class="on-debate"><h5>【審議中】</h5>精神主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>異教徒POPが5%以上いるロケーションの支配度<span class="good">+10%</span></div></td><td><ul><li>イベント"ヴィジャヤナガルのの方針"発生済み</li><li>国教がヒンドゥー教</li><li>異教徒POPが5%以上いるロケーションがある</li></ul></td><td>25</td></tr>
+<tr><td>（庶民）<br>飢饉対策</td><td><div class="on-debate"><h5>【審議中】</h5>食糧購入費<span class="good">-25%</span></div><div class="passed"><h5>【可決時】</h5>庶民満足度<span class="good">+10%</span><br>農業RGOの建設上限<span class="good">+1</span>（人口順に対象数の1/20+1個まで）</div></td><td><ul><li>イベント"デリーでの飢饉への対処"発生済み</li><li>農業RGOで最大まで建設していないロケーションがある</li></ul></td><td>25</td></tr>
+<tr><td>（王室）<br>ニューモデル軍</td><td><div class="on-debate"><h5>【審議中】</h5>陸軍海軍士気<span class="good">+10%</span></div><div class="passed"><h5>【可決時】</h5>質へ<span class="good">33</span>傾く<br>陸軍の伝統<span class="good">+25</span></div></td><td>イングランドイベント"ニューモデル軍"発生済み</td><td>1000</td></tr>
+<tr><td>（王室）<br>ナントの勅令</td><td><div class="on-debate"><h5>【審議中】</h5>毎月の戦争疲弊<span class="good">-0.25</span><br>反乱軍からの脱退しきい値<span class="good">+0.2</span></div><div class="passed"><h5>【可決時】</h5><span class="good">フランス宗教戦争を終息</span><br>法"ナントの勅令（<span class="good">聖職者満足度-5%・毎月の安定度+0.02・異端寛容度+2</span>）"採用</div></td><td>災厄"フランス宗教戦争"専用</td><td>0</td></tr>
+<tr><td>（貴族）<br>ラージャスターンの役人を昇格</td><td><div class="on-debate"><h5>【審議中】</h5>ズィンミーの満足度<span class="good">+5%</span></div><div class="passed"><h5>【可決時】</h5>ラージャスターン語系の受容文化からヒンドゥーのジンミー階級のキャラクター（<span class="good">統治30-60・外交20-50・軍事50-80</span>）が採用される</div></td><td>ムガルイベント"ラージャスターン話者の昇格"発生済み</td><td>25</td></tr>
+<tr><td>（王室）<br>フス派の軍事改革</td><td><div class="on-debate"><h5>【審議中】</h5>毎月の安定度<span class="good">-1</span><br>毎月の正統性<span class="good">-1</span><br>毎月の献身<span class="good">-1</span></div><div class="passed"><h5>【可決時】</h5>攻撃的へ<span class="good">33</span>傾く<br>法"フス派の戦術の改革（<span class="good">攻撃的へ毎月0.1傾く・人的資源+10%</span>）"解禁<br>※失敗時、守備的へ<span class="good">33</span>傾く、安定度<span class="bad">-20</span></div></td><td>フス派イベント"ウォーワゴンと軍事戦術"発生済み</td><td>100</td></tr>
+<tr><td>（聖職者）<br>ロムヴァ再興への対策</td><td><div class="on-debate"><h5>【審議中】</h5>POP改宗速度<span class="good">+2.5%</span></div><div class="passed"><h5>【可決時】</h5>ロムヴァPOPの<span class="good">5%を国教に改宗</span></div></td><td><ul><li>リトアニアイベント“ロムヴァ回帰への対策"発生済み</li><li>局面"宗教改革"進行中</li><li>国内のロムヴァ人口5%超</li><li>国教がロムヴァ以外</li></ul></td><td>50</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<ul class="reference">
+  <li>\game\in_game\common\parliament_types\*.txt</li>
+  <li>\game\in_game\common\parliament_issues\*.txt</li>
+  <li>\game\in_game\events\*.txt</li>
+  <li>\game\main_menu\common\script_values\default_values.txt</li>
+</ul>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">タグ</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/project-caesar/">Project Caesar</a>
+
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/europa-universalis-v/">Europa Universalis V</a>
+
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/eu5/">EU5</a>
+
+  <a class="tag tag--primary tag--small" href="https://nekotei-m.github.io/tags/data/">Data</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nekotei-m.github.io/eu5/parliament/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nekotei-m.github.io/eu5/parliament/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=https://nekotei-m.github.io/eu5/parliament/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2025 ねこてー. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        
+<div class="post-actions-wrap">
+  
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="この記事を共有する">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nekotei-m.github.io/eu5/parliament/" title="Facebookで共有" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nekotei-m.github.io/eu5/parliament/" title="Twitterで共有" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.reddit.com/submit?url=https://nekotei-m.github.io/eu5/parliament/" title="Redditで共有" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action arrow-up">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="トップに戻る">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnekotei-m.github.io%2Feu5%2Fparliament%2F" aria-label="Facebookで共有">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Facebookで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fnekotei-m.github.io%2Feu5%2Fparliament%2F" aria-label="Twitterで共有">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>Twitterで共有</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.reddit.com/submit?url=https%3A%2F%2Fnekotei-m.github.io%2Feu5%2Fparliament%2F" aria-label="Redditで共有">
+          <i class="fab fa-reddit" aria-hidden="true"></i><span>Redditで共有</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://nekotei-m.github.io/img/layout/icon_profile.png" alt="プロフィール画像" />
+    
+    <h4 id="about-card-name">ねこてー</h4>
+    
+      <div id="about-card-bio">ねこを愛するひと（愛されるとは言ってない）</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        管理人
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        ニャパン
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://nekotei-m.github.io/img/layout/bg_sidebar.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://nekotei-m.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

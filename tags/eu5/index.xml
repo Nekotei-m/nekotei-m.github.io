@@ -6,8 +6,15 @@
     <description>Recent content in EU5 on ねこメモ</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 20 Nov 2025 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 26 Nov 2025 21:00:00 +0900</lastBuildDate>
     <atom:link href="https://nekotei-m.github.io/tags/eu5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Europa Universalis V - 議会について</title>
+      <link>https://nekotei-m.github.io/eu5/parliament/</link>
+      <pubDate>Wed, 26 Nov 2025 21:00:00 +0900</pubDate>
+      <guid>https://nekotei-m.github.io/eu5/parliament/</guid>
+      <description>&lt;p&gt;EU5での議会についての解説です。（Ver1.0.8βで確認）&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Europa Universalis V - 開戦事由（Casus Belli/CB）一覧</title>
       <link>https://nekotei-m.github.io/eu5/casus-belli/</link>
