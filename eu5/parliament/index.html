@@ -310,39 +310,70 @@ th {
   font-size: smaller;
   line-height: 1.5;
 }
-td:nth-child(1) {
+.issue td:nth-child(1) {
   width: 8rem;
   text-align: center;
 }
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4) {
+.issue td:nth-child(2),
+.issue td:nth-child(3),
+.issue td:nth-child(4) {
   width: 16rem;
   font-size: smaller;
   text-align: left;
 }
-td:nth-child(4) {
+.issue td:nth-child(4) {
   width: 14rem;
 }
-td ul {
-  margin: 0 0 0 12px;
-}
-td h5 {
+.issue td h5 {
   margin: 0 0 0 -0.7rem;
   font-size: 1.4rem !important;
   line-height: 1.9em;
 }
-div.on-debate,
-div.passed {
+.issue div.on-debate,
+.issue div.passed {
   line-height: 1.8em;
 }
-div.on-debate {
+.issue div.on-debate {
   margin-bottom: 8px;
 }
-.on-debate h5 { color: #223a70; }
-.passed h5 { color: #a22041; }
+.issue .on-debate h5 { color: #223a70; }
+.issue .passed h5 { color: #a22041; }
+.issue .peace-cost { display: block; margin-left: 1rem; }
+
+.agenda-important td:nth-child(1),
+.agenda td:nth-child(1) {
+  width: 9rem;
+  text-align: center;
+}
+.agenda-important td:nth-child(2),
+.agenda td:nth-child(2) {
+  width: 5rem;
+  text-align: center;
+}
+.agenda-important td:nth-child(3),
+.agenda-important td:nth-child(6),
+.agenda td:nth-child(5) {
+  width: 5rem;
+  text-align: center;
+}
+.agenda-important td:nth-child(5),
+.agenda td:nth-child(4) {
+  width: 20rem;
+}
+.agenda-important td:nth-child(2),
+.agenda-important td:nth-child(4),
+.agenda-important td:nth-child(5),
+.agenda td:nth-child(2),
+.agenda td:nth-child(3),
+.agenda td:nth-child(4) {
+  font-size: smaller;
+}
+
+
+td ul {
+  margin: 0 0 0 12px;
+}
 .good, .bad { font-weight: bold; }
-.peace-cost { display: block; margin-left: 1rem; }
 </style>
 <p>議会は最短で5年ごとに開催でき、半年の審議期間を経て採決されます。表の「効果」のうち、【審議中】のものは議会開催中の間にだけ効果があります。【可決時】は半年後の採決で可決されたときのみ効果を発揮します。議題はランダムで選ばれますが、「提示条件」を満たしていないものは選択肢にあがりません。「提案確率」は基本を1とし、状況によって補正されます。+2されるとおおよそ3倍弱の出現確率になると思って良いでしょう。</p>
 <p>議会の支持を上げてくれる「協議事項」については後日リストアップします。</p>
@@ -351,19 +382,32 @@ div.on-debate {
 <div class="toc">
   <h3>もくじ</h3>
   <ul>
-    <li><a href="#crown">王室の議題</a></li>
-    <li><a href="#noble">貴族の議題</a></li>
-    <li><a href="#clergy">聖職者の議題</a></li>
-    <li><a href="#burghers">市民の議題</a></li>
-    <li><a href="#commons">庶民の議題</a></li>
-    <li><a href="#disaster">国難専用の議題</a></li>
-    <li><a href="#countries">各国固有の議題</a></li>
+    <li>議題
+      <ul>
+        <li><a href="#crown">王室の議題</a></li>
+        <li><a href="#noble">貴族の議題</a></li>
+        <li><a href="#clergy">聖職者の議題</a></li>
+        <li><a href="#burghers">市民の議題</a></li>
+        <li><a href="#commons">庶民の議題</a></li>
+        <li><a href="#disaster">国難専用の議題</a></li>
+        <li><a href="#countries">各国固有の議題</a></li>
+      </ul><br>
+    </li>
+    <li>協議事項
+      <ul>
+        <li><a href="#common-agenda">一般</a></li>
+        <li><a href="#social-agenda">社会的価値観</a></li>
+        <li><a href="#institution-agenda">制度</a></li>
+        <li><a href="#building-agenda">階級建物</a></li>
+        <li><a href="#hre-agenda">HRE専用</a></li>
+      </ul>
+    </li>
   </ul>
 </div>
 <hr class="none">
 
 <h3 id="crown">王室の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>政府の強化</td><td><div class="on-debate"><h5>【審議中】</h5>月間正統性<span class="good">+1</span></div><div class="passed"><h5>【可決時】</h5>特権剥奪コスト<span class="good">-10%</span><br>君主力<span class="good">+20%</span><br>（各10年）</div></td><td><ul><li>戦争中でない</li><li>議会タイプに制限あり</li><li>君主の政治力50未満</li><li>君主制／共和制／神権制／部族制／遊牧民制</li><li>前回可決してないこと</li></ul></td><td><ul><li>君主の政治力20%未満のとき +2</li><li>君主の政治力40%超のとき x0.5</li></ul></td></tr>
 <tr><td>人口調査の実施</td><td><div class="on-debate"><h5>【審議中】</h5>人口増加<span class="good">+0.5%</span></div><div class="passed"><h5>【可決時】</h5>安定度<span class="good">+7</span></div></td><td><ul><li>議会タイプに制限あり</li></ul></td><td><ul><li>安定度0以下のとき +2</li><li>安定度-40以下のとき +4（上に加算）</li><li>安定度80以上のとき -1</li></ul></td></tr>
@@ -374,7 +418,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="noble">貴族階級の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>城建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"城"研究済み</li><li>"砦"・"星形要塞"・"要塞"をいずれも未研究</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が1.0ダカット未満のとき -10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
 <tr><td>砦建設事業の推進</td><td><div class="on-debate"><h5>【審議中】</h5>要塞建造物コスト<span class="good">-50%</span><br>守備的に毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>要塞維持費<span class="good">-20%</span>（10年）</div></td><td><ul><li>"砦"研究済み</li><li>"星形要塞"・"要塞"をいずれも未研究</li><li>前回可決してないこと</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li><li>月間収支が4.0ダカット未満のとき -10</li><li>攻撃的に30超傾いているとき x0.5</li></ul></td></tr>
@@ -397,7 +441,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="clergy">聖職者階級の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>儒教学院への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>研究進行<span class="good">+5%</span><br>革新主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い街／都の1つに<span class="good">儒教学院が半額で建設</span>される（都優先）</div></td><td><ul><li>議会タイプに制限あり</li><li>"儒教学院"研究済み</li><li>儒教学院が未建設の街／都がある</li></ul></td><td><ul><li>革新主義へ30超傾いているとき +2</li><li>儒教学院が1つも建っていないとき +4</li><li>伝統主義へ傾いているとき x0.5</li></ul></td></tr>
 <tr><td>聖堂への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>精神主義へ毎月<span class="good">0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い街／都の1つに<span class="good">儒教学院が半額で建設</span>される（都優先）</div></td><td><ul><li>"聖堂"研究済み</li><li>聖堂が未建設の街／都がある</li></ul></td><td><ul><li>精神主義へ30超傾いているとき +2</li><li>聖堂が1つも建っていないとき +4</li><li>人文主義へ30超傾いているとき x0.5</li></ul></td></tr>
@@ -411,7 +455,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="burghers">市民階級の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>大学への資金援助</td><td><div class="on-debate"><h5>【審議中】</h5>研究進行<span class="good">+5%</span><br>革新主義へ毎月<span class="good">+0.5</span>傾く</div><div class="passed"><h5>【可決時】</h5>人口の多い中核州の街／都の1つ<span class="good">大学が半額で建設</span>される（都優先）</div></td><td><ul><li>“研究進行"研究済</li><li>聖職者特権"講義の誓約"を付与していない</li><li>大学未建設で中核州の街／都がある</li></ul></td><td><ul><li>革新主義に30超傾いているとき +2</li><li>大学が1つも建っていないとき +2</li><li>伝統主義に傾いているとき x0.5</li></ul></td></tr>
 <tr><td>砂利道の整備</td><td><div class="on-debate"><h5>【審議中】</h5>道路建設時間<span class="good">-20%</span><br>砂利道建設費<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>中央集権に<span class="good">10</span>傾く</div></td><td><ul><li>"舗装路"・"近代的街道"・"鉄道"をいずれも未研究</li></ul></td><td><ul><li>6以上のロケーションを持っているとき +2</li><li>ロケーションが1つのみのとき -10</li></ul></td></tr>
@@ -437,7 +481,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="commons">庶民階級の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>新しい狩猟場の設立</td><td><div class="on-debate"><h5>【審議中】</h5>狩猟RGO建設費<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない狩猟RGOのロケーションのRGOが<span class="good">1レベル建設</span>される（人口の多い順に対象数の1/20+1個まで）<br>対象の繁栄度<span class="good">+15%</span></div></td><td><ul><li>狩猟RGO（象牙・狩猟動物・毛皮）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>伝統経済へ30超傾いているとき +2</li><li>資本経済へ60超傾いているとき x0.5</li></ul></td></tr>
 <tr><td>採取活動の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>採集RGO拡張費<span class="good">-33%</span><br>RGO建設時間<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>最大まで建設していない採集RGOのロケーションのRGOが<span class="good">1レベル建設</span>される（人口の多い順に対象数の1/20+1個まで）<br>対象の繁栄度<span class="good">+15%</span></div></td><td><ul><li>採集RGO（粘土・砂・塩・薬剤・真珠・琥珀・魚）のロケーションが存在し、最大まで建設していない</li></ul></td><td><ul><li>伝統経済へ30超傾いているとき +2</li><li>資本経済へ60超傾いているとき x0.5</li></ul></td></tr>
@@ -450,7 +494,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="disaster">国難専用の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>王家の権限を制限</td><td><div class="on-debate"><h5>【審議中】</h5>月間正統性<span class="bad">-2</span></div><div class="passed"><h5>【可決時】</h5>支配度上限<span class="bad">-10%</span><br>君主力<span class="bad">-20%</span>（各10年）<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td>君主制または共和国で災厄"革命"進行中（※イベント限定）</td><td>－</td></tr>
 <tr><td>貴族の特権を剥奪</td><td><div class="on-debate"><h5>【審議中】</h5>貴族満足度<span class="bad">-100%</span></div><div class="passed"><h5>【可決時】</h5>ランダムな<span class="bad">貴族特権を1つ剥奪</span><br>貴族満足度<span class="bad">-20%</span><br>金権政治へ<span class="good">20</span>傾く<br>※失敗時、革命反乱進行度<span class="bad">+5%</span>、市民・庶民満足度<span class="bad">-20%</span></div></td><td><ul><li>君主制または共和国で災厄"革命"進行中（※イベント限定）</li><li>貴族特権が3つより多い</li></ul></td><td>－</td></tr>
@@ -459,7 +503,7 @@ div.on-debate {
 </table>
 <hr>
 <h3 id="countries">各国固有の議題</h3>
-<table>
+<table class="issue">
 <tr><th>議題名</th><th>効果</th><th>提示条件</th><th>提案確率</th></tr>
 <tr><td>（市民）<br>男爵領自治都市の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>街の昇格コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>街／都の開発度<span class="good">+1</span>（人口順に対象数の1/10+1個まで）<br>時代④宗教改革以降は重商主義に<span class="good">2</span>傾く<br>※失敗時、時代④宗教改革以降は自由貿易に<span class="good">2</span>傾く</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>時代③発見以降</li></ul></td><td>1</td></tr>
 <tr><td>（聖職者）<br>教会自治都市の拡大</td><td><div class="on-debate"><h5>【審議中】</h5>街の昇格コスト<span class="good">-20%</span></div><div class="passed"><h5>【可決時】</h5>街／都の開発度<span class="good">+1</span>（人口順に対象数の1/10+1個まで）<br>時代④宗教改革以降は精神主義に<span class="good">2</span>傾く<br>※失敗時、時代④宗教改革以降は人文主義に<span class="good">2</span>傾く</div></td><td><ul><li>スコットランドまたはスコットランド文化</li><li>時代③発見以降</li></ul></td><td>1</td></tr>
@@ -478,13 +522,158 @@ div.on-debate {
 <tr><td>（王室）<br>フス派の軍事改革</td><td><div class="on-debate"><h5>【審議中】</h5>毎月の安定度<span class="good">-1</span><br>毎月の正統性<span class="good">-1</span><br>毎月の献身<span class="good">-1</span></div><div class="passed"><h5>【可決時】</h5>攻撃的へ<span class="good">33</span>傾く<br>法"フス派の戦術の改革（<span class="good">攻撃的へ毎月0.1傾く・人的資源+10%</span>）"解禁<br>※失敗時、守備的へ<span class="good">33</span>傾く、安定度<span class="bad">-20</span></div></td><td>フス派イベント"ウォーワゴンと軍事戦術"発生済み</td><td>100</td></tr>
 <tr><td>（聖職者）<br>ロムヴァ再興への対策</td><td><div class="on-debate"><h5>【審議中】</h5>POP改宗速度<span class="good">+2.5%</span></div><div class="passed"><h5>【可決時】</h5>ロムヴァPOPの<span class="good">5%を国教に改宗</span></div></td><td><ul><li>リトアニアイベント“ロムヴァ回帰への対策"発生済み</li><li>局面"宗教改革"進行中</li><li>国内のロムヴァ人口5%超</li><li>国教がロムヴァ以外</li></ul></td><td>50</td></tr>
 </table>
+<hr>
+<br><br>
 
+<h3 id="common-agenda">協議事項（一般）</h3>
+<p>協議事項を採用することで上がる支持率は、<br>「<strong>階級権力×（100% - 満足度 - 議会タイプ補正）×重要度</strong>」<br>です。つまり階級の権力が高く、満足度も高いと支持率は上がりやすくなります。そのため序盤の貴族の権力だけが高い状態の方が支持率を上げやすいことも多いです。</p><p>また<strong>議会タイプにより提案可能な階級が限定</strong>されますので、議会タイプの変更も検討してみるとよいでしょう。</p>
+<table class="agenda-important">
+<tr><th>タイトル</th><th>提案階級</th><th>重要度</th><th>提案条件</th><th>効果</th><th>出現率</th></tr>
+<tr><td>特権を付与</td><td>貴族<br>聖職者<br>市民<br>庶民</td><td>1.5</td><td>その階級の特権が6未満で、1つ以上追加できる特権がある</td><td>ランダムな<span class="bad">特権を付与</span>する</td><td>10</td></tr>
+<tr><td>ポリシーを変更</td><td>貴族<br>聖職者<br>市民<br>庶民</td><td>-</td><td>その階級が好むポリシーがあり、かつその法律がロックされていない</td><td>ランダムな対象ポリシーを採用し、安定度<span class="bad">-12</span></td><td>10</td></tr>
+<tr><td>免税</td><td>貴族</td><td>2</td><td>既に同じ補正がない<br>“聖職者”の税率が25%超</td><td>貴族最大税率<span class="bad">-20%</span>（5年）</td><td>10</td></tr>
+<tr><td>免税</td><td>聖職者</td><td>2</td><td>既に同じ補正がない<br>聖職者の税率が20%超</td><td>聖職者最大税率<span class="bad">-20%</span>（5年）</td><td>10</td></tr>
+<tr><td>免税</td><td>市民</td><td>2</td><td>既に同じ補正がない<br>市民の税率が20%超</td><td>市民最大税率<span class="bad">-20%</span>（5年）</td><td>10</td></tr>
+<tr><td>免税</td><td>庶民</td><td>2</td><td>既に同じ補正がない<br>庶民の税率が20%超</td><td>庶民最大税率<span class="bad">-20%</span>（5年）</td><td>10</td></tr>
+<tr><td>募兵義務軽減</td><td>貴族</td><td>1.5</td><td>既に同じ補正がない</td><td>貴族召集兵規模<span class="bad">-50%</span>（5年）</td><td>5</td></tr>
+<tr><td>募兵義務軽減</td><td>聖職者</td><td>-</td><td>既に同じ補正がない</td><td>聖職者召集兵規模<span class="bad">-50%</span>（5年）</td><td>5</td></tr>
+<tr><td>募兵義務軽減</td><td>市民</td><td>-</td><td>既に同じ補正がない</td><td>市民召集兵規模<span class="bad">-50%</span>（5年）</td><td>5</td></tr>
+<tr><td>募兵義務軽減</td><td>庶民</td><td>1.5</td><td>既に同じ補正がない</td><td>庶民召集兵規模<span class="bad">-15%</span>（5年）</td><td>5</td></tr>
+<tr><td>同盟破棄</td><td>貴族<br>聖職者<br>市民<br>庶民</td><td>2</td><td>その階級が嫌っている同盟国が存在する</td><td>対象国との<span class="bad">同盟を解消</span></td><td>10</td></tr>
+<tr><td>評価を下げる</td><td>貴族<br>市民<br>庶民</td><td>0.75</td><td>同宗教圏にその階級が嫌う国が存在する</td><td>対象国との評価を相互に<span class="bad">-25低下</span></td><td>10</td></tr>
+<tr><td>評価を上げる</td><td>貴族<br>聖職者<br>市民<br>庶民</td><td>0.75</td><td>同宗教圏にその階級が好む国が存在する</td><td>対象国との評価を相互に<span class="good">+25上昇</span></td><td>10</td></tr>
+<tr><td>軍事学校の改革</td><td>貴族<br>市民</td><td>-</td><td>時代⑤絶対主義以降<br>陸軍伝統5超</td><td>陸軍伝統<span class="bad">-5</span></td><td>5</td></tr>
+<tr><td>海軍学校の改革</td><td>貴族<br>市民</td><td>-</td><td>時代⑤絶対主義以降<br>海軍伝統5超</td><td>海軍伝統<span class="bad">-5</span></td><td>5</td></tr>
+<tr><td>陸軍募集の縮小</td><td>庶民</td><td>-</td><td>時代⑤絶対主義以降<br>最大人的資源5超<br>毎月の人的資源+0超</td><td>毎月の人的資源<span class="bad">-3</span></td><td>5</td></tr>
+<tr><td>海軍募集の縮小</td><td>庶民</td><td>-</td><td>時代④宗教改革以降<br>最大水夫数5超<br>毎月の水夫数+0超</td><td>毎月の水夫数<span class="bad">-2</span></td><td>5</td></tr>
+</table>
+<hr>
+<h3 id="social-agenda">協議事項（社会的価値観）</h3>
+<table class="agenda">
+<tr><th>タイトル</th><th>提案階級</th><th>提案条件</th><th>効果</th><th>出現率</th></tr>
+<tr><td>自治運動</td><td>貴族</td><td>中央集権0超</td><td>安定度<span class="bad">-2.5</span><br>地方分権に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>自治の支持</td><td>貴族</td><td>地方分権0超かつ90未満</td><td>安定度<span class="bad">-2.5</span><br>地方分権に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>貴族の運動</td><td>貴族</td><td>金権政治0超</td><td>正統性<span class="bad">-5</span><br>貴族政治に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>貴族の支持</td><td>貴族</td><td>貴族政治0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>貴族政治に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>農奴制運動</td><td>貴族</td><td>自由民0超</td><td>威信<span class="bad">-5</span><br>農奴制に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>農奴制の支持</td><td>貴族</td><td>農奴制0超かつ90未満</td><td>威信<span class="bad">-5</span><br>農奴制に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>好戦運動</td><td>貴族</td><td>融和的0超</td><td>首都で敵対心2発生<br>好戦的に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>好戦派閥の支持</td><td>貴族</td><td>好戦的0超かつ90未満</td><td>首都で敵対心1発生<br>好戦的に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>領土重視</td><td>貴族</td><td>海軍0超</td><td>海軍伝統<span class="bad">-5</span><br>陸軍に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>領土重視の支持</td><td>貴族</td><td>陸軍0超かつ90未満</td><td>海軍伝統<span class="bad">-5</span><br>陸軍に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>伝統経済</td><td>貴族</td><td>資本主義0超</td><td>安定度<span class="bad">-5</span><br>伝統経済に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>伝統経済の支持</td><td>貴族</td><td>伝統経済0超かつ90未満</td><td>安定度<span class="bad">-5</span><br>伝統経済に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>外向的視点</td><td>貴族</td><td>内向き0超<br>時代③発見以降</td><td>正統性<span class="bad">-5</span><br>外向きに<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>外向姿勢の支持</td><td>貴族</td><td>外向き0超かつ90未満<br>時代③発見以降</td><td>正統性<span class="bad">-5</span><br>外向きに<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>伝統的思想の保護</td><td>聖職者</td><td>革新主義0超</td><td>研究進捗<span class="bad">-5</span><br>伝統主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>伝統的思想の支持</td><td>聖職者</td><td>伝統主義0超かつ90未満</td><td>研究進捗<span class="bad">-5</span><br>伝統主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>唯心アイデアの保護</td><td>聖職者</td><td>人文主義0超</td><td>威信<span class="bad">-5</span><br>精神主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>唯心アイデアの支持</td><td>聖職者</td><td>精神主義0超かつ90未満</td><td>威信<span class="bad">-5</span><br>精神主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>共同体主義的価値観の保護</td><td>聖職者</td><td>個人主義0超</td><td>正統性<span class="bad">-5</span><br>共同体主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>共同体主義的価値観の支持</td><td>聖職者</td><td>共同体主義0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>共同体主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>内向的視点</td><td>聖職者</td><td>外向き0超<br>時代③発見以降</td><td>威信<span class="bad">-5</span><br>内向きに<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>内向姿勢の支持</td><td>聖職者</td><td>内向き0超かつ90未満<br>時代③発見以降</td><td>威信<span class="bad">-5</span><br>内向きに<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>革新アイデアへの適応</td><td>市民</td><td>伝統主義0超</td><td>文化的伝統<span class="bad">-5</span><br>革新主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>革新アイデアの支持</td><td>市民</td><td>革新主義0超かつ90未満</td><td>文化的伝統<span class="bad">-5</span><br>革新主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>人文アイデアへの適応</td><td>市民</td><td>精神主義0超</td><td>正統性<span class="bad">-5</span><br>人文主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>人文アイデアの支持</td><td>市民</td><td>人文主義0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>人文主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>金権政治の運動</td><td>市民</td><td>貴族政治0超</td><td>正統性<span class="bad">-5</span><br>金権政治に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>金権政治の支持</td><td>市民</td><td>金権政治0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>金権政治に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>自由の要求</td><td>市民</td><td>農奴制0超</td><td>威信<span class="bad">-5</span><br>自由民に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>自由な従属国の支援</td><td>市民</td><td>自由民0超かつ90未満</td><td>威信<span class="bad">-5</span><br>自由民に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>融和運動</td><td>市民</td><td>好戦的0超</td><td>戦争疲弊<span class="bad">-5</span><br>融和的に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>融和の支持</td><td>市民</td><td>融和的0超かつ90未満</td><td>戦争疲弊<span class="bad">-5</span><br>融和的に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>海軍運動</td><td>市民</td><td>陸軍0超<br>沿岸州を持つ</td><td>陸軍伝統<span class="bad">-5</span><br>海軍に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>海軍の支持</td><td>市民</td><td>海軍0超かつ90未満</td><td>陸軍伝統<span class="bad">-5</span><br>海軍に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>資本経済</td><td>市民</td><td>伝統経済0超</td><td>安定度<span class="bad">-5</span><br>資本経済に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>資本経済の支持</td><td>市民</td><td>資本経済0超かつ90未満</td><td>安定度<span class="bad">-5</span><br>資本経済に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>個人主義的価値観の保護</td><td>市民</td><td>共同体主義0超</td><td>正統性<span class="bad">-5</span><br>個人主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>個人主義的価値観の支持</td><td>市民</td><td>個人主義0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>個人主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>外向的視点</td><td>市民</td><td>内向き0超<br>時代③発見以降</td><td>文化的伝統<span class="bad">-5</span><br>外向きに<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>外向姿勢の支持</td><td>市民</td><td>外向き0超かつ90未満<br>時代③発見以降</td><td>文化的伝統<span class="bad">-5</span><br>外向きに<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>自治運動</td><td>庶民</td><td>中央集権0超</td><td>安定度<span class="bad">-5</span><br>地方分権に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>自治の支持</td><td>庶民</td><td>地方分権0超かつ90未満</td><td>安定度<span class="bad">-5</span><br>地方分権に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>唯心アイデアの保護</td><td>庶民</td><td>人文主義0超</td><td>威信<span class="bad">-5</span><br>精神主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>唯心アイデアの支持</td><td>庶民</td><td>精神主義0超かつ90未満</td><td>威信<span class="bad">-5</span><br>精神主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>自由の要求</td><td>庶民</td><td>農奴制0超</td><td>威信<span class="bad">-5</span><br>自由民に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>自由な従属国の支援</td><td>庶民</td><td>自由民0超かつ90未満</td><td>威信<span class="bad">-5</span><br>自由民に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>重商主義運動</td><td>庶民</td><td>自由貿易0超<br>時代④宗教改革以降</td><td>正統性<span class="bad">-5</span><br>重商主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>重商主義の支持</td><td>庶民</td><td>重商主義0超かつ90未満<br>時代④宗教改革以降</td><td>正統性<span class="bad">-5</span><br>重商主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>融和運動</td><td>庶民</td><td>好戦的0超</td><td>戦争疲弊+1<br>融和的に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>融和の支持</td><td>庶民</td><td>融和的0超かつ90未満</td><td>戦争疲弊+1<br>融和的に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>伝統経済</td><td>庶民</td><td>資本経済0超</td><td>安定度<span class="bad">-5</span><br>伝統経済に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>伝統経済の支持</td><td>庶民</td><td>伝統経済0超かつ90未満</td><td>安定度<span class="bad">-5</span><br>伝統経済に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>共同体主義的価値観の保護</td><td>庶民</td><td>個人主義0超</td><td>正統性<span class="bad">-5</span><br>共同体主義に<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>共同体主義的価値観の支持</td><td>庶民</td><td>共同体主義0超かつ90未満</td><td>正統性<span class="bad">-5</span><br>共同体主義に<span class="good">2</span>傾く</td><td>10</td></tr>
+<tr><td>内向的視点</td><td>庶民</td><td>外向き0超<br>時代③発見以降</td><td>外交官<span class="bad">-1</span><br>内向きに<span class="good">5</span>傾く</td><td>10</td></tr>
+<tr><td>内向姿勢の支持</td><td>庶民</td><td>内向き0超かつ90未満<br>時代③発見以降</td><td>外交官<span class="bad">-1</span><br>内向きに<span class="good">2</span>傾く</td><td>10</td></tr>
+</table>
+<hr>
 
+<h3 id="institution-agenda">協議事項（制度）</h3>
+<table class="agenda">
+<tr><th>タイトル</th><th>提案階級</th><th>提案条件</th><th>効果</th><th>出現率</th></tr>
+<tr><td>封建主義の抑制</td><td>市民<br>庶民</td><td>封建主義の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>律法主義の抑制</td><td>貴族<br>庶民</td><td>律法主義の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>能力主義の抑制</td><td>貴族<br>聖職者</td><td>能力主義の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>ルネサンスの抑制</td><td>庶民</td><td>ルネサンスの制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>銀行の抑制</td><td>貴族<br>聖職者</td><td>銀行の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>職業軍隊の抑制</td><td>貴族<br>市民</td><td>職業軍隊の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>新大陸の抑制</td><td>貴族<br>庶民</td><td>新大陸の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>印刷機の抑制</td><td>貴族<br>聖職者</td><td>印刷機の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>槍と銃の抑制</td><td>聖職者<br>市民</td><td>槍と銃の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>信条主義の抑制</td><td>貴族<br>庶民</td><td>信条主義の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>国際交易の抑制</td><td>聖職者<br>庶民</td><td>国際交易の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>大砲の抑制</td><td>市民<br>庶民</td><td>大砲の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>工場の抑制</td><td>貴族<br>聖職者</td><td>工場の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>科学革命の抑制</td><td>聖職者<br>庶民</td><td>科学革命の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>軍事革命の抑制</td><td>貴族<br>庶民</td><td>軍事革命の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>啓蒙の抑制</td><td>聖職者<br>庶民</td><td>啓蒙の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>産業化の抑制</td><td>貴族<br>庶民</td><td>産業化の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+<tr><td>国民皆兵制度の抑制</td><td>聖職者<br>庶民</td><td>国民皆兵制度の制度を未受容かつ進行度が0%超～99%未満%の自国ロケーションが存在する</td><td>制度進行度<span class="bad">-10%</span>（人口順に対象ロケーション数の1/20+1まで）</td><td>10</td></tr>
+</table>
+<hr>
 
+<h3 id="building-agenda">協議事項（階級建物）</h3>
+<table class="agenda">
+<tr><th>タイトル</th><th>提案階級</th><th>提案条件</th><th>効果</th><th>出現率</th></tr>
+<tr><td>教区教会への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>聖職者満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>修養所への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>聖職者満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>僧兵の訓練場への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>聖職者満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地元市場への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>市民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>市民の邸宅への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>市民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>農民の訓練場への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>農民の狩猟場への苦情の対処</td><td>貴族</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地方議会への苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>貴族の要塞への苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>商人組合への苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>市民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>職人ギルドへの苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>市民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>祝祭場への苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地方の学校への苦情の対処</td><td>聖職者</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>税関城への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>腐敗選挙区への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地方貴族代表部への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>教会記録保管所への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>聖職者満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>海賊の巣窟への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地方紙への苦情の対処</td><td>市民</td><td>国内に対象施設が1つ以上存在する</td><td>庶民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>ギルド集会所への苦情の対処</td><td>庶民</td><td>国内に対象施設が1つ以上存在する</td><td>市民満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>執行官への苦情の対処</td><td>庶民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/5+1まで）</td><td>10</td></tr>
+<tr><td>貴族の別荘への苦情の対処</td><td>庶民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>貴族の募集施設への苦情の対処</td><td>庶民</td><td>国内に対象施設が1つ以上存在する</td><td>貴族満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>地方の神社への苦情の対処</td><td>庶民</td><td>国内に対象施設が1つ以上存在する</td><td>聖職者満足度<span class="bad">-10%</span><br>対象施設を破棄する（ロケーションの人口の多い順に対象数の1/10+1まで）</td><td>10</td></tr>
+<tr><td>新たな修道院を求める声</td><td>聖職者</td><td>修道院を建設可能<br>修道院が未建設の田園がある</td><td>対象の田園の1つに宗派に応じた<span class="good">修道院が半額で建設</span>される</td><td>10</td></tr>
+<tr><td>新しい市場を求める声</td><td>市民<br>庶民</td><td>市場の村が未建設の田園がある</td><td>対象の田園の1つに<span class="good">市場の村が半額で建設</span>される</td><td>5</td></tr>
+</table>
+<hr>
 
-
-
-
+<h3 id="hre-agenda">協議事項（HRE専用）</h3>
+<table class="agenda">
+<tr><th>タイトル</th><th>提案階級</th><th>提案条件</th><th>効果</th><th>出現率</th></tr>
+<tr><td>税負担の軽減</td><td>帝国諸侯<br>自由都市<br>帝国司教国</td><td>過去2年に同じ協議事項を採用していない<br>皇帝が議会を主導している<br>現在の議題が帝国法の議論ではない</td><td>対象の加盟国のうち収入の低い最大5カ国の<span class="bad">帝国貢物-75%</span>・<span class="bad">帝国国庫への貢献-75%</span>（各5年）</td><td>10</td></tr>
+<tr><td>プロイセン王国に昇格</td><td>選帝侯</td><td>この議題が解禁済み<br>プロイセンが選帝侯であり皇帝ではない<br>皇帝が議会を主導している<br>現在の議題が帝国法の議論ではない</td><td>プロイセンイベント"<span class="good">プロイセンの正統な王</span>"発生</td><td>10</td></tr>
+<tr><td>帝国の称号を授与</td><td>選帝侯</td><td>過去2年に同じ協議事項を採用していない<br>皇帝の威信が20超<br>皇帝が議会を主導している<br>現在の議題が帝国法の議論ではない</td><td>皇帝が<span class="bad">選帝侯の数×5の威信を失い</span>、各選帝侯は威信<span class="good">+10</span>を得る</td><td>10</td></tr>
+<tr><td>自由都市の権利の承認</td><td>自由都市</td><td>過去2年に同じ協議事項を採用していない<br>皇帝が議会を主導している<br>現在の議題が帝国法の議論ではない</td><td>皇帝が<span class="bad">自由都市の数×0.25の威信を失い</span>、すべての自由都市に安定度<span class="good">+7</span><br>自由都市の敵側戦争主導国の評価<span class="bad">-25</span></td><td>10</td></tr>
+</table>
 
 
 
