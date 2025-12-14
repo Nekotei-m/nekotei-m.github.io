@@ -43,7 +43,7 @@
     }
     
   },
-  "description": "勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）\n",
+  "description": "勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）\n",
   "keywords": []
 }
 
@@ -53,18 +53,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="author" content="ねこてー">
 <meta name="keywords" content="">
-<meta name="description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）">
+<meta name="description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）">
 
 
-<meta property="og:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）">
+<meta property="og:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="勢力ブロック">
 <meta name="twitter:title" content="勢力ブロック">
 <meta property="og:url" content="https://nekotei-m.github.io/vic3/powerblock/">
 <meta property="twitter:url" content="https://nekotei-m.github.io/vic3/powerblock/">
 <meta property="og:site_name" content="ねこメモ">
-<meta property="og:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）">
-<meta name="twitter:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）">
+<meta property="og:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）">
+<meta name="twitter:description" content="勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）">
 <meta property="og:locale" content="ja">
 
   
@@ -187,13 +187,13 @@
             <strong>Europa Universalis V</strong>
           </a></li>
           <li><a href="https://nekotei-m.github.io/eu5/trade-tips/">貿易の手引き（1.0）</a></li>
-          <li><a href="https://nekotei-m.github.io/eu5/parliament/">議会について</a></li>
-          <li><a href="https://nekotei-m.github.io/eu5/casus-belli/">CB一覧</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/parliament/">議会について（1.0）</a></li>
+          <li><a href="https://nekotei-m.github.io/eu5/casus-belli/">CB一覧（1.0）</a></li>
           <li><a href="https://nekotei-m.github.io/eu5/trade-goods/">商品一覧</a></li>
           <li class="game-title vic3"><a href="https://nekotei-m.github.io/categories/victoria3/">
             <strong>Victoria3</strong>
           </a></li>
-          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.10）</a></li>
+          <li><a href="https://nekotei-m.github.io/vic3/powerblock/">勢力ブロック（1.12）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/subjects/">従属国（1.8）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/company-list/">企業（1.12）</a></li>
           <li><a href="https://nekotei-m.github.io/vic3/ig-list/">利益団体（1.9）</a></li>
@@ -294,15 +294,23 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>勢力ブロックのアイデンティティと原則の一覧です。（1.10.3で確認）</p>
+              <p>勢力ブロックのアイデンティティと原則の一覧です。（1.12で確認）</p>
 
 <style>
 p strong.term { color: #933; }
 table td { padding: 20px 10px; }
 table td:first-child { text-align: center; }
 table.identity strong { color: #335; }
-table.identity td:first-child strong { color: #444; font-size: larger;  white-space: nowrap }
-table.identity td:first-child img { width: 140px; }
+table.identity td:first-child strong { 
+  color: #444;
+  font-size: larger;
+  text-align: center;
+  white-space: nowrap
+}
+table.identity td:first-child img {
+  margin: 0 auto;
+  width: 140px;
+}
 table.principal td:first-child strong { font-size: 1.5rem; }
 table.principal td:first-child span { font-size: 1.3rem; }
 table.principal td { font-size: 1.4rem; vertical-align:top ;}
@@ -310,7 +318,7 @@ table.principal td:nth-child(n+2) strong { color: #116; }
 table.principal td:nth-child(n+2) { width: 190px; }
 table.principal td img { margin-top: -10px; }
 </style>
-<h3 id="identity">勢力ブロックとは</h3>
+<h3 id="about-pb">勢力ブロックとは</h3>
 <p><strong class="term">勢力ブロック</strong>とはある目標を掲げた複数の国家からなる連合体です。<br>
 目標となる<strong class="term">アイディンティティ</strong>と特性を決める<strong class="term">原則</strong>により、リーダーとメンバーで異なるボーナスを受け取ります。<br>
 勢力ブロックを立ち上げるには<strong>大国以上の国家ランク（非承認大国含む）</strong>と<strong>影響力500</strong>が必要です。</p>
@@ -342,71 +350,81 @@ table.principal td img { margin-top: -10px; }
 <h3 id="identity">アイデンティティ</h3>
 <table class="identity">
 <tr><th>名称</th><th>効果</th></tr>
-<tr><td><strong>貿易同盟</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/trade_league.png"></td>
+<tr><td><strong>貿易同盟</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/trade_league.png" alt=""></td>
 <td><strong>初期原則：</strong>国内貿易 or 対外貿易<br>
 <strong>設立条件：</strong>孤立主義が未制定<br>
 <br>
 <strong>関税同盟を有効化</strong><br>
--15 列強の勢力ブロック招待の受諾率<br>
--1 メンバーあたりの勢力ブロックの結束力<br>
+列強の勢力ブロック招待の受諾率 -15<br>
+メンバーあたりの勢力ブロックの結束力 -1<br>
 <br>
-<strong>リーダー：</strong>+25% 貿易キャパシティ<br>
-<strong>メンバー：</strong>+20% 市場リーダーへの輸送船団提供<br>
-<strong>専用モニュメント：</strong>威信+3 / 人口に基づくインフラ+10% / SoLに基づく体制派+10%
+<strong>リーダー：</strong>貿易キャパシティ +25%<br>
+<strong>メンバー：</strong>市場リーダーへの輸送船団提供 +20%<br>
+<strong>専用モニュメント：</strong>威信 +3 / 人口に基づくインフラ +10% / SoLに基づく体制派 +10%
 </td></tr>
 
-<tr><td><strong>君主制帝国</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/sovereign_empire.png"></td>
+<tr><td><strong>君主制帝国</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/sovereign_empire.png" alt=""></td>
 <td><strong>初期原則：</strong>属国化 or メンバーの搾取<br>
 <strong>設立条件：</strong>君主制採用 / 要SoI<br>
 <br>
 <strong>メンバーを従属させられる</strong><br>
--50 列強の勢力ブロック招待の受諾率<br>
--40 大国/非承認大国の勢力ブロック招待の受諾率<br>
--30 非主要国/非承認地方国の勢力ブロック招待の受諾率<br>
--3 メンバーあたりの勢力ブロックの結束力<br>
+列強の勢力ブロック招待の受諾率 -50<br>
+大国/非承認大国の勢力ブロック招待の受諾率 -40<br>
+非主要国/非承認地方国の勢力ブロック招待の受諾率 -30<br>
+メンバーあたりの勢力ブロックの結束力 -3<br>
 <br>
-<strong>リーダー：</strong>-0.05 すべての従属国の週単位の自由への願望<br>
+<strong>リーダー：</strong>すべての従属国の週単位の自由への願望 -0.05<br>
 <strong>メンバー：</strong>なし<br>
-<strong>専用モニュメント：</strong>威信+3 / 布告コスト-25%
+<strong>専用モニュメント：</strong>威信 +3 / 布告コスト -25%
 </td></tr>
 
-<tr><td><strong>イデオロギー連合</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/ideological_union.png"></td>
+<tr><td><strong>イデオロギー連合</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/ideological_union.png" alt=""></td>
 <td><strong>初期原則：</strong>創造的な立法府 or イデオロギーの真理<br>
 <strong>設立条件：</strong>要SoI<br>
 <br>
 <strong>強制体制変更を許可</strong><br>
--2 勢力ブロックメンバーあたりの勢力ブロックの結束力<br>
+メンバーあたりの勢力ブロックの結束力 -2<br>
 <br>
-<strong>リーダー：</strong>-10% 施行期間 / リーダーの政府の原則および権力の配分の法をメンバーに強制可<br>
-<strong>メンバー：</strong>+30% ブロックリーダーが制定済みの法律の制定成功率<br>
-<strong>専用モニュメント：</strong>威信+3 / 影響力+5 / POP政治力+25%
+<strong>リーダー：</strong>施行期間 -10% / リーダーの政府の原則および権力の配分の法をメンバーに強制可<br>
+<strong>メンバー：</strong>ブロックリーダーが制定済みの法律の制定成功率 +30%<br>
+<strong>専用モニュメント：</strong>威信 +3 / 影響力 +5 / POP政治力 +25%
 </td></tr>
 
-<tr><td><strong>軍事条約</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/military_treaty_organization.png"></td>
+<tr><td><strong>軍事条約</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/military_treaty_organization.png" alt=""></td>
 <td><strong>初期原則：</strong>防衛協力 or 積極的な連携<br>
 <strong>設立条件：</strong>国民民兵が未制定 / 要SoI<br>
 <br>
 <strong>リーダーはメンバーの戦争へ自発的参戦時に目標追加可能</strong><br>
--15 列強の勢力ブロック招待の受諾率<br>
--2 メンバーあたりの勢力ブロックの結束力<br>
-
+列強の勢力ブロック招待の受諾率 -15<br>
+メンバーあたりの勢力ブロックの結束力 -2<br>
 <br>
-<strong>リーダー：</strong>+20% 訓練率 / +10% 陸軍・海軍戦力投射による国威<br>
-<strong>メンバー：</strong>+20% 訓練率<br>
-<strong>専用モニュメント：</strong>威信+3 / 徴兵率+25%
+<strong>リーダー：</strong>訓練率 +20% / 陸軍・海軍戦力投射による国威 +10%<br>
+<strong>メンバー：</strong>訓練率 +20%<br>
+<strong>専用モニュメント：</strong>威信 +3 / 徴兵率 +25%
 </td></tr>
 
-<tr><td><strong>宗教招集</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/religious.png"></td>
+<tr><td><strong>宗教招集</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/religious.png" alt=""></td>
 <td><strong>初期原則：</strong>神聖なる経済 or 神聖なる市民<br>
-<strong>設立条件：</strong>国教or良心の自由を制定 / 要SoI<br><br>
-
+<strong>設立条件：</strong>国教or良心の自由を制定 / 要SoI<br>
 <br>
 <strong>メンバーに対する国教の強要可</strong><br>
--2 メンバーあたりの勢力ブロックの結束力<br>
+メンバーあたりの勢力ブロックの結束力 -2<br>
 <br>
-<strong>リーダー：</strong>+25% 信者の政治力 / +33% 改宗 / +5% 出生率 / +25% 聖職者投資プール貢献<br>
-<strong>メンバー：</strong>+25% 信者の政治力 / +33% 改宗 / +5% 出生率<br>
-<strong>専用モニュメント：</strong>威信+3 / 改宗率+25% / 社会不安-10%
+<strong>リーダー：</strong>信者の政治力 +25% / 改宗 +33% / 出生率 +5% / 聖職者投資プール貢献 +25%<br>
+<strong>メンバー：</strong>信者の政治力 +25% / 改宗 +33% / 出生率 +5%<br>
+<strong>専用モニュメント：</strong>威信 +3 / 改宗率 +25% / 社会不安 -10%
+</td></tr>
+
+<tr><td><strong>文化連邦</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/cultural.png" alt=""></td>
+<td><strong>初期原則：共通の規範 or 移動の自由</strong><br>
+<strong>設立条件：多文化主義を制定していない</strong> / 要IW<br>
+<br>
+<strong>メンバーにリーダーの主要文化を強制可</strong>（リーダーのみ）<br>
+メンバーあたりの勢力ブロックの結束力 -2<br>
+<br>
+<strong>リーダー：同じ市民権の法を強制可</strong><br>
+<strong>メンバー：</strong>なし<br>
+<strong>専用モニュメント：</strong>威信 +3 / 布告コスト -25%
 </td></tr>
 
 <tr><td>共通</td>
@@ -422,68 +440,71 @@ table.principal td img { margin-top: -10px; }
 <table class="principal">
 <tr><th>原則名</th><th>Lv1</th><th>Lv2</th><th>Lv3</th></tr>
 
-<tr><td><strong>建設</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/construction.png"></td>
+<tr><td><strong>建設</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/construction.png" alt=""></td>
 <td><strong>+10% 州の建設効率</strong></td><td>+10% 州の建設効率<br><strong>-75% 建設局のインフラ使用</strong></td><td>+10% 州の建設効率<br>-75% 建設局のインフラ使用<br><strong>企業：<a href="https://nekotei-m.github.io/vic3/company-list/#company_construction_power_bloc">建設複合企業体</a>アンロック</strong></td></tr>
 
-<tr><td><strong>国内貿易</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/internal_trade.png"><span>（貿易同盟限定）</span></td>
-<td><strong>+10% インフラ<br>+20% 市場リーダーへの輸送船団提供</strong></td><td>+10% インフラ<br>+20% 市場リーダーへの輸送船団提供<br><strong>+5% 企業生産量ボーナス</td><td>+10% インフラ<br><strong>+40%</strong> 市場リーダーへの輸送船団提供<br>+5% 企業生産量ボーナス<br><strong>+25% 港の接続の輸送コスト</strong></td></tr>
+<tr><td><strong>国内貿易</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/internal_trade.png" alt=""><span>（貿易同盟限定）</span></td>
+<td><strong>+10% インフラ<br>+20% 市場リーダーへの輸送船団提供</strong></td><td>+10% インフラ<br>+20% 市場リーダーへの輸送船団提供<br><strong>+5% 企業生産量ボーナス</strong></td><td>+10% インフラ<br><strong>+40%</strong> 市場リーダーへの輸送船団提供<br>+5% 企業生産量ボーナス<br><strong>+25% 港の接続の輸送コスト</strong></td></tr>
 
-<tr><td><strong>市場統合</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/market_unification.png"><span>（貿易同盟では選択不可）</span></td>
+<tr><td><strong>市場統合</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/market_unification.png" alt=""><span>（貿易同盟では選択不可）</span></td>
 <td><strong>メンバー間の禁輸不可<br>+10% インフラ<br>+100 勢力ブロック内の貿易優位性</strong></td><td><strong>関税同盟を有効化</strong><br>+10% インフラ<br><strong>+5% 企業生産量ボーナス</strong><br></td><td>関税同盟を有効化<br>+10% インフラ<br>+5% 企業生産量ボーナス<br><strong>+20% 市場リーダーへの輸送船団提供</strong></td></tr>
 
-<tr><td><strong>属国化</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/vassals_subjects.png"></td>
+<tr><td><strong>属国化</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/vassals_subjects.png" alt=""></td>
 <td><strong>+10 従属国あたりの権力</strong></td><td><strong>+15</strong> 従属国あたりの権力<br><strong>+25% 従属国からの貢納</strong></td><td><strong>+20</strong> 従属国あたりの権力<br>+25% 従属国からの貢納<br><strong>従属国州に対する布告の制定を許可</strong></td></tr>
 
-<tr><td><strong>高度な調査</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/advanced_research.png"></td>
+<tr><td><strong>高度な調査</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/advanced_research.png" alt=""></td>
 <td><strong>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br>+25% 教育の制度の変更速度<br>-10% 教育の制度の行政コスト<br>+5% 技術の普及（制度Lv毎）</strong></td><td>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br><strong>+40%</strong> 教育の制度の変更速度<br><strong>-25%</strong> 教育の制度の行政コスト<br>+5% 技術の普及（制度Lv毎）<br><strong>-5% 先行ペナルティ（制度Lv毎）</strong></td><td>自国の教育法をメンバーに強制可（リーダーのみ）<br>（法）学校なしを禁止<br><strong>+50%</strong> 教育の制度の変更速度<br><strong>-50%</strong> 教育の制度の行政コスト<br>+5% 技術の普及（制度Lv毎）<br>-5% 先行ペナルティ（制度Lv毎）<br><strong>+5 最大革新投資（制度Lv毎）</strong></td></tr>
 
-<tr><td><strong>防衛協力<img src="https://nekotei-m.github.io/img/vic3/powerbloc/defensive_coorperation.png"></td>
+<tr><td><strong>防衛協力</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/defensive_coorperation.png" alt=""></td>
 <td><strong>メンバー間戦争の禁止</strong></td><td>メンバー間戦争の禁止<br><strong>自国の陸軍法をメンバーに強制可（リーダーのみ）<br>-50% 外交戦でのメンバー懐柔の戦略ポイント</strong></td><td>メンバー間戦争の禁止<br>自国の陸軍法をメンバーに強制可（リーダーのみ）<br>-50% 外交戦でのメンバー懐柔の戦略ポイント<br><strong>メンバー間の防衛戦争での協力</strong></td></tr>
 
-<tr><td><strong>積極的な連携</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/aggressive_coordination.png"><span>（軍事条約限定）</span></td>
+<tr><td><strong>積極的な連携</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/aggressive_coordination.png" alt=""><span>（軍事条約限定）</span></td>
 <td><strong>-30% 攻撃戦争時の戦略ポイント</strong></td><td>-30% 攻撃戦争時の戦略ポイント<br><strong>-15% 死傷者による厭戦</strong></td><td>-30% 攻撃戦争時の戦略ポイント<br>-15% 死傷者による厭戦<br><strong><span class="caution">-10</span> 勢力ブロックの結束力<br><span class="caution">+15%</span> 悪名の生成<br>すべての外交戦でメンバーに参戦要請可</strong></td></tr>
 
-<tr><td><strong>対外貿易</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/external_trade.png"></td>
+<tr><td><strong>対外貿易</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/external_trade.png" alt=""></td>
 <td><strong>+25% 貿易キャパシティ<br>+25% 貿易優位性</strong></td><td>+25% 貿易キャパシティ<br>+25% 貿易優位性<br><strong>取引所PM「影響力のある取引所」（週間取引+1/貿易キャパシティ+10）アンロック</strong></td><td>+25% 貿易キャパシティ<br>+25% 貿易優位性<br>取引所PM「影響力のある取引所」アンロック<br><strong>関心のない地域での貿易優位性ペナルティを無効化</strong></td></tr>
 
-<tr><td><strong>食品の規格化</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/food_standardization.png"></td>
+<tr><td><strong>食品の規格化</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/food_standardization.png" alt=""></td>
 <td><strong>+10% 農業生産量</strong></td><td>+10% 農業生産量<br><strong>-10% 死亡率</strong></td><td>+10% 農業生産量<br>-10% 死亡率<br><strong>+1 生活水準<br>食品産業PM「効率的な製缶方法」（食料品生産+10）アンロック</strong></td></tr>
 
-<tr><td><strong>警察の連携</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/dedicated_police.png"></td>
+<tr><td><strong>警察の連携</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/dedicated_police.png" alt=""></td>
 <td><strong>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br>+25% 法執行機関の制度の変更速度<br>-10% 法執行機関の行政力コスト</strong></td><td>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br><strong>+40%</strong> 法執行機関の制度の変更速度<br><strong>-25%</strong> 法執行機関の行政力コスト<br><strong>-5% 政治運動活動（制度Lv毎）</strong></td><td>自国の警察法をメンバーに強制可（リーダーのみ）<br>（法）警察なしを禁止<br><strong>+50%</strong> 法執行機関の制度の変更速度<br><strong>-50%</strong> 法執行機関の行政力コスト<br>-5% 政治運動活動（制度Lv毎）<br><strong>+50 権力（制度Lv毎）</strong></td></tr>
 
-<tr><td><strong>輸送インフラ</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/transport.png"></td>
+<tr><td><strong>輸送インフラ</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/transport.png" alt=""></td>
 <td><strong>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限</strong></td><td>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限<br><strong>+20% 港の生産性</strong></td><td>+33% 人口100K人あたりのインフラ<br>+33% 人口由来のインフラ上限<br>+20% 港の生産性<br><strong>+10 規模の経済の上限<br>鉄道用PM3種（輸送生産・インフラUP）アンロック</strong></td></tr>
 
-<tr><td><strong>軍国主義産業</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/military_industry.png"></td>
+<tr><td><strong>軍国主義産業</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/military_industry.png" alt=""></td>
 <td><strong>+10% 自動車産業・武器工場・大砲工場・軍用造船所の各生産量</strong></td><td>+10% 自動車産業・武器工場・大砲工場・軍用造船所の各生産量<br><strong>-15% 軍需品の経費</strong></td><td>+10% 自動車産業・武器工場・大砲工場・軍用造船所の各生産量<br>-15% 軍需品の経費<br><strong>-33% 補給路コスト<br>気球偵察アンロック</strong></td></tr>
 
-<tr><td><strong>植民地事業所</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/colonial_offices.png"></td>
+<tr><td><strong>植民地事業所</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/colonial_offices.png" alt=""></td>
 <td><strong>自国の植民法をメンバーに強制可（リーダーのみ）<br>+25% 植民地の制度の変更速度<br>-10% 植民地の制度の行政力コスト</strong></td><td>自国の植民法をメンバーに強制可（リーダーのみ）<br><strong>+40%</strong> 植民地の制度の変更速度<br><strong>-25%</strong> 植民地の制度の行政力コスト<br><strong>+0.05 植民地成長スピード（制度Lv毎）</strong></td><td>自国の植民法をメンバーに強制可（リーダーのみ）<br><strong>+50%</strong> 植民地の制度の変更速度<br><strong>-50%</strong> 植民地の制度の行政力コスト<br>+0.05 植民地成長スピード（制度Lv毎）<br><strong>-5% 非承認国に対する悪名の生成（制度Lv毎）</strong></td></tr>
 
-<tr><td><strong>国外投資</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/foreign_investment.png"></td>
+<tr><td><strong>国外投資</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/foreign_investment.png" alt=""></td>
 <td><strong>経済的依存度による勢力影響の増大</strong></td><td>経済的依存度による勢力影響の増大<br><strong>-50% ブロック外所有施設の国有化コスト</strong></td><td>経済的依存度による勢力影響の増大<br>-50% ブロック外所有施設の国有化コスト<br><strong>下位の威信ランクメンバーへの国外投資権</strong></td></tr>
 
-<tr><td><strong>創造的な立法府</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/creative_legislature.png"></td>
+<tr><td><strong>創造的な立法府</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/creative_legislature.png" alt=""></td>
 <td><strong>-33% 制定引き延ばしの可能性</strong></td><td>-33% 制定引き延ばしの可能性<br><strong>-25% 制定否認による政治活動の増加<br>+25% 制定承認による政治活動の減少</strong></td><td>-33% 制定引き延ばしの可能性<br>-25% 制定否認による政治活動の増加<br>+25% 制定承認による政治活動の減少<br><strong>+1 法制定時の後退可能数</strong></td></tr>
 
-<tr><td><strong>移動の自由</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/freedom_of_movement.png"><span>（リーダーが国境閉鎖を未制定）</span></td>
+<tr><td><strong>移動の自由</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/freedom_of_movement.png" alt=""><span>（リーダーが国境閉鎖を未制定）</span></td>
 <td><strong>+25% 移住割当数</strong></td><td>+25% 移住割当数<br><strong>+50% 集団移住求心力<br>（大規模移住の対象になりやすくなる）</strong></td><td>+25% 移住割当数<br>+50% 集団移住求心力<br><strong>市場外メンバー間の移住許可</strong> ※国境閉鎖の国は除く<br><strong>芸術院および大学用PM「取引量の増加」（移住求心力+20%）アンロック</strong></td></tr>
 
-<tr><td><strong>神聖なる経済</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/divine_economy.png"><span>（宗教招集限定）</span></td>
+<tr><td><strong>神聖なる経済</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/divine_economy.png" alt=""><span>（宗教招集限定）</span></td>
 <td><strong>+50 同宗教国との貿易優位性<br>+50% 異教の従属国からの貢納</strong></td><td>+50 同宗教国との貿易優位性<br>+50% 異教の従属国からの貢納<br><strong>金融街およびマナーハウス用PM「聖職者の監視の強化」（聖職者雇用+100/持ち株+100%）アンロック</strong></td><td>+50 同宗教国との貿易優位性<br>+50% 異教の従属国からの貢納<br>金融街およびマナーハウス用PM」聖職者の監視の強化」アンロック<br><strong>+25% 国教のPOPの賃金</strong></td></tr>
 
-<tr><td><strong>メンバーの搾取</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/exploitation_of_members.png"><span>（君主制帝国限定）</span></td>
+<tr><td><strong>メンバーの搾取</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/exploitation_of_members.png" alt=""><span>（君主制帝国限定）</span></td>
 <td><strong><span class="caution">-5</span> 勢力ブロックの結束力<br>+20% 権力（リーダーのみ）<br>-20% 権力（メンバー）</strong></td><td><strong><span class="caution">-10</span></strong> 勢力ブロックの結束力<br>+20% <strong>権力および影響力</strong>（リーダーのみ）<br>-20% <strong>権力および影響力</strong>（メンバー）</td><td><strong><span class="caution">-20</span></strong> 勢力ブロックの結束力<br>+20% 権力および影響力（リーダーのみ）<br>-20% 権力および影響力（メンバー）<br><strong>+5% リーダーへの貢納</strong></td></tr>
 
-<tr><td><strong>神聖なる市民</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/sacred_civics.png"></td>
+<tr><td><strong>神聖なる市民</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/sacred_civics.png" alt=""></td>
 <td><strong>同じ宗教国への高い外交提案受諾率</strong></td><td>同じ宗教国への高い外交提案受諾率<br><strong>同じ宗教国に対する自由への願望の低下</strong></td><td>同じ宗教国への高い外交提案受諾率<br>同じ宗教国に対する自由への願望の低下<br><strong>同じ宗教法をメンバーに強制可能</strong></td></tr>
 
-<tr><td><strong>イデオロギーの真理</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/ideological_truth.png"><span>（イデオロギー連合限定）</span></td>
-<td><strong>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト</td><td>-33 対立側の扇動者の人気度</strong><br>-25% 抑圧および強化コスト<br><strong>+10% イデオロギーの矛盾に対する党内総務の影響</strong></td><td>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト<br>+10% イデオロギーの矛盾に対する党内総務の影響<br><strong>25 正当性の下限値</strong></td></tr>
+<tr><td><strong>イデオロギーの真理</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/ideological_truth.png" alt=""><span>（イデオロギー連合限定）</span></td>
+<td><strong>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト</strong></td><td><strong>--33 対立側の扇動者の人気度</strong><br>-25% 抑圧および強化コスト<br><strong>+10% イデオロギーの矛盾に対する党内総務の影響</strong></td><td>-33 対立側の扇動者の人気度<br>-25% 抑圧および強化コスト<br>+10% イデオロギーの矛盾に対する党内総務の影響<br><strong>25 正当性の下限値</strong></td></tr>
 
-<tr><td><strong>企業</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/sacred_civics.png"></td>
+<tr><td><strong>企業</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/companies.png" alt=""></td>
 <td><strong>+10% 企業生産量ボーナス</strong></td><td>+10% 企業生産量ボーナス<br><strong>+1 無償の企業認可数</strong></td><td>+10% 企業生産量ボーナス<br>+1 無償の企業認可数<br><strong>+1 企業スロット</strong></td></tr>
+
+<tr><td><strong>共通の規範</strong><img src="https://nekotei-m.github.io/img/vic3/powerbloc/shared_canon.png" alt=""><span>（文化連邦限定）</span></td>
+<td><strong>+10% 社会技術の伝播</strong></td><td>+10% 社会技術の伝播<br><strong>+10％ 同化</strong></td><td>+10% 社会技術の伝播<br>+10％ 同化<br><strong>-10％ 全受容POPの急進主義</strong></td></tr>
 </table>
 <hr>
 <ul class="reference">
